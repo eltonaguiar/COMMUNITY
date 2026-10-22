@@ -225,6 +225,19 @@ Searched `audit_dashboard/data/*top*`, `*edge*`, `*hidden*`, `*winner*`, `equity
 - `edge_decay_heatmap.json`, `mc_edge_audit_fresh.json`: no new hidden winners found.
 - No hidden top performers outside the already-analyzed cells.
 
+## 4o. Institutional-grade validation (billion-dollar standard)
+
+Ran `tools/institutional_validation.py` on luxalgo_confluence SHORT (n=404):
+- Sharpe 0.19 (target >2.0) → FAIL
+- Sortino 0.41
+- Calmar 6.65 (target >2.0) → PASS
+- Omega 1.57
+- CVaR (1%) -7.59%
+- Monte Carlo p-value 0.0 (significant)
+- DSR -2.99 (negative — selection bias)
+
+Verdict: FAIL on Sharpe. Even the best candidate does not meet institutional standards. No strategy is institutional-grade. The edge is real but small and fragile.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
