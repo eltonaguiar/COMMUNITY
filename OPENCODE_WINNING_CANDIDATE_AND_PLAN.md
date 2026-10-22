@@ -46,7 +46,7 @@
 ## 2. Proven profitable pick (current best)
 
 **Primary proven candidate:** `luxalgo_confluence` SHORT portfolio (XRP/ETH/BTC/STX, CRYPTO) — P(>0)=1.0000, n=404, PF 1.57
-**Secondary:** `commodity_term_cot` on `HG=F` (artifact-flagged, not strict winner)
+**Secondary:** `commodity_term_cot` on `HG=F` — DOWNGRADED after Copilot review: 751/815 signals overlap an earlier copper position, peak 53 simultaneous LONGs; one-position-at-a-time PF 1.21 (137 trades) → -0.0277%/trade after 0.10% cost; distinct-exit ratio did not reproduce. Candidate only, not proven.
 **Tertiary:** `high_trust_momentum` (CRYPTO) — PROVEN aggregate
 
 **Backup candidate:** `high_trust_momentum` (CRYPTO) — `alpha_engine/proven_edge_strategies.py:268`
