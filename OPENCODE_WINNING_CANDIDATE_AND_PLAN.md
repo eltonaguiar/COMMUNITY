@@ -312,6 +312,10 @@ See `CROSS_AGENT_MASTER_PLAN_2026-10-22.md` for the full synthesis. Key findings
 
 Checked all `ml_enhanced_*` and `ml_crypto_pred` strategies (1,400+ picks total). Many show 100% WR / inf PF (ml_enhanced_INJUSDT 168/168 wins, FETUSDT 171/171) — suspicious, likely overfit or soft-resolution. `ml_crypto_pred` is the only modest one (n=140, WR 62.1%, PF 2.07). **All ML strategies are stale** (last activity May 2026, 0 picks in last 7 days). Not a viable path to winners currently. Need retrain on fresh data with proper validation (purged CV, DSR) before any promotion.
 
+## 4u. ML candidate (logistic regression) — fails independence
+
+Built `tools/ml_candidate_eval.py` (logistic regression on asset_class, direction, confidence). Selected prob≥0.6 trades: n=1,353, WR 66.5%, PF 2.35, bootstrap CI [1.174,1.825], P=1.0. **But one-position-at-a-time n=1** — all selected trades overlap, so not executable. Fails independence. ML approach needs per-symbol, non-overlapping design.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
