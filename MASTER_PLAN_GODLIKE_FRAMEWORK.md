@@ -100,6 +100,33 @@ A sleeve is promoted to "proven winner" only when it passes **all 6 layers**. Ev
 - All other sources are stale or artifact-flagged.
 - **Next action:** Deploy fixed-resolver (P0-1), re-run harness, open sealed forward cohort for the best surviving cell.
 
+## 5b. Institutional-grade metrics (billion-dollar standard)
+
+Beyond the 6-layer framework, any candidate must also pass:
+
+### Phase 1 — Risk-adjusted performance
+- **Sharpe Ratio** > 2.0 (daily data); IR > 1.5 after market impact/costs.
+- **Sortino Ratio** (downside-only volatility penalty).
+- **Calmar Ratio** > 2.0 (annualized return / max drawdown).
+
+### Phase 2 — Not a coin flip
+- **Monte Carlo p-value** < 0.01 (10,000+ simulations shuffling trade order).
+- **t-statistic** > 2.58.
+- **Profit Factor** > 1.25 at scale; **Expectancy** > 0 with CI above 0.
+- **Deflated Sharpe Ratio (DSR)** (López de Prado) — adjusts for selection bias/data mining.
+
+### Phase 3 — Institutional scale
+- **Market impact / slippage** — strategy must survive $500M+ deployment.
+- **Omega Ratio** — probability-weighted gains vs losses (captures fat tails).
+- **CVaR / Expected Shortfall** — expected loss on worst 1% of days.
+
+### Direct comparison summary
+| Layer | Tool | Institutional target |
+|---|---|---|
+| Risk-adjusted return | Sharpe/Sortino/Calmar | Sharpe > 2.0, Calmar > 2.0 |
+| Statistical edge | Monte Carlo p-value / DSR | p < 0.01, DSR > 0 |
+| Institutional scale | Market impact / CVaR | Minimal slippage, acceptable tail-loss |
+
 ## 6. Cross-agent verification
 
 - OpenCode's "PROVEN" claims have been independently verified by Copilot and downgraded to CANDIDATE.
