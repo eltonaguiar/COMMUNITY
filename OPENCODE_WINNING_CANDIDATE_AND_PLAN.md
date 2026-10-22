@@ -284,6 +284,21 @@ These are large-cap institutional accumulation signals. Could inform EQUITY pick
 
 Phase 3 metrics (beta/alpha vs benchmark, vs buy-and-hold) are PENDING — requires a daily market data feed (SPY for equity, BTC for crypto) not yet in the pipeline. Grok's checklist item #8/#9 cannot be evaluated until this feed exists.
 
+## 4r. Data quality audit + top picks from all agents
+
+**Data quality (DB):** CRYPTO 9.4% null pnl, 26.8% zero pnl; MEMECOIN/PENNY frozen since May 2026; UNKNOWN junk (138 zero-pnl). Only AlphaEngine + mega_mutation live. Consensus: only CRYPTO (10,439) and EQUITY (771) resolved.
+
+**Top picks from all agents (consensus):**
+| Agent | Pick | Asset | n | WR | PF | Status |
+|---|---|---|---:|---:|---:|---|
+| OpenCode/Beam | luxalgo_confluence SHORT | CRYPTO | 404 | 56.9% | 1.57 | Candidate (P=1.0, one-pos PF 1.20) |
+| Inception | CRYPTO SHORT @ RSI 30-50 | CRYPTO | 125 | 60.8% | 2.16 | Candidate (CI-LB 1.688) |
+| Poolside | mega_mutation (4-sym) | CRYPTO | 171 | 80.7% | 7.66 | Contested (NULL timestamps) |
+| GHCOPILOT | regime_accumulation | FOREX | 100 | 53.8% | 2.745 | Not proven (weekend price issue) |
+| OpenCode/Beam | regime_accumulation | FOREX (USDCAD) | 204 | 61% | 2.74 | Candidate (one-pos PF 2.56) |
+
+Consensus: no PROVEN winner. All candidates subject to forward validation.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
