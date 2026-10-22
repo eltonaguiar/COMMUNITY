@@ -261,6 +261,12 @@ Verdict: FAIL on Sharpe. Even the best candidate does not meet institutional sta
 
 Verdict: FAILS Grok's institutional standard. No strategy is institutional-grade.
 
+## 4q. Inception's mined candidate: CRYPTO SHORT @ RSI 30-50
+
+- n=125, WR 60.8%, net PF 2.163, net avg +0.748%/trade, symbol-bootstrap CI-LB 1.688, ex-top-3 1.544, last 30d net PF 4.97 (n=26).
+- Stronger than luxalgo_confluence SHORT (PF 1.57). Subject to Copilot's independence/cost audit.
+- Added to paper trading page. Status: CANDIDATE (forward-monitoring, not sized).
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
