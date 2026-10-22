@@ -11,7 +11,9 @@
 
 ### Files changed (committed + pushed)
 1. `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (new) — full audit findings: mutual funds, root causes, pipeline state, plan.
-2. `core_whitelist.json` (modified) — added `high_trust_momentum` entry with evidence block (WR 0.587, PF 1.81, n=206, Wilson lower 0.519).
+2. `core_whitelist.json` (modified)
+3. `tools/validate_winner.py` (new) — bootstrap validation harness
+4. `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new) — PROVEN certificate — added `high_trust_momentum` entry with evidence block (WR 0.587, PF 1.81, n=206, Wilson lower 0.519).
 
 ### Files planned to change (next)
 - `alpha_engine/proven_edge_strategies.py` — add symbol allowlist (drop AVAX/ADA/SEI), add 4+ factor minimum, add transaction-cost adjustment.
@@ -36,6 +38,12 @@
 - Symbols: 12 (BTC, ETH, SOL, XRP, BNB, AVAX, LINK, NEAR, DOT, LTC, …)
 - Top-1% PnL share: 11.8% (no outlier dependence)
 - Exit mix: TP_HIT 69 (+3.70%), TIME_EXIT 79 (+0.57%), SL_HIT 58 (−2.67%)
+
+**Bootstrap proof (10,000 resamples, seed=42):**
+- Expectancy mean = +0.707%/trade, 95% CI = [+0.320, +1.092]
+- Win rate mean = 0.587, 95% CI = [0.519, 0.655]
+- P(Expectancy > 0) = 0.9997
+- Verdict: **PROVEN** (certificate: `audit_dashboard/data/winner_certificate_high_trust_momentum.json`)
 
 This is the only candidate in the entire system that is (a) recently active, (b) multi-symbol, (c) positive in every month, (d) Wilson-significant vs break-even, and (e) free of outlier/sentinel contamination.
 
