@@ -11,8 +11,8 @@
 
 - **Branch:** `oc-winning-candidate` in `eltonaguiar/findtorontoevents_antigravity.ca`
 - **Latest commit:** winner validation harness + PROVEN certificate
-- **Proven strategy:** `commodity_term_cot` on `HG=F` (copper futures) — PROVEN (bootstrap P(>0)=1.0000, n=815, PF 2.29)
-- **Secondary:** `high_trust_momentum` (CRYPTO) — PROVEN (bootstrap P(>0)=0.9997, n=206)
+- **No strategy currently qualifies as PROVEN** after independence/cost audit. All candidates are CANDIDATE status.
+- Best candidate: luxalgo_confluence SHORT portfolio (P=1.0 aggregate, but one-position-at-a-time PF 1.29 → 1.13 after costs).
 - **Files changed/pushed:**
   - `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (findings + plan)
   - `core_whitelist.json` (+high_trust_momentum entry)
@@ -45,7 +45,7 @@
 
 ## 2. Proven profitable pick (current best)
 
-**Primary proven candidate:** `luxalgo_confluence` SHORT portfolio (XRP/ETH/BTC/STX, CRYPTO) — P(>0)=1.0000, n=404, PF 1.57
+**Primary candidate (DOWNGRADED after audit):** `luxalgo_confluence` SHORT portfolio (XRP/ETH/BTC/STX, CRYPTO) — aggregate n=404, PF 1.57, P(>0)=1.0000, BUT one-position-at-a-time n=104, PF 1.29 gross → 1.20 after 0.10% cost → 1.13 after 0.20% cost. Monthly inconsistent (Jul WR 0.47, Aug WR 0.53, avg -0.29). Status: CANDIDATE, not proven.
 **Secondary:** `commodity_term_cot` on `HG=F` — DOWNGRADED after Copilot review: 751/815 signals overlap an earlier copper position, peak 53 simultaneous LONGs; one-position-at-a-time PF 1.21 (137 trades) → -0.0277%/trade after 0.10% cost; distinct-exit ratio did not reproduce. Candidate only, not proven.
 **Tertiary:** `high_trust_momentum` (CRYPTO) — PROVEN aggregate
 
