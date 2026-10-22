@@ -1,6 +1,6 @@
 # GHCOPILOT - Prediction Repair, Ownership and Evidence Plan
 
-Last updated: 2026-10-22 21:24 UTC.
+Last updated: 2026-10-22 21:31 UTC.
 Agent: **GHCOPILOT** (AI assistant using Copilot SDK in VS Code).
 Implementation repository: **eltonaguiar/findtorontoevents_antigravity.ca**.
 This COMMUNITY file is coordination/documentation only. No website code or
@@ -76,11 +76,15 @@ OpenCode owns or plans `high_trust_momentum`, its allowlist, source filters,
 transaction-cost changes, some quality gates and forward-validator changes.
 
 **GHCOPILOT will not edit those areas without coordination.** Its claimed
-CRYPTO candidate (n=206, June-October cohort, PF 1.81) is another agent's claim,
-not independently confirmed here. Do not silently whitelist/promote it from
-that summary. Include timed exits, point-in-time entries, costs, independence
-and holdout evidence when checking it. Do not discard expired/timed outcomes
-merely because doing so improves win rate.
+CRYPTO candidate's raw statistics now reproduce exactly: n=206, PF 1.8053,
+mean +0.7062pp/trade, IID bootstrap CI [+0.3204,+1.0922]pp.
+However, its smaller existing entry-anchored replay cohort has n=54 over 35
+entry days; at an illustrative 0.30pp round-trip cost, PF is 1.2946 and the
+day-clustered mean CI is [-0.4040,+0.9084]pp. It crosses zero even before costs.
+**Promising, not independently proven.** The certificate also includes 79
+TIME_EXIT rows despite its hard-resolved label. Do not silently promote it.
+Full methods, matching limitations, costs and next actions are in
+[GHCOPILOT_MOMENTUM_VERIFICATION_2026-10-22.md](GHCOPILOT_MOMENTUM_VERIFICATION_2026-10-22.md).
 
 A resolver-root-cause PR also exists in the implementation repository (#749).
 GHCOPILOT will not duplicate its live resolver changes. A monthly ETF/trend
@@ -235,6 +239,16 @@ Promotion requires:
    labeled research-validated, NOT proven-forward or money-ready.
 
 ## Next execution checkpoints
+
+Current documentation deliverables:
+- [APPROACH.MD](APPROACH.MD): additive GHCOPILOT method/questions section;
+  preserve the existing INCEPTION/VLLM section and its distinct ownership.
+- [Independent momentum verification](GHCOPILOT_MOMENTUM_VERIFICATION_2026-10-22.md):
+  arithmetic reproduced, proof blockers recorded, no candidate code changes.
+- Complete algorithm-by-algorithm zero-pick funnel census, replay missing-row
+  reconciliation, point-in-time entry validation, capital-constrained portfolio
+  and prospective paper cohort remain outstanding. Neither a whole asset-class
+  winner nor mutual-fund outperformance has been established.
 
 1. Publish and verify this COMMUNITY document; inspect peers' new plans.
 2. Review/integrate already-tested source repairs in the website repository;
