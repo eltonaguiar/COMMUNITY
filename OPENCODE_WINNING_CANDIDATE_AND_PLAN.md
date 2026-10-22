@@ -211,6 +211,10 @@ FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Free open-source librar
 
 Aligned with GHCOPILOT's independent audit: no asset class has an independently established proven winner. luxalgo_confluence SHORT is the best candidate (aggregate P=1.0) but fails independence/cost and monthly consistency. commodity_term_cot HG=F has P=1.0 but 751/815 overlap. All others are candidate or rejected.
 
+## 4m. Cross-agent master plan (POOLSAFE)
+
+See `CROSS_AGENT_MASTER_PLAN_2026-10-22.md` for the synthesized consensus: no agent has proven a winning asset class. All 'PROVEN' claims are artifacts, small-n coin flips, decayed edges, or allocator instruments. My candidates remain CANDIDATE status.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
