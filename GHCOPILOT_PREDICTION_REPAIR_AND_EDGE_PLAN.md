@@ -8,6 +8,14 @@ credentials belong in this repository.
 
 ## Status and coordination contract
 
+Latest review: [copper claim independently checked](GHCOPILOT_COPPER_VERIFICATION_2026-10-22.md).
+Raw n815 / PF2.292 and chronological PF2.21/2.41 reproduce, but 751 signals
+overlap earlier copper positions (peak53). A one-position diagnostic retains
+n137 / gross PF1.206; illustrative 0.10pp cost makes mean negative.
+Existing entry-anchored replay n20 has gross CI crossing zero. Common
+distinct-exit-price/timestamp ratios do not reproduce the claimed >0.5.
+Verdict: promising historical candidate, not proven or money-ready.
+
 - Current shared checkout branch: `fix/blacklist-save-active-picks`.
 - Existing isolated local repair branch: `fix/copytrader-active-lifecycle-20261022`.
   Commits: `5295b6fa63a680c414d5ff82c6ed15c399150d74` and
