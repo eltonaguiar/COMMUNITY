@@ -316,6 +316,10 @@ Checked all `ml_enhanced_*` and `ml_crypto_pred` strategies (1,400+ picks total)
 
 Built `tools/ml_candidate_eval.py` (logistic regression on asset_class, direction, confidence). Selected prob≥0.6 trades: n=1,353, WR 66.5%, PF 2.35, bootstrap CI [1.174,1.825], P=1.0. **But one-position-at-a-time n=1** — all selected trades overlap, so not executable. Fails independence. ML approach needs per-symbol, non-overlapping design.
 
+## 4v. GROK audit framework applied
+
+Created branch `grok-audit-framework` with Top verified picks section on /audit. Full framework: 8 fixes (compound return headline, hide WR n<20, exclude artifacts, too-good badge, recent 5 real hit time, top verified picks section, data coverage, status chips). Strategy pages: same exclusions + scorecard. Validation: before/after screenshots, re-running identical numbers. CI: pandas freq="ME" issue noted.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
