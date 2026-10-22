@@ -171,6 +171,14 @@ No strategy currently qualifies as PROVEN. luxalgo_confluence SHORT has aggregat
 
 Verdict: No true winner yet. Best candidate luxalgo_confluence SHORT (CANDIDATE) requires 100+ forward TP/SL outcomes + independence verification.
 
+## 4h. Cross-check of top_edges_per_class (Poolsafe lead)
+
+Poolsafe highlighted `conf=C0.75-0.80 & score_dec=S50` (CRYPTO, n=183, WR 79.23%, PF 4.706, Bonferroni PASS, holdout PF 3.534). I verified the broader slice `AlphaEngine conf 0.75-0.80` (n=4,641): WR 47.3%, PF 1.79, bootstrap CI [+0.837,+1.256], P=1.0 — but monthly WR ranges 0.35-0.68 and one-position-at-a-time PF 1.03 (essentially coin flip after costs). The narrow cell is likely an overfit slice. Not a true winner.
+
+EQUITY mean_reversion cell (n=64, WR 98.44%, PF 235) is almost certainly a frozen-exit artifact — needs distinct-exit audit.
+
+Verdict: No new proven winner from top_edges. Best candidate remains luxalgo_confluence SHORT (CANDIDATE, subject to independence/cost).
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
