@@ -203,6 +203,10 @@ FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Recommended free open-s
 
 FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Free open-source libraries for gaps: backtrader, freqtrade, vectorbt (Python backtesting/strategy frameworks), yfinance (free market data), ccxt (crypto exchange API).
 
+## 4k. Concrete fix: transaction cost model
+
+**Fixed:** `alpha_engine/transaction_costs.py` — added `bond`, `commodity`, `futures`, `etf` cost models (previously defaulted to `stocks_etf` at 0.03%, understating real costs). Now bond 0.05%, commodity 0.07%, futures 0.05%, ETF 0.02% round-trip. This addresses root cause #7 from `ROOT_CAUSE_ANALYSIS_NON_CRYPTO.md`.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
