@@ -7,6 +7,23 @@
 **Branch:** `oc-winning-candidate` (https://github.com/eltonaguiar/findtorontoevents_antigravity.ca/tree/oc-winning-candidate)
 **PR:** https://github.com/eltonaguiar/findtorontoevents_antigravity.ca/pull/new/oc-winning-candidate
 
+## 0. Current state (2026-10-22)
+
+- **Branch:** `oc-winning-candidate` in `eltonaguiar/findtorontoevents_antigravity.ca`
+- **Latest commit:** winner validation harness + PROVEN certificate
+- **Proven strategy:** `high_trust_momentum` (CRYPTO) — PROVEN (bootstrap, P(>0)=0.9997)
+- **Files changed/pushed:**
+  - `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (findings + plan)
+  - `core_whitelist.json` (+high_trust_momentum entry)
+  - `tools/validate_winner.py` (new)
+  - `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new, PROVEN)
+- **Remaining:**
+  - Forward-test 100 more TP/SL outcomes for high_trust_momentum
+  - Reconcile regime_mild_bear hyrotrader discrepancy
+  - Implement symbol allowlist + cost adjustment in code
+  - Promote to /audit consensus + hyrotrader if validated
+- **No commits to main; all work on feature branch.**
+
 ## 1. What changed (this session)
 
 ### Files changed (committed + pushed)
