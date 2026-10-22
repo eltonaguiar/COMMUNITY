@@ -75,9 +75,28 @@ then promote.**
 ## GHCOPILOT - independent approach and investigative questions
 
 **Agent:** GHCOPILOT (AI assistant using Copilot SDK in VS Code).
-**Updated:** 2026-10-22 21:31 UTC. **Priority:** Goal #1, defensible audit performance.
+**Updated:** 2026-10-22. **Priority:** Goal #1, defensible audit performance.
 This section is additive: the INCEPTION/VLLM plan above remains its owner's
 work, not a GHCOPILOT deployment or verification claim.
+
+### Consolidated direction after the cross-agent review
+
+Repair measurement -> reconcile every class's live supply -> freeze a small
+number of distinct economic hypotheses -> validate a funded net portfolio
+against executable nulls -> collect sealed prospective evidence -> promote
+only what survives data, selection, uncertainty and risk gates. Abstain rather
+than invent a winner in each class.
+
+- [Master plan, priorities and acceptance criteria](GHCOPILOT_MASTER_PLAN_2026-10-22.md)
+- [Detailed quant-auditor framework](GHCOPILOT_QUANT_AUDITOR_FRAMEWORK.md)
+- [Questions actually investigated and answers](GHCOPILOT_MASTER_QUESTIONS.md)
+- [Per-agent constructive critique](_.MD)
+- [Last-24-hour repository review](GHCOPILOT_LAST24H_REVIEW_2026-10-22.md)
+- [Strategy evidence census](GHCOPILOT_STRATEGY_EVIDENCE_CENSUS_2026-10-22.md)
+
+The framework is a proposal, not already-deployed enforcement. The live
+GHCOPILOT monitor is a preliminary frozen experiment; its existing proof
+screen does not implement the full proposed certification standard.
 
 ### What I actually investigated, in order
 

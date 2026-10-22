@@ -1,0 +1,281 @@
+{
+  "checked_at": "2026-10-22T21:58:58.740088+00:00",
+  "scope": "Read-only cumulative at_raw_picks aggregate snapshot and public paper quality snapshot; not an outcome certification",
+  "raw_total": 108476,
+  "historical_sources": 236,
+  "class_source_strategy_pairs": 3482,
+  "missing_signal_timestamp": 16289,
+  "recorded_before_signal_minus_5m": 0,
+  "active24h_sources": [
+    {
+      "source_system": "AlphaEngine",
+      "observed24h": "181",
+      "latest_recorded": "2026-10-22 19:05:07",
+      "strategies": 252
+    },
+    {
+      "source_system": "mega_mutation",
+      "observed24h": "2",
+      "latest_recorded": "2026-10-22 21:47:26",
+      "strategies": 5
+    }
+  ],
+  "classes": [
+    {
+      "asset_class": "CRYPTO",
+      "source_n": 211,
+      "named_strategies": 1792,
+      "source_strategy_pairs": 2365
+    },
+    {
+      "asset_class": "FOREX",
+      "source_n": 57,
+      "named_strategies": 191,
+      "source_strategy_pairs": 321
+    },
+    {
+      "asset_class": "EQUITY",
+      "source_n": 38,
+      "named_strategies": 152,
+      "source_strategy_pairs": 236
+    },
+    {
+      "asset_class": "PENNY_STOCK",
+      "source_n": 20,
+      "named_strategies": 50,
+      "source_strategy_pairs": 69
+    },
+    {
+      "asset_class": "MEMECOIN",
+      "source_n": 82,
+      "named_strategies": 240,
+      "source_strategy_pairs": 307
+    },
+    {
+      "asset_class": "FUTURES",
+      "source_n": 14,
+      "named_strategies": 45,
+      "source_strategy_pairs": 85
+    },
+    {
+      "asset_class": "ETF",
+      "source_n": 17,
+      "named_strategies": 57,
+      "source_strategy_pairs": 76
+    },
+    {
+      "asset_class": "BOND",
+      "source_n": 2,
+      "named_strategies": 8,
+      "source_strategy_pairs": 8
+    },
+    {
+      "asset_class": "UNKNOWN",
+      "source_n": 1,
+      "named_strategies": 15,
+      "source_strategy_pairs": 15
+    }
+  ],
+  "database_quality": {
+    "raw_classes": [
+      {
+        "asset_class": "CRYPTO",
+        "n": 66770,
+        "recorded_24h": 129,
+        "latest_recorded": "2026-10-22T21:47:26Z",
+        "latest_signal": "2026-10-22T19:03:48Z",
+        "missing_signal": 13880,
+        "closed_n": 58020,
+        "missing_closed_pnl": 6185,
+        "zero_closed_pnl": 9204,
+        "extreme_pnl": 1026
+      },
+      {
+        "asset_class": "FOREX",
+        "n": 14895,
+        "recorded_24h": 22,
+        "latest_recorded": "2026-10-22T19:05:06Z",
+        "latest_signal": "2026-10-22T18:54:42Z",
+        "missing_signal": 690,
+        "closed_n": 14326,
+        "missing_closed_pnl": 1366,
+        "zero_closed_pnl": 741,
+        "extreme_pnl": 8
+      },
+      {
+        "asset_class": "EQUITY",
+        "n": 14197,
+        "recorded_24h": 12,
+        "latest_recorded": "2026-10-22T19:05:06Z",
+        "latest_signal": "2026-10-22T18:54:42Z",
+        "missing_signal": 1000,
+        "closed_n": 13907,
+        "missing_closed_pnl": 1094,
+        "zero_closed_pnl": 945,
+        "extreme_pnl": 654
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "n": 494,
+        "recorded_24h": 0,
+        "latest_recorded": "2026-05-12T23:21:16Z",
+        "latest_signal": "2026-05-12T14:57:31Z",
+        "missing_signal": 106,
+        "closed_n": 370,
+        "missing_closed_pnl": 236,
+        "zero_closed_pnl": 107,
+        "extreme_pnl": 0
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "n": 2001,
+        "recorded_24h": 0,
+        "latest_recorded": "2026-05-13T00:00:27Z",
+        "latest_signal": "2026-05-11T01:10:29Z",
+        "missing_signal": 564,
+        "closed_n": 1820,
+        "missing_closed_pnl": 525,
+        "zero_closed_pnl": 560,
+        "extreme_pnl": 1
+      },
+      {
+        "asset_class": "FUTURES",
+        "n": 8020,
+        "recorded_24h": 8,
+        "latest_recorded": "2026-10-22T17:07:55Z",
+        "latest_signal": "2026-10-22T16:52:51Z",
+        "missing_signal": 5,
+        "closed_n": 7817,
+        "missing_closed_pnl": 881,
+        "zero_closed_pnl": 109,
+        "extreme_pnl": 4
+      },
+      {
+        "asset_class": "ETF",
+        "n": 1740,
+        "recorded_24h": 6,
+        "latest_recorded": "2026-10-22T15:02:18Z",
+        "latest_signal": "2026-10-22T14:50:50Z",
+        "missing_signal": 40,
+        "closed_n": 1589,
+        "missing_closed_pnl": 116,
+        "zero_closed_pnl": 35,
+        "extreme_pnl": 9
+      },
+      {
+        "asset_class": "BOND",
+        "n": 214,
+        "recorded_24h": 0,
+        "latest_recorded": "2026-10-21T05:05:19Z",
+        "latest_signal": "2026-10-20T22:45:04Z",
+        "missing_signal": 4,
+        "closed_n": 197,
+        "missing_closed_pnl": 14,
+        "zero_closed_pnl": 0,
+        "extreme_pnl": 0
+      },
+      {
+        "asset_class": "UNKNOWN",
+        "n": 145,
+        "recorded_24h": 6,
+        "latest_recorded": "2026-10-22T19:05:06Z",
+        "latest_signal": "2026-10-22T18:54:42Z",
+        "missing_signal": 0,
+        "closed_n": 0,
+        "missing_closed_pnl": 0,
+        "zero_closed_pnl": 0,
+        "extreme_pnl": 0
+      }
+    ],
+    "outcome_classes": [
+      {
+        "asset_class": "CRYPTO",
+        "n": 44233,
+        "latest_signal": "2026-10-22T15:29:51Z",
+        "replay_n": 42466,
+        "no_replay": 1767,
+        "ambiguous": 38238
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "n": 2452,
+        "latest_signal": "2026-10-20T16:50:38Z",
+        "replay_n": 2451,
+        "no_replay": 1,
+        "ambiguous": 2349
+      },
+      {
+        "asset_class": "EQUITY",
+        "n": 696,
+        "latest_signal": "2026-10-21T10:46:19Z",
+        "replay_n": 583,
+        "no_replay": 113,
+        "ambiguous": 284
+      },
+      {
+        "asset_class": "COMMODITY",
+        "n": 503,
+        "latest_signal": "2026-10-22T14:17:07Z",
+        "replay_n": 467,
+        "no_replay": 36,
+        "ambiguous": 165
+      },
+      {
+        "asset_class": "FOREX",
+        "n": 1856,
+        "latest_signal": "2026-10-22T15:12:05Z",
+        "replay_n": 1379,
+        "no_replay": 477,
+        "ambiguous": 277
+      },
+      {
+        "asset_class": "BOND",
+        "n": 70,
+        "latest_signal": "2026-10-14T14:12:13Z",
+        "replay_n": 56,
+        "no_replay": 14,
+        "ambiguous": 8
+      },
+      {
+        "asset_class": "ETF",
+        "n": 165,
+        "latest_signal": "2026-10-22T12:33:08Z",
+        "replay_n": 81,
+        "no_replay": 84,
+        "ambiguous": 25
+      },
+      {
+        "asset_class": "FUTURES",
+        "n": 127,
+        "latest_signal": "2026-10-18T12:50:30Z",
+        "replay_n": 121,
+        "no_replay": 6,
+        "ambiguous": 7
+      },
+      {
+        "asset_class": "UNKNOWN",
+        "n": 25,
+        "latest_signal": "2026-10-18T02:52:29Z",
+        "replay_n": 22,
+        "no_replay": 3,
+        "ambiguous": 1
+      },
+      {
+        "asset_class": "",
+        "n": 178,
+        "latest_signal": "2026-10-19T16:45:42Z",
+        "replay_n": 131,
+        "no_replay": 47,
+        "ambiguous": 1
+      }
+    ],
+    "checked_at": "2026-10-22T21:58:58.740088+00:00",
+    "scope": "Cumulative ledgers; zero is diagnostic, not assumed invalid. Ambiguous replay is not independently certified."
+  },
+  "limitations": [
+    "Historical names are not independent algorithms",
+    "Not every observation was independently price-replayed",
+    "A zero is not necessarily bad data",
+    "Raw and outcome classification namespaces differ"
+  ]
+}

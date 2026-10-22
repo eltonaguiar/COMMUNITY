@@ -1,0 +1,3888 @@
+{
+  "checked_at": "2026-10-22T22:20:18.190310+00:00",
+  "price_tables": [
+    {
+      "n": 1643438,
+      "symbols": 333,
+      "earliest": 1662778800000,
+      "latest": 1792699200000,
+      "table": "crypto_ohlcv",
+      "by_symbol": [
+        {
+          "symbol": "0GUSDT",
+          "n": 5163,
+          "earliest": 1765522800000,
+          "latest": 1784106000000
+        },
+        {
+          "symbol": "1000SATSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "2ZUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "A2ZUSDT",
+          "n": 2636,
+          "earliest": 1765522800000,
+          "latest": 1775008800000
+        },
+        {
+          "symbol": "AAVEUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ACEUSDT",
+          "n": 6872,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ACHUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ACTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ADAUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "AEROUSDT",
+          "n": 832,
+          "earliest": 1782608400000,
+          "latest": 1785600000000
+        },
+        {
+          "symbol": "AGLDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "AIXBTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ALGOUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ALICEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ALLOUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ALTUSDT",
+          "n": 4585,
+          "earliest": 1765522800000,
+          "latest": 1782025200000
+        },
+        {
+          "symbol": "AMPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ANIMEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ANKRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "APEUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "API3USDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "APTUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ARBUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ARKMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ASTERUSDT",
+          "n": 7507,
+          "earliest": 1765522800000,
+          "latest": 1792544400000
+        },
+        {
+          "symbol": "ATOMUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "AUDIOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "AUDUSDT",
+          "n": 720,
+          "earliest": 1683007200000,
+          "latest": 1685595600000
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "AVNTUSDT",
+          "n": 5058,
+          "earliest": 1765522800000,
+          "latest": 1783728000000
+        },
+        {
+          "symbol": "AWEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "AXLUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "AXSUSDT",
+          "n": 5806,
+          "earliest": 1765522800000,
+          "latest": 1786420800000
+        },
+        {
+          "symbol": "BABYUSDT",
+          "n": 7549,
+          "earliest": 1765522800000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "BANANAS31USDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BANANAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BANKUSDT",
+          "n": 6538,
+          "earliest": 1765522800000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "BARDUSDT",
+          "n": 4605,
+          "earliest": 1765522800000,
+          "latest": 1782097200000
+        },
+        {
+          "symbol": "BATUSDT",
+          "n": 720,
+          "earliest": 1790110800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "BCHUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "BELUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BERAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BFUSDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BICOUSDT",
+          "n": 3512,
+          "earliest": 1779490800000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "BIGTIMEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BIOUSDT",
+          "n": 7576,
+          "earliest": 1765425600000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "BLURUSDT",
+          "n": 5849,
+          "earliest": 1765522800000,
+          "latest": 1786575600000
+        },
+        {
+          "symbol": "BNBUSD",
+          "n": 2348,
+          "earliest": 1772524800000,
+          "latest": 1780974000000
+        },
+        {
+          "symbol": "BNBUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "BOMEUSDT",
+          "n": 7035,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "BONKUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "BROCCOLI714USDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "BTCUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "CAKEUSDT",
+          "n": 6995,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "CELOUSDT",
+          "n": 4955,
+          "earliest": 1765522800000,
+          "latest": 1783357200000
+        },
+        {
+          "symbol": "CETUSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CFGUSDT",
+          "n": 2058,
+          "earliest": 1773666000000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CFXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CHIPUSDT",
+          "n": 2549,
+          "earliest": 1776776400000,
+          "latest": 1785949200000
+        },
+        {
+          "symbol": "CHRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CHZUSDT",
+          "n": 7576,
+          "earliest": 1765425600000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "CKBUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "COCOSUSDT",
+          "n": 720,
+          "earliest": 1682755200000,
+          "latest": 1685343600000
+        },
+        {
+          "symbol": "COMPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "COSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "COWUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CRCLBUSDT",
+          "n": 720,
+          "earliest": 1789246800000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "CRVUSDT",
+          "n": 6735,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "CTSIUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "CUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "DASHUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "DEGOUSDT",
+          "n": 3284,
+          "earliest": 1765522800000,
+          "latest": 1777341600000
+        },
+        {
+          "symbol": "DENTUSDT",
+          "n": 3284,
+          "earliest": 1765522800000,
+          "latest": 1777341600000
+        },
+        {
+          "symbol": "DEXEUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "DODOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "DOGSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "DOLOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "DOTUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "DUSDT",
+          "n": 5551,
+          "earliest": 1765522800000,
+          "latest": 1785502800000
+        },
+        {
+          "symbol": "DUSKUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "DYDXUSDT",
+          "n": 7576,
+          "earliest": 1765425600000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "DYMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "EDENUSDT",
+          "n": 1606,
+          "earliest": 1779436800000,
+          "latest": 1785214800000
+        },
+        {
+          "symbol": "EDUUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "EGLDUSDT",
+          "n": 1408,
+          "earliest": 1787634000000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "EIGENUSDT",
+          "n": 5718,
+          "earliest": 1765522800000,
+          "latest": 1786104000000
+        },
+        {
+          "symbol": "ENAUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ENJUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ENSOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ENSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ERAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ESPUSDT",
+          "n": 2826,
+          "earliest": 1770901200000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ETCUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ETHFIUSDT",
+          "n": 7348,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ETHUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "EULUSDT",
+          "n": 5096,
+          "earliest": 1765522800000,
+          "latest": 1785848400000
+        },
+        {
+          "symbol": "EURUSDT",
+          "n": 6258,
+          "earliest": 1765425600000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "FDUSDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "FETUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "FIDAUSDT",
+          "n": 6382,
+          "earliest": 1765425600000,
+          "latest": 1788397200000
+        },
+        {
+          "symbol": "FILUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "FIOUSDT",
+          "n": 3164,
+          "earliest": 1765522800000,
+          "latest": 1776909600000
+        },
+        {
+          "symbol": "FLOKIUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "FLOWUSDT",
+          "n": 5272,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "FOGOUSDT",
+          "n": 3497,
+          "earliest": 1768485600000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "FORMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "FUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GALAUSDT",
+          "n": 4585,
+          "earliest": 1765522800000,
+          "latest": 1782025200000
+        },
+        {
+          "symbol": "GASUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GBPUSDT",
+          "n": 720,
+          "earliest": 1701226800000,
+          "latest": 1703815200000
+        },
+        {
+          "symbol": "GENIUSUSDT",
+          "n": 451,
+          "earliest": 1779451200000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GHSTUSDT",
+          "n": 1508,
+          "earliest": 1765522800000,
+          "latest": 1770948000000
+        },
+        {
+          "symbol": "GIGGLEUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "GLMRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GMTUSDT",
+          "n": 4926,
+          "earliest": 1765522800000,
+          "latest": 1783252800000
+        },
+        {
+          "symbol": "GMXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GNOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GPSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GRTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GTCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GUNUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "GUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HBARUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "HEIUSDT",
+          "n": 6670,
+          "earliest": 1765522800000,
+          "latest": 1789531200000
+        },
+        {
+          "symbol": "HEMIUSDT",
+          "n": 5966,
+          "earliest": 1765522800000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "HIGHUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HIVEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HMSTRUSDT",
+          "n": 5399,
+          "earliest": 1765522800000,
+          "latest": 1784955600000
+        },
+        {
+          "symbol": "HOLOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HOMEUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "HOTUSDT",
+          "n": 5966,
+          "earliest": 1765522800000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "HUMAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HYPERUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "n": 3670,
+          "earliest": 1779490800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ICPUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "IDUSDT",
+          "n": 1695,
+          "earliest": 1779544800000,
+          "latest": 1785643200000
+        },
+        {
+          "symbol": "IMXUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "INITUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "INJUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "IOTAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "IOTXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "IOUSDT",
+          "n": 745,
+          "earliest": 1780074000000,
+          "latest": 1782752400000
+        },
+        {
+          "symbol": "JASMYUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "JOEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "JSTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "JTOUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "JUPUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "KAITOUSDT",
+          "n": 7328,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "KASUSDT",
+          "n": 2623,
+          "earliest": 1783260000000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "KATUSDT",
+          "n": 3251,
+          "earliest": 1773838800000,
+          "latest": 1785538800000
+        },
+        {
+          "symbol": "KAVAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "KERNELUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "KITEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "KNCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "KSMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LAYERUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LDOUSDT",
+          "n": 7195,
+          "earliest": 1765522800000,
+          "latest": 1791421200000
+        },
+        {
+          "symbol": "LINEAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LINKUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "LITUSDT",
+          "n": 720,
+          "earliest": 1736564400000,
+          "latest": 1739152800000
+        },
+        {
+          "symbol": "LPTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LTCUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "LUMIAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LUNAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "LUNCUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "MAGICUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MANAUSDT",
+          "n": 5400,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "MANTAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MANTRAUSDT",
+          "n": 2351,
+          "earliest": 1772611200000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MASKUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MATICUSDT",
+          "n": 720,
+          "earliest": 1723345200000,
+          "latest": 1725933600000
+        },
+        {
+          "symbol": "MAVUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MBOXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MDTUSDT",
+          "n": 3164,
+          "earliest": 1765522800000,
+          "latest": 1776909600000
+        },
+        {
+          "symbol": "MEGAUSDT",
+          "n": 2007,
+          "earliest": 1777546800000,
+          "latest": 1784768400000
+        },
+        {
+          "symbol": "MEMEUSDT",
+          "n": 5266,
+          "earliest": 1765522800000,
+          "latest": 1784476800000
+        },
+        {
+          "symbol": "METISUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "METUSDT",
+          "n": 4755,
+          "earliest": 1765522800000,
+          "latest": 1782637200000
+        },
+        {
+          "symbol": "MINAUSDT",
+          "n": 5312,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "MITOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MKRUSDT",
+          "n": 720,
+          "earliest": 1755313200000,
+          "latest": 1757901600000
+        },
+        {
+          "symbol": "MMTUSDT",
+          "n": 5121,
+          "earliest": 1765522800000,
+          "latest": 1786683600000
+        },
+        {
+          "symbol": "MOVEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MOVRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MUBARAKUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "MUBUSDT",
+          "n": 1646,
+          "earliest": 1785661200000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "NEARUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "NEIROUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "NEOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "NEXOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "NFPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "NIGHTUSDT",
+          "n": 3467,
+          "earliest": 1773241200000,
+          "latest": 1785718800000
+        },
+        {
+          "symbol": "NILUSDT",
+          "n": 5283,
+          "earliest": 1765522800000,
+          "latest": 1784538000000
+        },
+        {
+          "symbol": "NMRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "NOMUSDT",
+          "n": 6953,
+          "earliest": 1765425600000,
+          "latest": 1790452800000
+        },
+        {
+          "symbol": "NOTUSDT",
+          "n": 7247,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "NXPCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ONDOUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ONGUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ONTUSDT",
+          "n": 6353,
+          "earliest": 1765522800000,
+          "latest": 1788390000000
+        },
+        {
+          "symbol": "OPENUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "OPGUSDT",
+          "n": 451,
+          "earliest": 1779451200000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "OPNUSDT",
+          "n": 3904,
+          "earliest": 1772715600000,
+          "latest": 1791604800000
+        },
+        {
+          "symbol": "OPUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ORCAUSDT",
+          "n": 6209,
+          "earliest": 1765522800000,
+          "latest": 1787871600000
+        },
+        {
+          "symbol": "ORDIUSDT",
+          "n": 7576,
+          "earliest": 1765425600000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "OSMOUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PARTIUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PAXGUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "PENDLEUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "PENGUUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "PEOPLEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PEPEUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "PHAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PHBUSDT",
+          "n": 3980,
+          "earliest": 1765522800000,
+          "latest": 1779847200000
+        },
+        {
+          "symbol": "PIXELUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PLUMEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PNUTUSDT",
+          "n": 4962,
+          "earliest": 1765522800000,
+          "latest": 1783382400000
+        },
+        {
+          "symbol": "POLUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "POLYUSDT",
+          "n": 720,
+          "earliest": 1662778800000,
+          "latest": 1665367200000
+        },
+        {
+          "symbol": "POLYXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PORTALUSDT",
+          "n": 6003,
+          "earliest": 1765522800000,
+          "latest": 1787284800000
+        },
+        {
+          "symbol": "PROMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PROVEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PSGUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "PUMPUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "PYTHUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "QNTUSDT",
+          "n": 6927,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "RADUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RAREUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RAYUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RDNTUSDT",
+          "n": 2636,
+          "earliest": 1765522800000,
+          "latest": 1775008800000
+        },
+        {
+          "symbol": "REDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RENDERUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "RESOLVUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "REUSDT",
+          "n": 3031,
+          "earliest": 1781791200000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "REZUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RLUSDUSDT",
+          "n": 3335,
+          "earliest": 1769068800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RNDRUSDT",
+          "n": 720,
+          "earliest": 1719025200000,
+          "latest": 1721613600000
+        },
+        {
+          "symbol": "ROBOUSDT",
+          "n": 2343,
+          "earliest": 1772640000000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RSRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "RUNEUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SAGAUSDT",
+          "n": 5305,
+          "earliest": 1765522800000,
+          "latest": 1791093600000
+        },
+        {
+          "symbol": "SAHARAUSDT",
+          "n": 5194,
+          "earliest": 1765522800000,
+          "latest": 1784217600000
+        },
+        {
+          "symbol": "SANDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SAPIENUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SCRUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SEIUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SENTUSDT",
+          "n": 3330,
+          "earliest": 1769086800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SHIBUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SIGNUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SKHYBUSDT",
+          "n": 1440,
+          "earliest": 1785661200000,
+          "latest": 1791093600000
+        },
+        {
+          "symbol": "SKLUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SKYUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SLPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SNDKBUSDT",
+          "n": 1646,
+          "earliest": 1785661200000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "SNXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SOLUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SOLVUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SOMIUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SOPHUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SPCXBUSDT",
+          "n": 1646,
+          "earliest": 1785661200000,
+          "latest": 1791835200000
+        },
+        {
+          "symbol": "SPELLUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SPKUSDT",
+          "n": 5050,
+          "earliest": 1765522800000,
+          "latest": 1783699200000
+        },
+        {
+          "symbol": "STEEMUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "STGUSDT",
+          "n": 5686,
+          "earliest": 1765522800000,
+          "latest": 1785988800000
+        },
+        {
+          "symbol": "STORJUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "STOUSDT",
+          "n": 5850,
+          "earliest": 1765522800000,
+          "latest": 1786579200000
+        },
+        {
+          "symbol": "STRKUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "STXUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SUIUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SUPERUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SUSHIUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "SYNUSDT",
+          "n": 3670,
+          "earliest": 1779490800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "SYRUPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "TAOUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "THETAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "THEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "TIAUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "TLMUSDT",
+          "n": 1636,
+          "earliest": 1780693200000,
+          "latest": 1786579200000
+        },
+        {
+          "symbol": "TNSRUSDT",
+          "n": 5056,
+          "earliest": 1765522800000,
+          "latest": 1783720800000
+        },
+        {
+          "symbol": "TONUSDT",
+          "n": 4823,
+          "earliest": 1765425600000,
+          "latest": 1782784800000
+        },
+        {
+          "symbol": "TOWNSUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "TRBUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "TREEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "TRUMPUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "TRUUSDT",
+          "n": 3284,
+          "earliest": 1765522800000,
+          "latest": 1777341600000
+        },
+        {
+          "symbol": "TRXUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "TSTUSDT",
+          "n": 5305,
+          "earliest": 1765522800000,
+          "latest": 1788249600000
+        },
+        {
+          "symbol": "TURBOUSDT",
+          "n": 4831,
+          "earliest": 1765522800000,
+          "latest": 1782910800000
+        },
+        {
+          "symbol": "TUTUSDT",
+          "n": 6624,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "UMAUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "UNIUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "USD1USDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "USDCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "USDEUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "USTCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "USUALUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "UTKUSDT",
+          "n": 2959,
+          "earliest": 1765522800000,
+          "latest": 1776171600000
+        },
+        {
+          "symbol": "UUSDT",
+          "n": 3551,
+          "earliest": 1768291200000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "VANAUSDT",
+          "n": 5168,
+          "earliest": 1765522800000,
+          "latest": 1785747600000
+        },
+        {
+          "symbol": "VANRYUSDT",
+          "n": 5687,
+          "earliest": 1765522800000,
+          "latest": 1785992400000
+        },
+        {
+          "symbol": "VETUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "VICUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "VIRTUALUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "WALUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "WAXPUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "WBTCUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "WCTUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "WIFUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "WLDUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "WLFIUSDT",
+          "n": 4755,
+          "earliest": 1765522800000,
+          "latest": 1782637200000
+        },
+        {
+          "symbol": "WUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XAIUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "XAUTUSDT",
+          "n": 5047,
+          "earliest": 1774533600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XECUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "XLMUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XMRUSDT",
+          "n": 3260,
+          "earliest": 1705806000000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XPLUSDT",
+          "n": 7550,
+          "earliest": 1765522800000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XRPUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "XUSDUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "YFIUSDT",
+          "n": 6547,
+          "earliest": 1765522800000,
+          "latest": 1792695600000
+        },
+        {
+          "symbol": "YGGUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ZAMAUSDT",
+          "n": 5966,
+          "earliest": 1770037200000,
+          "latest": 1792684800000
+        },
+        {
+          "symbol": "ZBTUSDT",
+          "n": 6859,
+          "earliest": 1765522800000,
+          "latest": 1790211600000
+        },
+        {
+          "symbol": "ZECUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ZENUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ZKPUSDT",
+          "n": 3689,
+          "earliest": 1767794400000,
+          "latest": 1781071200000
+        },
+        {
+          "symbol": "ZKUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ZROUSDT",
+          "n": 7577,
+          "earliest": 1765425600000,
+          "latest": 1792699200000
+        },
+        {
+          "symbol": "ZRXUSDT",
+          "n": 4320,
+          "earliest": 1765522800000,
+          "latest": 1781071200000
+        }
+      ]
+    },
+    {
+      "n": 288522,
+      "symbols": 230,
+      "earliest": "2021-06-21",
+      "latest": "2026-06-18",
+      "table": "equity_daily_ohlcv",
+      "by_symbol": [
+        {
+          "symbol": "AAPL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ABBV",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ABNB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ABT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ACN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ADBE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ADI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ADM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ADP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AFL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AIG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ALL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ALLY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AMC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AMD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AMGN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AMT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AMZN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ANET",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "APD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "APH",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AVGO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "AXP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BAC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BBBY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BKNG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BLK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BMY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BRK-B",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "BSX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "C",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CARR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CAT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CCI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CCL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CDNS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CF",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CGC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CLF",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CMCSA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CME",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CMG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CMI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "COF",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "COIN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "COP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "COST",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CRM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CRWD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CSCO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "CVX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DAL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DDOG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DELL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DHR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DIS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DLR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DLTR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DOW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "DUK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ECL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "EMR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "EOG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "EQIX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ETN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "F",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FCX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FDX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FIS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FISV",
+          "n": 1254,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FITB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "FTNT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GILD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GIS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GME",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GOOG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GOOGL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GPN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HBAN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HLT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HON",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HOOD",
+          "n": 1228,
+          "earliest": "2021-07-29",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HPQ",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "HSY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "IBM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ICE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "INTC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "INTU",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ISRG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ITW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "JCI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "JNJ",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "JPM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KDP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KEY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KHC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KLAC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KMB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KMI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KNSL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "KO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LIN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LLY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LMT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LOW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LRCX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LULU",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "LUV",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MAR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MCD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MCO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MDT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MET",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "META",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MGM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MLM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MMM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MNST",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MOS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MPC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MRK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MRVL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MSFT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MSI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "MU",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NDAQ",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NEM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NET",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NFLX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NKE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NOC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NOW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NSC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NUE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "NVDA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "O",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ODFL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ORCL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "OXY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PANW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PCAR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PEP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PFE",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PGR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PH",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PLD",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PLTR",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PLUG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PNC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PPG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PRU",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PSA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PSX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "PYPL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "QCOM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "RCL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "REGN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "RIVN",
+          "n": 1155,
+          "earliest": "2021-11-10",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ROP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ROST",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "RTX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SBUX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SCHW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SHOP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SHW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SLB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SNOW",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SNPS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SOFI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SPG",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SPGI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SPY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "STT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "STX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "STZ",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SYK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "SYY",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "T",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TEAM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TFC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TGT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TJX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TMO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TRV",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TSLA",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "TXN",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "UAL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "UBER",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "UNH",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "UNP",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "UPS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "USB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "V",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VICI",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VLO",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VMC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VRSK",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VRTX",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VTRS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "VZ",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WDC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WELL",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WFC",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WMB",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "WMT",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "XOM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "YUM",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ZS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ZTS",
+          "n": 1255,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "n": 125432,
+      "symbols": 36,
+      "earliest": "2005-01-03",
+      "latest": "2026-09-30",
+      "table": "etf_daily_ohlcv",
+      "by_symbol": [
+        {
+          "symbol": "AGG",
+          "n": 5470,
+          "earliest": "2005-01-03",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "DBC",
+          "n": 5195,
+          "earliest": "2006-02-06",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "EEM",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "EFA",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "GLD",
+          "n": 5470,
+          "earliest": "2005-01-03",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "HYG",
+          "n": 4843,
+          "earliest": "2007-04-11",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "IEF",
+          "n": 5470,
+          "earliest": "2005-01-03",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "IWM",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "LQD",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "MTUM",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "QQQ",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "QUAL",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "SCHD",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "SHY",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "SIZE",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "SLV",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "SPY",
+          "n": 5470,
+          "earliest": "2005-01-03",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "TIP",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "TLT",
+          "n": 5470,
+          "earliest": "2005-01-03",
+          "latest": "2026-09-30"
+        },
+        {
+          "symbol": "USMV",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "VEA",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "VIG",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "VLUE",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "VNQ",
+          "n": 5413,
+          "earliest": "2005-01-03",
+          "latest": "2026-07-10"
+        },
+        {
+          "symbol": "VWO",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLB",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLC",
+          "n": 2020,
+          "earliest": "2018-06-19",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLE",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLF",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLI",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLK",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLP",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLRE",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLU",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLV",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        },
+        {
+          "symbol": "XLY",
+          "n": 2136,
+          "earliest": "2018-01-02",
+          "latest": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "n": 13833,
+      "symbols": 11,
+      "earliest": "2021-06-21",
+      "latest": "2026-06-21",
+      "table": "futures_daily_ohlcv",
+      "by_symbol": [
+        {
+          "symbol": "CL=F",
+          "n": 1258,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "CT=F",
+          "n": 1258,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "GC=F",
+          "n": 1258,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "HG=F",
+          "n": 1259,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "NG=F",
+          "n": 1259,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "PA=F",
+          "n": 1257,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "PL=F",
+          "n": 1258,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "SI=F",
+          "n": 1258,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-21"
+        },
+        {
+          "symbol": "ZC=F",
+          "n": 1256,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ZS=F",
+          "n": 1256,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        },
+        {
+          "symbol": "ZW=F",
+          "n": 1256,
+          "earliest": "2021-06-21",
+          "latest": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "n": 0,
+      "symbols": 0,
+      "earliest": null,
+      "latest": null,
+      "table": "fx_price_history"
+    },
+    {
+      "n": 2694,
+      "symbols": 8,
+      "earliest": "2025-02-10",
+      "latest": "2026-05-12",
+      "table": "fxp_price_history"
+    }
+  ],
+  "copy_named_raw_sources": [
+    {
+      "source_system": "multi_asset_copytrader",
+      "asset_class": "FOREX",
+      "n": 2052,
+      "symbols": 12,
+      "latest_recorded": "2026-05-10 14:47:35",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_intel",
+      "asset_class": "CRYPTO",
+      "n": 406,
+      "symbols": 154,
+      "latest_recorded": "2026-05-12 07:57:28",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_binance",
+      "asset_class": "CRYPTO",
+      "n": 183,
+      "symbols": 23,
+      "latest_recorded": "2026-05-12 23:33:26",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_polymarket",
+      "asset_class": "CRYPTO",
+      "n": 127,
+      "symbols": 2,
+      "latest_recorded": "2026-05-12 18:53:29",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_highscore",
+      "asset_class": "CRYPTO",
+      "n": 79,
+      "symbols": 75,
+      "latest_recorded": "2026-05-12 23:20:27",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_bitget",
+      "asset_class": "CRYPTO",
+      "n": 58,
+      "symbols": 5,
+      "latest_recorded": "2026-04-10 20:26:27",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_intel",
+      "asset_class": "FOREX",
+      "n": 34,
+      "symbols": 19,
+      "latest_recorded": "2026-05-05 04:05:06",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_bybit",
+      "asset_class": "CRYPTO",
+      "n": 26,
+      "symbols": 2,
+      "latest_recorded": "2026-05-12 23:20:26",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_binance",
+      "asset_class": "EQUITY",
+      "n": 13,
+      "symbols": 1,
+      "latest_recorded": "2026-05-12 23:32:49",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_binance",
+      "asset_class": "MEMECOIN",
+      "n": 12,
+      "symbols": 2,
+      "latest_recorded": "2026-03-26 09:25:53",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_clones",
+      "asset_class": "CRYPTO",
+      "n": 12,
+      "symbols": 8,
+      "latest_recorded": "2026-05-12 23:20:27",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_intel",
+      "asset_class": "MEMECOIN",
+      "n": 12,
+      "symbols": 4,
+      "latest_recorded": "2026-03-21 08:52:41",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "multi_asset_copytrader",
+      "asset_class": "FUTURES",
+      "n": 9,
+      "symbols": 9,
+      "latest_recorded": "2026-04-10 10:07:40",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "multi_asset_copytrader",
+      "asset_class": "EQUITY",
+      "n": 6,
+      "symbols": 6,
+      "latest_recorded": "2026-04-10 10:07:40",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_highscore",
+      "asset_class": "FOREX",
+      "n": 5,
+      "symbols": 5,
+      "latest_recorded": "2026-04-19 07:15:14",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "polymarket_signals",
+      "asset_class": "CRYPTO",
+      "n": 4,
+      "symbols": 2,
+      "latest_recorded": "2026-04-23 01:39:47",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "multi_asset_copytrader",
+      "asset_class": "PENNY_STOCK",
+      "n": 3,
+      "symbols": 3,
+      "latest_recorded": "2026-04-10 10:07:40",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_consensus",
+      "asset_class": "CRYPTO",
+      "n": 1,
+      "symbols": 1,
+      "latest_recorded": "2026-04-10 16:07:04",
+      "recorded_24h": "0"
+    },
+    {
+      "source_system": "copy_trader_variations",
+      "asset_class": "CRYPTO",
+      "n": 1,
+      "symbols": 1,
+      "latest_recorded": "2026-04-10 16:07:04",
+      "recorded_24h": "0"
+    }
+  ],
+  "copy_named_tables": [],
+  "crypto_timeframes": [
+    {
+      "timeframe": "1h",
+      "n": 1643438,
+      "symbols": 333,
+      "earliest_ms": 1662778800000,
+      "latest_ms": 1792699200000
+    }
+  ],
+  "stock_timeframes": [
+    {
+      "timeframe": "1h",
+      "n": 401864,
+      "symbols": 327,
+      "earliest_ms": 1773235800000,
+      "latest_ms": 1792692000000
+    }
+  ]
+}

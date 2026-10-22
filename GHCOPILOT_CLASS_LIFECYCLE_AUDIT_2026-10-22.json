@@ -1,0 +1,2660 @@
+{
+  "objective": "Goal #1: bounded read-only class lifecycle and recent coverage, not a performance or executable-pick verdict",
+  "requested_classes": [
+    "CRYPTO",
+    "EQUITY",
+    "FOREX",
+    "COMMODITY",
+    "FUTURES",
+    "ETF",
+    "BOND",
+    "PENNY_STOCK",
+    "MEMECOIN"
+  ],
+  "queries": {
+    "table_metadata": {
+      "sql": "SELECT TABLE_NAME,TABLE_ROWS AS estimated_rows,ENGINE FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME IN ('at_raw_picks','at_signal_outcomes')",
+      "duration_seconds": 0.015,
+      "aggregate_rows": 2
+    },
+    "raw_status_counts": {
+      "sql": "SELECT asset_class,status,COUNT(*) AS n FROM at_raw_picks WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') GROUP BY asset_class,status ORDER BY asset_class,status",
+      "duration_seconds": 0.234,
+      "aggregate_rows": 44
+    },
+    "raw_class_lifecycle": {
+      "sql": "SELECT asset_class,COUNT(*) AS n,SUM(status='OPEN') AS open_n,SUM(status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED')) AS terminal_status_n,SUM(status='CLOSED') AS literal_closed_n,SUM(status IS NULL OR status='') AS missing_status_n,MIN(signal_timestamp) AS earliest_signal,MAX(signal_timestamp) AS latest_signal,MAX(recorded_at) AS latest_recorded,MAX(closed_at) AS latest_closed,SUM(signal_timestamp IS NULL) AS missing_signal_ts,SUM(recorded_at IS NULL) AS missing_recorded_ts,SUM(signal_timestamp>'2026-10-22 22:31:05') AS future_signal_ts,SUM(status='OPEN' AND signal_timestamp<'2026-10-22 22:31:05'-INTERVAL 7 DAY) AS open_signal_older_7d,SUM(status='OPEN' AND signal_timestamp<'2026-10-22 22:31:05'-INTERVAL 30 DAY) AS open_signal_older_30d,SUM(status='OPEN' AND signal_timestamp IS NULL) AS open_missing_signal_ts,SUM(status='OPEN' AND closed_at IS NOT NULL) AS open_has_closed_at,SUM(status='OPEN' AND pnl_pct IS NOT NULL) AS open_has_pnl,SUM(status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED') AND pnl_pct IS NULL) AS terminal_without_pnl,SUM(status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED') AND closed_at IS NULL) AS terminal_without_closed_at,SUM(status='CLOSED' AND pnl_pct IS NULL) AS literal_closed_without_pnl,SUM(status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED') AND signal_timestamp IS NOT NULL AND closed_at<signal_timestamp) AS closure_before_signal,SUM(entry_price IS NULL OR take_profit IS NULL OR stop_loss IS NULL) AS missing_geometry_any,SUM(entry_price<=0 OR take_profit<=0 OR stop_loss<=0) AS nonpositive_geometry_any,SUM(entry_price>0 AND take_profit>0 AND stop_loss>0 AND ((direction='LONG' AND take_profit>entry_price AND stop_loss<entry_price) OR (direction='SHORT' AND take_profit<entry_price AND stop_loss>entry_price))) AS strict_directional_geometry_n,SUM(status='OPEN' AND (entry_price IS NULL OR take_profit IS NULL OR stop_loss IS NULL)) AS open_missing_geometry_any,SUM(status='OPEN' AND (entry_price>0 AND take_profit>0 AND stop_loss>0 AND ((direction='LONG' AND take_profit>entry_price AND stop_loss<entry_price) OR (direction='SHORT' AND take_profit<entry_price AND stop_loss>entry_price)))) AS open_strict_geometry_n,SUM(COALESCE(was_stale,0)<>0) AS flagged_stale_n,SUM(COALESCE(was_banned,0)<>0) AS flagged_banned_n,SUM(COALESCE(was_demoted,0)<>0) AS flagged_demoted_n,SUM((signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS signal_48h_n,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN source_system END) AS signal_48h_sources,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN symbol END) AS signal_48h_symbols,SUM(status='OPEN' AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS open_signal_48h_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND closed_at <= '2026-10-22 22:31:05') AND status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED')) AS terminal_closed_48h_n,SUM((recorded_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND recorded_at <= '2026-10-22 22:31:05')) AS recorded_48h_n,SUM((signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS signal_14d_n,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN source_system END) AS signal_14d_sources,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN symbol END) AS signal_14d_symbols,SUM(status='OPEN' AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS open_signal_14d_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND closed_at <= '2026-10-22 22:31:05') AND status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED')) AS terminal_closed_14d_n,SUM((recorded_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND recorded_at <= '2026-10-22 22:31:05')) AS recorded_14d_n,SUM((signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS signal_30d_n,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN source_system END) AS signal_30d_sources,COUNT(DISTINCT CASE WHEN (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05') THEN symbol END) AS signal_30d_symbols,SUM(status='OPEN' AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS open_signal_30d_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND closed_at <= '2026-10-22 22:31:05') AND status IN ('WON','LOST','EXPIRED','CLOSED','ABANDONED')) AS terminal_closed_30d_n,SUM((recorded_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND recorded_at <= '2026-10-22 22:31:05')) AS recorded_30d_n,SUM(status='OPEN' AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 7 DAY AND signal_timestamp <= '2026-10-22 22:31:05') AND (entry_price>0 AND take_profit>0 AND stop_loss>0 AND ((direction='LONG' AND take_profit>entry_price AND stop_loss<entry_price) OR (direction='SHORT' AND take_profit<entry_price AND stop_loss>entry_price))) AND closed_at IS NULL AND COALESCE(was_stale,0)=0 AND COALESCE(was_banned,0)=0 AND COALESCE(was_demoted,0)=0) AS open_recent7d_geometry_unflagged_proxy_n,SUM((recorded_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND recorded_at <= '2026-10-22 22:31:05') AND signal_timestamp<'2026-10-22 22:31:05'-INTERVAL 7 DAY) AS recorded14d_old_signal7d_n FROM at_raw_picks WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') GROUP BY asset_class ORDER BY asset_class",
+      "duration_seconds": 2.09,
+      "aggregate_rows": 8
+    },
+    "raw_recent30d_source_coverage": {
+      "sql": "SELECT asset_class,source_system,COUNT(*) AS n,COUNT(DISTINCT symbol) AS symbols,COUNT(DISTINCT strategy) AS strategies,SUM(status='OPEN') AS open_n,MAX(signal_timestamp) AS latest_signal,SUM((signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS signal_48h_n,SUM((signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND signal_timestamp <= '2026-10-22 22:31:05')) AS signal_14d_n FROM at_raw_picks WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05') GROUP BY asset_class,source_system ORDER BY asset_class,n DESC LIMIT 2000",
+      "duration_seconds": 0.133,
+      "aggregate_rows": 7
+    },
+    "raw_recent30d_symbol_coverage": {
+      "sql": "SELECT asset_class,symbol,COUNT(*) AS n,COUNT(DISTINCT source_system) AS sources,MAX(signal_timestamp) AS latest_signal FROM at_raw_picks WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') AND (signal_timestamp >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND signal_timestamp <= '2026-10-22 22:31:05') GROUP BY asset_class,symbol ORDER BY asset_class,n DESC LIMIT 3000",
+      "duration_seconds": 0.089,
+      "aggregate_rows": 112
+    },
+    "outcome_status_counts": {
+      "sql": "SELECT asset_class,outcome,COUNT(*) AS n FROM at_signal_outcomes WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') GROUP BY asset_class,outcome ORDER BY asset_class,outcome",
+      "duration_seconds": 0.09,
+      "aggregate_rows": 45
+    },
+    "outcome_class_coverage": {
+      "sql": "SELECT asset_class,COUNT(*) AS n,COUNT(DISTINCT source_system) AS sources,COUNT(DISTINCT symbol) AS symbols,MAX(opened_at) AS latest_opened,MAX(closed_at) AS latest_closed,MAX(created_at) AS latest_created,SUM(pnl_pct IS NULL) AS missing_pnl_n,SUM(opened_at IS NULL) AS missing_opened_n,SUM(closed_at IS NULL) AS missing_closed_n,SUM(closed_at<opened_at) AS closure_before_opened_n,SUM(UPPER(outcome) IN ('OPEN','PENDING','ACTIVE') AND closed_at IS NOT NULL) AS active_label_has_closed_at,SUM(opened_at>'2026-10-22 22:31:05') AS future_opened_n,SUM(closed_at>'2026-10-22 22:31:05') AS future_closed_n,SUM((opened_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND opened_at <= '2026-10-22 22:31:05')) AS opened_48h_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND closed_at <= '2026-10-22 22:31:05')) AS closed_48h_n,SUM((created_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND created_at <= '2026-10-22 22:31:05')) AS created_48h_n,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND closed_at <= '2026-10-22 22:31:05') THEN source_system END) AS closed_48h_sources,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND closed_at <= '2026-10-22 22:31:05') THEN symbol END) AS closed_48h_symbols,SUM((opened_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND opened_at <= '2026-10-22 22:31:05')) AS opened_14d_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND closed_at <= '2026-10-22 22:31:05')) AS closed_14d_n,SUM((created_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND created_at <= '2026-10-22 22:31:05')) AS created_14d_n,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND closed_at <= '2026-10-22 22:31:05') THEN source_system END) AS closed_14d_sources,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND closed_at <= '2026-10-22 22:31:05') THEN symbol END) AS closed_14d_symbols,SUM((opened_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND opened_at <= '2026-10-22 22:31:05')) AS opened_30d_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND closed_at <= '2026-10-22 22:31:05')) AS closed_30d_n,SUM((created_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND created_at <= '2026-10-22 22:31:05')) AS created_30d_n,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND closed_at <= '2026-10-22 22:31:05') THEN source_system END) AS closed_30d_sources,COUNT(DISTINCT CASE WHEN (closed_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND closed_at <= '2026-10-22 22:31:05') THEN symbol END) AS closed_30d_symbols FROM at_signal_outcomes WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') GROUP BY asset_class ORDER BY asset_class",
+      "duration_seconds": 0.259,
+      "aggregate_rows": 8
+    },
+    "outcome_recent30d_source_coverage": {
+      "sql": "SELECT asset_class,source_system,COUNT(*) AS n,COUNT(DISTINCT symbol) AS symbols,MAX(opened_at) AS latest_opened,MAX(closed_at) AS latest_closed,MAX(created_at) AS latest_created,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 2 DAY AND closed_at <= '2026-10-22 22:31:05')) AS closed_48h_n,SUM((closed_at >= '2026-10-22 22:31:05' - INTERVAL 14 DAY AND closed_at <= '2026-10-22 22:31:05')) AS closed_14d_n FROM at_signal_outcomes WHERE asset_class IN ('CRYPTO','EQUITY','FOREX','COMMODITY','FUTURES','ETF','BOND','PENNY_STOCK','MEMECOIN') AND ((closed_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND closed_at <= '2026-10-22 22:31:05') OR (opened_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND opened_at <= '2026-10-22 22:31:05') OR (created_at >= '2026-10-22 22:31:05' - INTERVAL 30 DAY AND created_at <= '2026-10-22 22:31:05')) GROUP BY asset_class,source_system ORDER BY asset_class,n DESC LIMIT 2000",
+      "duration_seconds": 0.063,
+      "aggregate_rows": 9
+    },
+    "all_class_presence": {
+      "sql": "SELECT 'at_raw_picks' AS table_name,asset_class,COUNT(*) AS n FROM at_raw_picks GROUP BY asset_class UNION ALL SELECT 'at_signal_outcomes',asset_class,COUNT(*) FROM at_signal_outcomes GROUP BY asset_class",
+      "duration_seconds": 0.11,
+      "aggregate_rows": 19
+    }
+  },
+  "data": {
+    "table_metadata": [
+      {
+        "TABLE_NAME": "at_raw_picks",
+        "estimated_rows": 97195,
+        "ENGINE": "InnoDB"
+      },
+      {
+        "TABLE_NAME": "at_signal_outcomes",
+        "estimated_rows": 42515,
+        "ENGINE": "InnoDB"
+      }
+    ],
+    "raw_status_counts": [
+      {
+        "asset_class": "CRYPTO",
+        "status": "OPEN",
+        "n": 89
+      },
+      {
+        "asset_class": "CRYPTO",
+        "status": "WON",
+        "n": 13623
+      },
+      {
+        "asset_class": "CRYPTO",
+        "status": "LOST",
+        "n": 18515
+      },
+      {
+        "asset_class": "CRYPTO",
+        "status": "EXPIRED",
+        "n": 6496
+      },
+      {
+        "asset_class": "CRYPTO",
+        "status": "CLOSED",
+        "n": 19386
+      },
+      {
+        "asset_class": "CRYPTO",
+        "status": "ABANDONED",
+        "n": 8661
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "OPEN",
+        "n": 62
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "WON",
+        "n": 7751
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "LOST",
+        "n": 4069
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "EXPIRED",
+        "n": 1784
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "CLOSED",
+        "n": 722
+      },
+      {
+        "asset_class": "FOREX",
+        "status": "ABANDONED",
+        "n": 507
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "OPEN",
+        "n": 34
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "WON",
+        "n": 6922
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "LOST",
+        "n": 4910
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "EXPIRED",
+        "n": 1143
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "CLOSED",
+        "n": 932
+      },
+      {
+        "asset_class": "EQUITY",
+        "status": "ABANDONED",
+        "n": 256
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "status": "WON",
+        "n": 7
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "status": "LOST",
+        "n": 12
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "status": "EXPIRED",
+        "n": 237
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "status": "CLOSED",
+        "n": 114
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "status": "ABANDONED",
+        "n": 124
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "status": "WON",
+        "n": 142
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "status": "LOST",
+        "n": 223
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "status": "EXPIRED",
+        "n": 532
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "status": "CLOSED",
+        "n": 923
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "status": "ABANDONED",
+        "n": 181
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "OPEN",
+        "n": 25
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "WON",
+        "n": 3383
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "LOST",
+        "n": 3445
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "EXPIRED",
+        "n": 898
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "CLOSED",
+        "n": 91
+      },
+      {
+        "asset_class": "FUTURES",
+        "status": "ABANDONED",
+        "n": 178
+      },
+      {
+        "asset_class": "ETF",
+        "status": "OPEN",
+        "n": 48
+      },
+      {
+        "asset_class": "ETF",
+        "status": "WON",
+        "n": 640
+      },
+      {
+        "asset_class": "ETF",
+        "status": "LOST",
+        "n": 792
+      },
+      {
+        "asset_class": "ETF",
+        "status": "EXPIRED",
+        "n": 124
+      },
+      {
+        "asset_class": "ETF",
+        "status": "CLOSED",
+        "n": 33
+      },
+      {
+        "asset_class": "ETF",
+        "status": "ABANDONED",
+        "n": 103
+      },
+      {
+        "asset_class": "BOND",
+        "status": "WON",
+        "n": 57
+      },
+      {
+        "asset_class": "BOND",
+        "status": "LOST",
+        "n": 125
+      },
+      {
+        "asset_class": "BOND",
+        "status": "EXPIRED",
+        "n": 15
+      },
+      {
+        "asset_class": "BOND",
+        "status": "ABANDONED",
+        "n": 17
+      }
+    ],
+    "raw_class_lifecycle": [
+      {
+        "asset_class": "CRYPTO",
+        "n": 66770,
+        "open_n": 89,
+        "terminal_status_n": 66681,
+        "literal_closed_n": 19386,
+        "missing_status_n": 0,
+        "earliest_signal": "0000-00-00 00:00:00",
+        "latest_signal": "2026-10-22T19:03:48",
+        "latest_recorded": "2026-10-22T21:47:26",
+        "latest_closed": "2026-10-22T21:25:55",
+        "missing_signal_ts": 13880,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 4,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 6185,
+        "terminal_without_closed_at": 12686,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 4167,
+        "nonpositive_geometry_any": 213,
+        "strict_directional_geometry_n": 59831,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 89,
+        "flagged_stale_n": 2836,
+        "flagged_banned_n": 11214,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 249,
+        "signal_48h_sources": 2,
+        "signal_48h_symbols": 41,
+        "open_signal_48h_n": 85,
+        "terminal_closed_48h_n": 312,
+        "recorded_48h_n": 307,
+        "signal_14d_n": 1412,
+        "signal_14d_sources": 2,
+        "signal_14d_symbols": 53,
+        "open_signal_14d_n": 85,
+        "terminal_closed_14d_n": 1688,
+        "recorded_14d_n": 1750,
+        "signal_30d_n": 3357,
+        "signal_30d_sources": 2,
+        "signal_30d_symbols": 62,
+        "open_signal_30d_n": 85,
+        "terminal_closed_30d_n": 4172,
+        "recorded_30d_n": 4160,
+        "open_recent7d_geometry_unflagged_proxy_n": 85,
+        "recorded14d_old_signal7d_n": 822
+      },
+      {
+        "asset_class": "FOREX",
+        "n": 14895,
+        "open_n": 62,
+        "terminal_status_n": 14833,
+        "literal_closed_n": 722,
+        "missing_status_n": 0,
+        "earliest_signal": "2026-02-17T00:00:00",
+        "latest_signal": "2026-10-22T18:54:42",
+        "latest_recorded": "2026-10-22T19:05:06",
+        "latest_closed": "2026-10-22T06:42:56",
+        "missing_signal_ts": 690,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 1366,
+        "terminal_without_closed_at": 1864,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 647,
+        "nonpositive_geometry_any": 18,
+        "strict_directional_geometry_n": 14139,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 62,
+        "flagged_stale_n": 229,
+        "flagged_banned_n": 252,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 46,
+        "signal_48h_sources": 1,
+        "signal_48h_symbols": 5,
+        "open_signal_48h_n": 42,
+        "terminal_closed_48h_n": 15,
+        "recorded_48h_n": 47,
+        "signal_14d_n": 690,
+        "signal_14d_sources": 1,
+        "signal_14d_symbols": 10,
+        "open_signal_14d_n": 62,
+        "terminal_closed_14d_n": 855,
+        "recorded_14d_n": 698,
+        "signal_30d_n": 2153,
+        "signal_30d_sources": 1,
+        "signal_30d_symbols": 12,
+        "open_signal_30d_n": 62,
+        "terminal_closed_30d_n": 2095,
+        "recorded_30d_n": 2155,
+        "open_recent7d_geometry_unflagged_proxy_n": 62,
+        "recorded14d_old_signal7d_n": 487
+      },
+      {
+        "asset_class": "EQUITY",
+        "n": 14197,
+        "open_n": 34,
+        "terminal_status_n": 14163,
+        "literal_closed_n": 932,
+        "missing_status_n": 0,
+        "earliest_signal": "0000-00-00 00:00:00",
+        "latest_signal": "2026-10-22T18:54:42",
+        "latest_recorded": "2026-10-22T19:05:06",
+        "latest_closed": "2026-10-20T14:28:00",
+        "missing_signal_ts": 1000,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 1094,
+        "terminal_without_closed_at": 1450,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 991,
+        "nonpositive_geometry_any": 36,
+        "strict_directional_geometry_n": 13154,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 34,
+        "flagged_stale_n": 169,
+        "flagged_banned_n": 17,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 24,
+        "signal_48h_sources": 1,
+        "signal_48h_symbols": 2,
+        "open_signal_48h_n": 24,
+        "terminal_closed_48h_n": 0,
+        "recorded_48h_n": 24,
+        "signal_14d_n": 415,
+        "signal_14d_sources": 1,
+        "signal_14d_symbols": 12,
+        "open_signal_14d_n": 34,
+        "terminal_closed_14d_n": 2729,
+        "recorded_14d_n": 415,
+        "signal_30d_n": 1129,
+        "signal_30d_sources": 1,
+        "signal_30d_symbols": 15,
+        "open_signal_30d_n": 34,
+        "terminal_closed_30d_n": 3003,
+        "recorded_30d_n": 1129,
+        "open_recent7d_geometry_unflagged_proxy_n": 34,
+        "recorded14d_old_signal7d_n": 314
+      },
+      {
+        "asset_class": "PENNY_STOCK",
+        "n": 494,
+        "open_n": 0,
+        "terminal_status_n": 494,
+        "literal_closed_n": 114,
+        "missing_status_n": 0,
+        "earliest_signal": "2026-02-17T00:00:00",
+        "latest_signal": "2026-05-12T14:57:31",
+        "latest_recorded": "2026-05-12T23:21:16",
+        "latest_closed": "2026-06-05T05:29:33",
+        "missing_signal_ts": 106,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 236,
+        "terminal_without_closed_at": 280,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 392,
+        "nonpositive_geometry_any": 0,
+        "strict_directional_geometry_n": 87,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 0,
+        "flagged_stale_n": 45,
+        "flagged_banned_n": 0,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 0,
+        "signal_48h_sources": 0,
+        "signal_48h_symbols": 0,
+        "open_signal_48h_n": 0,
+        "terminal_closed_48h_n": 0,
+        "recorded_48h_n": 0,
+        "signal_14d_n": 0,
+        "signal_14d_sources": 0,
+        "signal_14d_symbols": 0,
+        "open_signal_14d_n": 0,
+        "terminal_closed_14d_n": 0,
+        "recorded_14d_n": 0,
+        "signal_30d_n": 0,
+        "signal_30d_sources": 0,
+        "signal_30d_symbols": 0,
+        "open_signal_30d_n": 0,
+        "terminal_closed_30d_n": 0,
+        "recorded_30d_n": 0,
+        "open_recent7d_geometry_unflagged_proxy_n": 0,
+        "recorded14d_old_signal7d_n": 0
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "n": 2001,
+        "open_n": 0,
+        "terminal_status_n": 2001,
+        "literal_closed_n": 923,
+        "missing_status_n": 0,
+        "earliest_signal": "0000-00-00 00:00:00",
+        "latest_signal": "2026-05-11T01:10:29",
+        "latest_recorded": "2026-05-13T00:00:27",
+        "latest_closed": "2026-06-05T05:29:33",
+        "missing_signal_ts": 564,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 525,
+        "terminal_without_closed_at": 869,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 177,
+        "nonpositive_geometry_any": 3,
+        "strict_directional_geometry_n": 1640,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 0,
+        "flagged_stale_n": 86,
+        "flagged_banned_n": 418,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 0,
+        "signal_48h_sources": 0,
+        "signal_48h_symbols": 0,
+        "open_signal_48h_n": 0,
+        "terminal_closed_48h_n": 0,
+        "recorded_48h_n": 0,
+        "signal_14d_n": 0,
+        "signal_14d_sources": 0,
+        "signal_14d_symbols": 0,
+        "open_signal_14d_n": 0,
+        "terminal_closed_14d_n": 0,
+        "recorded_14d_n": 0,
+        "signal_30d_n": 0,
+        "signal_30d_sources": 0,
+        "signal_30d_symbols": 0,
+        "open_signal_30d_n": 0,
+        "terminal_closed_30d_n": 0,
+        "recorded_30d_n": 0,
+        "open_recent7d_geometry_unflagged_proxy_n": 0,
+        "recorded14d_old_signal7d_n": 0
+      },
+      {
+        "asset_class": "FUTURES",
+        "n": 8020,
+        "open_n": 25,
+        "terminal_status_n": 7995,
+        "literal_closed_n": 91,
+        "missing_status_n": 0,
+        "earliest_signal": "2026-03-11T10:20:03",
+        "latest_signal": "2026-10-22T16:52:51",
+        "latest_recorded": "2026-10-22T17:07:55",
+        "latest_closed": "2026-10-22T13:09:22",
+        "missing_signal_ts": 5,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 881,
+        "terminal_without_closed_at": 1219,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 0,
+        "nonpositive_geometry_any": 0,
+        "strict_directional_geometry_n": 8000,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 25,
+        "flagged_stale_n": 2,
+        "flagged_banned_n": 0,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 32,
+        "signal_48h_sources": 1,
+        "signal_48h_symbols": 5,
+        "open_signal_48h_n": 17,
+        "terminal_closed_48h_n": 29,
+        "recorded_48h_n": 32,
+        "signal_14d_n": 310,
+        "signal_14d_sources": 1,
+        "signal_14d_symbols": 12,
+        "open_signal_14d_n": 25,
+        "terminal_closed_14d_n": 339,
+        "recorded_14d_n": 310,
+        "signal_30d_n": 685,
+        "signal_30d_sources": 1,
+        "signal_30d_symbols": 14,
+        "open_signal_30d_n": 25,
+        "terminal_closed_30d_n": 614,
+        "recorded_30d_n": 685,
+        "open_recent7d_geometry_unflagged_proxy_n": 25,
+        "recorded14d_old_signal7d_n": 161
+      },
+      {
+        "asset_class": "ETF",
+        "n": 1740,
+        "open_n": 48,
+        "terminal_status_n": 1692,
+        "literal_closed_n": 33,
+        "missing_status_n": 0,
+        "earliest_signal": "2026-02-19T14:49:46",
+        "latest_signal": "2026-10-22T14:50:50",
+        "latest_recorded": "2026-10-22T15:02:18",
+        "latest_closed": "2026-10-22T19:06:50",
+        "missing_signal_ts": 40,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 116,
+        "terminal_without_closed_at": 223,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 8,
+        "nonpositive_geometry_any": 7,
+        "strict_directional_geometry_n": 1723,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 48,
+        "flagged_stale_n": 33,
+        "flagged_banned_n": 0,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 18,
+        "signal_48h_sources": 1,
+        "signal_48h_symbols": 5,
+        "open_signal_48h_n": 10,
+        "terminal_closed_48h_n": 10,
+        "recorded_48h_n": 18,
+        "signal_14d_n": 182,
+        "signal_14d_sources": 1,
+        "signal_14d_symbols": 7,
+        "open_signal_14d_n": 48,
+        "terminal_closed_14d_n": 244,
+        "recorded_14d_n": 182,
+        "signal_30d_n": 396,
+        "signal_30d_sources": 1,
+        "signal_30d_symbols": 8,
+        "open_signal_30d_n": 48,
+        "terminal_closed_30d_n": 518,
+        "recorded_30d_n": 396,
+        "open_recent7d_geometry_unflagged_proxy_n": 48,
+        "recorded14d_old_signal7d_n": 91
+      },
+      {
+        "asset_class": "BOND",
+        "n": 214,
+        "open_n": 0,
+        "terminal_status_n": 214,
+        "literal_closed_n": 0,
+        "missing_status_n": 0,
+        "earliest_signal": "2026-03-13T23:29:24",
+        "latest_signal": "2026-10-20T22:45:04",
+        "latest_recorded": "2026-10-21T05:05:19",
+        "latest_closed": "2026-10-22T17:26:16",
+        "missing_signal_ts": 4,
+        "missing_recorded_ts": 0,
+        "future_signal_ts": 0,
+        "open_signal_older_7d": 0,
+        "open_signal_older_30d": 0,
+        "open_missing_signal_ts": 0,
+        "open_has_closed_at": 0,
+        "open_has_pnl": 0,
+        "terminal_without_pnl": 14,
+        "terminal_without_closed_at": 31,
+        "literal_closed_without_pnl": 0,
+        "closure_before_signal": 0,
+        "missing_geometry_any": 0,
+        "nonpositive_geometry_any": 0,
+        "strict_directional_geometry_n": 214,
+        "open_missing_geometry_any": 0,
+        "open_strict_geometry_n": 0,
+        "flagged_stale_n": 0,
+        "flagged_banned_n": 0,
+        "flagged_demoted_n": 0,
+        "signal_48h_n": 1,
+        "signal_48h_sources": 1,
+        "signal_48h_symbols": 1,
+        "open_signal_48h_n": 0,
+        "terminal_closed_48h_n": 4,
+        "recorded_48h_n": 1,
+        "signal_14d_n": 19,
+        "signal_14d_sources": 1,
+        "signal_14d_symbols": 1,
+        "open_signal_14d_n": 0,
+        "terminal_closed_14d_n": 23,
+        "recorded_14d_n": 19,
+        "signal_30d_n": 32,
+        "signal_30d_sources": 1,
+        "signal_30d_symbols": 1,
+        "open_signal_30d_n": 0,
+        "terminal_closed_30d_n": 32,
+        "recorded_30d_n": 32,
+        "open_recent7d_geometry_unflagged_proxy_n": 0,
+        "recorded14d_old_signal7d_n": 12
+      }
+    ],
+    "raw_recent30d_source_coverage": [
+      {
+        "asset_class": "CRYPTO",
+        "source_system": "AlphaEngine",
+        "n": 3339,
+        "symbols": 62,
+        "strategies": 98,
+        "open_n": 85,
+        "latest_signal": "2026-10-22T19:03:48",
+        "signal_48h_n": 248,
+        "signal_14d_n": 1397
+      },
+      {
+        "asset_class": "CRYPTO",
+        "source_system": "mega_mutation",
+        "n": 18,
+        "symbols": 8,
+        "strategies": 4,
+        "open_n": 0,
+        "latest_signal": "2026-10-22T04:51:55",
+        "signal_48h_n": 1,
+        "signal_14d_n": 15
+      },
+      {
+        "asset_class": "FOREX",
+        "source_system": "AlphaEngine",
+        "n": 2153,
+        "symbols": 12,
+        "strategies": 7,
+        "open_n": 62,
+        "latest_signal": "2026-10-22T18:54:42",
+        "signal_48h_n": 46,
+        "signal_14d_n": 690
+      },
+      {
+        "asset_class": "EQUITY",
+        "source_system": "AlphaEngine",
+        "n": 1129,
+        "symbols": 15,
+        "strategies": 7,
+        "open_n": 34,
+        "latest_signal": "2026-10-22T18:54:42",
+        "signal_48h_n": 24,
+        "signal_14d_n": 415
+      },
+      {
+        "asset_class": "FUTURES",
+        "source_system": "AlphaEngine",
+        "n": 685,
+        "symbols": 14,
+        "strategies": 13,
+        "open_n": 25,
+        "latest_signal": "2026-10-22T16:52:51",
+        "signal_48h_n": 32,
+        "signal_14d_n": 310
+      },
+      {
+        "asset_class": "ETF",
+        "source_system": "AlphaEngine",
+        "n": 396,
+        "symbols": 8,
+        "strategies": 12,
+        "open_n": 48,
+        "latest_signal": "2026-10-22T14:50:50",
+        "signal_48h_n": 18,
+        "signal_14d_n": 182
+      },
+      {
+        "asset_class": "BOND",
+        "source_system": "AlphaEngine",
+        "n": 32,
+        "symbols": 1,
+        "strategies": 1,
+        "open_n": 0,
+        "latest_signal": "2026-10-20T22:45:04",
+        "signal_48h_n": 1,
+        "signal_14d_n": 19
+      }
+    ],
+    "raw_recent30d_symbol_coverage": [
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "XRPUSDT",
+        "n": 417,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BNBUSDT",
+        "n": 376,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "DOGEUSDT",
+        "n": 363,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ETHUSDT",
+        "n": 334,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BTCUSDT",
+        "n": 305,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SOLUSDT",
+        "n": 273,
+        "sources": 1,
+        "latest_signal": "2026-10-22T17:05:58"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "DOTUSDT",
+        "n": 159,
+        "sources": 2,
+        "latest_signal": "2026-10-22T02:41:53"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "AVAXUSDT",
+        "n": 103,
+        "sources": 2,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ADAUSDT",
+        "n": 90,
+        "sources": 2,
+        "latest_signal": "2026-10-22T16:52:21"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "WIFUSDT",
+        "n": 85,
+        "sources": 2,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "LINKUSDT",
+        "n": 77,
+        "sources": 1,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ATOMUSDT",
+        "n": 67,
+        "sources": 1,
+        "latest_signal": "2026-10-22T00:27:35"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "RENDERUSDT",
+        "n": 58,
+        "sources": 2,
+        "latest_signal": "2026-10-22T06:50:09"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "NEARUSDT",
+        "n": 50,
+        "sources": 1,
+        "latest_signal": "2026-10-22T05:35:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SUIUSDT",
+        "n": 46,
+        "sources": 1,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "JUPUSDT",
+        "n": 43,
+        "sources": 2,
+        "latest_signal": "2026-10-22T06:50:09"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "APTUSDT",
+        "n": 42,
+        "sources": 1,
+        "latest_signal": "2026-10-22T12:22:39"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "STXUSDT",
+        "n": 42,
+        "sources": 2,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ARBUSDT",
+        "n": 39,
+        "sources": 1,
+        "latest_signal": "2026-10-22T05:35:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ENAUSDT",
+        "n": 39,
+        "sources": 2,
+        "latest_signal": "2026-10-22T06:50:09"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SEIUSDT",
+        "n": 36,
+        "sources": 1,
+        "latest_signal": "2026-10-22T15:23:54"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "INJUSDT",
+        "n": 34,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "OPUSDT",
+        "n": 32,
+        "sources": 1,
+        "latest_signal": "2026-10-22T15:23:54"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "WUSDT",
+        "n": 21,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:30"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "IMXUSDT",
+        "n": 20,
+        "sources": 1,
+        "latest_signal": "2026-10-22T15:23:54"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ONDOUSDT",
+        "n": 20,
+        "sources": 1,
+        "latest_signal": "2026-10-01T02:29:35"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ICPUSDT",
+        "n": 17,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:30"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ZECUSDT",
+        "n": 17,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:01:34"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "TIAUSDT",
+        "n": 13,
+        "sources": 1,
+        "latest_signal": "2026-10-22T03:19:41"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SHIBUSDT",
+        "n": 12,
+        "sources": 1,
+        "latest_signal": "2026-10-20T06:26:11"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BONKUSDT",
+        "n": 11,
+        "sources": 1,
+        "latest_signal": "2026-10-21T15:23:29"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "PEPEUSDT",
+        "n": 11,
+        "sources": 1,
+        "latest_signal": "2026-10-16T04:49:18"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "TAOUSDT",
+        "n": 11,
+        "sources": 1,
+        "latest_signal": "2026-10-07T16:51:30"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "TRXUSDT",
+        "n": 11,
+        "sources": 1,
+        "latest_signal": "2026-10-21T21:25:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "LTCUSDT",
+        "n": 10,
+        "sources": 1,
+        "latest_signal": "2026-10-18T15:21:28"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "FLOKIUSDT",
+        "n": 9,
+        "sources": 1,
+        "latest_signal": "2026-10-13T09:31:33"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "EGLDUSDT",
+        "n": 8,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:52:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "STRKUSDT",
+        "n": 7,
+        "sources": 1,
+        "latest_signal": "2026-10-21T18:44:49"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "FETUSDT",
+        "n": 6,
+        "sources": 1,
+        "latest_signal": "2026-10-14T20:44:46"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "MAVUSDT",
+        "n": 5,
+        "sources": 1,
+        "latest_signal": "2026-10-12T14:54:38"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "KASUSDT",
+        "n": 4,
+        "sources": 1,
+        "latest_signal": "2026-09-29T01:57:15"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "PYTHUSDT",
+        "n": 4,
+        "sources": 1,
+        "latest_signal": "2026-10-12T14:54:37"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "FILUSDT",
+        "n": 3,
+        "sources": 1,
+        "latest_signal": "2026-10-21T18:44:49"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "HOTUSDT",
+        "n": 3,
+        "sources": 1,
+        "latest_signal": "2026-10-21T02:52:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "MINAUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-21T02:52:04"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "NEOUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-11T18:52:29"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "NOTUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:52:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SNXUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:52:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "THETAUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "YFIUSDT",
+        "n": 2,
+        "sources": 1,
+        "latest_signal": "2026-10-04T08:39:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ARB11841USDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-11T16:42:03"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "AXSUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-07T16:51:30"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BOMEUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-21T06:59:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "DYDXUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-05T21:58:52"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ENSUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ETCUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-09-25T04:16:44"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "HYPEUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "MKRUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-01T08:28:33"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "NEXOUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-05T21:58:52"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "UNIUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-11T18:52:30"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "WLDUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-12T13:02:54"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "XTZUSDT",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-14T12:54:34"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDCAD=X",
+        "n": 399,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDCHF=X",
+        "n": 329,
+        "sources": 1,
+        "latest_signal": "2026-10-19T18:53:57"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "NZDUSD=X",
+        "n": 259,
+        "sources": 1,
+        "latest_signal": "2026-10-17T04:41:54"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "GBPUSD=X",
+        "n": 231,
+        "sources": 1,
+        "latest_signal": "2026-10-20T18:48:31"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "AUDUSD=X",
+        "n": 226,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURUSD=X",
+        "n": 218,
+        "sources": 1,
+        "latest_signal": "2026-10-22T01:14:20"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURGBP=X",
+        "n": 150,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:12:33"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "AUDJPY=X",
+        "n": 102,
+        "sources": 1,
+        "latest_signal": "2026-10-16T06:17:23"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURJPY=X",
+        "n": 101,
+        "sources": 1,
+        "latest_signal": "2026-10-13T10:13:08"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDJPY=X",
+        "n": 89,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:11"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "CADJPY=X",
+        "n": 37,
+        "sources": 1,
+        "latest_signal": "2026-10-05T08:01:06"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "GBPJPY=X",
+        "n": 12,
+        "sources": 1,
+        "latest_signal": "2026-09-30T02:21:00"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "MSFT",
+        "n": 145,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AAPL",
+        "n": 117,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "META",
+        "n": 115,
+        "sources": 1,
+        "latest_signal": "2026-10-17T01:18:24"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AMD",
+        "n": 103,
+        "sources": 1,
+        "latest_signal": "2026-10-17T01:18:24"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "DNA",
+        "n": 97,
+        "sources": 1,
+        "latest_signal": "2026-10-18T04:49:14"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "NVDA",
+        "n": 86,
+        "sources": 1,
+        "latest_signal": "2026-10-20T01:19:07"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "TSLA",
+        "n": 81,
+        "sources": 1,
+        "latest_signal": "2026-10-14T18:48:34"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "PLTR",
+        "n": 77,
+        "sources": 1,
+        "latest_signal": "2026-10-16T01:09:45"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "IONQ",
+        "n": 75,
+        "sources": 1,
+        "latest_signal": "2026-10-08T22:43:45"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AMZN",
+        "n": 66,
+        "sources": 1,
+        "latest_signal": "2026-10-18T22:39:08"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "QUBT",
+        "n": 61,
+        "sources": 1,
+        "latest_signal": "2026-10-06T01:15:46"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "GOOGL",
+        "n": 55,
+        "sources": 1,
+        "latest_signal": "2026-10-15T01:17:52"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "NIO",
+        "n": 46,
+        "sources": 1,
+        "latest_signal": "2026-10-16T01:09:45"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "LCID",
+        "n": 4,
+        "sources": 1,
+        "latest_signal": "2026-10-08T01:18:20"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "SNDL",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-09-25T01:13:04"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZC=F",
+        "n": 250,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "HG=F",
+        "n": 247,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ES=F",
+        "n": 48,
+        "sources": 1,
+        "latest_signal": "2026-10-15T22:45:24"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "NG=F",
+        "n": 36,
+        "sources": 1,
+        "latest_signal": "2026-10-20T04:49:43"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "NQ=F",
+        "n": 35,
+        "sources": 1,
+        "latest_signal": "2026-10-18T22:08:50"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "YM=F",
+        "n": 26,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "RTY=F",
+        "n": 18,
+        "sources": 1,
+        "latest_signal": "2026-10-14T02:13:28"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZW=F",
+        "n": 12,
+        "sources": 1,
+        "latest_signal": "2026-09-29T12:53:14"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "CC=F",
+        "n": 8,
+        "sources": 1,
+        "latest_signal": "2026-10-20T12:54:02"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "6C=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-05T21:58:52"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "PA=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-21T16:41:15"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZL=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-15T02:55:28"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZM=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-09T18:45:49"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZN=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "SPY",
+        "n": 153,
+        "sources": 1,
+        "latest_signal": "2026-10-22T14:50:50"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "QQQ",
+        "n": 125,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "IWM",
+        "n": 65,
+        "sources": 1,
+        "latest_signal": "2026-10-14T12:17:09"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "EFA",
+        "n": 39,
+        "sources": 1,
+        "latest_signal": "2026-10-15T06:18:55"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "TLT",
+        "n": 6,
+        "sources": 1,
+        "latest_signal": "2026-10-22T14:11:45"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "GLD",
+        "n": 4,
+        "sources": 1,
+        "latest_signal": "2026-10-21T16:41:15"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "TLH",
+        "n": 3,
+        "sources": 1,
+        "latest_signal": "2026-09-28T16:45:57"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "VTI",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-21T02:52:04"
+      },
+      {
+        "asset_class": "BOND",
+        "symbol": "IEF",
+        "n": 32,
+        "sources": 1,
+        "latest_signal": "2026-10-20T22:45:04"
+      }
+    ],
+    "raw_recent30d_top10_symbols": [
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "XRPUSDT",
+        "n": 417,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BNBUSDT",
+        "n": 376,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "DOGEUSDT",
+        "n": 363,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ETHUSDT",
+        "n": 334,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "BTCUSDT",
+        "n": 305,
+        "sources": 1,
+        "latest_signal": "2026-10-22T19:03:48"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "SOLUSDT",
+        "n": 273,
+        "sources": 1,
+        "latest_signal": "2026-10-22T17:05:58"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "DOTUSDT",
+        "n": 159,
+        "sources": 2,
+        "latest_signal": "2026-10-22T02:41:53"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "AVAXUSDT",
+        "n": 103,
+        "sources": 2,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "ADAUSDT",
+        "n": 90,
+        "sources": 2,
+        "latest_signal": "2026-10-22T16:52:21"
+      },
+      {
+        "asset_class": "CRYPTO",
+        "symbol": "WIFUSDT",
+        "n": 85,
+        "sources": 2,
+        "latest_signal": "2026-10-22T08:41:43"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "MSFT",
+        "n": 145,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AAPL",
+        "n": 117,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "META",
+        "n": 115,
+        "sources": 1,
+        "latest_signal": "2026-10-17T01:18:24"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AMD",
+        "n": 103,
+        "sources": 1,
+        "latest_signal": "2026-10-17T01:18:24"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "DNA",
+        "n": 97,
+        "sources": 1,
+        "latest_signal": "2026-10-18T04:49:14"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "NVDA",
+        "n": 86,
+        "sources": 1,
+        "latest_signal": "2026-10-20T01:19:07"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "TSLA",
+        "n": 81,
+        "sources": 1,
+        "latest_signal": "2026-10-14T18:48:34"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "PLTR",
+        "n": 77,
+        "sources": 1,
+        "latest_signal": "2026-10-16T01:09:45"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "IONQ",
+        "n": 75,
+        "sources": 1,
+        "latest_signal": "2026-10-08T22:43:45"
+      },
+      {
+        "asset_class": "EQUITY",
+        "symbol": "AMZN",
+        "n": 66,
+        "sources": 1,
+        "latest_signal": "2026-10-18T22:39:08"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDCAD=X",
+        "n": 399,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDCHF=X",
+        "n": 329,
+        "sources": 1,
+        "latest_signal": "2026-10-19T18:53:57"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "NZDUSD=X",
+        "n": 259,
+        "sources": 1,
+        "latest_signal": "2026-10-17T04:41:54"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "GBPUSD=X",
+        "n": 231,
+        "sources": 1,
+        "latest_signal": "2026-10-20T18:48:31"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "AUDUSD=X",
+        "n": 226,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:54:42"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURUSD=X",
+        "n": 218,
+        "sources": 1,
+        "latest_signal": "2026-10-22T01:14:20"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURGBP=X",
+        "n": 150,
+        "sources": 1,
+        "latest_signal": "2026-10-22T18:12:33"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "AUDJPY=X",
+        "n": 102,
+        "sources": 1,
+        "latest_signal": "2026-10-16T06:17:23"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "EURJPY=X",
+        "n": 101,
+        "sources": 1,
+        "latest_signal": "2026-10-13T10:13:08"
+      },
+      {
+        "asset_class": "FOREX",
+        "symbol": "USDJPY=X",
+        "n": 89,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:11"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZC=F",
+        "n": 250,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "HG=F",
+        "n": 247,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ES=F",
+        "n": 48,
+        "sources": 1,
+        "latest_signal": "2026-10-15T22:45:24"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "NG=F",
+        "n": 36,
+        "sources": 1,
+        "latest_signal": "2026-10-20T04:49:43"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "NQ=F",
+        "n": 35,
+        "sources": 1,
+        "latest_signal": "2026-10-18T22:08:50"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "YM=F",
+        "n": 26,
+        "sources": 1,
+        "latest_signal": "2026-10-22T16:52:51"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "RTY=F",
+        "n": 18,
+        "sources": 1,
+        "latest_signal": "2026-10-14T02:13:28"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "ZW=F",
+        "n": 12,
+        "sources": 1,
+        "latest_signal": "2026-09-29T12:53:14"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "CC=F",
+        "n": 8,
+        "sources": 1,
+        "latest_signal": "2026-10-20T12:54:02"
+      },
+      {
+        "asset_class": "FUTURES",
+        "symbol": "6C=F",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-05T21:58:52"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "SPY",
+        "n": 153,
+        "sources": 1,
+        "latest_signal": "2026-10-22T14:50:50"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "QQQ",
+        "n": 125,
+        "sources": 1,
+        "latest_signal": "2026-10-22T04:53:08"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "IWM",
+        "n": 65,
+        "sources": 1,
+        "latest_signal": "2026-10-14T12:17:09"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "EFA",
+        "n": 39,
+        "sources": 1,
+        "latest_signal": "2026-10-15T06:18:55"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "TLT",
+        "n": 6,
+        "sources": 1,
+        "latest_signal": "2026-10-22T14:11:45"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "GLD",
+        "n": 4,
+        "sources": 1,
+        "latest_signal": "2026-10-21T16:41:15"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "TLH",
+        "n": 3,
+        "sources": 1,
+        "latest_signal": "2026-09-28T16:45:57"
+      },
+      {
+        "asset_class": "ETF",
+        "symbol": "VTI",
+        "n": 1,
+        "sources": 1,
+        "latest_signal": "2026-10-21T02:52:04"
+      },
+      {
+        "asset_class": "BOND",
+        "symbol": "IEF",
+        "n": 32,
+        "sources": 1,
+        "latest_signal": "2026-10-20T22:45:04"
+      }
+    ],
+    "outcome_status_counts": [
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "CLOSED",
+        "n": 4
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "EXPIRED",
+        "n": 218
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "LOST",
+        "n": 2394
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "OPEN",
+        "n": 38
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "SL_HIT",
+        "n": 21852
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "STALE_INGEST",
+        "n": 3
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "TP_HIT",
+        "n": 14327
+      },
+      {
+        "asset_class": "CRYPTO",
+        "outcome": "WON",
+        "n": 5411
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "EXPIRED",
+        "n": 51
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "LOST",
+        "n": 738
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "RESOLVE_FAILED",
+        "n": 1
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "SL_HIT",
+        "n": 189
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "TP_HIT",
+        "n": 159
+      },
+      {
+        "asset_class": "FOREX",
+        "outcome": "WON",
+        "n": 718
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "EXPIRED",
+        "n": 10
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "LOST",
+        "n": 152
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "SL_HIT",
+        "n": 175
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "STALE_INGEST",
+        "n": 1
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "TP_HIT",
+        "n": 201
+      },
+      {
+        "asset_class": "EQUITY",
+        "outcome": "WON",
+        "n": 158
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "EXPIRED",
+        "n": 1
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "LOST",
+        "n": 52
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "RESOLVE_FAILED",
+        "n": 1
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "SL_HIT",
+        "n": 1391
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "TP_HIT",
+        "n": 989
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "outcome": "WON",
+        "n": 20
+      },
+      {
+        "asset_class": "FUTURES",
+        "outcome": "EXPIRED",
+        "n": 12
+      },
+      {
+        "asset_class": "FUTURES",
+        "outcome": "LOST",
+        "n": 17
+      },
+      {
+        "asset_class": "FUTURES",
+        "outcome": "SL_HIT",
+        "n": 37
+      },
+      {
+        "asset_class": "FUTURES",
+        "outcome": "TP_HIT",
+        "n": 53
+      },
+      {
+        "asset_class": "FUTURES",
+        "outcome": "WON",
+        "n": 8
+      },
+      {
+        "asset_class": "ETF",
+        "outcome": "EXPIRED",
+        "n": 2
+      },
+      {
+        "asset_class": "ETF",
+        "outcome": "LOST",
+        "n": 70
+      },
+      {
+        "asset_class": "ETF",
+        "outcome": "SL_HIT",
+        "n": 23
+      },
+      {
+        "asset_class": "ETF",
+        "outcome": "TP_HIT",
+        "n": 4
+      },
+      {
+        "asset_class": "ETF",
+        "outcome": "WON",
+        "n": 66
+      },
+      {
+        "asset_class": "COMMODITY",
+        "outcome": "EXPIRED",
+        "n": 9
+      },
+      {
+        "asset_class": "COMMODITY",
+        "outcome": "LOST",
+        "n": 277
+      },
+      {
+        "asset_class": "COMMODITY",
+        "outcome": "SL_HIT",
+        "n": 87
+      },
+      {
+        "asset_class": "COMMODITY",
+        "outcome": "TP_HIT",
+        "n": 62
+      },
+      {
+        "asset_class": "COMMODITY",
+        "outcome": "WON",
+        "n": 68
+      },
+      {
+        "asset_class": "BOND",
+        "outcome": "LOST",
+        "n": 36
+      },
+      {
+        "asset_class": "BOND",
+        "outcome": "SL_HIT",
+        "n": 21
+      },
+      {
+        "asset_class": "BOND",
+        "outcome": "TP_HIT",
+        "n": 6
+      },
+      {
+        "asset_class": "BOND",
+        "outcome": "WON",
+        "n": 7
+      }
+    ],
+    "outcome_class_coverage": [
+      {
+        "asset_class": "CRYPTO",
+        "n": 44247,
+        "sources": 25,
+        "symbols": 427,
+        "latest_opened": "2026-10-22T18:54:42",
+        "latest_closed": "2026-10-22T18:54:42",
+        "latest_created": "2026-10-22T22:30:32",
+        "missing_pnl_n": 23346,
+        "missing_opened_n": 37353,
+        "missing_closed_n": 37447,
+        "closure_before_opened_n": 0,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 69,
+        "closed_48h_n": 72,
+        "created_48h_n": 112,
+        "closed_48h_sources": 2,
+        "closed_48h_symbols": 37,
+        "opened_14d_n": 376,
+        "closed_14d_n": 382,
+        "created_14d_n": 407,
+        "closed_14d_sources": 2,
+        "closed_14d_symbols": 81,
+        "opened_30d_n": 884,
+        "closed_30d_n": 892,
+        "created_30d_n": 898,
+        "closed_30d_sources": 2,
+        "closed_30d_symbols": 110
+      },
+      {
+        "asset_class": "FOREX",
+        "n": 1856,
+        "sources": 3,
+        "symbols": 27,
+        "latest_opened": "2026-10-22T15:12:05",
+        "latest_closed": "2026-10-22T15:30:38",
+        "latest_created": "2026-10-22T15:35:14",
+        "missing_pnl_n": 2,
+        "missing_opened_n": 0,
+        "missing_closed_n": 346,
+        "closure_before_opened_n": 1,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 27,
+        "closed_48h_n": 21,
+        "created_48h_n": 40,
+        "closed_48h_sources": 1,
+        "closed_48h_symbols": 8,
+        "opened_14d_n": 86,
+        "closed_14d_n": 76,
+        "created_14d_n": 86,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 12,
+        "opened_30d_n": 252,
+        "closed_30d_n": 227,
+        "created_30d_n": 252,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 12
+      },
+      {
+        "asset_class": "EQUITY",
+        "n": 697,
+        "sources": 3,
+        "symbols": 80,
+        "latest_opened": "2026-10-22T16:52:50",
+        "latest_closed": "2026-10-22T16:55:45",
+        "latest_created": "2026-10-22T22:30:32",
+        "missing_pnl_n": 2,
+        "missing_opened_n": 0,
+        "missing_closed_n": 77,
+        "closure_before_opened_n": 2,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 2,
+        "closed_48h_n": 2,
+        "created_48h_n": 4,
+        "closed_48h_sources": 1,
+        "closed_48h_symbols": 1,
+        "opened_14d_n": 19,
+        "closed_14d_n": 19,
+        "created_14d_n": 19,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 4,
+        "opened_30d_n": 41,
+        "closed_30d_n": 42,
+        "created_30d_n": 42,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 9
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "n": 2454,
+        "sources": 7,
+        "symbols": 16,
+        "latest_opened": "2026-10-22T16:52:51",
+        "latest_closed": "2026-10-22T16:55:45",
+        "latest_created": "2026-10-22T22:30:32",
+        "missing_pnl_n": 2333,
+        "missing_opened_n": 2331,
+        "missing_closed_n": 2339,
+        "closure_before_opened_n": 0,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 2,
+        "closed_48h_n": 2,
+        "created_48h_n": 3,
+        "closed_48h_sources": 1,
+        "closed_48h_symbols": 2,
+        "opened_14d_n": 6,
+        "closed_14d_n": 6,
+        "created_14d_n": 6,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 3,
+        "opened_30d_n": 7,
+        "closed_30d_n": 7,
+        "created_30d_n": 7,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 4
+      },
+      {
+        "asset_class": "FUTURES",
+        "n": 127,
+        "sources": 1,
+        "symbols": 25,
+        "latest_opened": "2026-10-18T12:50:30",
+        "latest_closed": "2026-10-18T12:52:34",
+        "latest_created": "2026-10-20T22:31:11",
+        "missing_pnl_n": 1,
+        "missing_opened_n": 0,
+        "missing_closed_n": 4,
+        "closure_before_opened_n": 0,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 0,
+        "closed_48h_n": 0,
+        "created_48h_n": 1,
+        "closed_48h_sources": 0,
+        "closed_48h_symbols": 0,
+        "opened_14d_n": 6,
+        "closed_14d_n": 6,
+        "created_14d_n": 6,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 4,
+        "opened_30d_n": 7,
+        "closed_30d_n": 7,
+        "created_30d_n": 8,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 5
+      },
+      {
+        "asset_class": "ETF",
+        "n": 165,
+        "sources": 1,
+        "symbols": 21,
+        "latest_opened": "2026-10-22T12:33:08",
+        "latest_closed": "2026-10-22T15:30:41",
+        "latest_created": "2026-10-22T15:35:14",
+        "missing_pnl_n": 0,
+        "missing_opened_n": 0,
+        "missing_closed_n": 0,
+        "closure_before_opened_n": 0,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 2,
+        "closed_48h_n": 2,
+        "created_48h_n": 3,
+        "closed_48h_sources": 1,
+        "closed_48h_symbols": 2,
+        "opened_14d_n": 4,
+        "closed_14d_n": 4,
+        "created_14d_n": 4,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 3,
+        "opened_30d_n": 13,
+        "closed_30d_n": 13,
+        "created_30d_n": 13,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 7
+      },
+      {
+        "asset_class": "COMMODITY",
+        "n": 503,
+        "sources": 2,
+        "symbols": 41,
+        "latest_opened": "2026-10-22T14:17:07",
+        "latest_closed": "2026-10-22T15:30:38",
+        "latest_created": "2026-10-22T15:35:14",
+        "missing_pnl_n": 0,
+        "missing_opened_n": 0,
+        "missing_closed_n": 169,
+        "closure_before_opened_n": 3,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 2,
+        "closed_48h_n": 2,
+        "created_48h_n": 4,
+        "closed_48h_sources": 1,
+        "closed_48h_symbols": 1,
+        "opened_14d_n": 10,
+        "closed_14d_n": 10,
+        "created_14d_n": 10,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 4,
+        "opened_30d_n": 16,
+        "closed_30d_n": 16,
+        "created_30d_n": 16,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 8
+      },
+      {
+        "asset_class": "BOND",
+        "n": 70,
+        "sources": 1,
+        "symbols": 14,
+        "latest_opened": "2026-10-14T14:12:13",
+        "latest_closed": "2026-10-14T22:25:58",
+        "latest_created": "2026-10-14T22:30:38",
+        "missing_pnl_n": 0,
+        "missing_opened_n": 0,
+        "missing_closed_n": 0,
+        "closure_before_opened_n": 0,
+        "active_label_has_closed_at": 0,
+        "future_opened_n": 0,
+        "future_closed_n": 0,
+        "opened_48h_n": 0,
+        "closed_48h_n": 0,
+        "created_48h_n": 0,
+        "closed_48h_sources": 0,
+        "closed_48h_symbols": 0,
+        "opened_14d_n": 3,
+        "closed_14d_n": 3,
+        "created_14d_n": 3,
+        "closed_14d_sources": 1,
+        "closed_14d_symbols": 3,
+        "opened_30d_n": 12,
+        "closed_30d_n": 12,
+        "created_30d_n": 12,
+        "closed_30d_sources": 1,
+        "closed_30d_symbols": 3
+      }
+    ],
+    "outcome_recent30d_source_coverage": [
+      {
+        "asset_class": "CRYPTO",
+        "source_system": "alpha_engine",
+        "n": 890,
+        "symbols": 110,
+        "latest_opened": "2026-10-22T18:54:42",
+        "latest_closed": "2026-10-22T18:54:42",
+        "latest_created": "2026-10-22T22:30:32",
+        "closed_48h_n": 71,
+        "closed_14d_n": 377
+      },
+      {
+        "asset_class": "CRYPTO",
+        "source_system": "crypto_signal_engine",
+        "n": 8,
+        "symbols": 3,
+        "latest_opened": "2026-10-22T01:51:13",
+        "latest_closed": "2026-10-22T01:51:13",
+        "latest_created": "2026-10-22T12:45:12",
+        "closed_48h_n": 1,
+        "closed_14d_n": 5
+      },
+      {
+        "asset_class": "FOREX",
+        "source_system": "alpha_engine",
+        "n": 252,
+        "symbols": 12,
+        "latest_opened": "2026-10-22T15:12:05",
+        "latest_closed": "2026-10-22T15:30:38",
+        "latest_created": "2026-10-22T15:35:14",
+        "closed_48h_n": 21,
+        "closed_14d_n": 76
+      },
+      {
+        "asset_class": "EQUITY",
+        "source_system": "alpha_engine",
+        "n": 42,
+        "symbols": 9,
+        "latest_opened": "2026-10-22T16:52:50",
+        "latest_closed": "2026-10-22T16:55:45",
+        "latest_created": "2026-10-22T22:30:32",
+        "closed_48h_n": 2,
+        "closed_14d_n": 19
+      },
+      {
+        "asset_class": "MEMECOIN",
+        "source_system": "alpha_engine",
+        "n": 7,
+        "symbols": 4,
+        "latest_opened": "2026-10-22T16:52:51",
+        "latest_closed": "2026-10-22T16:55:45",
+        "latest_created": "2026-10-22T22:30:32",
+        "closed_48h_n": 2,
+        "closed_14d_n": 6
+      },
+      {
+        "asset_class": "FUTURES",
+        "source_system": "alpha_engine",
+        "n": 8,
+        "symbols": 5,
+        "latest_opened": "2026-10-18T12:50:30",
+        "latest_closed": "2026-10-18T12:52:34",
+        "latest_created": "2026-10-20T22:31:11",
+        "closed_48h_n": 0,
+        "closed_14d_n": 6
+      },
+      {
+        "asset_class": "ETF",
+        "source_system": "alpha_engine",
+        "n": 13,
+        "symbols": 7,
+        "latest_opened": "2026-10-22T12:33:08",
+        "latest_closed": "2026-10-22T15:30:41",
+        "latest_created": "2026-10-22T15:35:14",
+        "closed_48h_n": 2,
+        "closed_14d_n": 4
+      },
+      {
+        "asset_class": "COMMODITY",
+        "source_system": "alpha_engine",
+        "n": 16,
+        "symbols": 8,
+        "latest_opened": "2026-10-22T14:17:07",
+        "latest_closed": "2026-10-22T15:30:38",
+        "latest_created": "2026-10-22T15:35:14",
+        "closed_48h_n": 2,
+        "closed_14d_n": 10
+      },
+      {
+        "asset_class": "BOND",
+        "source_system": "alpha_engine",
+        "n": 12,
+        "symbols": 3,
+        "latest_opened": "2026-10-14T14:12:13",
+        "latest_closed": "2026-10-14T22:25:58",
+        "latest_created": "2026-10-14T22:30:38",
+        "closed_48h_n": 0,
+        "closed_14d_n": 3
+      }
+    ],
+    "all_class_presence": [
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "CRYPTO",
+        "n": 66770
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "FOREX",
+        "n": 14895
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "EQUITY",
+        "n": 14197
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "PENNY_STOCK",
+        "n": 494
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "MEMECOIN",
+        "n": 2001
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "FUTURES",
+        "n": 8020
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "ETF",
+        "n": 1740
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "BOND",
+        "n": 214
+      },
+      {
+        "table_name": "at_raw_picks",
+        "asset_class": "UNKNOWN",
+        "n": 145
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "CRYPTO",
+        "n": 44247
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "MEMECOIN",
+        "n": 2454
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "EQUITY",
+        "n": 697
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "COMMODITY",
+        "n": 503
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "FOREX",
+        "n": 1856
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "BOND",
+        "n": 70
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "ETF",
+        "n": 165
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "FUTURES",
+        "n": 127
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "UNKNOWN",
+        "n": 25
+      },
+      {
+        "table_name": "at_signal_outcomes",
+        "asset_class": "",
+        "n": 178
+      }
+    ]
+  },
+  "limitations": [
+    "No raw_payload or credentials fetched or persisted. No trading_picks or strategy_perf_by_class query.",
+    "OPEN is database bookkeeping, not proof of executable/current/eligible picks.",
+    "Class labels retained as stored; no symbol-based reclassification or cross-table row identity reconciliation.",
+    "No raw-pick deduplication, net-cost adjustment, signal validity check, or production gate replication.",
+    "Full-history aggregates are bounded to at_raw_picks and at_signal_outcomes; all recent windows end at the fixed snapshot time."
+  ],
+  "snapshot": {
+    "snapshot_utc": "2026-10-22T22:31:05",
+    "db_now": "2026-10-22T22:31:05",
+    "session_timezone": "SYSTEM"
+  },
+  "completed_utc": "2026-10-22T22:31:08.296836+00:00",
+  "summary": {
+    "raw_requested_classes_n": 108331,
+    "raw_open_n": 258,
+    "raw_open_signal_older_7d_n": 0,
+    "raw_open_missing_signal_n": 4,
+    "raw_open_has_closed_at_n": 0,
+    "raw_open_missing_geometry_n": 0,
+    "raw_literal_closed_missing_pnl_n": 0,
+    "raw_terminal_missing_pnl_n": 10417,
+    "raw_terminal_missing_closed_at_n": 18622,
+    "raw_recent7d_geometry_unflagged_open_proxy_n": 254,
+    "outcome_requested_classes_n": 50119,
+    "outcome_closure_before_opened_n": 6,
+    "absent_raw_classes": [
+      "COMMODITY"
+    ],
+    "absent_outcome_classes": [
+      "PENNY_STOCK"
+    ]
+  },
+  "cohort_definitions": {
+    "snapshot": "Repeatable-read consistent snapshot of InnoDB tables; database UTC_TIMESTAMP and NOW matched. No reliance on metadata row estimates for exact counts.",
+    "raw_terminal_statuses": [
+      "WON",
+      "LOST",
+      "EXPIRED",
+      "CLOSED",
+      "ABANDONED"
+    ],
+    "recent_windows": "Inclusive [snapshot minus interval, snapshot]; 48h=2 DAY. Signal/recorded/closed timestamps are separately counted; NULL never qualifies.",
+    "raw_stale_open": "status=OPEN AND signal_timestamp < snapshot - 7 DAY; missing signal timestamps counted separately",
+    "geometry": "Strict positive entry/TP/SL; LONG: TP>entry>SL; SHORT: TP<entry<SL. An indicative sanity screen, not a replication of production gates.",
+    "recent_open_proxy": "OPEN, signal within last 7d, strict geometry, no closed_at, was_stale/was_banned/was_demoted coalesced to zero; explicitly NOT an executable-pick designation.",
+    "outcome_recent_source_union": "opened_at OR closed_at OR created_at within 30d; distinct from closed-at-only recent outcome counts.",
+    "raw_recent_sources_symbols": "signal_timestamp within 30d; no symbol-based class remapping.",
+    "missing_class": "No group row means exact zero rows in that table for the stored class label."
+  },
+  "validation": {
+    "status_counts_reconcile": true,
+    "raw_open_plus_terminal_reconciles": true,
+    "recent_windows_nested": true,
+    "recent_source_and_symbol_counts_reconcile": true,
+    "group_limits_not_reached": true,
+    "credentials_persisted": false,
+    "raw_payload_selected": false,
+    "database_mutations": false
+  }
+}

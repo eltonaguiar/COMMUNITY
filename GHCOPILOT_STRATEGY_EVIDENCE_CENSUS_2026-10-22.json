@@ -1,0 +1,3481 @@
+{
+ "generated_at_utc": "2026-10-22T22:09:08.614782Z",
+ "git_head": "876b6b831dfa53bbb357e97b4d30ec53897f6f27",
+ "snapshot_kind": "git archive blobs of pinned commit; extracted subset only; file list from git ls-tree",
+ "method": "static AST/regex over git-tracked files; no repo module imported; no scanner/generator run; no DB. Counts are LITERAL-KEY counts, not verified emitters.",
+ "tracked_files_total": 37988,
+ "tracked_py": 5273,
+ "workflows_total": 379,
+ "counts": {
+  "registry_literals_found_total": 263,
+  "registry_literals_alpha_engine": 196,
+  "alpha_registry_files": 167,
+  "alpha_registry_files_direct_import_by_production_or_smart_picks": 10,
+  "alpha_registry_files_string_ref_only": 5,
+  "alpha_registry_files_reachable_1hop_only": 75,
+  "alpha_registry_files_unreachable_1hop": 77,
+  "unique_literal_keys_alpha_registries": 1162,
+  "unique_literal_keys_direct_wired_registries": 549,
+  "unique_literal_keys_direct_or_string_wired": 594,
+  "unique_literal_keys_1hop_reachable_total": 815,
+  "unique_literal_keys_unreachable_registries": 591,
+  "config_STRATEGY_FAMILIES_entries": 361,
+  "config_distinct_families": 14,
+  "alpha_registry_keys_missing_from_STRATEGY_FAMILIES": 801,
+  "STRATEGY_FAMILIES_keys_not_in_alpha_registry_literals": 0,
+  "config_STRATEGY_WEIGHT_OVERRIDES": 30,
+  "config_BANNED_SOURCE_SYSTEMS": 4,
+  "config_BLACKLISTED_STRATEGIES": 27,
+  "config_BLACKLISTED_EXCHANGES": 1,
+  "config_STRATEGY_MIN_CONFIDENCE": 1,
+  "config_ZOMBIE_BLACKLIST": 2,
+  "config_STRATEGY_TRACK_ALIASES": 8,
+  "baby_strategies_py": 230,
+  "baby_strategies_meta_json": 84,
+  "baby_strategy_classes_ast": 204,
+  "paper_trading_strategies_py": 54,
+  "paper_trading_strategy_classes_ast": 104,
+  "paper_trading_files_total": 87,
+  "hypotheses_list": 99,
+  "hypothesis_registry_sections": {
+   "hypotheses": 99,
+   "fork2_new_signals": 5,
+   "option3_structure_alpha": 1,
+   "archived_failures": 3,
+   "strand_b_new_input_class": 1,
+   "notes": 4,
+   "unrealized_research": 2,
+   "c2_exchange_flow_spread": 1,
+   "free_api_hypotheses_2026_05_18": 7,
+   "c2_fullbook": 1,
+   "h020_cross_exchange_premium": 1,
+   "et1_etf_creation_redemption": 1,
+   "co1_commodity_inventory_surprise": 1,
+   "e1_insider_cluster_buy": 3,
+   "local_harvest_2026_05_19": 3,
+   "tier2_2026_05_19": 3,
+   "mining_difficulty_lag_2026_05_19": 4,
+   "h040_equity_sector_momentum": 1
+  },
+  "hypotheses_with_acceptance_criteria": 92,
+  "hypotheses_with_economic_prior": 86,
+  "hypotheses_with_data_sample_lock": 42,
+  "screening_artifact_counts": {
+   "strategy_tier_tracker_reports": 9,
+   "money_ready_reports": 13,
+   "deep_dive_reports": 23,
+   "strategy_investigation_docs": 10,
+   "pf_registry_files": 7,
+   "strategy_symbol_edge_registry": 3,
+   "money_ready_verdict_files": 2,
+   "cpcv_pbo_results": 2,
+   "negative_knowledge": 1,
+   "quant_strategy_review_reports": 0,
+   "strategy_hunt_cycles": 1
+  },
+  "n_paper_candidate_surface_files": 166,
+  "n_paper_candidate_workflows": 77
+ },
+ "hypothesis_by_class": {
+  "COMMODITY": 15,
+  "EQUITY": 18,
+  "ETF": 9,
+  "FUTURES": 5,
+  "CRYPTO": 23,
+  "FOREX": 13,
+  "BOND": 4,
+  "CHEAP_STOCKS": 3,
+  "PENNY_STOCK": 3,
+  "MEME": 3,
+  "MULTI": 2,
+  "SPORTS": 1
+ },
+ "hypothesis_by_normalized_status": {
+  "REJECTED": 2,
+  "SHADOW_IMPLEMENTATION": 1,
+  "SHADOW_LIVE": 1,
+  "HARNESS_REJECTED": 1,
+  "FAILED_ARCHIVED": 1,
+  "KILLED": 2,
+  "TESTED_KILL": 2,
+  "UNTESTED": 8,
+  "UNTESTED_DATA_GAP": 2,
+  "DATA_GAP": 1,
+  "TESTED_WEAK": 2,
+  "TESTED_PASS": 1,
+  "PRE_REGISTERED": 16,
+  "PAPER_PILOT": 7,
+  "TESTED_PASS_BACKTEST_FORWARD_PENDING": 1,
+  "REGISTERED_BLOCKED_ON_DATA": 1,
+  "CONTROL_FAILED_PENDING_CLEAN_ENTRY": 1,
+  "FORWARD_OBSERVATION": 19,
+  "REGISTERED_UNTESTED": 3,
+  "CLOSED": 1,
+  "FORWARD_SHADOW": 7,
+  "REFUTED": 15,
+  "FORWARD_ACCRUING": 1,
+  "SUPPORTED": 1,
+  "NULL": 2
+ },
+ "hypothesis_class_x_status": {
+  "COMMODITY": {
+   "REJECTED": 1,
+   "HARNESS_REJECTED": 1,
+   "TESTED_KILL": 1,
+   "PRE_REGISTERED": 2,
+   "PAPER_PILOT": 1,
+   "FORWARD_OBSERVATION": 2,
+   "UNTESTED": 1,
+   "REGISTERED_UNTESTED": 1,
+   "FORWARD_SHADOW": 1,
+   "REFUTED": 4
+  },
+  "EQUITY": {
+   "SHADOW_IMPLEMENTATION": 1,
+   "KILLED": 2,
+   "UNTESTED": 2,
+   "UNTESTED_DATA_GAP": 1,
+   "TESTED_PASS": 1,
+   "PRE_REGISTERED": 4,
+   "PAPER_PILOT": 1,
+   "FORWARD_OBSERVATION": 2,
+   "FORWARD_SHADOW": 2,
+   "REFUTED": 2
+  },
+  "ETF": {
+   "SHADOW_LIVE": 1,
+   "TESTED_WEAK": 1,
+   "PAPER_PILOT": 1,
+   "PRE_REGISTERED": 2,
+   "TESTED_PASS_BACKTEST_FORWARD_PENDING": 1,
+   "FORWARD_OBSERVATION": 2,
+   "UNTESTED": 1
+  },
+  "FUTURES": {
+   "FAILED_ARCHIVED": 1,
+   "PAPER_PILOT": 1,
+   "FORWARD_OBSERVATION": 2,
+   "PRE_REGISTERED": 1
+  },
+  "CRYPTO": {
+   "REJECTED": 1,
+   "TESTED_KILL": 1,
+   "UNTESTED": 2,
+   "UNTESTED_DATA_GAP": 1,
+   "DATA_GAP": 1,
+   "PAPER_PILOT": 1,
+   "REGISTERED_BLOCKED_ON_DATA": 1,
+   "CONTROL_FAILED_PENDING_CLEAN_ENTRY": 1,
+   "FORWARD_OBSERVATION": 1,
+   "PRE_REGISTERED": 1,
+   "REGISTERED_UNTESTED": 2,
+   "CLOSED": 1,
+   "FORWARD_SHADOW": 2,
+   "FORWARD_ACCRUING": 1,
+   "NULL": 1,
+   "REFUTED": 5
+  },
+  "FOREX": {
+   "TESTED_WEAK": 1,
+   "PRE_REGISTERED": 2,
+   "PAPER_PILOT": 1,
+   "FORWARD_OBSERVATION": 2,
+   "UNTESTED": 2,
+   "REFUTED": 3,
+   "FORWARD_SHADOW": 2
+  },
+  "BOND": {
+   "PAPER_PILOT": 1,
+   "FORWARD_OBSERVATION": 2,
+   "PRE_REGISTERED": 1
+  },
+  "CHEAP_STOCKS": {
+   "FORWARD_OBSERVATION": 2,
+   "PRE_REGISTERED": 1
+  },
+  "PENNY_STOCK": {
+   "FORWARD_OBSERVATION": 2,
+   "PRE_REGISTERED": 1
+  },
+  "MEME": {
+   "FORWARD_OBSERVATION": 2,
+   "PRE_REGISTERED": 1
+  },
+  "MULTI": {
+   "SUPPORTED": 1,
+   "NULL": 1
+  },
+  "SPORTS": {
+   "REFUTED": 1
+  }
+ },
+ "hypothesis_top_families": [
+  [
+   "june2026_enhanced_v2",
+   20
+  ],
+  [
+   "cross_sectional_momentum",
+   2
+  ],
+  [
+   "carry_trade",
+   2
+  ],
+  [
+   null,
+   2
+  ],
+  [
+   "cot_commercial_hedger",
+   2
+  ],
+  [
+   "COT_positioning",
+   1
+  ],
+  [
+   "PEAD",
+   1
+  ],
+  [
+   "inventory_surprise_roll_yield",
+   1
+  ],
+  [
+   "futures_momentum_anti_signal_investigation",
+   1
+  ],
+  [
+   "options_iv_skew_momentum",
+   1
+  ],
+  [
+   "options_dealer_gamma",
+   1
+  ],
+  [
+   "volatility_cluster_mean_reversion",
+   1
+  ],
+  [
+   "funding_settlement_pressure_timing",
+   1
+  ],
+  [
+   "inventory_direction_gate",
+   1
+  ],
+  [
+   "exchange_netflow_cross_sectional",
+   1
+  ]
+ ],
+ "hypothesis_mentions": {
+  "copy_trader": {
+   "n": 3,
+   "ids": [
+    "H-001",
+    "H-101",
+    "H-105"
+   ]
+  },
+  "reverse_engineer_or_inverse": {
+   "n": 4,
+   "ids": [
+    "H-BABY-EQUITY-VT-PATTERN-SWEEP-001",
+    "H-20260612-futures_tsmom_volscaled_v2",
+    "H-112",
+    "H-136"
+   ]
+  },
+  "taa_tactical_rotation": {
+   "n": 8,
+   "ids": [
+    "H-037",
+    "H-BABY-EQUITY-TWO-BAR-RSI-001",
+    "H-102",
+    "H-103",
+    "H-20260612-equity_sector_rotation_vix_v2",
+    "H-20260612-etf_dual_momentum_vix_v2",
+    "H-108",
+    "H-109"
+   ]
+  },
+  "etf_class": {
+   "n": 9,
+   "ids": [
+    "H-003",
+    "H-037",
+    "H-043",
+    "H-102",
+    "H-103",
+    "H-20260612-etf_dual_momentum_vix_v2",
+    "H-20260612-etf_sector_rs_weekly_v2",
+    "H-20260612-etf_low_vol_anomaly_monthly",
+    "H-109"
+   ]
+  }
+ },
+ "config_family_distribution": [
+  [
+   "momentum",
+   80
+  ],
+  [
+   "volatility",
+   59
+  ],
+  [
+   "sentiment",
+   55
+  ],
+  [
+   "trend",
+   46
+  ],
+  [
+   "structure",
+   34
+  ],
+  [
+   "volume",
+   31
+  ],
+  [
+   "mean_reversion",
+   24
+  ],
+  [
+   "on_chain",
+   18
+  ],
+  [
+   "community",
+   4
+  ],
+  [
+   "carry",
+   3
+  ],
+  [
+   "regime",
+   3
+  ],
+  [
+   "macro",
+   2
+  ],
+  [
+   "earnings",
+   1
+  ],
+  [
+   "commodity_seasonal",
+   1
+  ]
+ ],
+ "config_policy_lists": {
+  "BANNED_SOURCE_SYSTEMS": [
+   "claude_gainer_st",
+   "ml_crypto_predictor",
+   "kimi_direct",
+   "gpt4_1"
+  ],
+  "BLACKLISTED_STRATEGIES": [
+   "binance_smart_money",
+   "hl_funding_fade",
+   "quan_engine_scalp",
+   "claude_gainer_st",
+   "ml_crypto_predictor",
+   "ml_crypto_predictor",
+   "rapid_fire",
+   "battleground_luxalgo",
+   "multi_period_rsi_confluence_eth",
+   "ml_breakout",
+   "genome_mutations",
+   "multi_asset_scanner",
+   "ctar_replicator",
+   "inverse_carry_contrarian",
+   "carry_trade_momentum",
+   "forex_carry_momentum",
+   "forex_carry_ppp",
+   "myfxbook_retail_contrarian",
+   "forex_carry_bb_hybrid",
+   "futures_momentum",
+   "ig_contrarian_sentiment",
+   "stocks_rsi2_pullback",
+   "prediction_market_consensus",
+   "fx_smart_carry_trade_momentum",
+   "goldmine_6x_consensus",
+   "commodity_momentum",
+   "cta_cross_asset_tsmom"
+  ],
+  "BLACKLISTED_EXCHANGES": [
+   "bitget"
+  ]
+ },
+ "registries": [
+  {
+   "file": "alpha_engine/advanced_quant_strategies.py",
+   "name": "ADVANCED_QUANT_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/advanced_statistical_strategies.py",
+   "name": "ADVANCED_STATISTICAL_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/advanced_strategies.py",
+   "name": "ADVANCED_STRATEGIES",
+   "n": 13
+  },
+  {
+   "file": "alpha_engine/antigravity_strategies.py",
+   "name": "ANTIGRAVITY_STRATEGIES",
+   "n": 19
+  },
+  {
+   "file": "alpha_engine/asset_class.py",
+   "name": "CRYPTO_STRATEGY_HINTS",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/asset_class.py",
+   "name": "COMMODITY_STRATEGY_HINTS",
+   "n": 12
+  },
+  {
+   "file": "alpha_engine/asset_class.py",
+   "name": "EQUITY_STRATEGY_HINTS",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/asset_class.py",
+   "name": "FOREX_STRATEGY_HINTS",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/auto_tuner.py",
+   "name": "LOW_CONFIDENCE_STRATEGIES",
+   "n": 58
+  },
+  {
+   "file": "alpha_engine/auto_tuner.py",
+   "name": "DIRECTION_RESTRICTED_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/backtest_kira_strategies.py",
+   "name": "STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/backtest_kira_strategies.py",
+   "name": "THEORY_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/backtest_multi_strategy.py",
+   "name": "STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/backtest_new_research_strategies.py",
+   "name": "STRATEGY_REGISTRY",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/basis_carry.py",
+   "name": "BASIS_CARRY_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/batch2_strategies.py",
+   "name": "BATCH2_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/binance_sentiment.py",
+   "name": "SENTIMENT_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/bond_scanner.py",
+   "name": "STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/bond_strategies.py",
+   "name": "BOND_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/bond_yield_curve_inversion.py",
+   "name": "BOND_YIELD_CURVE_INVERSION_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/candlestick_patterns.py",
+   "name": "CANDLESTICK_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/cascade_contrarian.py",
+   "name": "CASCADE_CONTRARIAN_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/cerebrus_strategies.py",
+   "name": "CEREBRUS_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/challenge_v3.py",
+   "name": "STRATEGY_FUNCS",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/cointegration_pairs.py",
+   "name": "COINTEGRATION_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/commodities_strategies.py",
+   "name": "COMMODITY_STRATEGIES",
+   "n": 9
+  },
+  {
+   "file": "alpha_engine/community_strategies.py",
+   "name": "COMMUNITY_CRYPTO_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/community_strategies.py",
+   "name": "COMMUNITY_FOREX_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/community_strategies.py",
+   "name": "COMMUNITY_EQUITY_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/concept_scorer.py",
+   "name": "_GATED_FAMILIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/concept_scorer.py",
+   "name": "_UNGATED_FAMILIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "STRATEGY_WEIGHT_OVERRIDES",
+   "n": 30
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "BLACKLISTED_STRATEGIES",
+   "n": 27
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "STRATEGY_MIN_CONFIDENCE",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "INDICATOR_FAMILIES",
+   "n": 14
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "STRATEGY_FAMILIES",
+   "n": 361
+  },
+  {
+   "file": "alpha_engine/config.py",
+   "name": "STRATEGY_TRACK_ALIASES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/confluence_engine.py",
+   "name": "STRATEGY_TYPE",
+   "n": 71
+  },
+  {
+   "file": "alpha_engine/confluence_engine.py",
+   "name": "HARD_KILL_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/confluence_strategies.py",
+   "name": "CONFLUENCE_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/conviction_stack_patch.py",
+   "name": "NON_CRYPTO_TIER_B_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/conviction_stack_patch.py",
+   "name": "NON_CRYPTO_TIER_A_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/cot_positioning.py",
+   "name": "COT_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/cross_asset_edge_discovery.py",
+   "name": "STRATEGIES",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/crypto_edge_strategies.py",
+   "name": "CRYPTO_EDGE_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/crypto_enhancement_pack.py",
+   "name": "CRYPTO_ENHANCEMENT_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/crypto_risk_gates.py",
+   "name": "LOW_CONFIDENCE_STRATEGIES",
+   "n": 12
+  },
+  {
+   "file": "alpha_engine/crypto_risk_gates.py",
+   "name": "HARD_KILL_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/crypto_strategies.py",
+   "name": "CRYPTO_STRATEGIES",
+   "n": 37
+  },
+  {
+   "file": "alpha_engine/crypto_strategy_harness.py",
+   "name": "CRYPTO_STRATEGY_HINTS",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/cryptopanic_feargreed.py",
+   "name": "CRYPTOPANIC_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/cta_bridge.py",
+   "name": "CTA_BRIDGE_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/cycle16_strategies.py",
+   "name": "CYCLE16_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/cycle17_strategies.py",
+   "name": "CYCLE17_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/cyclic_momentum_strategy.py",
+   "name": "CYCLIC_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/cyclical_strategies.py",
+   "name": "CYCLICAL_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/data/bucket_backtest.py",
+   "name": "STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/divergence_strategy.py",
+   "name": "TECHNICAL_DIVERGENCE_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/dna_mutations.py",
+   "name": "DNA_MUTATION_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/dna_revival.py",
+   "name": "STRATEGY_CONFIGS",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/ema_retracement_strategy.py",
+   "name": "EMA_RETRACEMENT_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/emergency_mutations.py",
+   "name": "STRATEGY_EDGE_TYPE",
+   "n": 15
+  },
+  {
+   "file": "alpha_engine/emitter_discipline.py",
+   "name": "HARD_KILL_STRATEGIES",
+   "n": 30
+  },
+  {
+   "file": "alpha_engine/emitter_discipline.py",
+   "name": "MONITOR_ONLY_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/emitter_discipline.py",
+   "name": "PROVEN_STRATEGIES",
+   "n": 35
+  },
+  {
+   "file": "alpha_engine/enhanced_strategies.py",
+   "name": "ENHANCED_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/equity_strategies.py",
+   "name": "_RAW_EQUITY_STRATEGIES",
+   "n": 15
+  },
+  {
+   "file": "alpha_engine/etf_scanner.py",
+   "name": "STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/etf_strategies.py",
+   "name": "ETF_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/event_strategies.py",
+   "name": "EVENT_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/exchange_flow_strategies.py",
+   "name": "EXCHANGE_FLOW_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/experimental_strategies.py",
+   "name": "EXPERIMENTAL_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/fast_regime_detector.py",
+   "name": "REGIME_STRATEGY_ROUTING",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/fast_regime_detector.py",
+   "name": "_STRATEGY_TYPE_MAP",
+   "n": 27
+  },
+  {
+   "file": "alpha_engine/fast_variants.py",
+   "name": "FAST_VARIANT_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/flow_behavioral_strategies.py",
+   "name": "FLOW_BEHAVIORAL_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/forex_backtest.py",
+   "name": "STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/forex_smart_picks.py",
+   "name": "STRATEGY_STATS",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/forex_smart_picks.py",
+   "name": "ALL_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/forex_strategies.py",
+   "name": "FOREX_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/forward_test_new_strategies.py",
+   "name": "TRACKED_STRATEGIES",
+   "n": 13
+  },
+  {
+   "file": "alpha_engine/fundamental_valuation_strategies.py",
+   "name": "FUNDAMENTAL_VALUATION_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/futures_strategies.py",
+   "name": "FUTURES_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/gainer_capture_strategy.py",
+   "name": "GAINER_CAPTURE_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/garch_volatility.py",
+   "name": "GARCH_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/generate_wf_audit_picks.py",
+   "name": "CANDIDATE_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/high_accuracy_strategies.py",
+   "name": "HIGH_ACCURACY_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/hoffman_strategy.py",
+   "name": "HOFFMAN_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/hybrid_bonus_backtest.py",
+   "name": "STRATEGY_FAMILIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/hybrid_strategies.py",
+   "name": "HYBRID_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/incubator_strategies.py",
+   "name": "INCUBATOR_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/institutional_onchain_strategies.py",
+   "name": "INSTITUTIONAL_ONCHAIN_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/integrate_new_strategies.py",
+   "name": "NEW_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/integrate_new_strategies.py",
+   "name": "FAILED_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/june2026_research_candidates.py",
+   "name": "NEW_STRATEGY_BY_CLASS",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/justin_bravo_strategies.py",
+   "name": "JUSTIN_BRAVO_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/justin_bravo_strategies_v2.py",
+   "name": "JUSTIN_BRAVO_STRATEGIES_V2",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/keltner_evolved.py",
+   "name": "KELTNER_EVOLVED_STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/kira_dna_scalp_variants.py",
+   "name": "DNA_SCALP_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/live_forward_test.py",
+   "name": "STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/lunarcrush_signal.py",
+   "name": "LUNARCRUSH_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/macd_crossover_strategy.py",
+   "name": "MACD_CROSSOVER_STRATEGY",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/market_microstructure_strategies.py",
+   "name": "MICROSTRUCTURE_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/mc_quality_purge.py",
+   "name": "PROVEN_ML_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/mercury_ai_strategies.py",
+   "name": "MERCURY_AI_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/meta_labeler.py",
+   "name": "STRATEGY_WR",
+   "n": 22
+  },
+  {
+   "file": "alpha_engine/microstructure_momentum.py",
+   "name": "MICROSTRUCTURE_MOMENTUM_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/ml_health_monitor.py",
+   "name": "ML_STRATEGY_NAMES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/ml_strategy_reviver.py",
+   "name": "PROVEN_STRATEGIES",
+   "n": 11
+  },
+  {
+   "file": "alpha_engine/ml_strategy_reviver.py",
+   "name": "INVERSE_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/momentum_rider_strategy.py",
+   "name": "MOMENTUM_RIDER_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/momentum_tracker.py",
+   "name": "MOMENTUM_TRACKER_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/multi_signal_confluence.py",
+   "name": "CONFLUENCE_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/negative_knowledge_registry.py",
+   "name": "BLOCKED_STRATEGY_SYSTEMS",
+   "n": 16
+  },
+  {
+   "file": "alpha_engine/new_crypto_strategies_20.py",
+   "name": "NEW_CRYPTO_STRATEGIES_20",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/new_equity_commodity_strategies_20.py",
+   "name": "NEW_EQUITY_COMMODITY_STRATEGIES_20",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/new_forex_strategies_20.py",
+   "name": "NEW_FOREX_STRATEGIES_20",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/new_proven_strategies.py",
+   "name": "STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/new_strategies/connors_rsi2_equity_scanner.py",
+   "name": "STRATEGY_META",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/new_strategies/strategy_designs.py",
+   "name": "STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/new_strategies/world_class_strategies.py",
+   "name": "STRATEGIES",
+   "n": 7
+  },
+  {
+   "file": "alpha_engine/nextgen_strategies.py",
+   "name": "NEXTGEN_STRATEGIES",
+   "n": 14
+  },
+  {
+   "file": "alpha_engine/non_crypto_policy.py",
+   "name": "NON_CRYPTO_STRATEGY_POLICY",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/novel_strategies.py",
+   "name": "NOVEL_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/onchain_crypto.py",
+   "name": "ONCHAIN_CRYPTO_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/onchain_macro_strategies.py",
+   "name": "ONCHAIN_MACRO_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/onchain_strategies.py",
+   "name": "ONCHAIN_STRATEGIES",
+   "n": 13
+  },
+  {
+   "file": "alpha_engine/opposite_day_strategies.py",
+   "name": "OPPOSITE_DAY_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/optimal_entry_finder.py",
+   "name": "PROVEN_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/optimal_entry_finder.py",
+   "name": "RELIABLE_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/optimized_backtest.py",
+   "name": "STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/optimized_backtest.py",
+   "name": "STRATEGY_CLASSES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/options_signals.py",
+   "name": "OPTIONS_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/orderbook_strategies.py",
+   "name": "ORDERBOOK_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/pairs_pick_generator.py",
+   "name": "PAIRS_PICK_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/pattern_cnn_lite.py",
+   "name": "CNN_LITE_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/pattern_strategies.py",
+   "name": "PATTERN_STRATEGIES",
+   "n": 9
+  },
+  {
+   "file": "alpha_engine/portfolio_tracker_copytrader.py",
+   "name": "ACCEPTED_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/portfolio_tracker_copytrader.py",
+   "name": "STRATEGY_KEYWORDS",
+   "n": 15
+  },
+  {
+   "file": "alpha_engine/prediction_market_whales.py",
+   "name": "PREDICTION_MARKET_WHALE_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/production_scanner.py",
+   "name": "_COPY_TRADER_STRATEGY_TAGS",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/production_scanner.py",
+   "name": "_BOOSTED_NON_CRYPTO_STRATEGIES",
+   "n": 15
+  },
+  {
+   "file": "alpha_engine/prove_winners.py",
+   "name": "STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/proven_edge_strategies.py",
+   "name": "PROVEN_EDGE_STRATEGIES",
+   "n": 11
+  },
+  {
+   "file": "alpha_engine/proven_forex_strategies.py",
+   "name": "PROVEN_FOREX_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/proven_research_strategies.py",
+   "name": "PROVEN_RESEARCH_STRATEGIES",
+   "n": 22
+  },
+  {
+   "file": "alpha_engine/proven_scanner_strategies.py",
+   "name": "PROVEN_STRATEGIES",
+   "n": 11
+  },
+  {
+   "file": "alpha_engine/quant_algorithms.py",
+   "name": "QUANT_ALGORITHM_STRATEGIES",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/quant_research_strategies.py",
+   "name": "QUANT_RESEARCH_STRATEGIES",
+   "n": 13
+  },
+  {
+   "file": "alpha_engine/quant_stack_strategy.py",
+   "name": "QUANT_STACK_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/quant_strategies.py",
+   "name": "QUANT_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/range_breakout.py",
+   "name": "RANGE_BREAKOUT_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/real_data_backtest.py",
+   "name": "STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/real_money_tracker.py",
+   "name": "PROVEN_STRATEGIES",
+   "n": 11
+  },
+  {
+   "file": "alpha_engine/regime_detector.py",
+   "name": "STRATEGY_REGIME_COMPATIBILITY",
+   "n": 13
+  },
+  {
+   "file": "alpha_engine/regime_ensemble.py",
+   "name": "STRATEGY_TAGS",
+   "n": 43
+  },
+  {
+   "file": "alpha_engine/regime_filter.py",
+   "name": "_STRATEGY_REGIME_MAP",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/regime_router.py",
+   "name": "STRATEGY_TYPES",
+   "n": 65
+  },
+  {
+   "file": "alpha_engine/regime_router.py",
+   "name": "REGIME_STRATEGY_MAP",
+   "n": 9
+  },
+  {
+   "file": "alpha_engine/scanner.py",
+   "name": "STRATEGY_REGIME_MAP",
+   "n": 185
+  },
+  {
+   "file": "alpha_engine/sentiment_divergence.py",
+   "name": "DIVERGENCE_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/session_breakout.py",
+   "name": "SESSION_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/short_trade_validator.py",
+   "name": "TOXIC_SHORT_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/sideways_market_strategies.py",
+   "name": "SIDEWAYS_MARKET_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/smart_picks_engine.py",
+   "name": "CRYPTO_PROVEN_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/smart_picks_engine.py",
+   "name": "CRYPTO_TOXIC_STRATEGIES",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/smart_picks_engine.py",
+   "name": "CRYPTO_STRATEGY_HINTS",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/spike_predictor.py",
+   "name": "SPIKE_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/statistical_strategies.py",
+   "name": "STATISTICAL_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/strategies/institutional_vector_signals.py",
+   "name": "INSTITUTIONAL_VECTOR_STRATEGIES",
+   "n": 20
+  },
+  {
+   "file": "alpha_engine/strategy_pair_affinity.py",
+   "name": "STRATEGY_MAP",
+   "n": 8
+  },
+  {
+   "file": "alpha_engine/super_strategies.py",
+   "name": "SUPER_STRATEGIES",
+   "n": 10
+  },
+  {
+   "file": "alpha_engine/supplemental_data_strategies.py",
+   "name": "SUPPLEMENTAL_DATA_STRATEGIES",
+   "n": 9
+  },
+  {
+   "file": "alpha_engine/survivor_backtest.py",
+   "name": "STRATEGIES",
+   "n": 29
+  },
+  {
+   "file": "alpha_engine/survivor_strategies.py",
+   "name": "SURVIVOR_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/sustained_gainer_algorithm.py",
+   "name": "SUSTAINED_GAINER_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/token_unlock_signals.py",
+   "name": "TOKEN_UNLOCK_SIGNAL_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/tradingview_strategies.py",
+   "name": "TV_RESEARCH_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/tradingview_strategies_wave2.py",
+   "name": "TV_RESEARCH_STRATEGIES_W2",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/tradingview_strategies_wave3.py",
+   "name": "TV_RESEARCH_STRATEGIES_W3",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/tradingview_strategies_wave4.py",
+   "name": "TV_RESEARCH_STRATEGIES_W4",
+   "n": 3
+  },
+  {
+   "file": "alpha_engine/trend_catcher.py",
+   "name": "TREND_CATCHER_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/ttm_squeeze.py",
+   "name": "TTM_SQUEEZE_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/tvl_momentum_strategy.py",
+   "name": "TVL_MOMENTUM_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/unified_backtest.py",
+   "name": "STRATEGY_REGISTRY",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/unique_edge_live.py",
+   "name": "UNIQUE_EDGE_CRYPTO_STRATEGIES",
+   "n": 5
+  },
+  {
+   "file": "alpha_engine/unlock_event_strategy.py",
+   "name": "TOKEN_UNLOCK_EVENT_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/untapped_strategies.py",
+   "name": "UNTAPPED_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/volatility_mean_reversion.py",
+   "name": "VOL_MR_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/volume_microstructure_strategies.py",
+   "name": "VOLUME_MICRO_STRATEGIES",
+   "n": 6
+  },
+  {
+   "file": "alpha_engine/vpin_signal.py",
+   "name": "VPIN_STRATEGIES",
+   "n": 1
+  },
+  {
+   "file": "alpha_engine/vt_baby_strategies.py",
+   "name": "VT_BABY_STRATEGIES",
+   "n": 15
+  },
+  {
+   "file": "alpha_engine/walk_forward_gate.py",
+   "name": "_PRESEED_STRATEGIES",
+   "n": 4
+  },
+  {
+   "file": "alpha_engine/wave456_strategies.py",
+   "name": "WAVE456_STRATEGIES",
+   "n": 12
+  },
+  {
+   "file": "alpha_engine/wavelet_cycle_strategies.py",
+   "name": "WAVELET_CYCLE_STRATEGIES",
+   "n": 2
+  },
+  {
+   "file": "alpha_engine/world_class_strategies_v21.py",
+   "name": "WORLD_CLASS_V21_STRATEGIES",
+   "n": 3
+  }
+ ],
+ "registry_wiring_tiers": {
+  "direct_import": [
+   "alpha_engine/config.py",
+   "alpha_engine/crypto_risk_gates.py",
+   "alpha_engine/emitter_discipline.py",
+   "alpha_engine/fast_regime_detector.py",
+   "alpha_engine/ml_health_monitor.py",
+   "alpha_engine/non_crypto_policy.py",
+   "alpha_engine/regime_router.py",
+   "alpha_engine/scanner.py",
+   "alpha_engine/short_trade_validator.py",
+   "alpha_engine/strategy_pair_affinity.py"
+  ],
+  "string_ref": [
+   "alpha_engine/asset_class.py",
+   "alpha_engine/confluence_strategies.py",
+   "alpha_engine/cot_positioning.py",
+   "alpha_engine/incubator_strategies.py",
+   "alpha_engine/volatility_mean_reversion.py"
+  ],
+  "reach_1hop": [
+   "alpha_engine/advanced_quant_strategies.py",
+   "alpha_engine/advanced_statistical_strategies.py",
+   "alpha_engine/advanced_strategies.py",
+   "alpha_engine/antigravity_strategies.py",
+   "alpha_engine/auto_tuner.py",
+   "alpha_engine/binance_sentiment.py",
+   "alpha_engine/bond_strategies.py",
+   "alpha_engine/candlestick_patterns.py",
+   "alpha_engine/cascade_contrarian.py",
+   "alpha_engine/cointegration_pairs.py",
+   "alpha_engine/commodities_strategies.py",
+   "alpha_engine/concept_scorer.py",
+   "alpha_engine/confluence_engine.py",
+   "alpha_engine/crypto_edge_strategies.py",
+   "alpha_engine/crypto_enhancement_pack.py",
+   "alpha_engine/crypto_strategies.py",
+   "alpha_engine/cryptopanic_feargreed.py",
+   "alpha_engine/cta_bridge.py",
+   "alpha_engine/cycle16_strategies.py",
+   "alpha_engine/cycle17_strategies.py",
+   "alpha_engine/divergence_strategy.py",
+   "alpha_engine/dna_mutations.py",
+   "alpha_engine/ema_retracement_strategy.py",
+   "alpha_engine/enhanced_strategies.py",
+   "alpha_engine/equity_strategies.py",
+   "alpha_engine/etf_strategies.py",
+   "alpha_engine/fast_variants.py",
+   "alpha_engine/flow_behavioral_strategies.py",
+   "alpha_engine/forex_strategies.py",
+   "alpha_engine/fundamental_valuation_strategies.py",
+   "alpha_engine/futures_strategies.py",
+   "alpha_engine/gainer_capture_strategy.py",
+   "alpha_engine/garch_volatility.py",
+   "alpha_engine/high_accuracy_strategies.py",
+   "alpha_engine/hoffman_strategy.py",
+   "alpha_engine/hybrid_strategies.py",
+   "alpha_engine/institutional_onchain_strategies.py",
+   "alpha_engine/keltner_evolved.py",
+   "alpha_engine/kira_dna_scalp_variants.py",
+   "alpha_engine/lunarcrush_signal.py",
+   "alpha_engine/meta_labeler.py",
+   "alpha_engine/microstructure_momentum.py",
+   "alpha_engine/multi_signal_confluence.py",
+   "alpha_engine/novel_strategies.py",
+   "alpha_engine/onchain_macro_strategies.py",
+   "alpha_engine/options_signals.py",
+   "alpha_engine/orderbook_strategies.py",
+   "alpha_engine/pairs_pick_generator.py",
+   "alpha_engine/pattern_cnn_lite.py",
+   "alpha_engine/prediction_market_whales.py",
+   "alpha_engine/proven_edge_strategies.py",
+   "alpha_engine/quant_algorithms.py",
+   "alpha_engine/quant_research_strategies.py",
+   "alpha_engine/quant_stack_strategy.py",
+   "alpha_engine/quant_strategies.py",
+   "alpha_engine/range_breakout.py",
+   "alpha_engine/sentiment_divergence.py",
+   "alpha_engine/session_breakout.py",
+   "alpha_engine/sideways_market_strategies.py",
+   "alpha_engine/super_strategies.py",
+   "alpha_engine/supplemental_data_strategies.py",
+   "alpha_engine/survivor_strategies.py",
+   "alpha_engine/sustained_gainer_algorithm.py",
+   "alpha_engine/token_unlock_signals.py",
+   "alpha_engine/trend_catcher.py",
+   "alpha_engine/ttm_squeeze.py",
+   "alpha_engine/tvl_momentum_strategy.py",
+   "alpha_engine/unlock_event_strategy.py",
+   "alpha_engine/untapped_strategies.py",
+   "alpha_engine/volume_microstructure_strategies.py",
+   "alpha_engine/vpin_signal.py",
+   "alpha_engine/vt_baby_strategies.py",
+   "alpha_engine/wave456_strategies.py",
+   "alpha_engine/wavelet_cycle_strategies.py",
+   "alpha_engine/world_class_strategies_v21.py"
+  ],
+  "unreachable": [
+   "alpha_engine/backtest_kira_strategies.py",
+   "alpha_engine/backtest_multi_strategy.py",
+   "alpha_engine/backtest_new_research_strategies.py",
+   "alpha_engine/basis_carry.py",
+   "alpha_engine/batch2_strategies.py",
+   "alpha_engine/bond_scanner.py",
+   "alpha_engine/bond_yield_curve_inversion.py",
+   "alpha_engine/cerebrus_strategies.py",
+   "alpha_engine/challenge_v3.py",
+   "alpha_engine/community_strategies.py",
+   "alpha_engine/conviction_stack_patch.py",
+   "alpha_engine/cross_asset_edge_discovery.py",
+   "alpha_engine/crypto_strategy_harness.py",
+   "alpha_engine/cyclic_momentum_strategy.py",
+   "alpha_engine/cyclical_strategies.py",
+   "alpha_engine/data/bucket_backtest.py",
+   "alpha_engine/dna_revival.py",
+   "alpha_engine/emergency_mutations.py",
+   "alpha_engine/etf_scanner.py",
+   "alpha_engine/event_strategies.py",
+   "alpha_engine/exchange_flow_strategies.py",
+   "alpha_engine/experimental_strategies.py",
+   "alpha_engine/forex_backtest.py",
+   "alpha_engine/forex_smart_picks.py",
+   "alpha_engine/forward_test_new_strategies.py",
+   "alpha_engine/generate_wf_audit_picks.py",
+   "alpha_engine/hybrid_bonus_backtest.py",
+   "alpha_engine/integrate_new_strategies.py",
+   "alpha_engine/june2026_research_candidates.py",
+   "alpha_engine/justin_bravo_strategies.py",
+   "alpha_engine/justin_bravo_strategies_v2.py",
+   "alpha_engine/live_forward_test.py",
+   "alpha_engine/macd_crossover_strategy.py",
+   "alpha_engine/market_microstructure_strategies.py",
+   "alpha_engine/mc_quality_purge.py",
+   "alpha_engine/mercury_ai_strategies.py",
+   "alpha_engine/ml_strategy_reviver.py",
+   "alpha_engine/momentum_rider_strategy.py",
+   "alpha_engine/momentum_tracker.py",
+   "alpha_engine/negative_knowledge_registry.py",
+   "alpha_engine/new_crypto_strategies_20.py",
+   "alpha_engine/new_equity_commodity_strategies_20.py",
+   "alpha_engine/new_forex_strategies_20.py",
+   "alpha_engine/new_proven_strategies.py",
+   "alpha_engine/new_strategies/connors_rsi2_equity_scanner.py",
+   "alpha_engine/new_strategies/strategy_designs.py",
+   "alpha_engine/new_strategies/world_class_strategies.py",
+   "alpha_engine/nextgen_strategies.py",
+   "alpha_engine/onchain_crypto.py",
+   "alpha_engine/onchain_strategies.py",
+   "alpha_engine/opposite_day_strategies.py",
+   "alpha_engine/optimal_entry_finder.py",
+   "alpha_engine/optimized_backtest.py",
+   "alpha_engine/pattern_strategies.py",
+   "alpha_engine/portfolio_tracker_copytrader.py",
+   "alpha_engine/production_scanner.py",
+   "alpha_engine/prove_winners.py",
+   "alpha_engine/proven_forex_strategies.py",
+   "alpha_engine/proven_research_strategies.py",
+   "alpha_engine/proven_scanner_strategies.py",
+   "alpha_engine/real_data_backtest.py",
+   "alpha_engine/real_money_tracker.py",
+   "alpha_engine/regime_detector.py",
+   "alpha_engine/regime_ensemble.py",
+   "alpha_engine/regime_filter.py",
+   "alpha_engine/smart_picks_engine.py",
+   "alpha_engine/spike_predictor.py",
+   "alpha_engine/statistical_strategies.py",
+   "alpha_engine/strategies/institutional_vector_signals.py",
+   "alpha_engine/survivor_backtest.py",
+   "alpha_engine/tradingview_strategies.py",
+   "alpha_engine/tradingview_strategies_wave2.py",
+   "alpha_engine/tradingview_strategies_wave3.py",
+   "alpha_engine/tradingview_strategies_wave4.py",
+   "alpha_engine/unified_backtest.py",
+   "alpha_engine/unique_edge_live.py",
+   "alpha_engine/walk_forward_gate.py"
+  ]
+ },
+ "imports_by_scanner": {
+  "alpha_engine/production_scanner.py": {
+   "static_import": [
+    "adaptive_stops",
+    "adaptive_tp_sl",
+    "adaptive_trust_tuner",
+    "advanced_risk_system",
+    "arkham_smart_money",
+    "audit_sync",
+    "calendar_anomalies",
+    "catalyst_filter",
+    "causal_filter",
+    "charter_position_sizer",
+    "circuit_breaker_aggregator",
+    "coinmetrics_signal",
+    "concentration_cap",
+    "config",
+    "consensus_tier",
+    "continuous_improvement_monitor",
+    "crypto_risk_gates",
+    "data_coverage_enforcer",
+    "dna_mutation_engine",
+    "drawdown_tracker",
+    "dynamic_risk",
+    "eagle_gates",
+    "elite_scorer",
+    "emitter_discipline",
+    "equity_earnings_loader",
+    "etherscan_whale_tracker",
+    "failover_imports",
+    "fast_regime_detector",
+    "feature_populator",
+    "force_close_breached",
+    "forward_validator",
+    "hedge_fund_quality_gate",
+    "inverse_loser_mutations",
+    "isolated_signal_integrator",
+    "kelly_position_sizer",
+    "kpi_monitor",
+    "macro_data_pipeline",
+    "macro_overlay_score",
+    "market_modifiers",
+    "mempool_signal",
+    "missed_opportunity_analyzer",
+    "ml_health_monitor",
+    "model_calibration",
+    "outcome_resolver",
+    "per_source_volume_cap",
+    "polymarket_volume_filter",
+    "prediction_anomaly_detector",
+    "pump_guard",
+    "regime_flip_detector",
+    "regime_router",
+    "risk_controls",
+    "risk_policy_check",
+    "run_atr_gate",
+    "scanner",
+    "short_trade_validator",
+    "slippage_model",
+    "sports_betting_edge",
+    "strategy_priority",
+    "strong_signal_filter",
+    "trio_bot_strategies",
+    "trust_audit_export",
+    "trust_score",
+    "universe_manager",
+    "var_enforcer",
+    "whale_alert_scanner",
+    "whale_concentration_index",
+    "whale_index"
+   ],
+   "string_ref_only": [
+    "alerts",
+    "asset_class",
+    "confluence_strategies",
+    "contrarian_consensus",
+    "cot_positioning",
+    "earnings_drift",
+    "forex_carry_ppp",
+    "hurst_exponent",
+    "incubator_strategies",
+    "regime",
+    "sentiment",
+    "track_record",
+    "volatility_mean_reversion"
+   ]
+  },
+  "alpha_engine/smart_picks_engine.py": {
+   "static_import": [
+    "confidence_calibrator",
+    "config",
+    "copy_trader_bridge",
+    "copytrader_integration",
+    "eagle2_class_source_cap",
+    "edge_concentrator",
+    "ensemble_gate",
+    "equity_factor_model",
+    "etf_quality_filters",
+    "hf_policy_thresholds",
+    "htf_confirmation",
+    "mtf_gate",
+    "non_crypto_policy",
+    "per_source_volume_cap",
+    "risk",
+    "risk_policy_loader",
+    "strategy_pair_affinity"
+   ],
+   "string_ref_only": [
+    "ab_test_portfolios",
+    "asset_class",
+    "cot_positioning",
+    "gainer_interceptor",
+    "macro",
+    "momentum_catcher",
+    "regime"
+   ]
+  },
+  "alpha_engine/scanner.py": {
+   "static_import": [
+    "advanced_quant_strategies",
+    "advanced_statistical_strategies",
+    "advanced_strategies",
+    "alligator_strategies",
+    "antigravity_strategies",
+    "api_failover",
+    "asset_class",
+    "auto_tuner",
+    "binance_sentiment",
+    "bond_strategies",
+    "candlestick_patterns",
+    "cascade_contrarian",
+    "coinalyze_client",
+    "coinmetrics_signal",
+    "cointegration_pairs",
+    "commodities_strategies",
+    "config",
+    "conflict_reconciler",
+    "confluence_engine",
+    "confluence_strategies",
+    "conformal_sizing",
+    "contrarian_consensus",
+    "copy_trader_analyzer",
+    "copy_trader_bridge",
+    "cot_positioning",
+    "cross_sectional",
+    "crypto_edge_strategies",
+    "crypto_enhancement_pack",
+    "crypto_feature_pipeline",
+    "crypto_ml_tuner",
+    "crypto_risk_gates",
+    "crypto_strategies",
+    "cryptopanic_feargreed",
+    "cta_bridge",
+    "cycle16_strategies",
+    "cycle17_strategies",
+    "database",
+    "defillama_signals",
+    "direction_balance_guard",
+    "divergence_strategy",
+    "dna_mutations",
+    "dynamic_universe",
+    "elite_scorer",
+    "ema_retracement_strategy",
+    "equity_strategies",
+    "equity_tracker",
+    "etf_strategies",
+    "execution_cost",
+    "fast_variants",
+    "feature_populator",
+    "feed_hygiene",
+    "finnhub_events",
+    "flow_behavioral_strategies",
+    "forex_strategies",
+    "fred_liquidity",
+    "fundamental_valuation_strategies",
+    "futures_strategies",
+    "fwls_stacker",
+    "gainer_capture_strategy",
+    "gainer_promoter",
+    "gainer_tracker",
+    "garch_volatility",
+    "generate_recommended_portfolio",
+    "google_trends_signal",
+    "high_accuracy_strategies",
+    "hindsight_learner",
+    "hoffman_strategy",
+    "htf_confirmation",
+    "hybrid_strategies",
+    "incubator_strategies",
+    "indicators",
+    "institutional_onchain_strategies",
+    "inverse_edge_system",
+    "inverse_strategies",
+    "keltner_evolved",
+    "kill_switch",
+    "kira_dna_scalp_variants",
+    "lunarcrush_signal",
+    "mempool_signal",
+    "microstructure_momentum",
+    "missed_opportunity_analyzer",
+    "ml_ranker",
+    "multi_signal_confluence",
+    "non_crypto_policy",
+    "non_crypto_quality_gate",
+    "novel_strategies",
+    "obi_velocity",
+    "ohlcv_failover",
+    "okx_consensus_signal",
+    "onchain_macro_strategies",
+    "options_signals",
+    "orderbook_strategies",
+    "pairs_pick_generator",
+    "pattern_cnn_lite",
+    "pine_to_python_indicators",
+    "polymarket_volume_filter",
+    "portfolio_correlation_guard",
+    "position_sizing",
+    "prediction_market_whales",
+    "proven_edge_strategies",
+    "quan_engine_scalp_hybrid_inverse",
+    "quant_algorithms",
+    "quant_research_strategies",
+    "quant_stack_strategy",
+    "quant_strategies",
+    "range_breakout",
+    "regime_position_sizer",
+    "regime_sentinel",
+    "residual_momentum",
+    "reversal_strategies",
+    "scanner_score_calibration",
+    "sentiment_divergence",
+    "session_breakout",
+    "sideways_market_strategies",
+    "super_strategies",
+    "supplemental_data_strategies",
+    "survivor_strategies",
+    "sustained_gainer_algorithm",
+    "sweep_breakout_scaler",
+    "symbol_specific_variants",
+    "technical_features",
+    "tldr_winner_report",
+    "token_unlock_signals",
+    "tournament_engine",
+    "transaction_costs",
+    "trend_catcher",
+    "ttm_squeeze",
+    "tvl_momentum_strategy",
+    "unlock_event_strategy",
+    "untapped_strategies",
+    "volatility_mean_reversion",
+    "volume_microstructure_strategies",
+    "vpin_signal",
+    "vt_baby_strategies",
+    "wave456_strategies",
+    "wavelet_cycle_strategies",
+    "winner_indicator_system",
+    "world_class_strategies_v21"
+   ],
+   "string_ref_only": [
+    "cost_model",
+    "hmm_regime",
+    "momentum",
+    "momentum_catcher",
+    "portfolio",
+    "regime",
+    "sentiment",
+    "volatility",
+    "volume"
+   ]
+  }
+ },
+ "scanner_like_files": [
+  "alpha_engine/academic_strategies_emitter.py",
+  "alpha_engine/bond_scanner.py",
+  "alpha_engine/crypto_smart_picks.py",
+  "alpha_engine/emitter_dedup.py",
+  "alpha_engine/emitter_discipline.py",
+  "alpha_engine/emitter_whitelist.py",
+  "alpha_engine/equity_breakout_scanner.py",
+  "alpha_engine/etf_scanner.py",
+  "alpha_engine/forex_smart_picks.py",
+  "alpha_engine/funding_rate_scanner.py",
+  "alpha_engine/hyrotrader_short_term_scanner.py",
+  "alpha_engine/kimi_inverse_scanner.py",
+  "alpha_engine/mutation_forward_scanner.py",
+  "alpha_engine/new_strategies/connors_rsi2_equity_scanner.py",
+  "alpha_engine/priority_picks_emitter.py",
+  "alpha_engine/production_scanner.py",
+  "alpha_engine/proven_scanner_strategies.py",
+  "alpha_engine/real_time_scanner.py",
+  "alpha_engine/research_edge_scanners.py",
+  "alpha_engine/rocket_scanner.py",
+  "alpha_engine/rocket_scanner_v2.py",
+  "alpha_engine/scanner.py",
+  "alpha_engine/scanner_score_calibration.py",
+  "alpha_engine/smart_picks_engine.py",
+  "alpha_engine/smart_picks_performance.py",
+  "alpha_engine/smart_picks_tracker.py",
+  "alpha_engine/sports_arbitrage_scanner.py",
+  "alpha_engine/tradingagents_emitter.py",
+  "alpha_engine/usd_strength_scanner.py",
+  "alpha_engine/volatile_alt_scanner.py",
+  "alpha_engine/whale_alert_scanner.py"
+ ],
+ "per_class_resources": {
+  "CRYPTO": [
+   {
+    "module": "alpha_engine/crypto_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "CRYPTO_STRATEGIES",
+      "n_keys": 37
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/crypto_edge_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "CRYPTO_EDGE_STRATEGIES",
+      "n_keys": 3
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/crypto_smart_picks.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/crypto_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "CRYPTO_STRATEGY_HINTS",
+      "n_keys": 6
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/crypto_risk_gates.py",
+    "exists": true,
+    "wired_static_prod_or_smart": true,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "LOW_CONFIDENCE_STRATEGIES",
+      "n_keys": 12
+     },
+     {
+      "name": "HARD_KILL_STRATEGIES",
+      "n_keys": 7
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/funding_rate_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/volatile_alt_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/rocket_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/rocket_scanner_v2.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/whale_alert_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": true,
+    "reachable_1hop_or_string": true,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/kimi_inverse_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/basis_carry.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "BASIS_CARRY_STRATEGIES",
+      "n_keys": 1
+     }
+    ]
+   }
+  ],
+  "EQUITY": [
+   {
+    "module": "alpha_engine/equity_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "_RAW_EQUITY_STRATEGIES",
+      "n_keys": 15
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/equity_breakout_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/equity_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/penny_stock_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   }
+  ],
+  "FOREX": [
+   {
+    "module": "alpha_engine/forex_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "FOREX_STRATEGIES",
+      "n_keys": 10
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/forex_smart_picks.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "STRATEGY_STATS",
+      "n_keys": 6
+     },
+     {
+      "name": "ALL_STRATEGIES",
+      "n_keys": 4
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/forex_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/usd_strength_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   }
+  ],
+  "COMMODITY": [
+   {
+    "module": "alpha_engine/commodities_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "COMMODITY_STRATEGIES",
+      "n_keys": 9
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/commodity_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/cot_positioning.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "COT_STRATEGIES",
+      "n_keys": 1
+     }
+    ]
+   }
+  ],
+  "ETF": [
+   {
+    "module": "alpha_engine/etf_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "STRATEGIES",
+      "n_keys": 8
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/etf_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   }
+  ],
+  "BOND": [
+   {
+    "module": "alpha_engine/bond_scanner.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "STRATEGIES",
+      "n_keys": 8
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/bond_strategies.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": true,
+    "registries": [
+     {
+      "name": "BOND_STRATEGIES",
+      "n_keys": 7
+     }
+    ]
+   },
+   {
+    "module": "alpha_engine/bond_strategy_harness.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": []
+   },
+   {
+    "module": "alpha_engine/bond_yield_curve_inversion.py",
+    "exists": true,
+    "wired_static_prod_or_smart": false,
+    "reachable_1hop_or_string": false,
+    "registries": [
+     {
+      "name": "BOND_YIELD_CURVE_INVERSION_STRATEGIES",
+      "n_keys": 1
+     }
+    ]
+   }
+  ]
+ },
+ "standards_and_protocols_present": [
+  "docs/BACKTEST_ADMISSIBILITY_STANDARD.md",
+  "docs/STRATEGY_VALIDATION_GATES.md",
+  "docs/STRATEGY_DISCOVERY_PROTOCOL.md",
+  "docs/STRATEGY_INVESTIGATION_BEFORE_KILL.md",
+  "docs/MUTATION_THREE_AXIS_PROTOCOL.md",
+  "docs/MONEY_READY_MASTER_LOOP_2026-06.md",
+  "docs/STRATEGY_LIFECYCLE_POLICY.md",
+  "docs/real_money_methodology.md",
+  "docs/STRATEGY_TRUST_RANKING.md",
+  "docs/STRATEGY_PER_ASSET_CLASS_MASTERPLAN.md",
+  "docs/CROSS_ASSET_STRATEGY_MATRIX.md",
+  "docs/STRATEGY_PIPELINE_END_TO_END_2026-05-31.md",
+  "docs/STRATEGY_FAILURE_ANALYSIS_FRAMEWORK.md",
+  "docs/STRATEGY_FACTORY_V1_1_AMENDMENTS.md",
+  "reports/money_ready_tiering_framework.md",
+  "reports/hypothesis_registry.json",
+  "TESTING_PROTOCOL.MD",
+  "alpha_engine/data_quality_gates.yaml"
+ ],
+ "screening_and_report_artifacts": {
+  "strategy_tier_tracker_reports": [
+   "reports/strategy_tier_tracker_20260605T140616Z.md",
+   "reports/strategy_tier_tracker_20260605T141049Z.md",
+   "reports/strategy_tier_tracker_20260605T141115Z.md",
+   "reports/strategy_tier_tracker_20260606T043206Z.md",
+   "reports/strategy_tier_tracker_20260606T043258Z.md",
+   "reports/strategy_tier_tracker_20260606T063349Z.md",
+   "reports/strategy_tier_tracker_20260606T063356Z.md",
+   "reports/strategy_tier_tracker_20260609T051140Z.md",
+   "reports/strategy_tier_tracker_20260609T180208Z.md"
+  ],
+  "money_ready_reports": [
+   "reports/MONEY_READY_BLITZ_2026-06-05.md",
+   "reports/MONEY_READY_DESIGN_AND_PATH_2026-06-19.md",
+   "reports/MONEY_READY_LOOP_SUMMARY_2026-06-20.md",
+   "reports/MONEY_READY_NEXT_STEPS_BUILD_PLAN_2026-06-19.md",
+   "reports/MONEY_READY_PER_CLASS_AUDIT_2026-06-05.md",
+   "reports/MONEY_READY_PICKS_NOW_2026-06-06_PROGRESS.md",
+   "reports/SESSION_SUMMARY_MONEY_READY_2026-06-19.md",
+   "reports/UPDATED_MONEY_READY_RECOMMENDATION_2026-06-09.md",
+   "reports/equity_money_ready_path_2026-06-09.md",
+   "reports/final_money_ready_audit_report.md",
+   "reports/money_ready_path_2026-06-06.md",
+   "reports/money_ready_per_class_synthesis_2026-05-31.md",
+   "reports/money_ready_tiering_framework.md"
+  ],
+  "deep_dive_reports": [
+   "reports/deep_dive_BOND_2026-05-31.md",
+   "reports/deep_dive_COMMODITY_2026-05-31.md",
+   "reports/deep_dive_COMMODITY_2026-05-31_v2.md",
+   "reports/deep_dive_CRYPTO_2026-05-31.md",
+   "reports/deep_dive_CRYPTO_2026-06-06.md",
+   "reports/deep_dive_EQUITY_2026-05-31.md",
+   "reports/deep_dive_ETF_2026-05-31.md",
+   "reports/deep_dive_ETF_CRYPTO_20260516.md",
+   "reports/deep_dive_FOREX_2026-05-31.md",
+   "reports/deep_dive_FOREX_DD1_2026-05-31.md",
+   "reports/deep_dive_FOREX_matrix_2026_05_04.csv",
+   "reports/deep_dive_FOREX_mutation_2026_05_04.md",
+   "reports/deep_dive_FUTURES_2026-05-18.md",
+   "reports/deep_dive_all_asset_classes_quant_top_notch_2026-06-06.md",
+   "reports/deep_dive_commodity_2026-06-05.md",
+   "reports/deep_dive_cotton_2026-05-15.md",
+   "reports/deep_dive_crypto_ml_enhanced_artifact_2026-05-17.md",
+   "reports/deep_dive_forex_2026-05-12.md",
+   "reports/deep_dive_forex_regime_2026-06-05.md",
+   "reports/deep_dive_futures_2026_05_18.md",
+   "reports/deep_dive_supplemental_matrix_2026_05_14.md",
+   "reports/deep_dive_verification_2026_05_14.json",
+   "reports/deep_dive_verification_2026_05_14.md"
+  ],
+  "strategy_investigation_docs": [
+   "docs/STRATEGY_INVESTIGATION_BEFORE_KILL.md",
+   "docs/STRATEGY_INVESTIGATION_aggregated_picks_CRYPTO_2026-05-18.md",
+   "docs/STRATEGY_INVESTIGATION_copy_trader_clones_CRYPTO_2026-05-19.md",
+   "docs/STRATEGY_INVESTIGATION_copy_trader_intel_CRYPTO_2026-05-18.md",
+   "docs/STRATEGY_INVESTIGATION_ensemble_CRYPTO_2026-05-19.md",
+   "docs/STRATEGY_INVESTIGATION_multi_asset_scanner_FOREX_2026_05_20.md",
+   "docs/STRATEGY_INVESTIGATION_quan_engine_2026_05_17.md",
+   "docs/STRATEGY_INVESTIGATION_quan_engine_CRYPTO_2026-05-18.md",
+   "docs/STRATEGY_INVESTIGATION_rapid_fire_CRYPTO_2026-05-18.md",
+   "docs/STRATEGY_INVESTIGATION_super_signals_CRYPTO_2026-05-18.md"
+  ],
+  "pf_registry_files": [
+   "audit_dashboard/data/pf_registry.json",
+   "reports/pf_registry_2026-05-17.md",
+   "tests/test_m110_pf_registry_direction_filter.py",
+   "tests/test_pf_registry_source_concentration.py",
+   "tests/test_pf_registry_tournament_db.py",
+   "tools/build_pf_registry.py",
+   "tools/reconcile_pf_registry.py"
+  ],
+  "strategy_symbol_edge_registry": [
+   "alpha_engine/data/strategy_symbol_edge_registry.json",
+   "tests/test_strategy_symbol_edge_scorer.py",
+   "tools/build_strategy_symbol_edge_registry.py"
+  ],
+  "money_ready_verdict_files": [
+   "alpha_engine/money_ready_verdict.py",
+   "audit_dashboard/data/money_ready_verdict.json"
+  ],
+  "cpcv_pbo_results": [
+   "tools/build_cpcv_pbo_results.py",
+   "tools/cpcv_pbo_results.json"
+  ],
+  "negative_knowledge": [
+   "alpha_engine/negative_knowledge_registry.py"
+  ],
+  "quant_strategy_review_reports": [],
+  "strategy_hunt_cycles": [
+   "reports/AUTONOMOUS_STRATEGY_HUNT_CYCLES_15-17_FINDINGS_2026-05-29.md"
+  ]
+ },
+ "proof_machinery": [
+  {
+   "file": "alpha_engine/deflated_sharpe.py",
+   "exists": true,
+   "lines": 349,
+   "doc": "Deflated Sharpe Ratio (DSR) -- Bailey & Lopez de Prado (2014)",
+   "n_public_functions": 5,
+   "public_functions": [
+    "returns_stats(returns)",
+    "sharpe_variance(sharpe, horizon, skew, kurtosis)",
+    "expected_max_sharpe(mean_sr, var_sr, nb_trials)",
+    "deflated_sharpe_ratio(estimated_sharpe, sr_variance, nb_trials, backtest_horizon, skew, kurtosis)",
+    "filter_edge_strategies(strategies, dsr_threshold, nb_trials)"
+   ],
+   "keywords": [
+    "DSR"
+   ]
+  },
+  {
+   "file": "tools/dsr.py",
+   "exists": true,
+   "lines": 18,
+   "doc": "DSR (Deflated Sharpe Ratio) \u2014 thin wrapper for h037_forward_verification.py",
+   "n_public_functions": 0,
+   "public_functions": [],
+   "keywords": [
+    "DSR",
+    "SPA"
+   ]
+  },
+  {
+   "file": "tools/dsr_audit.py",
+   "exists": true,
+   "lines": 263,
+   "doc": "Deflated Sharpe Ratio with the *true* trial count from the mutation engine.",
+   "n_public_functions": 5,
+   "public_functions": [
+    "load_true_trial_count(extra_sources)",
+    "group_returns(picks)",
+    "analyse(returns_by_key, n_trials, key_format)",
+    "main(argv)",
+    "write_markdown(summary, path)"
+   ],
+   "keywords": [
+    "DSR",
+    "SPA",
+    "walk.?forward",
+    "n_trials"
+   ]
+  },
+  {
+   "file": "tools/pbo.py",
+   "exists": true,
+   "lines": 55,
+   "doc": "PBO (Probability of Backtest Overfitting) \u2014 thin wrapper for h037_forward_verification.py",
+   "n_public_functions": 1,
+   "public_functions": [
+    "probability_of_backtest_overfitting(returns, n_splits)"
+   ],
+   "keywords": [
+    "PBO",
+    "SPA"
+   ]
+  },
+  {
+   "file": "tools/pbo_cscv.py",
+   "exists": true,
+   "lines": 114,
+   "doc": "Probability of Backtest Overfitting (PBO) via Combinatorial Symmetric",
+   "n_public_functions": 1,
+   "public_functions": [
+    "compute_pbo(returns_matrix, S)"
+   ],
+   "keywords": [
+    "PBO"
+   ]
+  },
+  {
+   "file": "tools/build_cpcv_pbo_results.py",
+   "exists": true,
+   "lines": 162,
+   "doc": "Generate tools/cpcv_pbo_results.json from at_signal_outcomes (minimax-m3-free, 2026-06-02).",
+   "n_public_functions": 4,
+   "public_functions": [
+    "get_conn()",
+    "load_pivot()",
+    "interpret_pbo(pbo)",
+    "main()"
+   ],
+   "keywords": [
+    "PBO",
+    "CPCV",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/tier_significance.py",
+   "exists": true,
+   "lines": 146,
+   "doc": "Per-tier win-rate significance vs global baseline on closed picks.",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": [
+    "bootstrap"
+   ]
+  },
+  {
+   "file": "tools/pending_spa_scan.py",
+   "exists": true,
+   "lines": 222,
+   "doc": "Pending SPA Scanner \u2014 surfaces strategies with 5 \u2264 n < 20 resolved picks.",
+   "n_public_functions": 4,
+   "public_functions": [
+    "scan_pending_spa(min_n, warn_wr)",
+    "print_report(result)",
+    "get_pending_spa_alerts(min_n, warn_wr)",
+    "main()"
+   ],
+   "keywords": [
+    "SPA",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/walk_forward_eff_harness.py",
+   "exists": true,
+   "lines": 337,
+   "doc": "Walk-Forward Eff-Stability Harness (PATH_TO_PROVEN_EDGE Step 1).",
+   "n_public_functions": 6,
+   "public_functions": [
+    "compute_rolling_eff(picks, score_field, window_days, n_windows)",
+    "admissibility_verdict(windows, min_windows, eff_floor, min_n)",
+    "run_harness(picks, score_fields, window_days, n_windows, min_windows, eff_floor)",
+    "load_picks(path)",
+    "print_report(result)",
+    "main()"
+   ],
+   "keywords": [
+    "walk.?forward",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/edge_stability_harness.py",
+   "exists": true,
+   "lines": 395,
+   "doc": "Walk-forward edge-stability harness.",
+   "n_public_functions": 6,
+   "public_functions": [
+    "evaluate(field, window_days)",
+    "evaluate_by_regime(field, window_days)",
+    "is_admissible(field, window_days, regime)",
+    "get_admissibility_badge(window_days)",
+    "admissible_scores(window_days)",
+    "main()"
+   ],
+   "keywords": [
+    "walk.?forward"
+   ]
+  },
+  {
+   "file": "alpha_engine/edge_stability_harness.py",
+   "exists": true,
+   "lines": 842,
+   "doc": "================================================================================",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "alpha_engine/admissibility_pipeline.py",
+   "exists": true,
+   "lines": 821,
+   "doc": "EAGLE2 Unified Admissibility Pipeline \u2014 v1.0 (2026-06-02)",
+   "n_public_functions": 1,
+   "public_functions": [
+    "timedelta(hours, days)"
+   ],
+   "keywords": [
+    "DSR",
+    "PBO",
+    "SPA",
+    "bootstrap",
+    "walk.?forward",
+    "purged|embargo"
+   ]
+  },
+  {
+   "file": "alpha_engine/anti_overfit_gate.py",
+   "exists": true,
+   "lines": 203,
+   "doc": "Anti-Overfit Gate \u2014 Hard gate preventing unvalidated strategies from Smart Picks.",
+   "n_public_functions": 7,
+   "public_functions": [
+    "get_validated_strategies()",
+    "get_gold_standard_strategies()",
+    "has_passed_anti_overfit(strategy_name)",
+    "get_anti_overfit_score_adjustment(strategy_name)",
+    "register_strategy(strategy_name, check_results, passed)",
+    "get_registry_stats()",
+    "audit_active_picks_against_registry(active_picks_path)"
+   ],
+   "keywords": [
+    "DSR",
+    "SPA",
+    "walk.?forward",
+    "FDR|Benjamini"
+   ]
+  },
+  {
+   "file": "alpha_engine/verified_promotion_gate.py",
+   "exists": true,
+   "lines": 232,
+   "doc": "Promotion gates for verified-strategy production sidecars.",
+   "n_public_functions": 8,
+   "public_functions": [
+    "etf_forward_report()",
+    "pilot_dashboard_report()",
+    "etf_scanner_merge_allowed()",
+    "etf_scanner_shadow_active()",
+    "equity_wf_pass()",
+    "equity_merge_allowed()",
+    "connors_harness_admissible()",
+    "build_edge_status()"
+   ],
+   "keywords": [
+    "walk.?forward"
+   ]
+  },
+  {
+   "file": "alpha_engine/money_ready_verdict.py",
+   "exists": true,
+   "lines": 1790,
+   "doc": "M-061: Unified money_ready_verdict() \u2014 wires DSR + PBO/CSCV + SPA into one per-class verdict.",
+   "n_public_functions": 3,
+   "public_functions": [
+    "money_ready_verdict(asset_class, n_boot, ci_mode)",
+    "print_report(results)",
+    "main()"
+   ],
+   "keywords": [
+    "DSR",
+    "PBO",
+    "SPA",
+    "bootstrap",
+    "walk.?forward",
+    "FDR|Benjamini",
+    "Bonferroni",
+    "min_n"
+   ]
+  },
+  {
+   "file": "alpha_engine/walk_forward_gate.py",
+   "exists": true,
+   "lines": 226,
+   "doc": "Walk-Forward Validation Gate",
+   "n_public_functions": 4,
+   "public_functions": [
+    "validate_strategy(strategy_name, total_trades, wins, losses, avg_win_pct, avg_loss_pct, asset_class, notes)",
+    "is_strategy_validated(strategy_name)",
+    "get_validation_status()",
+    "get_unvalidated_strategies(all_strategy_names)"
+   ],
+   "keywords": [
+    "walk.?forward"
+   ]
+  },
+  {
+   "file": "alpha_engine/dsr_pick_filter.py",
+   "exists": true,
+   "lines": 172,
+   "doc": "DSR (Deflated Sharpe Ratio) Pick Filter \u2014 Harvey-Liu multiple-testing correction.",
+   "n_public_functions": 8,
+   "public_functions": [
+    "get_dsr_survivors()",
+    "get_dsr_noise()",
+    "get_dsr_lookup()",
+    "dsr_status(strategy_name)",
+    "get_dsr_score_adjustment(strategy_name)",
+    "tag_picks_with_dsr(picks)",
+    "filter_picks_by_dsr(picks)",
+    "write_dsr_filtered_picks(picks)"
+   ],
+   "keywords": [
+    "DSR"
+   ]
+  },
+  {
+   "file": "alpha_engine/rigorous_backtest_harness.py",
+   "exists": true,
+   "lines": 658,
+   "doc": "World-Class Backtest Harness \u2014 Purged Walk-Forward, DSR, PBO, Costs/Slippage",
+   "n_public_functions": 12,
+   "public_functions": [
+    "load_pick_data(asset_class, source)",
+    "compute_sharpe(pnl_series, annualize)",
+    "compute_deflated_sharpe(sharpe_obs, n_trials, n_observations, base_sharpe, conf_level)",
+    "block_bootstrap(pnl_series, block_size, n_iterations, confidence)",
+    "compute_pbo(pnl_matrix, n_splits, n_bootstrap)",
+    "compute_max_drawdown(equity_curve)",
+    "compute_walk_forward_efficiency(is_sharpe, os_sharpe)",
+    "purged_walkforward(pnl_series, n_splits, purge_pct, embargo_pct)",
+    "apply_costs(pnl_series, asset_class, cost_rate, slippage_bps)",
+    "run_backtest(pnl_series, asset_class, strategy_name, n_trials, n_bootstrap)",
+    "run_batch(asset_class, output_dir)",
+    "main()"
+   ],
+   "keywords": [
+    "DSR",
+    "PBO",
+    "SPA",
+    "bootstrap",
+    "walk.?forward",
+    "purged|embargo",
+    "n_trials",
+    "min_n"
+   ]
+  },
+  {
+   "file": "alpha_engine/hf_quality_gate.py",
+   "exists": true,
+   "lines": 180,
+   "doc": "Optional hedge-fund-grade post-score filters for Smart Picks.",
+   "n_public_functions": 3,
+   "public_functions": [
+    "load_hf_quality_gates(path)",
+    "hf_smart_pick_post_score_reason(scored, source_pick, cfg)",
+    "suggested_kelly_notional_fraction(scored, cfg)"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "alpha_engine/hedge_fund_quality_gate.py",
+   "exists": true,
+   "lines": 590,
+   "doc": "Hedge-fund-grade quality gate \u2014 per-asset-class rejection rules.",
+   "n_public_functions": 4,
+   "public_functions": [
+    "passes_hedge_fund_gate(pick)",
+    "why_rejected(pick)",
+    "passes_safety_score_gate(pick)",
+    "batch_evaluate(picks)"
+   ],
+   "keywords": [
+    "purged|embargo"
+   ]
+  },
+  {
+   "file": "alpha_engine/benchmark_closed_ledger.py",
+   "exists": true,
+   "lines": 586,
+   "doc": "benchmark_closed_ledger.py \u2014 Task 10 of the money-ready plan.",
+   "n_public_functions": 11,
+   "public_functions": [
+    "wilson_interval(wins, n, z)",
+    "profit_factor(returns)",
+    "compound_return(returns)",
+    "paired_bootstrap(trade_rets, bench_rets, n_boot, seed)",
+    "random_entry_mc(series_by_sym, trades, n_perm, seed)",
+    "load_closed_picks(path)",
+    "load_prices(path)",
+    "fetch_prices_yf(symbols, start, end)",
+    "benchmark_ledger(rows, prices_by_sym, benchmark, n_boot, n_perm, seed)",
+    "build_report(rows, prices_by_sym, n_boot, n_perm, seed, min_n_for_timing)",
+    "main(argv)"
+   ],
+   "keywords": [
+    "SPA",
+    "bootstrap",
+    "Wilson",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/strategy_admissibility_report.py",
+   "exists": true,
+   "lines": 486,
+   "doc": "Unified strategy admissibility + edge-location report for /audit dashboards.",
+   "n_public_functions": 7,
+   "public_functions": [
+    "audit_live_portfolios(fetch_live)",
+    "load_money_ready()",
+    "load_tournament_edge()",
+    "load_pick_funnel_edge()",
+    "load_pilot_status()",
+    "build_report(fetch_live_portfolios)",
+    "main()"
+   ],
+   "keywords": [
+    "DSR",
+    "PBO",
+    "SPA",
+    "bootstrap",
+    "walk.?forward",
+    "purged|embargo"
+   ]
+  },
+  {
+   "file": "tools/strategy_tier_tracker.py",
+   "exists": true,
+   "lines": 158,
+   "doc": "strategy_tier_tracker.py \u2014 per-strategy x asset-class hedge-fund-tier tracker.",
+   "n_public_functions": 5,
+   "public_functions": [
+    "tier_label(row, min_n)",
+    "class_verdict(row)",
+    "fmt(v, w, prec)",
+    "build_report(reg, class_filter, min_n)",
+    "main()"
+   ],
+   "keywords": [
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/build_pf_registry.py",
+   "exists": true,
+   "lines": 1185,
+   "doc": "build_pf_registry.py \u2014 Canonical Profit-Factor Registry builder (Action Item A8)",
+   "n_public_functions": 5,
+   "public_functions": [
+    "load_rows()",
+    "classify_rows(rows)",
+    "aggregate(kept_rows, net)",
+    "raw_by_class(rows)",
+    "main()"
+   ],
+   "keywords": [
+    "SPA",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/ci_gate_money_ready_vs_registry.py",
+   "exists": true,
+   "lines": 164,
+   "doc": "CI gate: money_ready_verdict.py must not declare a class MONEY_READY",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/replay_harness.py",
+   "exists": true,
+   "lines": 356,
+   "doc": "replay_harness.py \u2014 the reusable ACT-engine replay harness (Master Loop \u00a72).",
+   "n_public_functions": 8,
+   "public_functions": [
+    "run_preflight(family, asset_class)",
+    "fetch_bars(cur, symbol, asset_class, start_ms, horizon_bars, pre_bars)",
+    "dedup_trades(trades)",
+    "replay_set(cur, trades, asset_class, horizon_bars, cost_frac, slip_bars)",
+    "regime_strata(results)",
+    "metrics_block(results)",
+    "latest_monkey_p95(asset_class)",
+    "main()"
+   ],
+   "keywords": [
+    "bootstrap",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/baby_dsr_scanner.py",
+   "exists": true,
+   "lines": 192,
+   "doc": "baby_dsr_scanner.py \u2014 per-strategy Deflated Sharpe Ratio scan of the baby",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": [
+    "DSR",
+    "SPA",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/forward_candidate_scoreboard.py",
+   "exists": true,
+   "lines": 120,
+   "doc": "forward_candidate_scoreboard.py \u2014 standing CI-LB referee over the honest ledger.",
+   "n_public_functions": 2,
+   "public_functions": [
+    "verdict(ci_lb, n_eff)",
+    "main()"
+   ],
+   "keywords": [
+    "bootstrap",
+    "min_n"
+   ]
+  },
+  {
+   "file": "tools/forward_paper_pilot.py",
+   "exists": true,
+   "lines": 132,
+   "doc": "4-week forward paper-pilot: replay each pick of a strategy on intrabar OHLCV",
+   "n_public_functions": 2,
+   "public_functions": [
+    "replay(entry, tp, sl, direction, bars)",
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/promote_high_quality_to_paper_pilot.py",
+   "exists": true,
+   "lines": 116,
+   "doc": "ENH #119 \u2014 paper-pilot stubs for bias-survivor tournament picks (no DB writes).",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/ghcopilot_paper_monitor.py",
+   "exists": true,
+   "lines": 560,
+   "doc": "Frozen, prospective-only research pilot. Never places orders or writes to MySQL.",
+   "n_public_functions": 19,
+   "public_functions": [
+    "utc(value)",
+    "number(value)",
+    "source_key(value)",
+    "bh_adjust(values)",
+    "summarize(rows)",
+    "geometry(row)",
+    "screen_candidates(rows, now)",
+    "admit_signals(state, rows, now)",
+    "validate_bars(bars)",
+    "resolve_leg(leg, bars, now, cls)",
+    "advance_trade(trade, bars, now)",
+    "market_bars(symbol, start, now)"
+   ],
+   "keywords": [
+    "SPA",
+    "bootstrap"
+   ]
+  },
+  {
+   "file": "tools/build_high_certainty_candidates.py",
+   "exists": true,
+   "lines": 86,
+   "doc": "",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/build_unified_copytrade_candidates.py",
+   "exists": true,
+   "lines": 137,
+   "doc": "Merge **existing repo JSON** (no external APIs) into one dashboard-friendly list:",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/cross_validate_kill_candidates.py",
+   "exists": true,
+   "lines": 196,
+   "doc": "cross_validate_kill_candidates.py \u2014 sanity-check strategy-kill decisions across",
+   "n_public_functions": 4,
+   "public_functions": [
+    "trading_picks_metrics(cur, strategy)",
+    "at_pick_outcomes_metrics(cur, strategy)",
+    "verdict(tp, apo)",
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/tier_lifecycle.py",
+   "exists": true,
+   "lines": 54,
+   "doc": "Heuristic tier lifecycle suggestions from aggregate stats (not automatic promotion).",
+   "n_public_functions": 1,
+   "public_functions": [
+    "evaluate_tier_row(stats)"
+   ],
+   "keywords": [
+    "min_n"
+   ]
+  },
+  {
+   "file": "alpha_engine/negative_knowledge_registry.py",
+   "exists": true,
+   "lines": 262,
+   "doc": "Negative Knowledge Registry (IDEA 6 from data audit)",
+   "n_public_functions": 9,
+   "public_functions": [
+    "load_strategy_performance()",
+    "check_symbol_block(pick)",
+    "check_strategy_block(pick)",
+    "check_time_block(pick)",
+    "check_confidence_block(pick)",
+    "check_rr_block(pick, live_price, entry, tp, sl)",
+    "check_direction_block(pick, strategy_perf)",
+    "check_negative_knowledge(pick, live_price, entry, tp, sl)",
+    "get_blocked_patterns_summary()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/mutation_analysis.py",
+   "exists": true,
+   "lines": 385,
+   "doc": "3-axis autopsy on closed picks CSV \u2014 before killing a system, see if it is misapplied.",
+   "n_public_functions": 6,
+   "public_functions": [
+    "read_csv_clean(path)",
+    "read_closed_picks_json(path)",
+    "pnl_pct(row)",
+    "run_analysis(rows, min_trades, dir_spread_pp, tf_spread_pp, sym_spread_pp)",
+    "write_compatibility_matrix(rows, path, min_trades)",
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/build_strategy_symbol_edge_registry.py",
+   "exists": true,
+   "lines": 103,
+   "doc": "Build strategy_symbol_edge_registry.json from audit_dashboard recent_closed (real rows only).",
+   "n_public_functions": 1,
+   "public_functions": [
+    "main()"
+   ],
+   "keywords": []
+  },
+  {
+   "file": "tools/buffy_mega_mutation_paper_tracker.py",
+   "exists": false
+  },
+  {
+   "file": "alpha_engine/forward_validator.py",
+   "exists": true,
+   "lines": 3757,
+   "doc": "ALPHA_ENGINE -- Forward Validator",
+   "n_public_functions": 25,
+   "public_functions": [
+    "print()",
+    "binomial_p_value(wins, total, null_hypothesis)",
+    "run_white_reality_check(closed_picks_path)",
+    "apply_winner_filter(signal)",
+    "print_winner_filter_summary()",
+    "passes_forward_gate(strategy_name, strategy_stats, min_trades, min_wr)",
+    "annotate_picks_with_forward_gate(picks, perf)",
+    "load_active_picks()",
+    "save_active_picks(picks)",
+    "load_closed_picks()",
+    "save_closed_picks(picks)",
+    "load_strategy_performance()"
+   ],
+   "keywords": [
+    "DSR",
+    "Wilson"
+   ]
+  },
+  {
+   "file": "alpha_engine/walkforward_validator.py",
+   "exists": true,
+   "lines": 608,
+   "doc": "Walk-Forward Validation + Mercury 2 Scoring Framework.",
+   "n_public_functions": 11,
+   "public_functions": [
+    "extract_strategy_trades(payload, min_trades)",
+    "walk_forward_validate(trades, train_size, test_size, step)",
+    "walk_forward_by_class(payload, min_trades, train_size, test_size, step, class_config)",
+    "bootstrap_sharpe_ci(pnls, n_boot)",
+    "ttest_pvalue(pnls)",
+    "max_drawdown(pnls)",
+    "perf_score(metrics)",
+    "proof_score(metrics)",
+    "final_score(perf, proof)",
+    "run_validation(min_trades)",
+    "main()"
+   ],
+   "keywords": [
+    "bootstrap",
+    "walk.?forward"
+   ]
+  }
+ ],
+ "proof_tests_in_tests_dir": [
+  "tests/test_benchmark_closed_ledger.py",
+  "tests/test_cpcv_overfit_detector.py",
+  "tests/test_deflated_sharpe_ratio.py",
+  "tests/test_edge_stability_harness_regime.py",
+  "tests/test_edge_stability_smoke.py",
+  "tests/test_m012_dsr_wireup.py",
+  "tests/test_money_ready_capital_lock.py",
+  "tests/test_money_ready_fdr_gate.py",
+  "tests/test_money_ready_intrabar_sizing_p1a.py",
+  "tests/test_money_ready_verdict.py",
+  "tests/test_stamp_pick_quality_dsr_gate.py",
+  "tests/test_walk_forward_eff_harness.py"
+ ],
+ "paper_candidate_surfaces": [
+  ".github/workflows/asterdex-paper-trading.yml",
+  ".github/workflows/baby-strat-forward-paper.yml",
+  ".github/workflows/forward_test.yml",
+  ".github/workflows/ghcopilot-paper-monitor.yml",
+  ".github/workflows/macd-rsi-m048-shadow-daily.yml",
+  ".github/workflows/paper-pilot-daily.yml",
+  ".github/workflows/pead-shadow-collector.yml",
+  ".github/workflows/tv-paper-tpsl-watchdog.yml",
+  ".github/workflows/verified-pilot-daily.yml",
+  "KIMI_FEB172026/underdog_forward_test.py",
+  "KIMI_FEB172026/unified_forward_test.py",
+  "KIMI_RISEOFTHECLAW/forward_signals.py",
+  "KIMI_RISEOFTHECLAW/paper_trade.py",
+  "alpha_engine/compute_backtest_forward_correlation.py",
+  "alpha_engine/forex_walk_forward_builtins.py",
+  "alpha_engine/forward_test.py",
+  "alpha_engine/forward_test_new_strategies.py",
+  "alpha_engine/forward_test_portfolios.py",
+  "alpha_engine/forward_validator.py",
+  "alpha_engine/june2026_research_candidates.py",
+  "alpha_engine/live_forward_test.py",
+  "alpha_engine/mutation_forward_scanner.py",
+  "alpha_engine/shadow_exit_tracker.py",
+  "alpha_engine/shadow_tracker.py",
+  "alpha_engine/strategies/cot_paper_pilot.py",
+  "alpha_engine/strategies/crypto_paper_pilot.py",
+  "alpha_engine/sync_forward_test_picks.py",
+  "alpha_engine/walk_forward_backtester.py",
+  "alpha_engine/walk_forward_gate.py",
+  "alpha_engine/walk_forward_validator.py",
+  "alpha_engine/walkforward_validator.py",
+  "analysis/walkforward_optimizer.py",
+  "analyze_forward_performance.py",
+  "asterdex_paper/paper_trader.py",
+  "audit_trail/forward_degradation_tracker.py",
+  "audit_trail/forward_test_gates.py",
+  "audit_trail/paper_trading_fixes.py",
+  "baby_strategies/backtest_forward_proven.py",
+  "baby_strategies/forward_proven_variations.py",
+  "battleground/walk_forward_validation.py",
+  "coinglass_strategies/paper_portfolio.py",
+  "copy_trader_intel/variation_forward_tester.py",
+  "cross_aggregation/forward_test_tracker.py",
+  "discord_baby_forward_test.py",
+  "forward_metrics_compat.py",
+  "forward_performance_dashboard.py",
+  "forward_test_gates.py",
+  "forward_testing/forward_database.py",
+  "forward_trade_executor.py",
+  "forward_trade_executor_v2.py",
+  "genome/mutation_lab/ag_forward_tracker.py",
+  "genome/mutation_lab/mega_forward_runner.py",
+  "genome/paper_trading_system.py",
+  "incubator/agents/team_alpha/crypto_shadow_unicorn_gate_v1.py",
+  "incubator/backtest_team/forward_signal_scanner.py",
+  "incubator/testing/discord_forward_test_bot.py",
+  "incubator/testing/forward_dashboard.py",
+  "incubator/testing/forward_test_coordinator.py",
+  "incubator/testing/forward_test_tracker.py",
+  "incubator/validation/backfill_paper_window.py",
+  "incubator/validation/promote_to_paper.py",
+  "incubator/validation/seed_paper_fasttrack.py",
+  "incubator/validation/update_forward_matches.py",
+  "paper_trading/tests/test_walkforward_elite_strategies.py",
+  "prop_firm_forward_analysis.py",
+  "quan_engine/forward_tracker.py",
+  "scripts/sports_walkforward_stub.py",
+  "scripts/walk_forward_validator.py",
+  "signal_recorder/forward_test_picks.py",
+  "tests/test_adaptive_stops_and_forward_gates.py",
+  "tests/test_cot_paper_pilot_dedup.py",
+  "tests/test_ctf_shadow_tracker.py",
+  "tests/test_dashboard_generator_walkforward_byclass.py",
+  "tests/test_forward_edge_audit.py",
+  "tests/test_forward_gate_bond_override.py",
+  "tests/test_forward_metrics_compat.py",
+  "tests/test_forward_validator_aggregation_collision.py",
+  "tests/test_ghcopilot_paper_monitor.py",
+  "tests/test_h103_forward_logger.py",
+  "tests/test_ma_forward_tracker.py",
+  "tests/test_ml_enhanced_walkforward_gate.py",
+  "tests/test_new_strategies_shadow_tracker.py",
+  "tests/test_paper_trading_mysql_sync.py",
+  "tests/test_pead_shadow_runner.py",
+  "tests/test_rsi5070_shadow_tagger.py",
+  "tests/test_shadow_monitor_safety.py",
+  "tests/test_shadow_promote.py",
+  "tests/test_shadow_size_policy.py",
+  "tests/test_tv_pick_capture_candidates.py",
+  "tests/test_ueps_adversarial_shadow.py",
+  "tests/test_walk_forward_eff_harness.py",
+  "tests/test_walkforward_by_class.py",
+  "tests/test_walkforward_gate.py",
+  "tests/test_walkforward_payload_restored.py",
+  "tools/_batch_pilot_wider.py",
+  "tools/_check_t2_candidates.py",
+  "tools/analyze_symbol_rehab_candidates.py",
+  "tools/bootstrap_forward_stats.py",
+  "tools/build_high_certainty_candidates.py",
+  "tools/build_unified_copytrade_candidates.py",
+  "tools/build_walkforward_oos_results.py",
+  "tools/check_walkforward_gate.py",
+  "tools/cross_validate_kill_candidates.py",
+  "tools/crypto_luxalgo_short_forward_tracker.py",
+  "tools/crypto_rsi5070_forward_tracker.py",
+  "tools/crypto_wf_forward_stats.py",
+  "tools/ctf_shadow_tracker.py",
+  "tools/drift/build_backtest_forward_drift.py",
+  "tools/ensure_forward_test_outcome_columns.py",
+  "tools/etf_forward_stats.py",
+  "tools/faber_forward_stats.py",
+  "tools/fix_windows_copilot_lm.py",
+  "tools/forward_candidate_scoreboard.py",
+  "tools/forward_edge_audit.py",
+  "tools/forward_n100_tracker.py",
+  "tools/forward_paper_pilot.py",
+  "tools/forward_signal_research.py",
+  "tools/generate_expansion_forward_pack.py",
+  "tools/ghcopilot_paper_monitor.py",
+  "tools/h037_forward_verification.py",
+  "tools/inverse_ml_forward_fastpath.py",
+  "tools/ma_strategy_forward_tracker.py",
+  "tools/new_strategies_shadow_tracker.py",
+  "tools/paper_trade_mysql_writer.py",
+  "tools/pead_shadow_runner.py",
+  "tools/picks_now_forward_tracker.py",
+  "tools/pilot_forward_dashboard.py",
+  "tools/pmc_pilot_monitor.py",
+  "tools/prediction_market_consensus_pilot.py",
+  "tools/promote_high_quality_to_paper_pilot.py",
+  "tools/redis_bus_dm_claude_tv_paper_picks.py",
+  "tools/redis_bus_post_joint_paper.py",
+  "tools/rehab_kill_candidate_report.py",
+  "tools/run_verified_pilots_daily.py",
+  "tools/set_deepseek_copilot_key.py",
+  "tools/shadow_diff_entry_anchored.py",
+  "tools/shadow_pilot_tracker.py",
+  "tools/test_forward_signal_research.py",
+  "tools/track_pmc_paper_pilot.py",
+  "tools/tv_paper_tpsl_audit.py",
+  "tools/walk_forward_backtest.py",
+  "tools/walk_forward_eff_harness.py",
+  "tools/walk_forward_per_strategy.py",
+  "tools/walk_forward_thresholds.py",
+  "tools/walk_forward_validate.py",
+  "tools/walk_forward_validation.py",
+  "tools/write_copilot_lm_config.py",
+  "verified_strategies/paper_pilot/b_flip_price_roc_forward_pilot.py",
+  "verified_strategies/paper_pilot/equity_bb_pilot.py",
+  "verified_strategies/paper_pilot/equity_pead_drift_pilot.py"
+ ],
+ "paper_candidate_workflows": [
+  ".github/workflows/alpha-engine-daily-picks.yml",
+  ".github/workflows/asterdex-paper-trading.yml",
+  ".github/workflows/baby-strat-forward-paper.yml",
+  ".github/workflows/closed-picks-command.yml",
+  ".github/workflows/coinglass-scanner.yml",
+  ".github/workflows/contested-pick-checker.yml",
+  ".github/workflows/conviction-picks.yml",
+  ".github/workflows/copy-trader-forward-test.yml",
+  ".github/workflows/crypto-smart-picks.yml",
+  ".github/workflows/crypto-winner-scan.yml",
+  ".github/workflows/daily-miracle-scan.yml",
+  ".github/workflows/daily-picks-snapshot.yml",
+  ".github/workflows/daily-top-picks-filter.yml",
+  ".github/workflows/dashboard-pick-trader.yml",
+  ".github/workflows/deploy-vetted-picks.yml",
+  ".github/workflows/ema-retracement-scan.yml",
+  ".github/workflows/etf-bond-scanner.yml",
+  ".github/workflows/forex-smart-picks.yml",
+  ".github/workflows/forward-signal-scanner.yml",
+  ".github/workflows/forward-test-daily.yml.disabled",
+  ".github/workflows/forward-test-new-strategies.yml",
+  ".github/workflows/forward-tracking-v2.yml",
+  ".github/workflows/forward_test.yml",
+  ".github/workflows/ghcopilot-paper-monitor.yml",
+  ".github/workflows/h103-forward-logger.yml",
+  ".github/workflows/hourly-master-picks.yml",
+  ".github/workflows/macd-rsi-m048-shadow-daily.yml",
+  ".github/workflows/master-picks-health.yml",
+  ".github/workflows/meme-scanner-fixed.yml",
+  ".github/workflows/meme-scanner-v2.yml",
+  ".github/workflows/meme-scanner.yml",
+  ".github/workflows/mercury2-scan.yml",
+  ".github/workflows/missed-opportunity-scan.yml",
+  ".github/workflows/ml-battleground-abc-pilots.yml.retired",
+  ".github/workflows/ml-forward-test.yml",
+  ".github/workflows/momentum-scanner.yml",
+  ".github/workflows/money-ready-registry-gate.yml",
+  ".github/workflows/money-ready-snapshot.yml",
+  ".github/workflows/multi-asset-scanner.yml",
+  ".github/workflows/mysql-stale-picks-resolver.yml",
+  ".github/workflows/now-scanner.yml",
+  ".github/workflows/paper-pilot-daily.yml",
+  ".github/workflows/paper-trading.yml.retired",
+  ".github/workflows/pead-shadow-collector.yml",
+  ".github/workflows/penny-stock-picks.yml",
+  ".github/workflows/pick-data-quality-gate.yml",
+  ".github/workflows/pick-flow-snapshot-fast.yml",
+  ".github/workflows/pick-funnel-nightly.yml",
+  ".github/workflows/pick-monitor-30min.yml",
+  ".github/workflows/picks-now-live-pnl.yml",
+  ".github/workflows/picks-now-refresh.yml",
+  ".github/workflows/picks_dispatch.yml",
+  ".github/workflows/poc-picks-checkpoint.yml",
+  ".github/workflows/pre-spike-scan.yml",
+  ".github/workflows/proven-strategies-scanner.yml",
+  ".github/workflows/rsi5070-forward-snapshot.yml",
+  ".github/workflows/secret-scan.yml",
+  ".github/workflows/simulation-picks-resolver.yml",
+  ".github/workflows/smart-money-tracker.yml",
+  ".github/workflows/smart-picks-tracker.yml",
+  ".github/workflows/specialized-scanners.yml",
+  ".github/workflows/spike-scanner.yml",
+  ".github/workflows/strategy-forward-tester.yml",
+  ".github/workflows/sustained-gainer-scan.yml",
+  ".github/workflows/swarm-pick-review.yml",
+  ".github/workflows/taste-profile-scan.yml",
+  ".github/workflows/top-gainers-scan.yml",
+  ".github/workflows/torontoevent-spike-scanner.yml",
+  ".github/workflows/track-quick-picks.yml",
+  ".github/workflows/tv-paper-tpsl-watchdog.yml",
+  ".github/workflows/tv-strategy-scanner.yml",
+  ".github/workflows/ueps-pick-runner.yml",
+  ".github/workflows/verified-pilot-daily.yml",
+  ".github/workflows/volatile-alt-scanner.yml",
+  ".github/workflows/walk-forward-backtest.yml",
+  ".github/workflows/walkforward-gate.yml",
+  ".github/workflows/winner-pattern-scanner.yml"
+ ],
+ "agent_dirs_file_counts": {
+  ".agent": 2,
+  ".agents": 56,
+  "Kimi_Agent_AI Algorithm Prompting Guide": 42,
+  "Kimi_Agent_BTC Scalping Strategy Replication": 24,
+  "Kimi_Agent_Crypto Pick Strategy Challenge Winners": 5,
+  "Kimi_Agent_From Coin Flip to Hedge Fund Picks": 10,
+  "Kimi_Agent_High-Score Asset Picks": 13,
+  "Kimi_Agent_Improving Crypto_Forex Picks": 16,
+  "Kimi_Agent_Investigating Crypto_Forex Win-Rate": 11,
+  "Kimi_Agent_ML Enhancement Integration Plan": 11,
+  "Kimi_Agent_Winning Algo_ Signals & Communities_Feb 14 2026": 7,
+  "ab_testing_agent": 15,
+  "cloud_agent_prompts": 1,
+  "non_crypto_agent": 11,
+  "parallel_agent": 8,
+  "prediction_market_agents": 21,
+  "rl_agent": 11,
+  "tournament_agents": 11
+ },
+ "copy_direct_files": [
+  "alpha_engine/copy_trader_analyzer.py",
+  "alpha_engine/copy_trader_bridge.py",
+  "alpha_engine/copy_trader_engine_v2.py",
+  "alpha_engine/copytrader_integration.py",
+  "alpha_engine/new_strategies/copytrade_pm_consensus.py",
+  "alpha_engine/portfolio_tracker_copytrader.py",
+  "alpha_engine/portfolio_tracker_copytrader_raw.py",
+  "audit_trail/copytrader_verification.py",
+  "copy_trader_intel/asset_class_analysis_commodities.py",
+  "copy_trader_intel/asset_class_analysis_equities.py",
+  "copy_trader_intel/asset_class_analysis_forex.py",
+  "copy_trader_intel/binance_scraper.py",
+  "copy_trader_intel/bingx_scraper.py",
+  "copy_trader_intel/bitget_scraper.py",
+  "copy_trader_intel/bybit_scraper.py",
+  "copy_trader_intel/cme_futures_bridge.py",
+  "copy_trader_intel/coinglass_scraper.py",
+  "copy_trader_intel/consensus_backtester.py",
+  "copy_trader_intel/consensus_pick_builder.py",
+  "copy_trader_intel/copin_scraper.py",
+  "copy_trader_intel/copytrader_lesson_extractor.py",
+  "copy_trader_intel/copytrader_quality_backtest.py",
+  "copy_trader_intel/copytrader_source_harvester.py",
+  "copy_trader_intel/cta_strategy_replicator.py",
+  "copy_trader_intel/dex_scraper.py",
+  "copy_trader_intel/dex_whale_scrapers.py",
+  "copy_trader_intel/direction_split_analyzer.py",
+  "copy_trader_intel/drift_scraper.py",
+  "copy_trader_intel/dune_scraper.py",
+  "copy_trader_intel/dydx_scraper.py",
+  "copy_trader_intel/enrichment_pipeline.py",
+  "copy_trader_intel/etoro_scraper.py",
+  "copy_trader_intel/gains_scraper.py",
+  "copy_trader_intel/gate_scraper.py",
+  "copy_trader_intel/generate_dashboard_data.py",
+  "copy_trader_intel/gmx_scraper.py",
+  "copy_trader_intel/hourly_pick_health_check.py",
+  "copy_trader_intel/htx_scraper.py",
+  "copy_trader_intel/hyperliquid_scraper.py",
+  "copy_trader_intel/live_intelligence_gather.py",
+  "copy_trader_intel/main.py",
+  "copy_trader_intel/market_price.py",
+  "copy_trader_intel/ml_strategy_reverser.py",
+  "copy_trader_intel/multi_asset_backtester.py",
+  "copy_trader_intel/multi_asset_bridge.py",
+  "copy_trader_intel/multi_asset_copytrader_scraper.py",
+  "copy_trader_intel/multi_asset_scorer.py",
+  "copy_trader_intel/myfxbook_scraper.py",
+  "copy_trader_intel/nansen_scraper.py",
+  "copy_trader_intel/non_crypto_consensus.py",
+  "copy_trader_intel/non_crypto_quality_enhancer.py",
+  "copy_trader_intel/okx_futures_scraper.py",
+  "copy_trader_intel/okx_scraper.py",
+  "copy_trader_intel/okx_scraper_temp.py",
+  "copy_trader_intel/olivierdanvel_wrapper.py",
+  "copy_trader_intel/outcome_resolver.py",
+  "copy_trader_intel/per_trader_portfolio.py",
+  "copy_trader_intel/performance_tracker.py",
+  "copy_trader_intel/pick_profitability_scorer.py",
+  "copy_trader_intel/pick_quality_monitor.py",
+  "copy_trader_intel/polymarket_scraper.py",
+  "copy_trader_intel/polymarket_trade_tracker_client.py",
+  "copy_trader_intel/score_calibration_validator.py",
+  "copy_trader_intel/sentiment_signals.py",
+  "copy_trader_intel/show_results.py",
+  "copy_trader_intel/stealth_copytrader_scraper.py",
+  "copy_trader_intel/strategy_clone_generator.py",
+  "copy_trader_intel/strategy_evolver.py",
+  "copy_trader_intel/strategy_learner.py",
+  "copy_trader_intel/strategy_reverse_engineer.py",
+  "copy_trader_intel/strategy_variation_engine.py",
+  "copy_trader_intel/strategy_variation_portfolios.py",
+  "copy_trader_intel/symbol_analysis_btc.py",
+  "copy_trader_intel/symbol_analysis_eth.py",
+  "copy_trader_intel/technical_analyzer.py",
+  "copy_trader_intel/test_hl_api.py",
+  "copy_trader_intel/trusted_trader_tracker.py",
+  "copy_trader_intel/unified_trader_research.py",
+  "copy_trader_intel/variation_forward_tester.py",
+  "copy_trader_intel/variation_portfolio_builder.py",
+  "copy_trader_intel/verify_and_extract_copytraders.py",
+  "copy_trader_intel/wallet_strategy_profiler.py",
+  "copy_trader_intel/whale_tracker.py",
+  "copy_trader_intel/zulutrade_scraper.py",
+  "strategies/copy_trader_scarcity_expander_v1.py",
+  "tools/ai_tournament/copy_trader_adapter.py",
+  "tools/ai_tournament/merge_copy_trader.py",
+  "tools/build_unified_copytrade_candidates.py",
+  "tools/kimi_research_2026_05_20/copy_trader_engine_v2.py"
+ ],
+ "reverse_engineered_files": [
+  "alpha_engine/cta_bridge.py",
+  "alpha_engine/kalshi_signals.py",
+  "alpha_engine/kimi_inverse_scanner.py",
+  "alpha_engine/polymarket_signals.py",
+  "alpha_engine/strategy_reverse_engineer.py",
+  "alpha_engine/winner_reverse_engineer.py",
+  "copy_trader_intel/cta_strategy_replicator.py",
+  "copy_trader_intel/ml_strategy_reverser.py",
+  "copy_trader_intel/polymarket_scraper.py",
+  "copy_trader_intel/strategy_reverse_engineer.py",
+  "genome/historical_reverse_engineer.py",
+  "genome/reverse_engineer_today.py",
+  "predictions/scrapers/polymarket_scraper.py",
+  "tests/test_kimi_inverse_scanner_failover.py",
+  "tests/test_polymarket_scraper_scoring.py"
+ ],
+ "taa_name_matches": [
+  "alpha_engine/backtest_etf_dual_momentum.py",
+  "alpha_engine/residual_momentum.py",
+  "audit_dashboard/data/etf_rotation_vix_regime_backtest.json",
+  "audit_dashboard/data/sector_dual_momentum.json",
+  "baby_strategies/dual_momentum_crypto.py",
+  "config/personas/strategy_persona__etf_faber_tactical.json",
+  "incubator/agents/cursor_ai/crossasset_spxbtc_residual_momentum_v1.py",
+  "obsidian-notes/strategies/etf_verified_dual_momentum.md",
+  "reports/POC_TACTICAL_PICKS_2026-07-04.json",
+  "reports/TACTICAL_ROTATION_EDGE_2026-07-04.md",
+  "reports/etf_dual_momentum_backtest_2026-06-03.md",
+  "reports/etf_dual_momentum_cv_2026-06-03.md",
+  "reports/peer_claude-strategy-build-faber-tactical_2026-05-31.md",
+  "reports/strategy_admit/etf_dual_momentum.json",
+  "reports/swarm_dbmf_replication_spec_2026-05-16.md",
+  "tests/test_etf_dual_momentum_backtest.py",
+  "tests/test_etf_dual_momentum_cv.py",
+  "tests/test_m023_sector_dual_momentum.py",
+  "tools/backtest_etf_rotation_vix_regime.py",
+  "tools/research/dbmf_replication.py",
+  "tools/research/sector_dual_momentum.py",
+  "tools/swarm/prompts/dbmf_replication_research.md",
+  "tools/tactical_blend_tracker.py",
+  "tools/tactical_rotation_tracker.py",
+  "verified_strategies/etf_dual_momentum_backtest.py",
+  "verified_strategies/etf_dual_momentum_cv.py",
+  "verified_strategies/paper_pilot/etf_dual_momentum_pilot.py",
+  "verified_strategies/paper_pilot/etf_dual_momentum_state.json",
+  "verified_strategies/strategies/dual_momentum_crypto.py",
+  "verified_strategies/strategies/etf_dual_momentum.py"
+ ],
+ "etf_py_files": [
+  "alpha_engine/backtest_etf_dual_momentum.py",
+  "alpha_engine/etf_country_rotation.py",
+  "alpha_engine/etf_economic_momentum.py",
+  "alpha_engine/etf_managed_futures_proxy.py",
+  "alpha_engine/etf_quality_filters.py",
+  "alpha_engine/etf_rebalancer.py",
+  "alpha_engine/etf_risk_parity.py",
+  "alpha_engine/etf_scanner.py",
+  "alpha_engine/etf_sector_momentum_rotation.py",
+  "alpha_engine/etf_strategies.py",
+  "alpha_engine/etf_strategy_harness.py",
+  "alpha_engine/etf_vix_regime_rotation.py",
+  "alpha_engine/etf_vix_term_structure.py",
+  "alpha_engine/faber_etf_strategy.py",
+  "alpha_engine/new_strategies/etf_mean_reversion.py",
+  "alpha_engine/strategies/etf_decay_shorts.py",
+  "alpha_engine/winners/etf_sector_momentum_winner.py",
+  "baby_strategies/vt_thematic_etf_momentum.py",
+  "incubator/agents/web_ai/etf_bond_equity_rotation.py",
+  "incubator/agents/web_ai/etf_sector_strength.py",
+  "incubator/agents/web_ai/parked/strategy_002_exchange_netflow.py",
+  "mimo_new_strategies/etf_sector_rotation_rs.py",
+  "mimo_strategies/etf_vwap_mean_reversion.py",
+  "paper_trading/strategies/exchange_netflow.py",
+  "test_etf_verify.py",
+  "tests/test_b11_etf_workflow_fix.py",
+  "tests/test_backtest_etf_economic.py",
+  "tests/test_etf_cross_sectional_momentum.py",
+  "tests/test_etf_dual_momentum_backtest.py",
+  "tests/test_etf_dual_momentum_cv.py",
+  "tests/test_etf_economic_momentum.py",
+  "tests/test_etf_elite_floor_and_60d_enrich.py",
+  "tests/test_etf_iwm_gld_kill.py",
+  "tests/test_etf_rebalancer.py",
+  "tests/test_etf_relative_strength_gate.py",
+  "tests/test_etf_risk_parity_backtest.py",
+  "tests/test_etf_sector_emitter.py",
+  "tests/test_etf_sector_rotation_backtest.py",
+  "tests/test_etf_vix_regime_rotation.py",
+  "tests/test_m098_etf_vix_gate.py"
+ ],
+ "committed_snapshots": {
+  "audit_dashboard/data/pf_registry.json": {
+   "bytes": 13185728,
+   "mtime_utc": "2026-10-22T21:58:15Z",
+   "git_tracked": true
+  },
+  "audit_dashboard/data/money_ready_verdict.json": {
+   "bytes": 43296,
+   "mtime_utc": "2026-10-22T21:58:15Z",
+   "git_tracked": true
+  }
+ },
+ "observed_from_snapshots": {
+  "audit_dashboard/data/pf_registry.json": {
+   "top_keys": [
+    "schema_version",
+    "generated_utc",
+    "description",
+    "source_files",
+    "source_files_canonical",
+    "methodology",
+    "counts",
+    "policy_excluded_count",
+    "canonical_view",
+    "display_tier",
+    "promotion_eligible",
+    "promotion_note",
+    "slippage_model",
+    "by_asset_class_raw",
+    "by_asset_class",
+    "by_asset_class_policy_clean",
+    "by_asset_class_policy_clean_net",
+    "by_asset_class_strategy_policy_clean_net",
+    "by_asset_class_strategy",
+    "by_asset_class_strategy_symbol",
+    "by_asset_class_strategy_date"
+   ],
+   "source_files.n": 36,
+   "by_asset_class_raw.n": 9,
+   "by_asset_class.n": 9,
+   "by_asset_class_policy_clean.n": 8,
+   "by_asset_class_policy_clean_net.n": 8,
+   "by_asset_class_strategy_policy_clean_net.n": 599,
+   "by_asset_class_strategy.n": 638,
+   "by_asset_class_strategy_symbol.n": 1987,
+   "by_asset_class_strategy_date.n": 21091
+  }
+ },
+ "closed_picks_snapshots": {}
+}

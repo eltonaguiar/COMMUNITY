@@ -1,0 +1,244 @@
+{
+  "snapshot_utc": "2026-10-22 22:37:46",
+  "read_only": true,
+  "warning": "Peer-selected hypotheses. Basic replay filter is not provenance, full policy or independent price-path certification. Per-trade not MTM. No exhaustive symbol search.",
+  "results": [
+    {
+      "strategy": "quan_engine_swing",
+      "symbol": "HYPEUSDT",
+      "cost_scenario_pp": 0.3,
+      "outcome_groups": [
+        {
+          "source": "alpha_engine",
+          "direction": "LONG",
+          "n_all": 2,
+          "statuses": {
+            "TP_HIT": 2
+          },
+          "replay_statuses": {
+            "TIME_EXIT": 2
+          },
+          "missing_created": 0,
+          "ambiguous_or_unknown": 2,
+          "missing_replay_pnl": 0,
+          "first_entry": "2000-01-02 19:12:33",
+          "last_entry": "2026-05-28 20:21:20",
+          "basic_replay_net_summary": {
+            "n": 0,
+            "entry_days": 0,
+            "span_days": 0,
+            "win_rate": null,
+            "net_mean_pct": null,
+            "net_pf": null,
+            "no_losses": false,
+            "day_bootstrap_ci95": null,
+            "coinflip_p": 1.0,
+            "half_net_means_pct": [
+              null,
+              null
+            ]
+          }
+        },
+        {
+          "source": "alpha_engine",
+          "direction": "SHORT",
+          "n_all": 1,
+          "statuses": {
+            "SL_HIT": 1
+          },
+          "replay_statuses": {
+            "TIME_EXIT": 1
+          },
+          "missing_created": 0,
+          "ambiguous_or_unknown": 1,
+          "missing_replay_pnl": 0,
+          "first_entry": "2000-01-02 19:17:27",
+          "last_entry": "2000-01-02 19:17:27",
+          "basic_replay_net_summary": {
+            "n": 0,
+            "entry_days": 0,
+            "span_days": 0,
+            "win_rate": null,
+            "net_mean_pct": null,
+            "net_pf": null,
+            "no_losses": false,
+            "day_bootstrap_ci95": null,
+            "coinflip_p": 1.0,
+            "half_net_means_pct": [
+              null,
+              null
+            ]
+          }
+        }
+      ],
+      "raw_groups": [
+        {
+          "source_system": "AlphaEngine",
+          "status": "LOST",
+          "n": 22,
+          "latest_signal": "2026-08-22 19:38:45",
+          "latest_recorded": "2026-08-22 20:44:12",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "alpha_engine_unified",
+          "status": "CLOSED",
+          "n": 12,
+          "latest_signal": "2026-03-19 00:36:48",
+          "latest_recorded": "2026-05-12 22:10:07",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "AlphaEngine",
+          "status": "WON",
+          "n": 34,
+          "latest_signal": "2026-08-22 15:38:28",
+          "latest_recorded": "2026-08-22 16:53:52",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "AlphaEngine",
+          "status": "ABANDONED",
+          "n": 1,
+          "latest_signal": "2026-06-01 18:58:36",
+          "latest_recorded": "2026-06-01 20:30:16",
+          "recorded24h": "0"
+        }
+      ]
+    },
+    {
+      "strategy": "meta_strategy",
+      "symbol": "PENGUUSDT",
+      "cost_scenario_pp": 0.3,
+      "outcome_groups": [],
+      "raw_groups": [
+        {
+          "source_system": "meta_strategy",
+          "status": "WON",
+          "n": 20,
+          "latest_signal": "2026-04-29 12:56:26",
+          "latest_recorded": "2026-05-12 22:09:55",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "meta_strategy",
+          "status": "LOST",
+          "n": 17,
+          "latest_signal": "2026-04-27 21:41:59",
+          "latest_recorded": "2026-05-12 22:09:47",
+          "recorded24h": "0"
+        }
+      ]
+    },
+    {
+      "strategy": "enhanced_ml_A_xgboost",
+      "symbol": "JTOUSDT",
+      "cost_scenario_pp": 0.3,
+      "outcome_groups": [],
+      "raw_groups": [
+        {
+          "source_system": "ml_crypto_pred",
+          "status": "WON",
+          "n": 21,
+          "latest_signal": "2026-05-12 20:57:34",
+          "latest_recorded": "2026-05-12 21:10:24",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "audit_trail_local",
+          "status": "CLOSED",
+          "n": 1,
+          "latest_signal": null,
+          "latest_recorded": "2026-03-10 19:09:50",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "ml_crypto_pred",
+          "status": "LOST",
+          "n": 11,
+          "latest_signal": "2026-05-11 22:42:15",
+          "latest_recorded": "2026-05-11 23:01:59",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "ml_crypto_pred",
+          "status": "EXPIRED",
+          "n": 2,
+          "latest_signal": "2026-05-12 01:14:54",
+          "latest_recorded": "2026-05-12 01:55:19",
+          "recorded24h": "0"
+        }
+      ]
+    },
+    {
+      "strategy": "smart_money_accumulation",
+      "symbol": "UNH",
+      "cost_scenario_pp": 0.1,
+      "outcome_groups": [
+        {
+          "source": "alpha_engine",
+          "direction": "LONG",
+          "n_all": 15,
+          "statuses": {
+            "LOST": 2,
+            "WON": 10,
+            "SL_HIT": 3
+          },
+          "replay_statuses": {
+            "TIME_EXIT": 14,
+            "None": 1
+          },
+          "missing_created": 0,
+          "ambiguous_or_unknown": 12,
+          "missing_replay_pnl": 1,
+          "first_entry": "2026-06-04 11:26:54",
+          "last_entry": "2026-07-25 03:25:42",
+          "basic_replay_net_summary": {
+            "n": 3,
+            "entry_days": 2,
+            "span_days": 1,
+            "win_rate": 0.6666666666666666,
+            "net_mean_pct": 1.4787,
+            "net_pf": 10.476821192052979,
+            "no_losses": false,
+            "day_bootstrap_ci95": [
+              0.9919999999999999,
+              2.4520999999999997
+            ],
+            "coinflip_p": 0.5,
+            "half_net_means_pct": [
+              -0.46809999999999996,
+              2.4520999999999997
+            ]
+          }
+        }
+      ],
+      "raw_groups": [
+        {
+          "source_system": "AlphaEngine",
+          "status": "ABANDONED",
+          "n": 12,
+          "latest_signal": "2026-06-04 20:16:45",
+          "latest_recorded": "2026-06-04 21:28:58",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "AlphaEngine",
+          "status": "LOST",
+          "n": 8,
+          "latest_signal": "2026-07-20 09:06:09",
+          "latest_recorded": "2026-07-20 09:55:33",
+          "recorded24h": "0"
+        },
+        {
+          "source_system": "AlphaEngine",
+          "status": "WON",
+          "n": 22,
+          "latest_signal": "2026-07-18 08:09:36",
+          "latest_recorded": "2026-07-18 09:19:54",
+          "recorded24h": "0"
+        }
+      ]
+    }
+  ]
+}
