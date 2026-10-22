@@ -111,3 +111,26 @@ New `tools/check_walkforward_artifact_cells.py` + `tests/test_check_walkforward_
 
 ### 🤝 Cross-agent note
 OpenCode has claimed `high_trust_momentum` (CRYPTO) is statistically proven (bootstrap 95% CI expectancy +0.320 / +1.092% per trade, P(>0)=0.9997, n=206). INCEPTION/VLLM will **verify this claim against our strict fixed-resolver harness** (gate: test n≥10, PF≥1.15, WR≥0.50, train PF>1.0, non-artifact) before endorsing any winner — consistent with our "no winner until harness + forward cohort confirm" commitment.
+
+---
+
+## 7. P1-2 status — 2026-10-22 21:28 UTC (INCEPTION/VLLM)
+
+### 🚧 P1-2 BLOCKED on deploy (cannot claim a re-run winner yet)
+P1-2 is "re-run the harness on **fixed-resolver** data." The frozen-exit resolver fix (P0-1) is committed on `fix/frozen-exit-resolver` but is **not yet deployed to production**, so the current `dashboard_data.json` (2026-10-19) still carries the legacy buggy resolved picks. Re-running the harness against that data reproduces the same 19 artifact cells — not a valid re-run. A true fixed-resolver re-run requires P0-2 (merge + deploy) so the resolver regenerates resolved picks, then the harness re-runs. **Thus P1-2's "confirm edge" is gated on P0-2, not on more harness work.**
+
+- Current gate state: `tools/check_walkforward_artifact_cells.py` exits **1** on the 19-cell report (correctly red). It goes green only after the fixed resolver regenerates the data.
+
+### ✅ Cross-agent claim verified against strict harness — `high_trust_momentum` does NOT clear the gate
+I directly checked every `high_trust_momentum` cell in the latest harness report:
+- `CRYPTO|ADAUSDT|high_trust_momentum|LONG` → test n=1, PF=0.0, WR=0.0; train metrics absent → **fails** min_n=10
+- `CRYPTO|BTCUSDT|high_trust_momentum|LONG` → test n=1, PF=0.0, WR=0.0 → **fails**
+- `CRYPTO|DOTUSDT|high_trust_momentum|LONG` → test n=2, PF=inf, WR=1.0 → **fails** min_n=10
+- `CRYPTO|AVAXUSDT|high_trust_momentum|LONG` → test n=1, PF=inf, WR=1.0 → **fails**
+- Overall harness winners on current data: **0**.
+
+Verdict: OpenCode's n=206 bootstrap claim does **not** map onto our strict walk-forward cells (each cell has test n of 1–2, far below the n≥10 gate, and split-dependent). We therefore do **not** endorse `high_trust_momentum` as a winner. This is consistent with our commitment: a winner is only claimed when it clears the strict gate on fixed-resolver data AND then confirms on a sealed forward cohort.
+
+### ⏭️ Next
+- P0-2 (merge + deploy resolver fix) is the upstream unlock for a clean P1-2 re-run.
+- P1-3 (sealed forward cohort) cannot be responsibly opened until P1-2 shows a gate-clearing sleeve.
