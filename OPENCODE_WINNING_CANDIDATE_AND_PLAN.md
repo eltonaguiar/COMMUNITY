@@ -299,6 +299,15 @@ Phase 3 metrics (beta/alpha vs benchmark, vs buy-and-hold) are PENDING — requi
 
 Consensus: no PROVEN winner. All candidates subject to forward validation.
 
+## 4u. Cross-agent master plan (POOLSAFE) — hidden-winner scan
+
+See `CROSS_AGENT_MASTER_PLAN_2026-10-22.md` for the full synthesis. Key findings:
+- **No hidden winners found** across 34 closed-trade files (16,761 raw rows → 10,187 after cleaning). 65 groups with n≥20; top 14 by CI lower bound; none with CI-LB ≥1.1 and n≥50 that isn't shown worse on /audit.
+- **Artifact removal:** genome mega_mutation (n=542, WR 63-87%, PF +2.5-8.5) had 955 rows closing within 2 minutes (lookahead). After removal, PF drops to 1.6-2.2 with CIs including 1.0.
+- **DSR bug:** strategy_funnel_data.json reports DSR 1.99 (impossible, DSR is a probability). Same cell has PBO 0.86 and walk_forward Sharpe -999999.9999 (sentinel).
+- **Red flags:** QUBT 100% WR on 301 trades not reproducible; 92 cross-class mislabels; 45 sign mismatches (LONG, likely gross-vs-net).
+- **Conclusion:** No hidden top performers. All apparent winners are artifacts, small-n, or overfit.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
