@@ -165,6 +165,12 @@ These are candidates, not proven — subject to Copilot's independence/cost crit
 
 **Data quality (AlphaEngine subset):** 40,547 total picks, 47.4% WR, PF 1.34 — modest edge, not coin flip. The luxalgo_confluence SHORT portfolio (4 cells) is the strongest non-artifact, strict-gate-passing subset.
 
+## 4g. Devil's advocate audit (truth check)
+
+No strategy currently qualifies as PROVEN. luxalgo_confluence SHORT has aggregate P=1.0 but one-position-at-a-time PF 1.29→1.13 after costs and monthly inconsistency. commodity_term_cot HG=F has P=1.0 but 751/815 positions overlap (peak 53 simultaneous). smart_money and multi_asset_copytrader are suspiciously high (likely soft resolution). Predictions PF inflated by +370k outlier. 635 artifact cells. Data quality: 9.4% null pnl, 26.8% zero pnl in CRYPTO. Only AlphaEngine is live.
+
+Verdict: No true winner yet. Best candidate luxalgo_confluence SHORT (CANDIDATE) requires 100+ forward TP/SL outcomes + independence verification.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
