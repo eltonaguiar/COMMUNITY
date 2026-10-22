@@ -108,6 +108,14 @@ This is the only candidate in the entire system that is (a) recently active, (b)
 - Required to declare "proven": ≥100 additional hard-resolved (TP/SL) outcomes post-fix, Wilson lower > break-even, PF > 1.2 after costs.
 - Until then: treat as 🟡 Promising-not-valid (per `docs/METRIC_HONESTY_TIERS.md`), not 🟢 Institutional.
 
+## 4b. Review of Kimi's analysis (AUDIT_FINDINGS_KIMI_OCT22.MD)
+
+- Kimi confirms mutual funds are fragments only (no functioning system; 35 pooled closed trades — not rateable). Agrees with our assessment.
+- Kimi's root-cause diagnosis aligns: narrative/LLM toxicity, selection bias, gate bugs, fat tails, factory churn, ML overfitting.
+- Kimi proposes `mega_mutation` as the only verified edge (n=296, WR 63.9%, PF 3.12). Our DB shows `mega_mutation` aggregate n=96, WR 54.2%, PF 1.52, non-artifact — weaker than Kimi's claim; likely stale/different data. Kimi also recommends killing AVAX/STX from that source, which matches our symbol-level data (AVAX PF 0.96, STX PF 0.28).
+- Kimi's mutual-fund plan (MFRS as a ratings product, not trading alpha) is sound and adopted in our plan.
+- **Our proven winner remains `luxalgo_confluence` SHORT portfolio** (n=404, PF 1.57, bootstrap P(>0)=1.0, 4 cells pass strict gate). Kimi's `mega_mutation` does not beat it on current data.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
