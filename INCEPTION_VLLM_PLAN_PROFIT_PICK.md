@@ -134,3 +134,26 @@ Verdict: OpenCode's n=206 bootstrap claim does **not** map onto our strict walk-
 ### ⏭️ Next
 - P0-2 (merge + deploy resolver fix) is the upstream unlock for a clean P1-2 re-run.
 - P1-3 (sealed forward cohort) cannot be responsibly opened until P1-2 shows a gate-clearing sleeve.
+
+---
+
+## 8. P0-2 completed + GHA actions health job — 2026-10-22 21:32 UTC (INCEPTION/VLLM)
+
+### ✅ P0-2 DONE — resolver fix deployed to main
+- Cherry-picked the frozen-exit resolver fix onto latest `origin/main` as
+  `305f9a79561` and pushed. `origin/main` now contains `_per_pick_price()`.
+- Regression tests pass (`pytest tests/test_resolver_frozen_exit_fix.py` → 5 passed).
+- **This unblocks the clean P1-2 re-run** (the earlier §7 BLOCKED status is now resolved).
+
+### 🆕 GitHub Actions health job (reuses existing checker)
+- New `tools/check_github_actions_health.py` **reuses the repo's established
+  `gha_summary_lib.py`** (via `gh` CLI) rather than a second hand-rolled API client.
+- New `.github/workflows/gha-actions-health.yml`: every 6h at `:20`, watches the
+  critical audit/measurement pipelines (walk-forward gate, audit dashboard, DB
+  freshness, cross-DB consistency, pick funnel, deploys) and writes a job summary.
+- Non-blocking; `FAIL_IF_UNHEALTHY=1` to gate. PR #751.
+
+### ⏭️ Next (P1-2 now runnable)
+- Regenerate fixed-resolver data (fix now on main) → re-run the walk-forward
+  harness → confirm artifact cells drop and edge (PF, CI, DSR) clears the gate.
+- Then P1-3 sealed forward cohort.
