@@ -215,6 +215,16 @@ Aligned with GHCOPILOT's independent audit: no asset class has an independently 
 
 See `CROSS_AGENT_MASTER_PLAN_2026-10-22.md` for the synthesized consensus: no agent has proven a winning asset class. All 'PROVEN' claims are artifacts, small-n coin flips, decayed edges, or allocator instruments. My candidates remain CANDIDATE status.
 
+## 4n. Hidden performer search (audit of other pages/data files)
+
+Searched `audit_dashboard/data/*top*`, `*edge*`, `*hidden*`, `*winner*`, `equity_top*`, `kimi_top*`, `daily_top_picks_filter`. Findings:
+- `equity_top5_long_short.json`: WR 48.4%, PF 1.06, Sharpe 0.08 — not a winner.
+- `kimi_top_3_live_picks.json`: all pending/negative (LDO SL hit -1.62%).
+- `daily_top_picks_filter.json`: panel_empty=false but n_returned=0, picks=[] — empty.
+- `top_edges_per_class.json`: CRYPTO conf 0.75-0.80 & score_dec S50 (n=183, WR 79%, PF 4.7) — likely overfit slice; broader conf 0.75-0.80 (n=4,641) WR 47.3%, one-position PF 1.03.
+- `edge_decay_heatmap.json`, `mc_edge_audit_fresh.json`: no new hidden winners found.
+- No hidden top performers outside the already-analyzed cells.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
