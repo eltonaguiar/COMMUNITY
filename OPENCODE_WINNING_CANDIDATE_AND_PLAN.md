@@ -280,6 +280,10 @@ Top institutional accumulation (new/increased positions, Q3-2025):
 
 These are large-cap institutional accumulation signals. Could inform EQUITY picks (smart_money_accumulation). Need cross-check with our DB picks for these symbols.
 
+## 4s. Phase 3 gap: benchmark comparison
+
+Phase 3 metrics (beta/alpha vs benchmark, vs buy-and-hold) are PENDING — requires a daily market data feed (SPY for equity, BTC for crypto) not yet in the pipeline. Grok's checklist item #8/#9 cannot be evaluated until this feed exists.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
