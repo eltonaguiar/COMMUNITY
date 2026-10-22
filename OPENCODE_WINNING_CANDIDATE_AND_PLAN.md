@@ -238,6 +238,12 @@ Ran `tools/institutional_validation.py` on luxalgo_confluence SHORT (n=404):
 
 Verdict: FAIL on Sharpe. Even the best candidate does not meet institutional standards. No strategy is institutional-grade. The edge is real but small and fragile.
 
+## 4o. Advanced entry conditions (luxalgo_confluence SHORT)
+
+- Monday-only subset: n=92, WR 0.696, PF 3.43, bootstrap CI [+0.891,+1.943], P=1.0, one-position PF 3.11 gross → 2.83 after 0.10% cost. But October WR dropped to 0.42. Data-mined, needs OOS validation.
+- Hour filter: hours 04,05,07,09,13,14,16,19,21,23 show PF 2.0-4.8. Not tested for independence.
+- Verdict: Promising but not proven. Do not size on this yet.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
