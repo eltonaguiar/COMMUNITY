@@ -137,6 +137,22 @@ These are candidates, not proven — subject to Copilot's independence/cost crit
 - Primary candidate: luxalgo_confluence SHORT (XRP/ETH/BTC/STX), status PAPER_TESTING
 - Secondary: 5 backup cells (status candidate)
 
+## 4e. Data quality assessment (DB cross-check)
+
+**Pipelines feeding:** CRYPTO/FOREX/EQUITY/FUTURES/ETF active in last 7 days; BOND sparse (7 picks/week); MEMECOIN/PENNY frozen since May 2026; UNKNOWN junk (138 zero-pnl rows).
+
+**Data quality red flags:**
+- CRYPTO: 9.4% null pnl, 26.8% zero pnl (unresolved/placeholder).
+- Predictions source: PF 4.37 inflated by single +370,850% outlier (entry $20 → exit $74,190).
+- smart_money: 72.1% WR / PF 8.32 — suspiciously high; likely soft resolution.
+- multi_asset_copytrader: 88.8% WR / PF 8.02 — likely soft/zero-loss resolution.
+- 635 artifact cells flagged by frozen-exit detector (wins > 2× distinct exit dates).
+- Consensus table: only CRYPTO (10,439) and EQUITY (771) have resolved picks; FOREX/COMMODITY have 1 each.
+
+**Trustworthy (non-artifact, strict gate):** luxalgo_confluence SHORT portfolio (4 cells, n=404, PF 1.57, bootstrap P=1.0) — distinct-exit ratio ~0.95-0.99, no frozen-exit flags.
+
+**Cross-check:** DB-level strict gate (per-cell 50/50 split, non-artifact, min_n=20, train/test PF∈[1.15,10], WR≥0.5) yields 11 candidate cells; 5 pass bootstrap P>0≥0.95. Best overall: luxalgo_confluence SHORT (P=1.0).
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
