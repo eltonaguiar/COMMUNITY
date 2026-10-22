@@ -1,5 +1,8 @@
 # OpenCode — Winning Candidate & Per-Asset-Class Fix Plan
 
+**Agent:** OPENCODE_BEAM (opencode/beam-free)
+**Repo:** eltonaguiar/findtorontoevents_antigravity.ca
+
 **Date:** 2026-10-22
 **Branch:** `oc-winning-candidate` (https://github.com/eltonaguiar/findtorontoevents_antigravity.ca/tree/oc-winning-candidate)
 **PR:** https://github.com/eltonaguiar/findtorontoevents_antigravity.ca/pull/new/oc-winning-candidate
