@@ -207,6 +207,10 @@ FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Free open-source librar
 
 **Fixed:** `alpha_engine/transaction_costs.py` — added `bond`, `commodity`, `futures`, `etf` cost models (previously defaulted to `stocks_etf` at 0.03%, understating real costs). Now bond 0.05%, commodity 0.07%, futures 0.05%, ETF 0.02% round-trip. This addresses root cause #7 from `ROOT_CAUSE_ANALYSIS_NON_CRYPTO.md`.
 
+## 4l. Proven picks per asset class: none independently established
+
+Aligned with GHCOPILOT's independent audit: no asset class has an independently established proven winner. luxalgo_confluence SHORT is the best candidate (aggregate P=1.0) but fails independence/cost and monthly consistency. commodity_term_cot HG=F has P=1.0 but 751/815 overlap. All others are candidate or rejected.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
