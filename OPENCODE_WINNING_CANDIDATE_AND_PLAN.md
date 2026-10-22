@@ -128,6 +128,14 @@ This is the only candidate in the entire system that is (a) recently active, (b)
 
 These are candidates, not proven — subject to Copilot's independence/cost critique (one-position-at-a-time, cost-adjusted expectancy). Listed in `core_whitelist.json` as `backup_stable_secondary_portfolio` (status: candidate).
 
+## 4d. Paper trading monitor (new)
+
+- Page: `/audit/opencode_paper_trading.html` (linked in audit dashboard tab bar)
+- Status JSON: `/audit/data/opencode_paper_trading_status.json`
+- Update job: `tools/opencode_paper_trading_update.py` (run hourly via cron/GHA)
+- Primary candidate: luxalgo_confluence SHORT (XRP/ETH/BTC/STX), status PAPER_TESTING
+- Secondary: 5 backup cells (status candidate)
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
