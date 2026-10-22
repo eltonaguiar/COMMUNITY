@@ -351,6 +351,33 @@ Live page https://findtorontoevents.ca/audit/opencode_paper_trading.html now inc
 - Honest "Can we get profit?" assessment: NO strategy currently beats buy-and-hold risk-adjusted. Needs Sharpe>1.0, MDD<20%, 100+ forward trades. All five gates fail today.
 - Candidate details: hold time, TP/SL, R:R per candidate
 
+## 4x. THREE ULTIMATE P/L BUGS FOUND (2026-10-22)
+
+### Bug 1: Duplicate trades (INFLATES n and P/L up to 5.2x)
+Same trade recorded multiple times with different UUIDs but identical entry/exit prices. IONQ: 64 trades, 7 distinct entry/exit. NIO: 21 trades, 1 distinct. AMD: 21 trades, 2 distinct.
+**Impact:** regime_mild_bear SHORT EQUITY showed WR 54.1% raw → 38.5% after dedup. PF 7.84 → 3.05. Edge was largely fake.
+**Fix:** Deduplicate by (symbol, entry_price, exit_price) before computing stats.
+
+### Bug 2: Batch-close contamination (21.2% of all closed picks)
+2026-05-10 03:16: 11,381 picks closed in 2 seconds with 0.00% pnl (RESOLUTION_TIMEOUT_NULL_TS). 2026-04-11 08:03: 2,301 picks in 15 seconds.
+**Impact:** Inflates "CLOSED" count by 21.2%. Frozen-exit resolver failures.
+
+### Bug 3: Lookahead contamination (1,239 picks)
+1,239 picks closed within 2 minutes of entry. Data artifacts, not real trades.
+
+## 4y. TRUE October 2026 winners (after all 3 bugs fixed)
+
+| Strategy | Dir | Asset | n | WR | PF | One-pos PF | CI | P(>0) | Gate |
+|---|---|---|---|---|---|---|---|---|---|
+| bond_yield_curve_slope | LONG | BOND | 18 | 72.2% | 9.44 | 3.55 | [0.454,1.125] | 1.0000 | PASS |
+| rapid_momentum_filter_mut | SHORT | CRYPTO | 55 | 65.5% | 2.59 | 1.33 | [0.543,2.120] | 0.9998 | PASS |
+| cvd_divergence | SHORT | CRYPTO | 42 | 66.7% | 2.60 | 1.66 | [0.397,2.003] | 0.9984 | PASS |
+| prediction_market_consensus | SHORT | CRYPTO | 682 | 56.0% | 2.11 | 1.11 | [0.670,1.031] | 1.0000 | PASS |
+| luxalgo_confluence | SHORT | CRYPTO | 206 | 54.4% | 1.65 | 1.27 | [0.316,1.280] | 1.0000 | PASS |
+| forex_zscore_200d_fade | SHORT | FOREX | 207 | 51.7% | 1.44 | 2.53 | [0.005,0.137] | 0.9822 | PASS |
+
+**Variety-pack composition:** BOND (bond_yield_curve_slope), CRYPTO SHORT (4 strategies), FOREX SHORT (forex_zscore_200d_fade). No EQUITY winner after dedup. No FUTURES winner.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
