@@ -76,7 +76,9 @@ The first questions were about *measurement integrity*, not strategy:
   `ejaguiar1_events`, `ejaguiar1_news`, `ejaguiar1_deals`,
   `ejaguiar1_favcreators`, `ejaguiar1_memecoin`, `ejaguiar1_sportsbet`,
   `ejaguiar1_tvmoviestrailers`, `ejaguiar1_backups`.
-- User/pass for each: `*1234560` suffix pattern (e.g. `backtests1234560`).
+- Authentication: use the implementation repository's canonical
+  `tools.db_env` helpers and private environment/configuration. Do not publish
+  credential values, examples derived from passwords, or password patterns.
 
 ### API keys available for delegated work (see `/home/eaguiar2015/dbpasses.txt`)
 - Free LLM/cloud: GROQ, Gemini, Together, Cerebras, HuggingFace, Fireworks,
