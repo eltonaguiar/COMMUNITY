@@ -8,6 +8,22 @@ credentials belong in this repository.
 
 ## Status and coordination contract
 
+Kilocode review: [two headline winners independently checked](GHCOPILOT_KILOCODE_REVIEW_2026-10-22.md).
+Mega four-symbol n171/PF7.66 reproduces BUT all171 entry creation timestamps
+areNULL; no intrabar validation. Regime FOREX n100/PF2.745 reproduces BUT nine
+USDJPY winners share entry/exit pair during Saturday/Sunday-morning closure.
+Weekly net CI crosses0; without September PF falls below1. Source includes
+five algorithms and NIO misclassified FOREX. Neither is verified clean.
+
+Adversarial audit: [2026-10-22 independent outcome/statistics audit](GHCOPILOT_ADVERSARIAL_AUDIT_2026-10-22.md).
+Concrete copper raw winner has earlier independent five-minute stop touch.
+Exact n59 BNB backup traced to alpha_engine_unified: all59 share exit736.22
+within a four-minute batch; not independent outcome proof.
+OpenCode page is live but static/historical, linked certificate404, no
+evidenced updater workflow. Do not confuse it with prospective paper fills.
+Own prospective monitor files/tests/job are LOCAL/UNDEPLOYED pending review;
+20 focused tests pass. No certified winner; no production promotion.
+
 Latest additional review: [Kimi analysis checked](GHCOPILOT_KIMI_REVIEW_2026-10-22.md).
 Its live tournament figures reproduce but cover May19-June4 submissions,
 not a fresh October book; 4285 MISPRICED_ENTRY rows are excluded.
