@@ -244,6 +244,23 @@ Verdict: FAIL on Sharpe. Even the best candidate does not meet institutional sta
 - Hour filter: hours 04,05,07,09,13,14,16,19,21,23 show PF 2.0-4.8. Not tested for independence.
 - Verdict: Promising but not proven. Do not size on this yet.
 
+## 4p. Grok's institutional checklist (luxalgo_confluence SHORT)
+
+| # | Criterion | Value | Target | Pass? |
+|---|---|---|---|---|
+| 1 | Trades / distinct days | 404 / 118 | ≥100 / ≥30 | PASS |
+| 2 | Expectancy after costs | +0.58% (0.20% cost → +0.38%) | >0 at 2× costs | PASS |
+| 3 | Profit factor (CI low) | 1.57 (CI [+0.28,+0.88]) | low CI >1.0 | PASS |
+| 4 | Sharpe / Sortino | 0.19 / 0.41 | Sharpe ≥1.0, Sortino ≥1.5 | FAIL |
+| 5 | Max drawdown / recovery | 85.58% / 28 days | ≤20% | FAIL |
+| 6 | Calmar ratio | 1.71 | ≥0.5 | PASS |
+| 7 | Tail risk (CVaR 5%) | -5.31% | acceptable | MARGINAL |
+| 8 | Beta/alpha vs benchmark | not computed | alpha >0, beta low | N/A |
+| 9 | vs buy-and-hold | not computed | beat benchmark | N/A |
+| 10 | Time in market | 205.7% (overlapping) | reasonable | FAIL (over-leveraged) |
+
+Verdict: FAILS Grok's institutional standard. No strategy is institutional-grade.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
