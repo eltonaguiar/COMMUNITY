@@ -116,6 +116,18 @@ This is the only candidate in the entire system that is (a) recently active, (b)
 - Kimi's mutual-fund plan (MFRS as a ratings product, not trading alpha) is sound and adopted in our plan.
 - **Our proven winner remains `luxalgo_confluence` SHORT portfolio** (n=404, PF 1.57, bootstrap P(>0)=1.0, 4 cells pass strict gate). Kimi's `mega_mutation` does not beat it on current data.
 
+## 4c. Secondary backup candidates (strict non-artifact gate + bootstrap P>0≥0.95)
+
+| Strategy | Symbol | n | Train PF | Test PF | Bootstrap P(>0) |
+|---|---|---:|---:|---:|---:|
+| regime_accumulation | USDCAD=X | 204 | 3.88 | 2.74 | 1.0000 |
+| prediction_market_consensus | BNBUSDT | 59 | 1.94 | 1.97 | 0.9954 |
+| cta_fx_multifactor | USDJPY=X | 75 | 1.96 | 1.79 | 0.9930 |
+| luxalgo_confluence | ETHUSDT | 132 | 1.48 | 1.47 | 0.9728 |
+| high_trust_momentum | BTCUSDT | 64 | 1.66 | 1.99 | 0.9730 |
+
+These are candidates, not proven — subject to Copilot's independence/cost critique (one-position-at-a-time, cost-adjusted expectancy). Listed in `core_whitelist.json` as `backup_stable_secondary_portfolio` (status: candidate).
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
