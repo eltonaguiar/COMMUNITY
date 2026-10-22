@@ -267,6 +267,19 @@ Verdict: FAILS Grok's institutional standard. No strategy is institutional-grade
 - Stronger than luxalgo_confluence SHORT (PF 1.57). Subject to Copilot's independence/cost audit.
 - Added to paper trading page. Status: CANDIDATE (forward-monitoring, not sized).
 
+## 4r. Institutional 13F data (gm_sec_13f_holdings, 4,085 rows)
+
+Top institutional accumulation (new/increased positions, Q3-2025):
+- AMZN: 4 funds increased ($5.97B), 2 new ($1.53B)
+- INTC: 4 funds new ($7.4M)
+- MSFT: 2 new ($2.67B), 1 increased ($400M)
+- META: 2 new ($2.07B), 1 increased ($167M)
+- GOOGL: 2 new ($1.82B), 1 increased ($574M)
+- NVDA: 2 new ($654M), 2 increased ($1.54B)
+- JNJ, PYPL, SQ, BAC, ABNB, XOM, UNH, CRM, AMD, MA, V, COST, NFLX: 1-2 funds
+
+These are large-cap institutional accumulation signals. Could inform EQUITY picks (smart_money_accumulation). Need cross-check with our DB picks for these symbols.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
