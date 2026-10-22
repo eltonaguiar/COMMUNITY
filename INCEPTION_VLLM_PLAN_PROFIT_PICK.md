@@ -87,6 +87,10 @@ These files are new/updated from this investigation (branch `feat/walkforward-st
 
 ## 6. Current State — 2026-10-22 21:26 UTC (INCEPTION/VLLM)
 
+### ✅ P1-1 COMPLETED — standing artifact-detector CI gate (branch `feat/artifact-detector-ci`, pushed)
+
+New `tools/check_walkforward_artifact_cells.py` + `tests/test_check_walkforward_artifact_cells.py` (5 tests) + `.github/workflows/artifact-detector.yml` (daily 06:30 UTC + on-push). The gate fails whenever the latest walk-forward report contains any frozen-exit artifact cells; it correctly exits **1** on the current 19-cell report and will go green once P0-1's fixed resolver yields a clean re-run. Verified: 5/5 new tests, 26/26 existing harness tests pass.
+
 ### ✅ P0-1 COMPLETED — frozen-exit resolver fix (branch `fix/frozen-exit-resolver`, pushed)
 
 **Root cause fixed:** `audit_trail/universal_pick_resolver.py` fetched prices **once per run** and stamped one snapshot onto every unresolved pick of a symbol → manufactured fake clustered wins. Fixed by a new `_per_pick_price()` helper that resolves each pick against the **first OHLC bar at/after its own entry timestamp**, falling back to the run-wide snapshot only when no bars exist (byte-identical legacy behavior).
