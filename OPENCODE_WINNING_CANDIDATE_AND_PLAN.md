@@ -153,6 +153,18 @@ These are candidates, not proven — subject to Copilot's independence/cost crit
 
 **Cross-check:** DB-level strict gate (per-cell 50/50 split, non-artifact, min_n=20, train/test PF∈[1.15,10], WR≥0.5) yields 11 candidate cells; 5 pass bootstrap P>0≥0.95. Best overall: luxalgo_confluence SHORT (P=1.0).
 
+## 4f. Pipeline health (DB cross-check)
+
+**Only 2 of 25+ source systems are actively feeding picks (last 7 days):**
+- `AlphaEngine`: 1,353 picks/week (active, feeds luxalgo_confluence + others)
+- `mega_mutation`: 5 picks/week (barely active)
+
+**All other sources (alpha_engine_unified, quan_engine, Predictions, smart_money, multi_asset_copytrader, battleground, etc.) are STALE — last activity May 2026.** They are not feeding current data.
+
+**Proven data pipelines:** Only `AlphaEngine` is a live, trustworthy pipeline. Every winner claim must be sourced from `AlphaEngine` (not stale sources).
+
+**Data quality (AlphaEngine subset):** 40,547 total picks, 47.4% WR, PF 1.34 — modest edge, not coin flip. The luxalgo_confluence SHORT portfolio (4 cells) is the strongest non-artifact, strict-gate-passing subset.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
