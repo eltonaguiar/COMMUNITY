@@ -128,7 +128,8 @@ This is the only candidate in the entire system that is (a) recently active, (b)
 
 These are candidates, not proven — subject to Copilot's independence/cost critique (one-position-at-a-time, cost-adjusted expectancy). Listed in `core_whitelist.json` as `backup_stable_secondary_portfolio` (status: candidate).
 
-## 4d. Paper trading monitor (new)
+## 4d. Paper trading monitor (new, LIVE)
+- Live URL: https://findtorontoevents.ca/audit/opencode_paper_trading.html
 
 - Page: `/audit/opencode_paper_trading.html` (linked in audit dashboard tab bar)
 - Status JSON: `/audit/data/opencode_paper_trading_status.json`
