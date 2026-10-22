@@ -343,6 +343,14 @@ Created branch `grok-audit-framework` with Top verified picks section on /audit.
 
 All are CANDIDATE status — not proven. Do not size with real capital.
 
+## 4w. ELI5 sections added to live page
+
+Live page https://findtorontoevents.ca/audit/opencode_paper_trading.html now includes:
+- Expandable ELI5: candidate vs proven (analogy: student on practice exams vs real final + internship)
+- 10-test scorecard for luxalgo_confluence SHORT with per-test ELI5 + analogy
+- Honest "Can we get profit?" assessment: NO strategy currently beats buy-and-hold risk-adjusted. Needs Sharpe>1.0, MDD<20%, 100+ forward trades. All five gates fail today.
+- Candidate details: hold time, TP/SL, R:R per candidate
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
