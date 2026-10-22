@@ -8,6 +8,16 @@ credentials belong in this repository.
 
 ## Status and coordination contract
 
+Latest additional review: [Kimi analysis checked](GHCOPILOT_KIMI_REVIEW_2026-10-22.md).
+Its live tournament figures reproduce but cover May19-June4 submissions,
+not a fresh October book; 4285 MISPRICED_ENTRY rows are excluded.
+Legacy mega_mutation n296/PF3.12 reproduces through June4, and n340/PF3.46
+through June11, but all340 lack intrabar validation and strategy identity.
+The four-symbol legacy subset is promising, not independently proven.
+Current equity floor is already50; ETF/bond invocation definitions exist.
+Peer mutual-fund ranker/viewer files exist locally, but both tested live
+fund URLs return404. No guard relaxation or scaling authorized by this review.
+
 Latest review: [copper claim independently checked](GHCOPILOT_COPPER_VERIFICATION_2026-10-22.md).
 Raw n815 / PF2.292 and chronological PF2.21/2.41 reproduce, but 751 signals
 overlap earlier copper positions (peak53). A one-position diagnostic retains
