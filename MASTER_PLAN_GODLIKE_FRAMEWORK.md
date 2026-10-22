@@ -92,6 +92,21 @@ Every candidate must pass ALL of the following before being called a "winner":
 ### Promotion rule
 A sleeve is promoted to "proven winner" only when it passes **all 6 layers**. Everything else stays paper or is rejected. No partial credit.
 
+## 5a. Ten institutional validation techniques (research-backed)
+
+1. **Validation-within-Validation (V-in-V)** — Timothy Masters. Prevents behavioral contamination across the research lifecycle.
+2. **CPCV (Combinatorially Purged Cross-Validation)** — López de Prado. Prevents temporal leakage within each train/test evaluation.
+3. **CSCV (Combinatorially Symmetric Cross-Validation) / PBO** — Probability of Backtest Overfitting. Quantifies probability the selection process produced an overfit result.
+4. **Purging & Embargo** — temporal gap between train and test to prevent information leakage through overlapping returns.
+5. **Deflated Sharpe Ratio (DSR)** — adjusts Sharpe downward for selection bias and data mining (multiple testing).
+6. **Monte Carlo permutation (p-value)** — shuffles trade order / random entry to test if performance is luck.
+7. **Bootstrap (CI for expectancy)** — 10,000+ resamples to estimate confidence intervals.
+8. **Walk-forward (OOS stability)** — chronological train/test split; ≥60% windows must pass.
+9. **Survivorship bias check** — include delisted entities; Yahoo Finance data is NOT survivorship-bias-free.
+10. **Look-ahead bias / data snooping** — lag high/low values; avoid using future data; correct for multiple testing.
+
+These 10 techniques map to the 6 layers above. A candidate must pass all applicable techniques before promotion.
+
 ## 5. Current status (honest)
 
 - **No strategy currently passes all 6 layers.**
