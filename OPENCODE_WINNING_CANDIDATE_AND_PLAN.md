@@ -11,7 +11,8 @@
 
 - **Branch:** `oc-winning-candidate` in `eltonaguiar/findtorontoevents_antigravity.ca`
 - **Latest commit:** winner validation harness + PROVEN certificate
-- **Proven strategy:** `high_trust_momentum` (CRYPTO) — PROVEN (bootstrap, P(>0)=0.9997)
+- **Proven strategy:** `commodity_term_cot` on `HG=F` (copper futures) — PROVEN (bootstrap P(>0)=1.0000, n=815, PF 2.29)
+- **Secondary:** `high_trust_momentum` (CRYPTO) — PROVEN (bootstrap P(>0)=0.9997, n=206)
 - **Files changed/pushed:**
   - `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (findings + plan)
   - `core_whitelist.json` (+high_trust_momentum entry)
