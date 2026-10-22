@@ -320,6 +320,17 @@ Built `tools/ml_candidate_eval.py` (logistic regression on asset_class, directio
 
 Created branch `grok-audit-framework` with Top verified picks section on /audit. Full framework: 8 fixes (compound return headline, hide WR n<20, exclude artifacts, too-good badge, recent 5 real hit time, top verified picks section, data coverage, status chips). Strategy pages: same exclusions + scorecard. Validation: before/after screenshots, re-running identical numbers. CI: pandas freq="ME" issue noted.
 
+## 4w. Best possible picks for go-public (honest assessment)
+
+**No strategy is PROVEN.** For a go-public showcase, the best candidates are:
+
+1. **CRYPTO SHORT @ RSI 30-50** (Inception's mined candidate) — n=125, WR 60.8%, net PF 2.163, CI-LB 1.688, last 30d PF 4.97. Strongest statistical evidence. Status: CANDIDATE (forward-monitoring).
+2. **luxalgo_confluence SHORT portfolio** (XRP/ETH/BTC/STX) — n=404, PF 1.57, P=1.0, 4 cells pass strict gate. Aggregate strong but one-position PF 1.29→1.13 after costs. Status: CANDIDATE.
+3. **regime_accumulation (USDCAD=X)** — n=204, PF 2.74, P=1.0, one-position PF 2.56. Best independence. Status: CANDIDATE.
+4. **high_trust_momentum (BTCUSDT)** — n=64, PF 1.99, P=0.973. Small sample. Status: CANDIDATE.
+
+**For go-public:** Present these as paper-trading candidates with full audit trails, not as proven winners. Include the god-like validation framework and honesty tiers. The mutual fund rating system (MFRS) is the safest product to ship.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
