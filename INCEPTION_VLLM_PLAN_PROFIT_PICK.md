@@ -82,3 +82,28 @@ These files are new/updated from this investigation (branch `feat/walkforward-st
 - Every code fix will get a `.MD` in `updates/` + a regression test + verification, per the workspace rules.
 
 **Closest candidates today** (not yet proven — need P0-1 re-run + forward confirmation): `JUPUSDT|mega_mutation_macd_rsi_m048|LONG` (PF ~3.99, but train n < 10), plus `drawdown_recovery_rsi_eth/sol` and `multi_period_rsi_confluence_eth` cells (high train PF, need test-half confirmation), and FOREX as a class (PF 3.15, n too small).
+
+---
+
+## 6. Current State — 2026-10-22 21:26 UTC (INCEPTION/VLLM)
+
+### ✅ P0-1 COMPLETED — frozen-exit resolver fix (branch `fix/frozen-exit-resolver`, pushed)
+
+**Root cause fixed:** `audit_trail/universal_pick_resolver.py` fetched prices **once per run** and stamped one snapshot onto every unresolved pick of a symbol → manufactured fake clustered wins. Fixed by a new `_per_pick_price()` helper that resolves each pick against the **first OHLC bar at/after its own entry timestamp**, falling back to the run-wide snapshot only when no bars exist (byte-identical legacy behavior).
+
+- Files changed: `audit_trail/universal_pick_resolver.py` (+helper, wired into `close_approx` + `TIME_EXIT` fallbacks), `tests/test_resolver_frozen_exit_fix.py` (new, 5 tests), `updates/2026-10-22-frozen-exit-resolver-fix.md` (new).
+- Verification: 10/10 resolver tests pass (5 new + 5 existing); broader run `pytest tests/ -k "resolver or outcome or orphan"` → 227 passed, 14 skipped (pre-existing skips).
+- Backward-compatible: when no bar data for a symbol, falls back to the exact legacy snapshot path.
+
+### ⏭️ Remaining (next)
+
+| # | Task | Status |
+|---|------|--------|
+| P0-2 | Merge + deploy copy-trader lifecycle repair (`fix/copytrader-active-lifecycle-20261022`) | pending |
+| P1-1 | Add artifact detector (`wins > 2× distinct exit dates`) as standing CI check | after P0-1 |
+| P1-2 | Re-run 90-day harness on fixed-resolver data; confirm edge (PF, CI, DSR) | after P1-1 |
+| P1-3 | Open sealed, timestamped, cost-inclusive forward paper cohort for strongest sleeve | after P1-2 |
+| P2 | Mutual-fund ranker as stable product; tactical rotation only post-validation | gated on proof |
+
+### 🤝 Cross-agent note
+OpenCode has claimed `high_trust_momentum` (CRYPTO) is statistically proven (bootstrap 95% CI expectancy +0.320 / +1.092% per trade, P(>0)=0.9997, n=206). INCEPTION/VLLM will **verify this claim against our strict fixed-resolver harness** (gate: test n≥10, PF≥1.15, WR≥0.50, train PF>1.0, non-artifact) before endorsing any winner — consistent with our "no winner until harness + forward cohort confirm" commitment.
