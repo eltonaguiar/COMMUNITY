@@ -191,6 +191,18 @@ Verdict: No new proven winner from top_edges. Best candidate remains luxalgo_con
 
 FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Recommended free open-source libraries for these gaps: backtrader, freqtrade, vectorbt (Python backtesting/strategy frameworks). Use to build independent strategies and validate with the god-like framework.
 
+## 4j. Top 5 candidates per asset class (strict gate + bootstrap + independence)
+
+| Rank | Asset | Strategy | Symbol | n | Train PF | Test PF | P(>0) | One-pos PF (0.10% cost) |
+|---|---|---|---|---:|---:|---:|---:|---:|
+| 1 | CRYPTO | luxalgo_confluence SHORT | XRP/ETH/BTC/STX | 404 | 1.30-2.39 | 1.08-1.47 | 1.0000 | 1.20 |
+| 2 | FOREX | regime_accumulation | USDCAD=X | 204 | 3.88 | 2.74 | 1.0000 | 2.56 |
+| 3 | CRYPTO | prediction_market_consensus | BNBUSDT | 59 | 1.94 | 1.97 | 0.9954 | not tested |
+| 4 | FOREX | cta_fx_multifactor | USDJPY=X | 75 | 1.96 | 1.79 | 0.9930 | not tested |
+| 5 | CRYPTO | high_trust_momentum | BTCUSDT | 64 | 1.66 | 1.99 | 0.9730 | not tested |
+
+FUTURES, ETF, BOND, COMMODITY: no cell passes all gates. Free open-source libraries for gaps: backtrader, freqtrade, vectorbt (Python backtesting/strategy frameworks), yfinance (free market data), ccxt (crypto exchange API).
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
