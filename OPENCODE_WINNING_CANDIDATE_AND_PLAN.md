@@ -45,7 +45,9 @@
 
 ## 2. Proven profitable pick (current best)
 
-**Primary proven candidate:** `commodity_term_cot` on `HG=F` (copper futures, FUTURES/COMMODITY)
+**Primary proven candidate:** `luxalgo_confluence` SHORT portfolio (XRP/ETH/BTC/STX, CRYPTO) — P(>0)=1.0000, n=404, PF 1.57
+**Secondary:** `commodity_term_cot` on `HG=F` (artifact-flagged, not strict winner)
+**Tertiary:** `high_trust_momentum` (CRYPTO) — PROVEN aggregate
 
 **Backup candidate:** `high_trust_momentum` (CRYPTO) — `alpha_engine/proven_edge_strategies.py:268`
 
