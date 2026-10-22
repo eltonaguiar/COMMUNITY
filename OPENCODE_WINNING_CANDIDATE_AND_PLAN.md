@@ -331,6 +331,18 @@ Created branch `grok-audit-framework` with Top verified picks section on /audit.
 
 **For go-public:** Present these as paper-trading candidates with full audit trails, not as proven winners. Include the god-like validation framework and honesty tiers. The mutual fund rating system (MFRS) is the safest product to ship.
 
+## 4v. Candidate details (hold time, TP/SL, R:R)
+
+| Candidate | Dir | Hold time | TP | SL | R:R | n |
+|---|---|---|---|---|---|---|
+| luxalgo_confluence SHORT | SHORT | ~0.8d (0-13d) | -3.2% | +2.2% | 1.56 | 404 |
+| Inception RSI 30-50 SHORT | SHORT | not stored | not stored | not stored | not stored | 125 |
+| regime_accumulation (USDCAD) | LONG | ~3.9d (0-6d) | +1.0% | -0.6% | 2.04 | 204 |
+| high_trust_momentum (BTC) | LONG | ~1.1d (0-2d) | +3.8% | -2.2% | 1.68 | 64 |
+| smart_money_accumulation (UNH) | LONG | not stored | not stored | not stored | not stored | 30 |
+
+All are CANDIDATE status — not proven. Do not size with real capital.
+
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
