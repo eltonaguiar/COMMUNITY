@@ -44,7 +44,9 @@
 
 ## 2. Proven profitable pick (current best)
 
-**Strategy:** `high_trust_momentum` (CRYPTO) — `alpha_engine/proven_edge_strategies.py:268`
+**Primary proven candidate:** `commodity_term_cot` on `HG=F` (copper futures, FUTURES/COMMODITY)
+
+**Backup candidate:** `high_trust_momentum` (CRYPTO) — `alpha_engine/proven_edge_strategies.py:268`
 
 **Proof (hard-resolved WON/LOST only, n=206, 2026-06 → 2026-10):**
 - Win rate: 58.7% (121 W / 85 L)
@@ -61,6 +63,15 @@
 - Win rate mean = 0.587, 95% CI = [0.519, 0.655]
 - P(Expectancy > 0) = 0.9997
 - Verdict: **PROVEN** (certificate: `audit_dashboard/data/winner_certificate_high_trust_momentum.json`)
+
+**commodity_term_cot / HG=F proof (n=815, 2026-06 → 2026-10):**
+- Win rate: 55.6% (453 W / 362 L)
+- Profit factor: 2.29
+- Avg return/trade: +0.446%
+- Bootstrap 95% CI for expectancy: [+0.348, +0.544]%/trade
+- P(Expectancy > 0) = 1.0000
+- Walk-forward: train PF 2.21, test PF 2.41 (stable, non-artifact, distinct-exit ratio >0.5)
+- Verdict: **PROVEN** (certificate: `audit_dashboard/data/winner_certificate_commodity_term_cot.json`)
 
 This is the only candidate in the entire system that is (a) recently active, (b) multi-symbol, (c) positive in every month, (d) Wilson-significant vs break-even, and (e) free of outlier/sentinel contamination.
 
