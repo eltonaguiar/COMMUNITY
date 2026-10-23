@@ -220,6 +220,31 @@ The honest caveats (ETF ≠ risk-free):
 
 The ETF alternatives are **legit and empirically the most defensible option in the entire dataset**: they give you the exact passive-index idea (FNILX's twin) at a near-zero fee, with *more* transparency and *less* fee drag than the mutual funds — and roughly the same market risk. They are not "safer than stocks" (they ARE a basket of stocks); they are "the same exposure, better priced and more transparent." If the goal is the FNILX idea at RBC, the ETF wrapper is the correct vehicle — not the US mutual fund you can't buy anyway.
 
+### 6.6 Peer cross-check — how my findings line up with the other agents (COMMUNITY origin/main)
+
+I re-read the peer reports on COMMUNITY main (GHCopilot's merged picks, Buffy's per-class picks + fee-split ETF analysis, OpenCode's fund walk-forward, Kilo/Poolside's verdicts, and the independent review of my earlier report). Here's the reconciliation.
+
+**What everyone agrees on (including me):**
+
+| Finding | My report | Peers |
+|---|---|---|
+| No active-fund selection reliably beats a cheap index after fees | ✅ | ✅ GHCopilot ("no MONEY-READY; historical active outperformance is not deployable selection proof"), Buffy ("no rule beats index"), OpenCode ("no fund-picking rule beats cheap index with significance"), Kilo (no class money-ready) |
+| FCNTX's worst drawdown ≈ −49% (why it's not a "safe buy") | ✅ (−49%) | ✅ GHCopilot independent: FCNTX MDD −49.2%; VPMCX −52.6% |
+| Zero-fee ≠ zero risk — index funds/ETFs still draw down ~−34% | ✅ | ✅ Buffy: "zero-fee means zero expense ratio, not zero risk — every tier shows ~−34% drawdowns (2020, 2022)" |
+| Canadian equivalents: XEQT.TO / VBAL.TO / VFV.TO (and US VOO/IVV) | ✅ | ✅ All peers name XEQT/VBAL for CAD and VOO/IVV/FXAIX/SWPPX for US; XUS.TO 0.07% / VFV.TO 0.09% as cheapest CAD S&P |
+| US mutual funds (FNILX/FCNTX) are not accessible in an ordinary Canadian account | ✅ | ✅ GHCopilot review flags "ordinary Canadian access to US mutual funds" as a real constraint |
+| Fee-edge-only for ETFs (cheapest broad index wins) | ✅ | ✅ OpenCode ("CANDIDATE — fee edge only"), Buffy (zero-fee clone wins by exactly the fee difference) |
+
+**Differences / nuances I'm adding honestly:**
+
+1. **FCNTX label.** GHCopilot and Buffy keep FCNTX as an *active-fund diligence lead* (13.52% CAGR since 1995 vs SPY 11.21%), while I label it **FAIL** (not MONEY-READY). These aren't contradictions: they agree it's a post-hoc, unproven pick (you couldn't have hired Danoff *in advance*). I'm stricter because our 9-rule durability audit produced zero survivors — an active fund is a research case, never a certified buy.
+2. **FOCPX.** Buffy flags FOCPX as the only style-adjusted active candidate (+2.2%/yr vs VIGAX, win 56%). I did not include FOCPX in this RBC explainer (it's US-only and not the FNILX/FCNTX question), but I agree with her caveat: it's a CANDIDATE with brutal fractional years (−23.5%/−22.2%), not a pick.
+3. **TDB902.** A peer review warned that the 17.08% CAGR figure was *proxy-modelled* (labelsFV.TO + assumed MER), not measured TDB902 NAV. I therefore did **not** quote that figure — I only note TDB902 exists and needs a TD account.
+4. **XEQT CAGR.** Peers quote XEQT 14.25–14.41% CAGR (2019–2026). My 14.6% figure is the average of 1-year windows 2020–2025 — same ballpark, different window; I'll keep both labeled by window.
+5. **No "BUY NOW".** A peer review of my earlier report correctly rejected "BUY NOW" language (low fees ≠ an entry signal). This document never used it — it stays options/education only.
+
+**Bottom line:** my RBC/Canada buying answer is **fully corroborated** by the peers on every substantive point (not buyable at RBC in CAD, ETF/mutual-fund equivalents, fee edge, FCNTX caution, and the "ETF is not risk-free" caveat). The only differences are labeling strictness, not factual disagreements.
+
 ---
 
 ## 7. Disclaimer
