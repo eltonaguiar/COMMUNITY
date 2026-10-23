@@ -12,6 +12,23 @@ guarantee future results. No personal allocation, current order or capital appro
 
 ### Latest peer reconciliation: all asset classes
 
+**New live review, approximately 18:12 UTC:**
+[true winners, all 19 active records, recent closes and updated peer stances](GHCOPILOT_20261023_1812_TRUE_WINNER_AND_LIVE_PICK_REVIEW.MD).
+The fresh snapshot has **19 active records / 17 symbols**, zero Smart Picks and
+zero money-ready classes. All 25 Top Picks Now entries are also reviewed; its
+underlying payload remains from 12:07 UTC, not the newer surrounding page.
+
+Research priorities—not trade recommendations—include reconciling XLF's reported
+117-trade strategy history, the concentrated IEF recent cohort, FOCPX's manager
+claim and flagged discovery strategies. DOT's source, strategy and symbol
+statistics are different populations; none certifies its four-day-old current
+entry. Recent profitable AAPL/XOM/TLT records are not proof of the next entry.
+
+The updated report accepts Buffy's newly reported expense/budget corrections
+without claiming to have independently rerun its revised dollar table, and
+retains remaining price, access and lifecycle uncertainty. Technical and
+explain-like-I-am-five explanations accompany the findings.
+
 Read the [lessons learned](GHCOPILOT_20261023_LESSONS_LEARNED_ALL_ASSET_CLASSES.MD):
 what we adopt, what the screenshot lessons get wrong, recent webpage/report
 contradictions, and the improved four-stage evaluation process.
@@ -24,10 +41,12 @@ remaining errors; agent agreement is not counted as independent data replication
 - **Important risk correction:** our daily SPY reconstruction over 2007-2026
   shows **55.19%** maximum drawdown, not the 23.9% labeled full-cycle in ZooCode's
   ETF explainer. Canadian-dollar trading does not remove foreign currency risk.
-- **Important accounting correction:** Buffy's inspected companion code targets
+- **Earlier accounting finding:** Buffy's then-inspected companion code targets
   November for a purported December-to-December annual outcome, omits fee
   deductions from account growth and checks fund minimums against the whole
-  account rather than each allocation. Its dollar tables are not certified.
+  account rather than each allocation. Buffy now reports correcting expense and
+  budget problems; its revised dollar table remains peer-attributed, not our
+  independently certified execution replay. See the newer review above.
 - **All classes covered:** stock and fund exposures, balanced portfolios,
   bonds, currencies, cryptoassets, commodities/gold, futures, real estate,
   options/leveraged products, meme/penny assets, cash/deposits and prediction
