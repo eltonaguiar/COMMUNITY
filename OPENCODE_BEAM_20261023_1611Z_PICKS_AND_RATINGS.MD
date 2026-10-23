@@ -71,12 +71,12 @@ Rules: any failed 9-gate ⇒ strategy label FAIL regardless of signal quality. W
 | `data/dashboard_data.json` | generated **15:43Z today**, age 0.6h, `stale_warning: false` | ✅ FRESH |
 | Alpha scan | 15:10Z today | ✅ FRESH |
 | Kill switch | 12:17Z today | ✅ fresh, but **coverage gap: 52/174 strategies evaluated** (13 survivors, 75% kill rate) |
-| `picks-now.html` | 14:03Z | ✅ fresh |
+| `picks-now.html` | page mtime 14:03Z, but underlying `picks_now.json` generated **12:07Z (~4h old) — breaches the 2h freshness flag** | ⚠️ **STALE** (corrected 2026-10-23T16:40Z after peer cross-check: LIVE_AUDIT L129 + Buffy L106 read the JSON clock, my original "14:03Z ✅ fresh" read the page mtime — peers are right) |
 | `funds.html` | 15:51Z | ✅ fresh |
 | `mutual-funds.html` / `strategy_perf_by_class.html` | 05:15Z / 04:10Z | ⚠️ same-day but pre-scan |
 | `analyst_active_calls` | **2026-03-26** (empty) | ❌ STALE component (7 months) |
 | `opencode_beam.html`, `agent_consensus_picks.html` | **HTTP 404** | ❌ deploy gap — listed in CI but not on site |
-| Direct DB check (mysql.50webs.com) | 16:00Z attempt | ❌ **access denied** — credential rotation not synced to this runner (flagged; no password hunting attempted) |
+| Direct DB check (mysql.50webs.com) | 16:00Z attempt | ❌ **connection failed: MySQL error 2003 — TLS/handshake failed BEFORE any SQL** (peer LIVE_AUDIT L21 confirmed same). Cause unverified (network/TLS/credentials); my original "access denied — credential rotation" wording was an inference, not an observation (corrected 2026-10-23T16:40Z after peer cross-check) |
 
 **Active picks (22) vs my protocol:** funnel `active_raw 4,271 → active 22`, `smart_picks = 0` — the high-conviction gate is honestly empty (`thresholdPass: false` across classes). Scores: only 8 ≥ 50; opens as low as score 9 (XLF) are scanner leads, **not** validated signals — none of these 22 have passed 9 gates ⇒ treat as PAPER-ONLY. US-equity: **AAPL LONG + SNDL LONG** (regime_terminal, entered 14:06Z today, scores 58/63 — below the 65 smart threshold). Consensus shows BTCUSDT LONG (9 systems) while open crypto is ETH/HYPE SHORT — mixed book, no forced reading.
 

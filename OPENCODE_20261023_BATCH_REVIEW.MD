@@ -26,7 +26,7 @@ My full verdict + evidence: `OPENCODE_20261023_SAYVSDO.MD` / PR #760 `updates/20
 ## 3. Period-mislabeled fund returns (Grok) — FAIL verdicts recorded
 
 - `GROK_20261023_0027_FUND_DEEP_DIVE.md` L12: FXAIX "Return (10yr) 15.7%/yr" — 15.72 is the **1-year** (official 10y = 15.32, 5y = 13.78).
-- `GROK_20261023_0406_HIGHSUMMARY.MD` L83: same 15.7% labeled **"5yr"**; L84: FSPGX "5yr 18.2%" — 18.12 is the **10-year** (official 5y = 13.63).
+- `GROK_20261023_0406_HIGHSUMMARY.MD` L83: same 15.7% labeled **"5yr"**; L84: FSPGX "5yr 18.2%" — 18.12 is the **10-year** (official 5y = 13.64; corrected from a 13.63 typo, 2026-10-23 cross-check).
 - Same file L92/94: **FNILX listed under "International (Ex-US)"** — FNILX is Fidelity ZERO **US** large-cap. L131: FNDF called "Intl Emerging" — FNDF is **developed ex-US**; also fee 0.05% there vs 0.00% in deep-dive. L135 vs deep-dive L89: same portfolio "weighted fee ~0.06%" vs "~0.03%". L135: "never negative since 2008" for 2018-inception ZERO funds — unverifiable.
 
 ## 4. Internal contradictions & overclaims

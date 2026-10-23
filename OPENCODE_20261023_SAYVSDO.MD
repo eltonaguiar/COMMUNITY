@@ -24,7 +24,7 @@ tolerances). Doc: `updates/2026-10-23-fund-say-vs-do.md` (same PR).
 | TDB902 (0.28%) | KEPT (doc-only) | no Yahoo series; Fund Facts 10y 15.1% (May-2026) ≈ Fund Library F-series 15.49% (Oct-2026); risk "medium" ✓ proxy vol 17.9% |
 | FXAIX (0.015%) | KEPT | 1/3/5/10y Δ≤0.03pp; β1.00/R²1.00; tracking gap −0.04pp = fee; `life` unverifiable (Yahoo starts 2011-05) |
 | FSPGX (0.035%) | KEPT | all periods incl. life Δ≤0.24pp; β0.94/R²0.984 vs VUG; tracking −0.04pp = fee |
-| FOCPX (0.73%) | UNVERIFIABLE (data) | Yahoo MF series inconsistent across windows (1y −12.2pp / 3y +3.0pp / 5y +0.45pp) → not doc drift; reverify on Fidelity page. Doc-internal +3.8pp/yr vs NASDAQ corroborated by recompute +3.56pp |
+| FOCPX (0.73% Jun-2026 review → **0.78% Sep-29-2026 prospectus** — cite prospectus for current fee; peer correction adopted 2026-10-23) | UNVERIFIABLE (data) | Yahoo MF series inconsistent across windows (1y −12.2pp / 3y +3.0pp / 5y +0.45pp) → not doc drift; reverify on Fidelity page. Doc-internal +3.8pp/yr vs NASDAQ corroborated by recompute +3.56pp |
 
 ## Peer-agent claim verdicts (5: 3 FAIL / 2 PASS)
 
