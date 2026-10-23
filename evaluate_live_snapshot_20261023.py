@@ -118,6 +118,19 @@ def main():
                 and r["source_system"] == source]
         active_cohorts.append({"asset_class": asset, "strategy": strategy,
                                "source_system": source, **stats(rows)})
+    peer_strategy_checks = []
+    for strategy in ("rs-breakout-scout", "MomentumEMA"):
+        rows = sorted([r for r in closed if r["strategy"] == strategy],
+                      key=lambda r: timestamp(r["closed_at"]))
+        midpoint = len(rows) // 2
+        peer_strategy_checks.append({
+            "match_level": "strategy_only_not_current_source_or_symbol",
+            "strategy": strategy, **stats(rows),
+            "first_half_closed_time_order": stats(rows[:midpoint]),
+            "second_half_closed_time_order": stats(rows[midpoint:]),
+            "chronology_warning": "Equal close timestamps retain input order; "
+                                  "halves of a batch are not a chronological stability test.",
+        })
     fingerprints = Counter(tuple(str(row.get(k)) for k in (
         "symbol", "direction", "strategy", "source_system", "timestamp", "entry_price", "closed_at"
     )) for row in closed)
@@ -166,6 +179,7 @@ def main():
         "verdict_summary": verdict["summary"],
         "active_records": active_output, "recent_closed_by_class": class_summaries,
         "recent_close_examples": examples, "active_strategy_closed_container_matches": active_cohorts,
+        "new_peer_named_strategy_checks": peer_strategy_checks,
         "published_recency_panels": {
             label: json.loads((SNAPSHOT / f"data_pick_summary_stats_{label}.json").read_text())
             for label in ("14d", "48h")

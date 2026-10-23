@@ -2235,6 +2235,134 @@
       "net_cost_populated": 0
     }
   ],
+  "new_peer_named_strategy_checks": [
+    {
+      "match_level": "strategy_only_not_current_source_or_symbol",
+      "strategy": "rs-breakout-scout",
+      "records": 117,
+      "numeric_pnl": 117,
+      "positive": 64,
+      "negative": 53,
+      "zero": 0,
+      "pf_published_pnl_only": 1.744187487414613,
+      "pf_undefined_no_losses": false,
+      "distinct_ids": 117,
+      "distinct_close_dates": 81,
+      "source_counts": {
+        "kimi_riseoftheclaw": 117
+      },
+      "exit_reason_counts": {
+        "TIME_EXIT": 24,
+        "TP_HIT": 47,
+        "SL_HIT": 46
+      },
+      "net_cost_populated": 0,
+      "first_half_closed_time_order": {
+        "records": 58,
+        "numeric_pnl": 58,
+        "positive": 39,
+        "negative": 19,
+        "zero": 0,
+        "pf_published_pnl_only": 3.0662536031923513,
+        "pf_undefined_no_losses": false,
+        "distinct_ids": 58,
+        "distinct_close_dates": 42,
+        "source_counts": {
+          "kimi_riseoftheclaw": 58
+        },
+        "exit_reason_counts": {
+          "TIME_EXIT": 13,
+          "TP_HIT": 31,
+          "SL_HIT": 14
+        },
+        "net_cost_populated": 0
+      },
+      "second_half_closed_time_order": {
+        "records": 59,
+        "numeric_pnl": 59,
+        "positive": 25,
+        "negative": 34,
+        "zero": 0,
+        "pf_published_pnl_only": 0.9424670146124802,
+        "pf_undefined_no_losses": false,
+        "distinct_ids": 59,
+        "distinct_close_dates": 39,
+        "source_counts": {
+          "kimi_riseoftheclaw": 59
+        },
+        "exit_reason_counts": {
+          "TP_HIT": 16,
+          "TIME_EXIT": 11,
+          "SL_HIT": 32
+        },
+        "net_cost_populated": 0
+      },
+      "chronology_warning": "Equal close timestamps retain input order; halves of a batch are not a chronological stability test."
+    },
+    {
+      "match_level": "strategy_only_not_current_source_or_symbol",
+      "strategy": "MomentumEMA",
+      "records": 73,
+      "numeric_pnl": 73,
+      "positive": 41,
+      "negative": 32,
+      "zero": 0,
+      "pf_published_pnl_only": 1.8994295028524857,
+      "pf_undefined_no_losses": false,
+      "distinct_ids": 73,
+      "distinct_close_dates": 1,
+      "source_counts": {
+        "signal_validation": 73
+      },
+      "exit_reason_counts": {
+        "TP_HIT": 35,
+        "TIME_EXIT": 8,
+        "SL_HIT": 30
+      },
+      "net_cost_populated": 0,
+      "first_half_closed_time_order": {
+        "records": 36,
+        "numeric_pnl": 36,
+        "positive": 24,
+        "negative": 12,
+        "zero": 0,
+        "pf_published_pnl_only": 3.012,
+        "pf_undefined_no_losses": false,
+        "distinct_ids": 36,
+        "distinct_close_dates": 1,
+        "source_counts": {
+          "signal_validation": 36
+        },
+        "exit_reason_counts": {
+          "TP_HIT": 21,
+          "TIME_EXIT": 4,
+          "SL_HIT": 11
+        },
+        "net_cost_populated": 0
+      },
+      "second_half_closed_time_order": {
+        "records": 37,
+        "numeric_pnl": 37,
+        "positive": 17,
+        "negative": 20,
+        "zero": 0,
+        "pf_published_pnl_only": 1.255083655083655,
+        "pf_undefined_no_losses": false,
+        "distinct_ids": 37,
+        "distinct_close_dates": 1,
+        "source_counts": {
+          "signal_validation": 37
+        },
+        "exit_reason_counts": {
+          "TP_HIT": 14,
+          "SL_HIT": 19,
+          "TIME_EXIT": 4
+        },
+        "net_cost_populated": 0
+      },
+      "chronology_warning": "Equal close timestamps retain input order; halves of a batch are not a chronological stability test."
+    }
+  ],
   "published_recency_panels": {
     "14d": {
       "generated_at": "2026-10-23T17:18:38+00:00",

@@ -29,6 +29,13 @@ without claiming to have independently rerun its revised dollar table, and
 retains remaining price, access and lifecycle uncertainty. Technical and
 explain-like-I-am-five explanations accompany the findings.
 
+**Late peer update incorporated:** direct Grok reports and Buffy round 3 arrived
+during the review. XLF's strategy-name history is now reproduced at PF 1.744,
+but its later half is **0.9425**: decay investigation, not a supported entry.
+MomentumEMA's 73 records all share one closure date in our snapshot, so its
+independence claim remains on hold. Buffy now reports fixing calendar/fee/running-
+budget defects; its new smallest-tier case loses money and remains peer-attributed.
+
 Read the [lessons learned](GHCOPILOT_20261023_LESSONS_LEARNED_ALL_ASSET_CLASSES.MD):
 what we adopt, what the screenshot lessons get wrong, recent webpage/report
 contradictions, and the improved four-stage evaluation process.
