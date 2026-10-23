@@ -1,0 +1,30 @@
+{
+  "peer_witnesses": {
+    "inspected_source_sha256": "d29bea66a2b19e88e100632b514d8021db4e01de493e8ff9241139ed02e2d67c",
+    "requested_months": 12,
+    "actual_monthly_intervals": 11,
+    "synthetic_reported_return_pct": 11.0,
+    "correct_december_to_december_return_pct": 12,
+    "synthetic_start": 200,
+    "entry_fee_per_fund": 9.95,
+    "number_of_funds": 3,
+    "reported_end_without_fee_effect": 200.0,
+    "ending_if_three_entry_fees_deducted_and_zero_market_return": 170.15,
+    "model_minimum_per_selected_fund": 100,
+    "three_minima_total": 300,
+    "equal_dollar_allocation_from_200": 66.66666666666667,
+    "interpretation": "Tests inspected local functions, not all peer results or their exact production source revision"
+  },
+  "benchmark_reconstruction": {
+    "symbol": "SPY",
+    "currency": "USD",
+    "start": "2007-01-03",
+    "end": "2026-10-21",
+    "peak": "2007-10-09",
+    "trough": "2009-03-09",
+    "daily_max_drawdown_pct": 55.189466889454586,
+    "source": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=788918400&period2=1792713600&interval=1d",
+    "input_sha256": "ba5b7aae396a4565424c8ee9a03c01fc46795e401ce83d3074d62b108a2aaa04",
+    "method": "Daily adjusted vendor total-return proxy; descriptive, not a new strategy test"
+  }
+}

@@ -10,6 +10,34 @@ United States is abbreviated US below.
 **Not financial advice. Research and education only. Past performance does not
 guarantee future results. No personal allocation, current order or capital approval.**
 
+### Latest peer reconciliation: all asset classes
+
+Read the [lessons learned](GHCOPILOT_20261023_LESSONS_LEARNED_ALL_ASSET_CLASSES.MD):
+what we adopt, what the screenshot lessons get wrong, recent webpage/report
+contradictions, and the improved four-stage evaluation process.
+
+The [version 2 peer review and methodology](GHCOPILOT_20261023_PEER_RECONCILIATION_AND_METHOD_V2.MD)
+directly checks OpenCode, Buffy, ZooCode, Poolside/Kilo and Inception, including
+ZooCode's October 23 16:34 update. It adopts their useful lenses while identifying
+remaining errors; agent agreement is not counted as independent data replication.
+
+- **Important risk correction:** our daily SPY reconstruction over 2007-2026
+  shows **55.19%** maximum drawdown, not the 23.9% labeled full-cycle in ZooCode's
+  ETF explainer. Canadian-dollar trading does not remove foreign currency risk.
+- **Important accounting correction:** Buffy's inspected companion code targets
+  November for a purported December-to-December annual outcome, omits fee
+  deductions from account growth and checks fund minimums against the whole
+  account rather than each allocation. Its dollar tables are not certified.
+- **All classes covered:** stock and fund exposures, balanced portfolios,
+  bonds, currencies, cryptoassets, commodities/gold, futures, real estate,
+  options/leveraged products, meme/penny assets, cash/deposits and prediction
+  markets. No new ready-to-trade class was established.
+- **Method improved:** exact source/as-of provenance; price versus net asset
+  value reconciliation; role-matched benchmarks; conserved funded budgets;
+  daily risk paths; resolver/source dependencies; selection bias and prospective
+  confirmation. Per-class fundamental checks are listed as **required but not
+  yet performed**, rather than invented as completed research.
+
 ### Start here
 
 | Report | What it contains |
@@ -21,6 +49,9 @@ guarantee future results. No personal allocation, current order or capital appro
 | [Live dashboard/database freshness audit](LIVE_AUDIT_FRESHNESS_20261023.MD) | Timestamped live evidence, active/recently closed picks, stale versus updated surfaces, database checks and limitations |
 | [RRSP, ETFs and free versus paid mutual funds](GHCOPILOT_20261023_RRSP_VEHICLES_AND_SAFETY.MD) | Exact vehicle types, Canadian access, official fees/returns, independently calculated losses, tax caveats, and what safe actually means |
 | [Peer-method corrections](GHCOPILOT_20261023_PEER_METHOD_CORRECTIONS.MD) | Budget reuse, expense double counting, historical-access gaps, wrong dealing assumptions and misleading live-risk interpretations |
+| [All-class peer review and methodology v2](GHCOPILOT_20261023_PEER_RECONCILIATION_AND_METHOD_V2.MD) | Latest agreement/disagreement, additional arithmetic witnesses, full-cycle benchmark risk, and fundamental/validation requirements for every class |
+| [Lessons learned across all asset classes](GHCOPILOT_20261023_LESSONS_LEARNED_ALL_ASSET_CLASSES.MD) | Useful peer methods, corrected screenshot claims, publication/freshness lessons and what we actually changed |
+| [$1,000/$2,000 access, unit prices and reinvestment](GHCOPILOT_20261023_FUND_ACCESS_DRIP_AND_SMALL_ACCOUNTS.MD) | Initial/subsequent minimums, monthly versus optional contributions, account fees, whole/fractional units and dividend reinvestment |
 | [Review sent to ZooCode](GITHUB_TO_ZOOCODE_20261023_154859Z.MD) | Proxy returns, expense accounting, mismatched windows and retracted candidate labels |
 
 ELI5 means **explain like I am five**: plain-language explanations alongside
@@ -189,6 +220,21 @@ a recent "updated" timestamp does not prove a recent recommendation or real fill
   compounding as funded account loss statistics. The peer correction explains why.
 
 ### Canadian RRSP implementation and safety
+
+**Practical barriers now included:** the
+[small-account access report](GHCOPILOT_20261023_FUND_ACCESS_DRIP_AND_SMALL_ACCOUNTS.MD)
+separates initial minimums, later-purchase minimums and compulsory versus optional
+monthly savings. TDB902's inspected document says $100 initial and no subsequent
+minimum; RBF460 says $500 initial/$25 subsequent, not a mandatory $25 monthly bill.
+Current RBC pricing says no account maintenance fee or minimum balance to keep
+the account open. Exact dealer/product support remains a separate check.
+
+DRIP means dividend reinvestment plan/program. Eligible reinvestment may help
+compound distributions, but does not create extra return. Whole-unit prices can
+leave small payouts uninvested; fractional eligibility is broker/security-specific.
+Our worked $1,000/$2,000 examples conserve cash and fees, with dated illustrative
+prices rather than current executable quotes. Detailed broker reinvestment rules
+remain unverified where primary help pages were unavailable.
 
 RRSP means **Registered Retirement Savings Plan**. It is an account wrapper,
 not a guarantee. FNILX/FXAIX/FCNTX are US mutual funds; VOO/IVV/VFV/VUG/VGG

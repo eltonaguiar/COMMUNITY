@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://findtorontoevents.ca/audit/agent_consensus_2026-10-23.html",
+    "observed_at": "2026-10-23T16:41:47.504131+00:00",
+    "status": 200,
+    "sha256": "eb0ea695f8921d6628e755b772498c8981fde05edad9677194d03eb3a040ef81",
+    "bytes": 21920,
+    "markers": {
+      "BUY NOW": false,
+      "17.08%": true,
+      "cash-equivalent": false,
+      "XEQT \u03940.29pp": false,
+      "$812": true,
+      "\u2264\u00b10.15pp": false
+    }
+  },
+  {
+    "url": "https://findtorontoevents.ca/audit/agent_consensus_picks.html",
+    "observed_at": "2026-10-23T16:41:47.580524+00:00",
+    "status": 404,
+    "sha256": "5d4ce9174c88469f421282d4e56f583c4be7737485e8c2897e5bcf69717c811c",
+    "bytes": 992
+  }
+]

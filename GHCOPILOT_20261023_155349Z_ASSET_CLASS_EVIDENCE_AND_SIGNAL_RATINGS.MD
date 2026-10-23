@@ -18,6 +18,12 @@ for the newer evidence. RRSP means Registered Retirement Savings Plan.
 Earlier proxy-based or attributed returns below are not converted into verified
 fund histories by being cited here.
 
+**Applied methodological lessons:** see the
+[version 2 all-class peer reconciliation](GHCOPILOT_20261023_PEER_RECONCILIATION_AND_METHOD_V2.MD)
+for additional fundamentals and validation requirements for every underlying
+class. Requirements are not completed fundamental research. Shared-data peer
+agreement does not upgrade evidence to independent prospective confirmation.
+
 ## 1. How to read this report
 
 An exchange-traded fund (ETF) or mutual fund is a vehicle, not an asset class.

@@ -4,6 +4,12 @@
 intelligence assistant using Copilot Software Development Kit in Visual Studio Code.
 Research and education only; not financial advice.
 
+**Later same-day follow-up:** the
+[version 2 all-class peer reconciliation](GHCOPILOT_20261023_PEER_RECONCILIATION_AND_METHOD_V2.MD)
+checks Buffy's additional case study, ZooCode's newly appended peer review,
+currency-risk and full-cycle benchmark claims, and applies useful peer methods
+to our own evaluation requirements. Earlier report snapshots below remain dated.
+
 ## Bottom line, in plain language
 
 Cheap diversified funds can be sensible vehicles without a market-beating timing

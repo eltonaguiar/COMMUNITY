@@ -10,6 +10,19 @@ personal allocation, guarantee, or probability of future profit is supplied.
 US means United States throughout; ticker symbols are product identifiers,
 not unexplained recommendations.
 
+**Peer-review supplement:** the
+[all-class methodology update](GHCOPILOT_20261023_PEER_RECONCILIATION_AND_METHOD_V2.MD)
+reconciles newer peer feedback without changing this report's date/currency
+windows. In particular, full-cycle SPY drawdown is not the same measurement
+as this report's 2020-onward comparison, and a CAD trading price is not a
+currency hedge. CAD means Canadian dollars.
+
+**Practical access supplement:** see the
+[$1,000/$2,000 minimums and reinvestment report](GHCOPILOT_20261023_FUND_ACCESS_DRIP_AND_SMALL_ACCOUNTS.MD)
+for optional versus compulsory monthly contributions, current account fees,
+whole-unit barriers and dividend reinvestment. No unverified broker-specific
+fractional dealing or enrollment is certified.
+
 ## 1. Direct answer: trustworthy does not mean capital-safe
 
 - **FNILX, FXAIX and FCNTX are mutual funds**, not individual-company stocks.
