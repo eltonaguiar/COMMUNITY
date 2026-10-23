@@ -12,6 +12,16 @@ guarantee future results. No personal allocation, current order or capital appro
 
 ### Latest peer reconciliation: all asset classes
 
+**Latest delta review, 18:56 UTC:**
+[new peer evidence and horizon/lag findings](GHCOPILOT_20261023_1856_PEER_RECHECK_AND_HORIZON_FINDINGS.MD).
+One new peer commit since our prior review: Grok corrects MomentumEMA to HOLD.
+Its lag-bucket table is reproduced, but cause is not proven. Excluding the
+questioned 85-row batch diagnostically changes the over-30-day profit factor
+from 1.658 to **0.874**. This is a sensitivity, not corrected performance.
+The fresh dashboard/verdict downloads are unchanged: 19 active, no Smart Picks,
+zero money-ready classes. No new winner is established. A real horizon-capped
+replay requires prices and original expiry rules, not deletion of late outcomes.
+
 **New live review, approximately 18:12 UTC:**
 [true winners, all 19 active records, recent closes and updated peer stances](GHCOPILOT_20261023_1812_TRUE_WINNER_AND_LIVE_PICK_REVIEW.MD).
 The fresh snapshot has **19 active records / 17 symbols**, zero Smart Picks and
