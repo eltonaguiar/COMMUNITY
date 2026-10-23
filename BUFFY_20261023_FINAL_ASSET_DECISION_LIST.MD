@@ -33,8 +33,8 @@
 
 | Asset | Fee / min | Rating | Why |
 |---|---|---|---|
-| **TD e-Series TDB900 (CDN idx)** | ~0.22%, $100 min, fractional, auto-reinvest | 🟠 | Cheap passive access where ETFs aren't practical; **not available at RBC DI** (TD channel only) |
-| **TD e-Series TDB902 (US idx)** | 0.28%, $100 min | 🟠 **vehicle facts only** | Its "17.08% CAGR" is a **VFV proxy window (2012+)**, not the fund's record (own ~15.1%) — performance leg = HOLD (OpenCode §2.5) |
+| **TD e-Series TDB900 (CDN idx)** | ~0.22%, $100 **initial** min, **no subsequent minimum**, $25 PAC optional, fractional, auto-reinvest | 🟠 | Cheap passive access where ETFs aren't practical; **not available at RBC DI** (TD channel only) |
+| **TD e-Series TDB902 (US idx)** | 0.28%, $100 initial, no subsequent min | 🟠 **vehicle facts only** | Its "17.08% CAGR" is a **VFV proxy window (2012+)**, not the fund's record (own ~15.1%) — performance leg = HOLD (OpenCode §2.5) |
 | **RBC Select Balanced RBF460** | **1.94%**, $500 min; $25 = optional PAC (corrected) | 🔴 | MER alone ≈ 10× XEQT; no selection evidence justifies it |
 | **Mawer MAW104** | 0.91%, $500 | 🔴 (small acct) | Decent shop, but fee > anything we measured |
 | **Fidelity Canada B / Dynamic A** | ~2.0–2.5%, $500 | 🔴 | Loads + MER |
@@ -84,7 +84,7 @@
 **Decision: 🟡 paper-only, zero real-money allocation.**
 - Live readiness: n=20,467, **PF 0.29**, MONITORING, `sizing_allowed=false`.
 - Paper candidates (never funded): `prediction_market_consensus` SHORT n=682 PF 2.11 (OpenCode CANDIDATE; Grok re-measure CI [0.68, 1.05] → FAIL), `rapid_momentum_filter_mut` SHORT n=55 PF 2.59, `cvd_divergence` SHORT n=42 PF 2.60, `luxalgo_confluence` SHORT post-cost 1.13.
-- **Mine:** CRYPTO SHORT RSI30-50 — n=125, PF 2.16 net, CI-LB 1.69 (3/10 gates pass, **7 NOT RUN**: MDD, MC, DSR, 2×cost, concentration, halves, artifact). Grok scores it CANDIDATE-with-unrun-gates; **my own honest rating = 🟡 PAPER**, it fails my CANDIDATE definition.
+- **Mine:** CRYPTO SHORT RSI30-50 — n=125, PF 2.16 net, CI-LB 1.69 (3/10 gates pass, **7 NOT RUN**: MDD, MC, DSR, 2×cost, concentration, halves, artifact). Grok's 1625 findings index finalizes it as **FAIL (gates not run)** — same practical outcome as my 🟡 PAPER stance: **not funded either way.** It fails my own CANDIDATE definition.
 - Killed claims: BTC momentum (daily MDD **−81.9%**, MC 77th pct, DSR≈0) · `high_trust_momentum` (Oct WR 38.1% decay, CI crosses 0) · alpha_engine cell (n=39 on 9 exit-days = artifact flag) · Kimi/Inception mega_mutation (n=15–96).
 
 ## 7. Forex
@@ -138,5 +138,14 @@
 **⛔ NOT BUYABLE in a Canadian RBC CAD account:** FOCPX, FCNTX, VPMCX, FZROX, FZILX, FNILX, FXAIX, VFINX, IVV/VOO without USD.
 
 **What would change any 🟡 to 🟢/funded:** resolver + horizon-cap fixes merged, artifact-free n≥100, PF-net ≥1.5 with CI-LB ≥1.2, MC ≥95th with real exits, DSR >0.95 with stated family, 2× costs, both halves, then a **sealed timestamped forward cohort** — and, for anything not a fund, Canadian access.
+
+---
+
+## ADDENDUM — accepted after Grok's 1625 findings index (`9d3cba0`, landed during compilation)
+
+1. **TD e-Series minimums corrected:** TD Fund Facts (Jul-2026) says **no subsequent minimum** — my "~$100 subsequent (verify)" was wrong; the $25 PAC is **optional**. My older "$25/month PAP required" claim (RBF460 row) is **retracted** (OpenCode + Grok: optional PAC, not a bill). Tables above carry the corrected values.
+2. **Grok's final labels adopted** (3-label policy): CRYPTO SHORT pmc + RSI30-50 = **FAIL** (CI includes <1 / gates not run) · XLF/rs-breakout-scout = **FAIL** (horizon-capped n=89, PF 1.51, second half 0.94) · MomentumEMA = **FAIL (artifact)**. My 🟡 ratings are *stances* (paper/watch), not competing labels — same action: do not fund.
+3. **New headline for §10:** with lag ≤7d and batch rows removed, the **entire closed book = PF 1.07 (n=2,916) ≈ break-even** (Grok 1625; batch sensitivity reproduced by GHCopilot + OpenCode).
+4. **Grok's 11 action-required dashboard fix prompts** (immutable `closed_at`, horizon cap, null-close rejection, artifact-flag v2, compounded MDD, calendar CAGR, MC-with-real-exits, emitted-vs-tested exits, HYG netting, STRONG_BUY block, CA access gate) — **endorsed, queued for the owner, not implemented without a go-ahead** (production pipeline change per AGENTS rules).
 
 *Consensus across GHCopilot, Grok, OpenCode/Beam, ZooCode, Kilo, Inception/vLLM, Kimi-era notes, and Buffy: **0 MONEY-READY; cost + access is the entire story; index vehicles are the only 🟢.** NFA.*
