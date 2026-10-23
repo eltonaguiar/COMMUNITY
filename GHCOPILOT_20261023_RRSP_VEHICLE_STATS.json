@@ -1,0 +1,197 @@
+{
+  "purpose": "Descriptive fixed-vehicle comparison; not predictive selection or RRSP execution",
+  "method": "Vendor adjusted close, reinvested-distribution proxy, embedded expenses; no second expense deduction",
+  "calendar_method": "Matched endpoints with each instrument's own observed sessions; no forward-fill",
+  "limitations": [
+    "Single-vendor revisions and survivor selection",
+    "CAD and USD returns are not directly ranked",
+    "Not broker NAV, verified fills or investor-tax-adjusted returns",
+    "No commissions, spread or currency conversion deducted",
+    "Historical adjusted prices are not historical dealing prices",
+    "No VOO or VGG cached history; IVV is not relabeled VOO"
+  ],
+  "provenance": {
+    "FNILX": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FNILX?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "95e5243f54484683a440f656d9ac400358d98f9737a0a389d0e12e8cc5a249c4",
+      "currency": "USD"
+    },
+    "FXAIX": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FXAIX?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "0f1a986f6d912034c9a6a8666fd507bfb04c3fd8b9aa5602e9fd35367f7daa27",
+      "currency": "USD"
+    },
+    "FCNTX": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FCNTX?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "a86085127ef7f55fbdc5248fcaec7ea93604c1cffa42613d3a09365aa7390a61",
+      "currency": "USD"
+    },
+    "IVV": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/IVV?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "3a5b7e510ab5ad771ded5d471939ebb0cef134dd3e027deb45cfb9ffc3e3597f",
+      "currency": "USD"
+    },
+    "VUG": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/VUG?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "43554ee4bce47ce4a349e17bbadbb14f2fee11d67bc91b46c20bfb7b5a74bdf6",
+      "currency": "USD"
+    },
+    "VFV.TO": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/VFV.TO?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "93649d002005030c0a890e9f1dc63e9f7304007a9e9c1bf35667f0c0aa76279f",
+      "currency": "CAD"
+    },
+    "VBAL.TO": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/VBAL.TO?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "9a988a6713fd9b6c49c96869387def86d7d07a7fbafc914dbbefda1849d87a39",
+      "currency": "CAD"
+    },
+    "XEQT.TO": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/XEQT.TO?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "123b52b79595ea7bd01d5a25431c02798fe0d491b7991d9f456c5db179cab818",
+      "currency": "CAD"
+    },
+    "SHY": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/SHY?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "caa23e5791a98c9c84365eec79073dce9d903444e83d3e50cad52323720dc1b5",
+      "currency": "USD"
+    },
+    "BND": {
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/BND?period1=788918400&period2=1792713600&interval=1d",
+      "sha256": "ee86329bd7141a6aca0852c9ced1939141ac5db4483d5b260e87b18d535d7fad",
+      "currency": "USD"
+    }
+  },
+  "results": {
+    "FNILX": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 15.304444670654771,
+      "total_return_pct": 163.39281707600168,
+      "max_drawdown_pct": 33.75528035009449,
+      "annualized_volatility_pct": 20.366481470076153,
+      "worst_252_session_return_pct": -20.902933629731237,
+      "ending_10000_local_currency": 26339.28170760017,
+      "calendar_2022_return_pct": -19.371327097557224,
+      "currency": "USD"
+    },
+    "FXAIX": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 15.290472363857921,
+      "total_return_pct": 163.17582957288593,
+      "max_drawdown_pct": 33.79491184086145,
+      "annualized_volatility_pct": 20.138883035959108,
+      "worst_252_session_return_pct": -19.674937127353186,
+      "ending_10000_local_currency": 26317.582957288592,
+      "calendar_2022_return_pct": -18.137956462864757,
+      "currency": "USD"
+    },
+    "FCNTX": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 17.960816720058293,
+      "total_return_pct": 207.5216977341897,
+      "max_drawdown_pct": 32.59377845309616,
+      "annualized_volatility_pct": 21.61064957608943,
+      "worst_252_session_return_pct": -30.937822177314324,
+      "ending_10000_local_currency": 30752.16977341897,
+      "calendar_2022_return_pct": -28.309525180118168,
+      "currency": "USD"
+    },
+    "IVV": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 15.262241037227554,
+      "total_return_pct": 162.737867200926,
+      "max_drawdown_pct": 33.90313857678719,
+      "annualized_volatility_pct": 20.133543347390635,
+      "worst_252_session_return_pct": -19.72941884222923,
+      "ending_10000_local_currency": 26273.7867200926,
+      "calendar_2022_return_pct": -18.161337807019862,
+      "currency": "USD"
+    },
+    "VUG": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 17.65061626086153,
+      "total_return_pct": 202.06373373039935,
+      "max_drawdown_pct": 35.61297921280908,
+      "annualized_volatility_pct": 24.27508470733793,
+      "worst_252_session_return_pct": -35.17690535226934,
+      "ending_10000_local_currency": 30206.373373039933,
+      "calendar_2022_return_pct": -33.15869595765609,
+      "currency": "USD"
+    },
+    "VFV.TO": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1708,
+      "cagr_pct": 16.293226002829343,
+      "total_return_pct": 179.14116499826457,
+      "max_drawdown_pct": 27.428813388697538,
+      "annualized_volatility_pct": 18.186864403646634,
+      "worst_252_session_return_pct": -14.122755079857342,
+      "ending_10000_local_currency": 27914.116499826454,
+      "calendar_2022_return_pct": -12.583487525102866,
+      "currency": "CAD"
+    },
+    "VBAL.TO": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1708,
+      "cagr_pct": 8.320497909843084,
+      "total_return_pct": 72.21100995205106,
+      "max_drawdown_pct": 21.186756057265622,
+      "annualized_volatility_pct": 10.775910971782702,
+      "worst_252_session_return_pct": -13.607946044274243,
+      "ending_10000_local_currency": 17221.100995205106,
+      "calendar_2022_return_pct": -11.393604400460077,
+      "currency": "CAD"
+    },
+    "XEQT.TO": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1708,
+      "cagr_pct": 13.824168295806928,
+      "total_return_pct": 141.2352068583276,
+      "max_drawdown_pct": 29.74290294928653,
+      "annualized_volatility_pct": 15.591231101914627,
+      "worst_252_session_return_pct": -14.67091638519219,
+      "ending_10000_local_currency": 24123.52068583276,
+      "calendar_2022_return_pct": -10.989747930611182,
+      "currency": "CAD"
+    },
+    "SHY": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 1.7509370631703325,
+      "total_return_pct": 12.529769869797281,
+      "max_drawdown_pct": 5.707129676586453,
+      "annualized_volatility_pct": 1.7987307925823832,
+      "worst_252_session_return_pct": -5.370527760853305,
+      "ending_10000_local_currency": 11252.976986979727,
+      "calendar_2022_return_pct": -3.8800429113176382,
+      "currency": "USD"
+    },
+    "BND": {
+      "start": "2020-01-02",
+      "end": "2026-10-21",
+      "n_prices": 1710,
+      "cagr_pct": 0.5200019611033779,
+      "total_return_pct": 3.5902237602113196,
+      "max_drawdown_pct": 18.582148572704615,
+      "annualized_volatility_pct": 6.406079746875797,
+      "worst_252_session_return_pct": -16.84321476815177,
+      "ending_10000_local_currency": 10359.022376021132,
+      "calendar_2022_return_pct": -13.11210602522641,
+      "currency": "USD"
+    }
+  }
+}

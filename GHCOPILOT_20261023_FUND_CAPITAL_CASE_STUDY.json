@@ -1,0 +1,6384 @@
+{
+  "study": "H-141 frozen-schedule capital replay, not a new hypothesis or optimization",
+  "currency": "USD",
+  "capitals": [
+    200,
+    500,
+    1000,
+    2000,
+    10000
+  ],
+  "examples_years": [
+    2008,
+    2016,
+    2020,
+    2022,
+    2025,
+    2026
+  ],
+  "protocol_sha256": "1c90e1045c72b5d7bf58dfb7bb8d8e6c0f2b414bc7585ce1332622246bc31c24",
+  "original_results_file_sha256": "103f1ad133f96753981cbb00807e8d73caeacd6606f8865fafd6d38182043dfc",
+  "engine_sha256": "8badc9fffea0f3cae9c5557a04025b3f8000c0167dbbf4589cc52a5c36b40100",
+  "input_hashes": {
+    "VFINX": "0a4a93e6adbed4eb7f42f2d21504bbcd6d69bd0175948535acf9da556a7b2944",
+    "VTSMX": "220f9d48b1044674fd634133b9e9f4cce375c8f76d826379967f0f3125993453",
+    "VTSAX": "fa4fa9c52c5e796c33426c274fa2bb517fff3d0554dcf81f3918ae25bd714cc0",
+    "VFIAX": "c22c91515e893e9b834bdb35639b3d5642839a23c613b61d15de8442099b0021",
+    "DODGX": "f459eb2a8459567e5d3bcfd82bc5ebd9b93490f94b55bed7b4d9d09b4bfeaf48",
+    "FCNTX": "a86085127ef7f55fbdc5248fcaec7ea93604c1cffa42613d3a09365aa7390a61",
+    "FLPSX": "cbeab42d636e6d341d83ecfc1b61ae256269ccb4de2af7c1032bdf4202a86091",
+    "FSPHX": "027ececf377d10314c2abcff4f3f3c82f9b47bc9536705c842f800762e7f8301",
+    "FSCSX": "f9514c40875e7e091ba152781257857c625fc0198c7374569942ccdf3171f5f5",
+    "FBGRX": "e3e23cd8dd8df927a18f64e8e2273a8690daba99f6ed3301671eb0f047122747",
+    "FDGRX": "2acc15d804a6ef6ab76953e3197c338c19be8d8278d27e8791f02f205968cae0",
+    "TRBCX": "76b78dd42304aa6847ad3e0a9ebd5b18c0012329af9f85f9765599a328919130",
+    "VPMCX": "c085a82e293c61dd57cde5ddf1089a40f76971c602a9d750e595df61f0df1602",
+    "VEXPX": "3e9595204c6afe3596df6e0fd5914b8d821856c5ad1480d45c73703098f12cf0",
+    "VSMAX": "74e6abe27978fb35a434a49c7312a038de8c397055f586daa07afb8e4dcc8a32",
+    "VIMAX": "a0897afe353af29341b080ce245d93e4a209bf89205aed72d714859eb13a444e",
+    "FXAIX": "0f1a986f6d912034c9a6a8666fd507bfb04c3fd8b9aa5602e9fd35367f7daa27",
+    "FSKAX": "f65349a9aa68624e458a28d6737e74964853a20fd358ac71c8ba043fa29a2a5d",
+    "SWPPX": "3d87fb85be8217ba9c78b3987e2a4d665482915586394b3443b629a2834090bd",
+    "SWTSX": "610a1142cb57295104e0ffab1600aa826776f1c4caae12c382779ebbc40de244",
+    "FZROX": "46825a22bad3f3d6e9b5c9e4a90546218984576e0f84b013217dd091a2bb0f7e",
+    "FZIPX": "f0cf148a264dc62aad7210dd3fc6e567e1558f7315a64a4e933bc8afceecc52e",
+    "FNILX": "95e5243f54484683a440f656d9ac400358d98f9737a0a389d0e12e8cc5a249c4",
+    "SPY": "ba5b7aae396a4565424c8ee9a03c01fc46795e401ce83d3074d62b108a2aaa04"
+  },
+  "future_perturbation_checks_passed": 66,
+  "prior_trial_metric_reproductions_passed": 9,
+  "historical_executability": "UNKNOWN: fund minimums, closures, broker access, loads, taxes and currency conversion not verified",
+  "survivorship_bias": true,
+  "future_eligibility_changed_selected_top_three": false,
+  "summaries": [
+    {
+      "selector": "trailing_total_return",
+      "entry_date": "2016-01-04",
+      "exit_date": "2026-10-21",
+      "metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 362.4430257035922,
+        "cagr_pct": 15.240733990111721,
+        "sharpe": 0.7639385882698813,
+        "sortino": 1.0724442844492945,
+        "mdd_pct": 39.73386726237682,
+        "daily_cvar5_pct": -3.3201140825986393,
+        "calmar": 0.38357036553909407
+      },
+      "benchmark_metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 356.39550270014695,
+        "cagr_pct": 15.100297714299948,
+        "sharpe": 0.8858453992517056,
+        "sortino": 1.2504722328178448,
+        "mdd_pct": 33.71728189633812,
+        "daily_cvar5_pct": -2.6953305046472225,
+        "calmar": 0.44785038606388733
+      },
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 924.8860514071844,
+          "profit_usd": 724.8860514071844
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 2312.2151285179607,
+          "profit_usd": 1812.215128517961
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 4624.430257035921,
+          "profit_usd": 3624.430257035922
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 9248.860514071843,
+          "profit_usd": 7248.860514071844
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 46244.302570359214,
+          "profit_usd": 36244.302570359214
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 912.7910054002939,
+          "profit_usd": 712.7910054002939
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 2281.977513500735,
+          "profit_usd": 1781.9775135007349
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 4563.95502700147,
+          "profit_usd": 3563.9550270014697
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 9127.91005400294,
+          "profit_usd": 7127.910054002939
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 45639.5502700147,
+          "profit_usd": 35639.5502700147
+        }
+      ],
+      "profitable_holding_periods": 18,
+      "completed_holding_periods": 21,
+      "holding_periods_including_partial": 22,
+      "worst_standalone_holding_return_pct": -37.741468301267155
+    },
+    {
+      "selector": "trailing_sharpe",
+      "entry_date": "2016-01-04",
+      "exit_date": "2026-10-21",
+      "metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 298.2128162320505,
+        "cagr_pct": 13.655428154162873,
+        "sharpe": 0.7157610355385677,
+        "sortino": 1.004636219351195,
+        "mdd_pct": 39.733867262376755,
+        "daily_cvar5_pct": -3.2294111502777763,
+        "calmar": 0.3436722648714574
+      },
+      "benchmark_metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 356.39550270014695,
+        "cagr_pct": 15.100297714299948,
+        "sharpe": 0.8858453992517056,
+        "sortino": 1.2504722328178448,
+        "mdd_pct": 33.71728189633812,
+        "daily_cvar5_pct": -2.6953305046472225,
+        "calmar": 0.44785038606388733
+      },
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 796.425632464101,
+          "profit_usd": 596.425632464101
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 1991.0640811602525,
+          "profit_usd": 1491.0640811602525
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 3982.128162320505,
+          "profit_usd": 2982.128162320505
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 7964.25632464101,
+          "profit_usd": 5964.25632464101
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 39821.281623205046,
+          "profit_usd": 29821.28162320505
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 912.7910054002939,
+          "profit_usd": 712.7910054002939
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 2281.977513500735,
+          "profit_usd": 1781.9775135007349
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 4563.95502700147,
+          "profit_usd": 3563.9550270014697
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 9127.91005400294,
+          "profit_usd": 7127.910054002939
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 45639.5502700147,
+          "profit_usd": 35639.5502700147
+        }
+      ],
+      "profitable_holding_periods": 18,
+      "completed_holding_periods": 21,
+      "holding_periods_including_partial": 22,
+      "worst_standalone_holding_return_pct": -35.0916397518917
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "entry_date": "2016-01-04",
+      "exit_date": "2026-10-21",
+      "metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 253.4181188569247,
+        "cagr_pct": 12.405968160632819,
+        "sharpe": 0.7865147395425908,
+        "sortino": 1.0945729632086785,
+        "mdd_pct": 36.65563623017163,
+        "daily_cvar5_pct": -2.5276913314111398,
+        "calmar": 0.33844640105909113
+      },
+      "benchmark_metrics": {
+        "n_days": 2716,
+        "years": 10.795345653661876,
+        "compound_pct": 356.39550270014695,
+        "cagr_pct": 15.100297714299948,
+        "sharpe": 0.8858453992517056,
+        "sortino": 1.2504722328178448,
+        "mdd_pct": 33.71728189633812,
+        "daily_cvar5_pct": -2.6953305046472225,
+        "calmar": 0.44785038606388733
+      },
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 706.8362377138494,
+          "profit_usd": 506.8362377138494
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 1767.0905942846236,
+          "profit_usd": 1267.0905942846236
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 3534.1811885692473,
+          "profit_usd": 2534.1811885692473
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 7068.362377138495,
+          "profit_usd": 5068.362377138495
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 35341.81188569247,
+          "profit_usd": 25341.81188569247
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 912.7910054002939,
+          "profit_usd": 712.7910054002939
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 2281.977513500735,
+          "profit_usd": 1781.9775135007349
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 4563.95502700147,
+          "profit_usd": 3563.9550270014697
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 9127.91005400294,
+          "profit_usd": 7127.910054002939
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 45639.5502700147,
+          "profit_usd": 35639.5502700147
+        }
+      ],
+      "profitable_holding_periods": 18,
+      "completed_holding_periods": 21,
+      "holding_periods_including_partial": 22,
+      "worst_standalone_holding_return_pct": -35.13798965027852
+    }
+  ],
+  "annual_selections": [
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2004-12-31",
+      "entry_date": "2005-01-03",
+      "exit_date": "2006-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "DODGX",
+        "FCNTX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 757,
+          "trailing_total_return_pct": 61.28550636613572,
+          "trailing_sharpe_zero_cash_rate": 1.1892087255147172,
+          "trailing_volatility_pct": 14.254918408500425
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.843387941367325,
+          "trailing_sharpe_zero_cash_rate": 0.7580635357700002,
+          "trailing_volatility_pct": 16.95367574049299
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.500740513383526,
+          "trailing_sharpe_zero_cash_rate": 0.8824262902638332,
+          "trailing_volatility_pct": 13.94447719611112
+        }
+      ],
+      "net_return_pct": 14.33999300108717,
+      "benchmark_net_return_pct": 6.96328052101487,
+      "daily_mdd_pct": 7.0293929189286,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.67998600217433,
+          "profit_usd": 28.67998600217434
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.6999650054358,
+          "profit_usd": 71.69996500543586
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1143.3999300108717,
+          "profit_usd": 143.3999300108717
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2286.7998600217434,
+          "profit_usd": 286.7998600217434
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11433.999300108717,
+          "profit_usd": 1433.999300108717
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 213.92656104202973,
+          "profit_usd": 13.92656104202974
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 534.8164026050744,
+          "profit_usd": 34.816402605074344
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1069.6328052101487,
+          "profit_usd": 69.63280521014869
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2139.2656104202974,
+          "profit_usd": 139.26561042029738
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10696.328052101488,
+          "profit_usd": 696.328052101487
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2005-12-30",
+      "entry_date": "2006-01-03",
+      "exit_date": "2007-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "VSMAX",
+        "FLPSX",
+        "VIMAX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "VSMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 88.4163099889147,
+          "trailing_sharpe_zero_cash_rate": 1.3903198030875303,
+          "trailing_volatility_pct": 16.106034273366845
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 88.12332961830727,
+          "trailing_sharpe_zero_cash_rate": 1.8592677044627322,
+          "trailing_volatility_pct": 11.685694150703114
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 85.34243729654018,
+          "trailing_sharpe_zero_cash_rate": 1.5613731056440459,
+          "trailing_volatility_pct": 13.76677685467264
+        }
+      ],
+      "net_return_pct": 13.637935628458075,
+      "benchmark_net_return_pct": 13.41474782042209,
+      "daily_mdd_pct": 11.734161609866888,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 227.27587125691616,
+          "profit_usd": 27.27587125691615
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 568.1896781422904,
+          "profit_usd": 68.18967814229038
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1136.3793562845808,
+          "profit_usd": 136.37935628458075
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2272.7587125691616,
+          "profit_usd": 272.7587125691615
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11363.793562845807,
+          "profit_usd": 1363.7935628458076
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 226.8294956408442,
+          "profit_usd": 26.82949564084418
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 567.0737391021105,
+          "profit_usd": 67.07373910211045
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1134.147478204221,
+          "profit_usd": 134.1474782042209
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2268.294956408442,
+          "profit_usd": 268.2949564084418
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11341.474782042209,
+          "profit_usd": 1341.474782042209
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2006-12-29",
+      "entry_date": "2007-01-03",
+      "exit_date": "2008-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "VIMAX",
+        "DODGX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 56.24106955460275,
+          "trailing_sharpe_zero_cash_rate": 1.4605777967687366,
+          "trailing_volatility_pct": 10.554257190246293
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 55.88678987634075,
+          "trailing_sharpe_zero_cash_rate": 1.2555338105114044,
+          "trailing_volatility_pct": 12.384637350364205
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 55.20835056712452,
+          "trailing_sharpe_zero_cash_rate": 1.5182376234044646,
+          "trailing_volatility_pct": 9.968118384370664
+        }
+      ],
+      "net_return_pct": 1.8063051693367527,
+      "benchmark_net_return_pct": 4.2013431423946646,
+      "daily_mdd_pct": 11.695513473180197,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 203.6126103386735,
+          "profit_usd": 3.6126103386735053
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 509.03152584668373,
+          "profit_usd": 9.031525846683763
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1018.0630516933675,
+          "profit_usd": 18.063051693367527
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2036.126103386735,
+          "profit_usd": 36.12610338673505
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10180.630516933676,
+          "profit_usd": 180.63051693367527
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 208.40268628478933,
+          "profit_usd": 8.402686284789329
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 521.0067157119734,
+          "profit_usd": 21.00671571197332
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1042.0134314239467,
+          "profit_usd": 42.01343142394664
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2084.0268628478934,
+          "profit_usd": 84.02686284789328
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10420.134314239467,
+          "profit_usd": 420.13431423946645
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2007-12-31",
+      "entry_date": "2008-01-02",
+      "exit_date": "2009-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FSCSX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": 55.245598856705655,
+          "trailing_sharpe_zero_cash_rate": 1.2241423310323585,
+          "trailing_volatility_pct": 12.66714714726181
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 54.8122728591095,
+          "trailing_sharpe_zero_cash_rate": 1.01588707566156,
+          "trailing_volatility_pct": 15.57507240442561
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 755,
+          "trailing_total_return_pct": 49.07271874147943,
+          "trailing_sharpe_zero_cash_rate": 0.9545525735349465,
+          "trailing_volatility_pct": 15.191458087565596
+        }
+      ],
+      "net_return_pct": -37.741468301267155,
+      "benchmark_net_return_pct": -34.44619353822825,
+      "daily_mdd_pct": 48.82524628519662,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 124.51706339746569,
+          "profit_usd": -75.48293660253431
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 311.29265849366425,
+          "profit_usd": -188.70734150633578
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 622.5853169873285,
+          "profit_usd": -377.41468301267156
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1245.170633974657,
+          "profit_usd": -754.8293660253431
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6225.853169873284,
+          "profit_usd": -3774.1468301267155
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 131.10761292354348,
+          "profit_usd": -68.8923870764565
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 327.76903230885875,
+          "profit_usd": -172.23096769114127
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 655.5380646177175,
+          "profit_usd": -344.46193538228255
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1311.076129235435,
+          "profit_usd": -688.9238707645651
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6555.380646177175,
+          "profit_usd": -3444.6193538228254
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2008-12-31",
+      "entry_date": "2009-01-02",
+      "exit_date": "2010-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VPMCX",
+        "FCNTX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": -12.100246593998342,
+          "trailing_sharpe_zero_cash_rate": -0.016795193787151268,
+          "trailing_volatility_pct": 27.783807322371356
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 755,
+          "trailing_total_return_pct": -16.629346392132394,
+          "trailing_sharpe_zero_cash_rate": -0.12151954852772184,
+          "trailing_volatility_pct": 24.77613753276935
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": -17.75397386720583,
+          "trailing_sharpe_zero_cash_rate": -0.17372411741622634,
+          "trailing_volatility_pct": 22.725161842489648
+        }
+      ],
+      "net_return_pct": 39.17872239098668,
+      "benchmark_net_return_pct": 24.48563384069944,
+      "daily_mdd_pct": 19.96439811800044,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 278.35744478197336,
+          "profit_usd": 78.35744478197336
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 695.8936119549334,
+          "profit_usd": 195.8936119549334
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1391.7872239098667,
+          "profit_usd": 391.7872239098668
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2783.5744478197335,
+          "profit_usd": 783.5744478197336
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13917.872239098668,
+          "profit_usd": 3917.8722390986677
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 248.97126768139887,
+          "profit_usd": 48.97126768139888
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 622.4281692034972,
+          "profit_usd": 122.42816920349719
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1244.8563384069944,
+          "profit_usd": 244.85633840699438
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2489.7126768139888,
+          "profit_usd": 489.71267681398876
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12448.563384069945,
+          "profit_usd": 2448.563384069944
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2009-12-31",
+      "entry_date": "2010-01-04",
+      "exit_date": "2011-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VPMCX",
+        "FSPHX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 756,
+          "trailing_total_return_pct": 15.294655090368758,
+          "trailing_sharpe_zero_cash_rate": 0.3076391204083403,
+          "trailing_volatility_pct": 30.287552530739852
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 756,
+          "trailing_total_return_pct": 1.7961652106054382,
+          "trailing_sharpe_zero_cash_rate": 0.16164264593722763,
+          "trailing_volatility_pct": 28.143557815872633
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 756,
+          "trailing_total_return_pct": 0.33285286501638645,
+          "trailing_sharpe_zero_cash_rate": 0.11684632119251029,
+          "trailing_volatility_pct": 22.400042804087686
+        }
+      ],
+      "net_return_pct": 15.698802449002791,
+      "benchmark_net_return_pct": 14.078455139254853,
+      "daily_mdd_pct": 14.881473426206659,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 231.39760489800557,
+          "profit_usd": 31.397604898005582
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 578.494012245014,
+          "profit_usd": 78.49401224501395
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1156.988024490028,
+          "profit_usd": 156.9880244900279
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2313.976048980056,
+          "profit_usd": 313.9760489800558
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11569.88024490028,
+          "profit_usd": 1569.8802449002792
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.1569102785097,
+          "profit_usd": 28.156910278509706
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 570.3922756962743,
+          "profit_usd": 70.39227569627427
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1140.7845513925486,
+          "profit_usd": 140.78455139254854
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2281.569102785097,
+          "profit_usd": 281.5691027850971
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11407.845513925486,
+          "profit_usd": 1407.8455139254852
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2010-12-31",
+      "entry_date": "2011-01-03",
+      "exit_date": "2012-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "VSMAX",
+        "FSCSX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "VSMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 11.556577818732606,
+          "trailing_sharpe_zero_cash_rate": 0.280763822144653,
+          "trailing_volatility_pct": 35.64691317153802
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 11.1686965836846,
+          "trailing_sharpe_zero_cash_rate": 0.2674302430745791,
+          "trailing_volatility_pct": 30.4976813048551
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 7.292252651568432,
+          "trailing_sharpe_zero_cash_rate": 0.22184844045898403,
+          "trailing_volatility_pct": 26.944316928575766
+        }
+      ],
+      "net_return_pct": -0.3181253906297421,
+      "benchmark_net_return_pct": 2.2547629351576504,
+      "daily_mdd_pct": 22.45479377490609,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 199.3637492187405,
+          "profit_usd": -0.6362507812594842
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 498.4093730468513,
+          "profit_usd": -1.5906269531487105
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 996.8187460937025,
+          "profit_usd": -3.181253906297421
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1993.637492187405,
+          "profit_usd": -6.362507812594842
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9968.187460937026,
+          "profit_usd": -31.81253906297421
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 204.50952587031531,
+          "profit_usd": 4.509525870315301
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 511.27381467578823,
+          "profit_usd": 11.273814675788252
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1022.5476293515765,
+          "profit_usd": 22.547629351576504
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2045.095258703153,
+          "profit_usd": 45.09525870315301
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10225.476293515765,
+          "profit_usd": 225.47629351576504
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2011-12-30",
+      "entry_date": "2012-01-03",
+      "exit_date": "2013-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VIMAX",
+        "VSMAX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 98.59209686240095,
+          "trailing_sharpe_zero_cash_rate": 1.0720804619055686,
+          "trailing_volatility_pct": 23.998905709202432
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 76.82957720329856,
+          "trailing_sharpe_zero_cash_rate": 0.8296266247126809,
+          "trailing_volatility_pct": 27.41286347287115
+        },
+        {
+          "symbol": "VSMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 75.27375206139864,
+          "trailing_sharpe_zero_cash_rate": 0.7613677357992469,
+          "trailing_volatility_pct": 30.75056955037444
+        }
+      ],
+      "net_return_pct": 18.66249097468615,
+      "benchmark_net_return_pct": 16.863035948286154,
+      "daily_mdd_pct": 12.389990897918324,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 237.3249819493723,
+          "profit_usd": 37.3249819493723
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 593.3124548734307,
+          "profit_usd": 93.31245487343077
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1186.6249097468615,
+          "profit_usd": 186.62490974686153
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2373.249819493723,
+          "profit_usd": 373.24981949372307
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11866.249097468615,
+          "profit_usd": 1866.2490974686152
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 233.7260718965723,
+          "profit_usd": 33.72607189657231
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 584.3151797414307,
+          "profit_usd": 84.31517974143077
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1168.6303594828614,
+          "profit_usd": 168.63035948286154
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2337.260718965723,
+          "profit_usd": 337.2607189657231
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11686.303594828616,
+          "profit_usd": 1686.3035948286154
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2012-12-31",
+      "entry_date": "2013-01-02",
+      "exit_date": "2014-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "VSMAX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 53.26533256206516,
+          "trailing_sharpe_zero_cash_rate": 0.8870505551744841,
+          "trailing_volatility_pct": 17.903131414526253
+        },
+        {
+          "symbol": "VSMAX",
+          "observations": 755,
+          "trailing_total_return_pct": 47.14341860970852,
+          "trailing_sharpe_zero_cash_rate": 0.6479712776896976,
+          "trailing_volatility_pct": 24.601224229912145
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 755,
+          "trailing_total_return_pct": 43.848358757430205,
+          "trailing_sharpe_zero_cash_rate": 0.6710928739894161,
+          "trailing_volatility_pct": 21.590223915251308
+        }
+      ],
+      "net_return_pct": 39.082695895135714,
+      "benchmark_net_return_pct": 27.509747381970804,
+      "daily_mdd_pct": 5.861670986769574,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 278.1653917902714,
+          "profit_usd": 78.16539179027143
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 695.4134794756785,
+          "profit_usd": 195.41347947567854
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1390.826958951357,
+          "profit_usd": 390.8269589513571
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2781.653917902714,
+          "profit_usd": 781.6539179027142
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13908.269589513571,
+          "profit_usd": 3908.269589513571
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 255.01949476394162,
+          "profit_usd": 55.01949476394161
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 637.548736909854,
+          "profit_usd": 137.54873690985403
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1275.097473819708,
+          "profit_usd": 275.09747381970806
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2550.194947639416,
+          "profit_usd": 550.1949476394161
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12750.974738197081,
+          "profit_usd": 2750.9747381970806
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2013-12-31",
+      "entry_date": "2014-01-02",
+      "exit_date": "2015-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FSCSX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 104.89566971367896,
+          "trailing_sharpe_zero_cash_rate": 1.4837569182356467,
+          "trailing_volatility_pct": 17.15992847474245
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 82.34214795876152,
+          "trailing_sharpe_zero_cash_rate": 1.1187865131280077,
+          "trailing_volatility_pct": 19.686721259192506
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 755,
+          "trailing_total_return_pct": 70.14883476584421,
+          "trailing_sharpe_zero_cash_rate": 1.0347958475766172,
+          "trailing_volatility_pct": 18.901076881452774
+        }
+      ],
+      "net_return_pct": 17.825555751160827,
+      "benchmark_net_return_pct": 14.271502749157317,
+      "daily_mdd_pct": 11.059046843299726,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 235.65111150232164,
+          "profit_usd": 35.651111502321655
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 589.1277787558041,
+          "profit_usd": 89.12777875580413
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1178.2555575116082,
+          "profit_usd": 178.25555751160826
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2356.5111150232165,
+          "profit_usd": 356.5111150232165
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11782.555575116083,
+          "profit_usd": 1782.5555751160825
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.54300549831464,
+          "profit_usd": 28.543005498314635
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.3575137457866,
+          "profit_usd": 71.35751374578658
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.7150274915732,
+          "profit_usd": 142.71502749157315
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2285.4300549831464,
+          "profit_usd": 285.4300549831463
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11427.150274915732,
+          "profit_usd": 1427.1502749157316
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2014-12-31",
+      "entry_date": "2015-01-02",
+      "exit_date": "2016-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FSCSX",
+        "VPMCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 754,
+          "trailing_total_return_pct": 151.44625906300777,
+          "trailing_sharpe_zero_cash_rate": 1.944747682569405,
+          "trailing_volatility_pct": 16.582064879896855
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 754,
+          "trailing_total_return_pct": 91.31590624906542,
+          "trailing_sharpe_zero_cash_rate": 1.3808082152035939,
+          "trailing_volatility_pct": 16.741581081460126
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 754,
+          "trailing_total_return_pct": 87.85292883615669,
+          "trailing_sharpe_zero_cash_rate": 1.7458111512894074,
+          "trailing_volatility_pct": 12.54107227578676
+        }
+      ],
+      "net_return_pct": 4.19488963351673,
+      "benchmark_net_return_pct": -0.32711163413415845,
+      "daily_mdd_pct": 14.392984693753919,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 208.38977926703345,
+          "profit_usd": 8.38977926703346
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 520.9744481675837,
+          "profit_usd": 20.97444816758365
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1041.9488963351673,
+          "profit_usd": 41.9488963351673
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2083.8977926703346,
+          "profit_usd": 83.8977926703346
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10419.488963351672,
+          "profit_usd": 419.48896335167296
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 199.3457767317317,
+          "profit_usd": -0.6542232682683169
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 498.3644418293292,
+          "profit_usd": -1.6355581706707922
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 996.7288836586584,
+          "profit_usd": -3.2711163413415845
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1993.457767317317,
+          "profit_usd": -6.542232682683169
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9967.288836586584,
+          "profit_usd": -32.711163413415846
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2015-12-31",
+      "entry_date": "2016-01-04",
+      "exit_date": "2017-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FSCSX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 757,
+          "trailing_total_return_pct": 122.92117933771065,
+          "trailing_sharpe_zero_cash_rate": 1.5179386373709405,
+          "trailing_volatility_pct": 18.773311278811637
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 757,
+          "trailing_total_return_pct": 81.62427394617026,
+          "trailing_sharpe_zero_cash_rate": 1.2427809379219574,
+          "trailing_volatility_pct": 17.199284448261874
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 757,
+          "trailing_total_return_pct": 71.89997187493475,
+          "trailing_sharpe_zero_cash_rate": 1.2518236477449198,
+          "trailing_volatility_pct": 15.375105092936254
+        }
+      ],
+      "net_return_pct": 3.4139844618095383,
+      "benchmark_net_return_pct": 14.22591636997872,
+      "daily_mdd_pct": 14.56448244146511,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 206.82796892361907,
+          "profit_usd": 6.827968923619077
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 517.0699223090477,
+          "profit_usd": 17.06992230904769
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1034.1398446180954,
+          "profit_usd": 34.13984461809538
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2068.2796892361907,
+          "profit_usd": 68.27968923619076
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10341.398446180954,
+          "profit_usd": 341.39844618095384
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.45183273995744,
+          "profit_usd": 28.45183273995744
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.1295818498936,
+          "profit_usd": 71.1295818498936
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.2591636997872,
+          "profit_usd": 142.2591636997872
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2284.5183273995744,
+          "profit_usd": 284.5183273995744
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11422.591636997871,
+          "profit_usd": 1422.591636997872
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2016-12-30",
+      "entry_date": "2017-01-03",
+      "exit_date": "2018-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "VPMCX",
+        "FSCSX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "VPMCX",
+          "observations": 758,
+          "trailing_total_return_pct": 35.30849443697856,
+          "trailing_sharpe_zero_cash_rate": 0.7581326030469673,
+          "trailing_volatility_pct": 14.707098103060773
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 33.38595818788323,
+          "trailing_sharpe_zero_cash_rate": 0.6144128417499004,
+          "trailing_volatility_pct": 18.34691723848464
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 31.645733041717627,
+          "trailing_sharpe_zero_cash_rate": 0.6354590096965551,
+          "trailing_volatility_pct": 16.5683469971565
+        }
+      ],
+      "net_return_pct": 35.454532487376866,
+      "benchmark_net_return_pct": 21.40269940163615,
+      "daily_mdd_pct": 3.385963473499165,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 270.90906497475373,
+          "profit_usd": 70.90906497475373
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 677.2726624368843,
+          "profit_usd": 177.27266243688433
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1354.5453248737685,
+          "profit_usd": 354.54532487376866
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2709.090649747537,
+          "profit_usd": 709.0906497475373
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13545.453248737687,
+          "profit_usd": 3545.4532487376864
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 242.8053988032723,
+          "profit_usd": 42.8053988032723
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 607.0134970081807,
+          "profit_usd": 107.01349700818075
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1214.0269940163614,
+          "profit_usd": 214.0269940163615
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2428.053988032723,
+          "profit_usd": 428.053988032723
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12140.269940163615,
+          "profit_usd": 2140.269940163615
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2017-12-29",
+      "entry_date": "2018-01-02",
+      "exit_date": "2019-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "FDGRX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 66.67111673813378,
+          "trailing_sharpe_zero_cash_rate": 1.1686517670727699,
+          "trailing_volatility_pct": 15.599341927886817
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 54.496683015268374,
+          "trailing_sharpe_zero_cash_rate": 1.0295203652082099,
+          "trailing_volatility_pct": 15.192513194901306
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 758,
+          "trailing_total_return_pct": 51.422724164158026,
+          "trailing_sharpe_zero_cash_rate": 1.0240634841042902,
+          "trailing_volatility_pct": 14.522450857113862
+        }
+      ],
+      "net_return_pct": -1.5126791983345211,
+      "benchmark_net_return_pct": -5.338184723000305,
+      "daily_mdd_pct": 23.02948156257294,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 196.97464160333095,
+          "profit_usd": -3.0253583966690423
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 492.4366040083274,
+          "profit_usd": -7.563395991672605
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 984.8732080166548,
+          "profit_usd": -15.12679198334521
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1969.7464160333095,
+          "profit_usd": -30.25358396669042
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9848.732080166548,
+          "profit_usd": -151.2679198334521
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 189.32363055399938,
+          "profit_usd": -10.67636944600061
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 473.3090763849985,
+          "profit_usd": -26.690923615001527
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 946.618152769997,
+          "profit_usd": -53.38184723000305
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1893.236305539994,
+          "profit_usd": -106.7636944600061
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9466.18152769997,
+          "profit_usd": -533.8184723000305
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2018-12-31",
+      "entry_date": "2019-01-02",
+      "exit_date": "2020-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "TRBCX",
+        "VPMCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 56.34374053566758,
+          "trailing_sharpe_zero_cash_rate": 0.9216797495927201,
+          "trailing_volatility_pct": 17.964521048313987
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 755,
+          "trailing_total_return_pct": 40.64070172389176,
+          "trailing_sharpe_zero_cash_rate": 0.7743457487148505,
+          "trailing_volatility_pct": 16.479555675354423
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 755,
+          "trailing_total_return_pct": 40.5151478911568,
+          "trailing_sharpe_zero_cash_rate": 0.8408987472851918,
+          "trailing_volatility_pct": 14.832465084854265
+        }
+      ],
+      "net_return_pct": 33.923577617393995,
+      "benchmark_net_return_pct": 32.04890519091048,
+      "daily_mdd_pct": 8.141540413723636,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 267.847155234788,
+          "profit_usd": 67.84715523478799
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 669.61788808697,
+          "profit_usd": 169.61788808696997
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1339.23577617394,
+          "profit_usd": 339.23577617393994
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2678.47155234788,
+          "profit_usd": 678.4715523478799
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13392.3577617394,
+          "profit_usd": 3392.3577617394
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 264.097810381821,
+          "profit_usd": 64.09781038182096
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 660.2445259545524,
+          "profit_usd": 160.24452595455242
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1320.4890519091048,
+          "profit_usd": 320.48905190910483
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2640.9781038182095,
+          "profit_usd": 640.9781038182097
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13204.890519091048,
+          "profit_usd": 3204.890519091048
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2019-12-31",
+      "entry_date": "2020-01-02",
+      "exit_date": "2021-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "FBGRX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 754,
+          "trailing_total_return_pct": 94.32333522106089,
+          "trailing_sharpe_zero_cash_rate": 1.3573094019412266,
+          "trailing_volatility_pct": 17.51976544979584
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 754,
+          "trailing_total_return_pct": 81.76052621341252,
+          "trailing_sharpe_zero_cash_rate": 1.2777345879057382,
+          "trailing_volatility_pct": 16.75663131322741
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 754,
+          "trailing_total_return_pct": 80.56897027117873,
+          "trailing_sharpe_zero_cash_rate": 1.198534373805913,
+          "trailing_volatility_pct": 17.836372976863554
+        }
+      ],
+      "net_return_pct": 53.308259738709054,
+      "benchmark_net_return_pct": 15.408043301649599,
+      "daily_mdd_pct": 31.197400285362832,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 306.6165194774181,
+          "profit_usd": 106.61651947741811
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 766.5412986935453,
+          "profit_usd": 266.5412986935453
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1533.0825973870906,
+          "profit_usd": 533.0825973870906
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 3066.165194774181,
+          "profit_usd": 1066.1651947741811
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 15330.825973870906,
+          "profit_usd": 5330.825973870905
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 230.8160866032992,
+          "profit_usd": 30.816086603299198
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 577.040216508248,
+          "profit_usd": 77.040216508248
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1154.080433016496,
+          "profit_usd": 154.080433016496
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2308.160866032992,
+          "profit_usd": 308.160866032992
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11540.80433016496,
+          "profit_usd": 1540.80433016496
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2020-12-31",
+      "entry_date": "2021-01-04",
+      "exit_date": "2022-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "FBGRX",
+        "FSCSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 756,
+          "trailing_total_return_pct": 118.68309716563235,
+          "trailing_sharpe_zero_cash_rate": 1.1136794350072368,
+          "trailing_volatility_pct": 26.682028616146773
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 756,
+          "trailing_total_return_pct": 115.18705565299281,
+          "trailing_sharpe_zero_cash_rate": 1.1061283065484644,
+          "trailing_volatility_pct": 26.28515306045095
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 756,
+          "trailing_total_return_pct": 104.3448430375483,
+          "trailing_sharpe_zero_cash_rate": 1.0236267321184969,
+          "trailing_volatility_pct": 26.85487359161679
+        }
+      ],
+      "net_return_pct": 23.836279290776254,
+      "benchmark_net_return_pct": 30.998710127748375,
+      "daily_mdd_pct": 11.113010768439358,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 247.6725585815525,
+          "profit_usd": 47.67255858155251
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 619.1813964538812,
+          "profit_usd": 119.18139645388126
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1238.3627929077625,
+          "profit_usd": 238.36279290776253
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2476.725585815525,
+          "profit_usd": 476.72558581552505
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12383.627929077626,
+          "profit_usd": 2383.627929077625
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 261.99742025549676,
+          "profit_usd": 61.99742025549675
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 654.9935506387419,
+          "profit_usd": 154.99355063874188
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1309.9871012774838,
+          "profit_usd": 309.98710127748376
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2619.9742025549676,
+          "profit_usd": 619.9742025549675
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13099.871012774838,
+          "profit_usd": 3099.8710127748373
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2021-12-31",
+      "entry_date": "2022-01-03",
+      "exit_date": "2023-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "FBGRX",
+        "FSCSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 183.999574304356,
+          "trailing_sharpe_zero_cash_rate": 1.4763912518047106,
+          "trailing_volatility_pct": 25.82760800793327
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 165.4120231189149,
+          "trailing_sharpe_zero_cash_rate": 1.3856066005595402,
+          "trailing_volatility_pct": 25.909452928838423
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 138.97413933408146,
+          "trailing_sharpe_zero_cash_rate": 1.2721920572002439,
+          "trailing_volatility_pct": 25.348529254990332
+        }
+      ],
+      "net_return_pct": -34.84706628770601,
+      "benchmark_net_return_pct": -19.150839451263113,
+      "daily_mdd_pct": 36.80744389463268,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 130.30586742458797,
+          "profit_usd": -69.69413257541201
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 325.76466856147,
+          "profit_usd": -174.23533143853004
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 651.52933712294,
+          "profit_usd": -348.4706628770601
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1303.05867424588,
+          "profit_usd": -696.9413257541202
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6515.293371229399,
+          "profit_usd": -3484.7066287706007
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 161.69832109747378,
+          "profit_usd": -38.30167890252623
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 404.2458027436844,
+          "profit_usd": -95.75419725631556
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 808.4916054873688,
+          "profit_usd": -191.50839451263113
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1616.9832109747376,
+          "profit_usd": -383.01678902526226
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 8084.916054873689,
+          "profit_usd": -1915.0839451263114
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2022-12-30",
+      "entry_date": "2023-01-03",
+      "exit_date": "2024-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "DODGX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 36.23596795717614,
+          "trailing_sharpe_zero_cash_rate": 0.4885810861316049,
+          "trailing_volatility_pct": 30.88409518504886
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 31.29059040557911,
+          "trailing_sharpe_zero_cash_rate": 0.4643259968313318,
+          "trailing_volatility_pct": 28.048203167567053
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 28.74569496805548,
+          "trailing_sharpe_zero_cash_rate": 0.48183729388182206,
+          "trailing_volatility_pct": 22.991549943943166
+        }
+      ],
+      "net_return_pct": 26.137619502375188,
+      "benchmark_net_return_pct": 25.748223600024357,
+      "daily_mdd_pct": 10.404003205252256,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 252.27523900475038,
+          "profit_usd": 52.275239004750375
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 630.688097511876,
+          "profit_usd": 130.68809751187592
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1261.376195023752,
+          "profit_usd": 261.37619502375185
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2522.752390047504,
+          "profit_usd": 522.7523900475037
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12613.761950237518,
+          "profit_usd": 2613.7619502375187
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 251.49644720004872,
+          "profit_usd": 51.49644720004871
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 628.7411180001218,
+          "profit_usd": 128.7411180001218
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1257.4822360002436,
+          "profit_usd": 257.4822360002436
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2514.964472000487,
+          "profit_usd": 514.9644720004871
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12574.822360002436,
+          "profit_usd": 2574.8223600024357
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2023-12-29",
+      "entry_date": "2024-01-02",
+      "exit_date": "2025-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "DODGX",
+        "FLPSX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "DODGX",
+          "observations": 756,
+          "trailing_total_return_pct": 45.33066898453064,
+          "trailing_sharpe_zero_cash_rate": 0.7936692820266139,
+          "trailing_volatility_pct": 17.695881564514067
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 756,
+          "trailing_total_return_pct": 35.227981581605135,
+          "trailing_sharpe_zero_cash_rate": 0.7374894482633829,
+          "trailing_volatility_pct": 15.232854640514187
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 756,
+          "trailing_total_return_pct": 34.12302352889354,
+          "trailing_sharpe_zero_cash_rate": 0.6451718512385816,
+          "trailing_volatility_pct": 17.587625700679535
+        }
+      ],
+      "net_return_pct": 15.315775971947353,
+      "benchmark_net_return_pct": 25.03029629206295,
+      "daily_mdd_pct": 6.856127720508343,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 230.63155194389472,
+          "profit_usd": 30.631551943894706
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 576.5788798597367,
+          "profit_usd": 76.57887985973677
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1153.1577597194735,
+          "profit_usd": 153.15775971947355
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2306.315519438947,
+          "profit_usd": 306.3155194389471
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11531.577597194735,
+          "profit_usd": 1531.5775971947355
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 250.06059258412589,
+          "profit_usd": 50.0605925841259
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 625.1514814603147,
+          "profit_usd": 125.15148146031474
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1250.3029629206294,
+          "profit_usd": 250.30296292062948
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2500.605925841259,
+          "profit_usd": 500.60592584125897
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12503.029629206294,
+          "profit_usd": 2503.029629206295
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2024-12-31",
+      "entry_date": "2025-01-02",
+      "exit_date": "2026-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FBGRX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 754,
+          "trailing_total_return_pct": 35.88082686703176,
+          "trailing_sharpe_zero_cash_rate": 0.6160370240024154,
+          "trailing_volatility_pct": 19.86482444353996
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 754,
+          "trailing_total_return_pct": 33.864391773476285,
+          "trailing_sharpe_zero_cash_rate": 0.5036306355899588,
+          "trailing_volatility_pct": 26.20089552189756
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 754,
+          "trailing_total_return_pct": 33.613465035125145,
+          "trailing_sharpe_zero_cash_rate": 0.5150717026027551,
+          "trailing_volatility_pct": 24.804987309862394
+        }
+      ],
+      "net_return_pct": 21.624048369506845,
+      "benchmark_net_return_pct": 17.989002010594568,
+      "daily_mdd_pct": 23.796054109908262,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 243.24809673901368,
+          "profit_usd": 43.24809673901369
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 608.1202418475342,
+          "profit_usd": 108.12024184753422
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1216.2404836950684,
+          "profit_usd": 216.24048369506843
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2432.480967390137,
+          "profit_usd": 432.48096739013687
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12162.404836950684,
+          "profit_usd": 2162.4048369506845
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 235.97800402118912,
+          "profit_usd": 35.978004021189136
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 589.9450100529729,
+          "profit_usd": 89.94501005297283
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1179.8900201059457,
+          "profit_usd": 179.89002010594567
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2359.7800402118914,
+          "profit_usd": 359.78004021189133
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11798.900201059458,
+          "profit_usd": 1798.9002010594568
+        }
+      ]
+    },
+    {
+      "selector": "trailing_total_return",
+      "signal_date": "2025-12-31",
+      "entry_date": "2026-01-02",
+      "exit_date": "2026-10-21",
+      "partial_final_period": true,
+      "selected": [
+        "FBGRX",
+        "FDGRX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FBGRX",
+          "observations": 752,
+          "trailing_total_return_pct": 163.38536304570934,
+          "trailing_sharpe_zero_cash_rate": 1.5851119347719365,
+          "trailing_volatility_pct": 22.037957365975842
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 752,
+          "trailing_total_return_pct": 153.7675979711914,
+          "trailing_sharpe_zero_cash_rate": 1.589631635855715,
+          "trailing_volatility_pct": 21.058271090498007
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 752,
+          "trailing_total_return_pct": 141.7753339038798,
+          "trailing_sharpe_zero_cash_rate": 1.5756109581856275,
+          "trailing_volatility_pct": 20.08447471029293
+        }
+      ],
+      "net_return_pct": 14.379401242757739,
+      "benchmark_net_return_pct": 13.818074504382993,
+      "daily_mdd_pct": 12.341058072028943,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.75880248551547,
+          "profit_usd": 28.758802485515478
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.8970062137887,
+          "profit_usd": 71.8970062137887
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1143.7940124275774,
+          "profit_usd": 143.7940124275774
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2287.588024855155,
+          "profit_usd": 287.5880248551548
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11437.940124275774,
+          "profit_usd": 1437.940124275774
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 227.63614900876598,
+          "profit_usd": 27.636149008765987
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 569.090372521915,
+          "profit_usd": 69.09037252191497
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1138.18074504383,
+          "profit_usd": 138.18074504382994
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2276.36149008766,
+          "profit_usd": 276.3614900876599
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11381.807450438298,
+          "profit_usd": 1381.8074504382994
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2004-12-31",
+      "entry_date": "2005-01-03",
+      "exit_date": "2006-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FCNTX",
+        "DODGX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 757,
+          "trailing_total_return_pct": 61.28550636613572,
+          "trailing_sharpe_zero_cash_rate": 1.1892087255147172,
+          "trailing_volatility_pct": 14.254918408500425
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.500740513383526,
+          "trailing_sharpe_zero_cash_rate": 0.8824262902638332,
+          "trailing_volatility_pct": 13.94447719611112
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.843387941367325,
+          "trailing_sharpe_zero_cash_rate": 0.7580635357700002,
+          "trailing_volatility_pct": 16.95367574049299
+        }
+      ],
+      "net_return_pct": 14.339993001087258,
+      "benchmark_net_return_pct": 6.96328052101487,
+      "daily_mdd_pct": 7.029392918928556,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.67998600217453,
+          "profit_usd": 28.679986002174516
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.6999650054363,
+          "profit_usd": 71.6999650054363
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1143.3999300108726,
+          "profit_usd": 143.3999300108726
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2286.799860021745,
+          "profit_usd": 286.7998600217452
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11433.999300108726,
+          "profit_usd": 1433.999300108726
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 213.92656104202973,
+          "profit_usd": 13.92656104202974
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 534.8164026050744,
+          "profit_usd": 34.816402605074344
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1069.6328052101487,
+          "profit_usd": 69.63280521014869
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2139.2656104202974,
+          "profit_usd": 139.26561042029738
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10696.328052101488,
+          "profit_usd": 696.328052101487
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2005-12-30",
+      "entry_date": "2006-01-03",
+      "exit_date": "2007-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FCNTX",
+        "VIMAX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 88.12332961830727,
+          "trailing_sharpe_zero_cash_rate": 1.8592677044627322,
+          "trailing_volatility_pct": 11.685694150703114
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 758,
+          "trailing_total_return_pct": 71.62496258701536,
+          "trailing_sharpe_zero_cash_rate": 1.6188509298123221,
+          "trailing_volatility_pct": 11.520502479837194
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 85.34243729654018,
+          "trailing_sharpe_zero_cash_rate": 1.5613731056440459,
+          "trailing_volatility_pct": 13.76677685467264
+        }
+      ],
+      "net_return_pct": 12.095296284058787,
+      "benchmark_net_return_pct": 13.41474782042209,
+      "daily_mdd_pct": 11.390266713757535,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 224.19059256811758,
+          "profit_usd": 24.190592568117573
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 560.4764814202939,
+          "profit_usd": 60.476481420293936
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1120.9529628405878,
+          "profit_usd": 120.95296284058787
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2241.9059256811756,
+          "profit_usd": 241.90592568117575
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11209.529628405879,
+          "profit_usd": 1209.5296284058788
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 226.8294956408442,
+          "profit_usd": 26.82949564084418
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 567.0737391021105,
+          "profit_usd": 67.07373910211045
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1134.147478204221,
+          "profit_usd": 134.1474782042209
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2268.294956408442,
+          "profit_usd": 268.2949564084418
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11341.474782042209,
+          "profit_usd": 1341.474782042209
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2006-12-29",
+      "entry_date": "2007-01-03",
+      "exit_date": "2008-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "DODGX",
+        "FLPSX",
+        "VIMAX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 55.20835056712452,
+          "trailing_sharpe_zero_cash_rate": 1.5182376234044646,
+          "trailing_volatility_pct": 9.968118384370664
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 56.24106955460275,
+          "trailing_sharpe_zero_cash_rate": 1.4605777967687366,
+          "trailing_volatility_pct": 10.554257190246293
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 55.88678987634075,
+          "trailing_sharpe_zero_cash_rate": 1.2555338105114044,
+          "trailing_volatility_pct": 12.384637350364205
+        }
+      ],
+      "net_return_pct": 1.8063051693368415,
+      "benchmark_net_return_pct": 4.2013431423946646,
+      "daily_mdd_pct": 11.695513473180219,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 203.61261033867368,
+          "profit_usd": 3.612610338673683
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 509.0315258466842,
+          "profit_usd": 9.031525846684207
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1018.0630516933684,
+          "profit_usd": 18.063051693368415
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2036.1261033867368,
+          "profit_usd": 36.12610338673683
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10180.630516933685,
+          "profit_usd": 180.63051693368413
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 208.40268628478933,
+          "profit_usd": 8.402686284789329
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 521.0067157119734,
+          "profit_usd": 21.00671571197332
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1042.0134314239467,
+          "profit_usd": 42.01343142394664
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2084.0268628478934,
+          "profit_usd": 84.02686284789328
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10420.134314239467,
+          "profit_usd": 420.13431423946645
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2007-12-31",
+      "entry_date": "2008-01-02",
+      "exit_date": "2009-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FSCSX",
+        "FSPHX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": 55.245598856705655,
+          "trailing_sharpe_zero_cash_rate": 1.2241423310323585,
+          "trailing_volatility_pct": 12.66714714726181
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 54.8122728591095,
+          "trailing_sharpe_zero_cash_rate": 1.01588707566156,
+          "trailing_volatility_pct": 15.57507240442561
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 38.019866501560465,
+          "trailing_sharpe_zero_cash_rate": 1.00983496073082,
+          "trailing_volatility_pct": 11.298629247656104
+        }
+      ],
+      "net_return_pct": -35.0916397518917,
+      "benchmark_net_return_pct": -34.44619353822825,
+      "daily_mdd_pct": 46.05370273483362,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 129.8167204962166,
+          "profit_usd": -70.1832795037834
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 324.5418012405415,
+          "profit_usd": -175.4581987594585
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 649.083602481083,
+          "profit_usd": -350.916397518917
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1298.167204962166,
+          "profit_usd": -701.832795037834
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6490.83602481083,
+          "profit_usd": -3509.1639751891703
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 131.10761292354348,
+          "profit_usd": -68.8923870764565
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 327.76903230885875,
+          "profit_usd": -172.23096769114127
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 655.5380646177175,
+          "profit_usd": -344.46193538228255
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1311.076129235435,
+          "profit_usd": -688.9238707645651
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6555.380646177175,
+          "profit_usd": -3444.6193538228254
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2008-12-31",
+      "entry_date": "2009-01-02",
+      "exit_date": "2010-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VPMCX",
+        "FCNTX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": -12.100246593998342,
+          "trailing_sharpe_zero_cash_rate": -0.016795193787151268,
+          "trailing_volatility_pct": 27.783807322371356
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 755,
+          "trailing_total_return_pct": -16.629346392132394,
+          "trailing_sharpe_zero_cash_rate": -0.12151954852772184,
+          "trailing_volatility_pct": 24.77613753276935
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": -17.75397386720583,
+          "trailing_sharpe_zero_cash_rate": -0.17372411741622634,
+          "trailing_volatility_pct": 22.725161842489648
+        }
+      ],
+      "net_return_pct": 39.17872239098668,
+      "benchmark_net_return_pct": 24.48563384069944,
+      "daily_mdd_pct": 19.96439811800044,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 278.35744478197336,
+          "profit_usd": 78.35744478197336
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 695.8936119549334,
+          "profit_usd": 195.8936119549334
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1391.7872239098667,
+          "profit_usd": 391.7872239098668
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2783.5744478197335,
+          "profit_usd": 783.5744478197336
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13917.872239098668,
+          "profit_usd": 3917.8722390986677
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 248.97126768139887,
+          "profit_usd": 48.97126768139888
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 622.4281692034972,
+          "profit_usd": 122.42816920349719
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1244.8563384069944,
+          "profit_usd": 244.85633840699438
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2489.7126768139888,
+          "profit_usd": 489.71267681398876
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12448.563384069945,
+          "profit_usd": 2448.563384069944
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2009-12-31",
+      "entry_date": "2010-01-04",
+      "exit_date": "2011-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VPMCX",
+        "FDGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 756,
+          "trailing_total_return_pct": 15.294655090368758,
+          "trailing_sharpe_zero_cash_rate": 0.3076391204083403,
+          "trailing_volatility_pct": 30.287552530739852
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 756,
+          "trailing_total_return_pct": 1.7961652106054382,
+          "trailing_sharpe_zero_cash_rate": 0.16164264593722763,
+          "trailing_volatility_pct": 28.143557815872633
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 756,
+          "trailing_total_return_pct": 0.10030439597945584,
+          "trailing_sharpe_zero_cash_rate": 0.1510985000534395,
+          "trailing_volatility_pct": 29.992322633545033
+        }
+      ],
+      "net_return_pct": 17.00025297342098,
+      "benchmark_net_return_pct": 14.078455139254853,
+      "daily_mdd_pct": 16.31311395683238,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 234.00050594684197,
+          "profit_usd": 34.00050594684196
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 585.001264867105,
+          "profit_usd": 85.00126486710491
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1170.00252973421,
+          "profit_usd": 170.00252973420982
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2340.00505946842,
+          "profit_usd": 340.00505946841963
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11700.025297342097,
+          "profit_usd": 1700.0252973420982
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.1569102785097,
+          "profit_usd": 28.156910278509706
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 570.3922756962743,
+          "profit_usd": 70.39227569627427
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1140.7845513925486,
+          "profit_usd": 140.78455139254854
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2281.569102785097,
+          "profit_usd": 281.5691027850971
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11407.845513925486,
+          "profit_usd": 1407.8455139254852
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2010-12-31",
+      "entry_date": "2011-01-03",
+      "exit_date": "2012-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "VSMAX",
+        "FSCSX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "VSMAX",
+          "observations": 758,
+          "trailing_total_return_pct": 11.556577818732606,
+          "trailing_sharpe_zero_cash_rate": 0.280763822144653,
+          "trailing_volatility_pct": 35.64691317153802
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 11.1686965836846,
+          "trailing_sharpe_zero_cash_rate": 0.2674302430745791,
+          "trailing_volatility_pct": 30.4976813048551
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 7.292252651568432,
+          "trailing_sharpe_zero_cash_rate": 0.22184844045898403,
+          "trailing_volatility_pct": 26.944316928575766
+        }
+      ],
+      "net_return_pct": -0.3181253906297421,
+      "benchmark_net_return_pct": 2.2547629351576504,
+      "daily_mdd_pct": 22.45479377490609,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 199.3637492187405,
+          "profit_usd": -0.6362507812594842
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 498.4093730468513,
+          "profit_usd": -1.5906269531487105
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 996.8187460937025,
+          "profit_usd": -3.181253906297421
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1993.637492187405,
+          "profit_usd": -6.362507812594842
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9968.187460937026,
+          "profit_usd": -31.81253906297421
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 204.50952587031531,
+          "profit_usd": 4.509525870315301
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 511.27381467578823,
+          "profit_usd": 11.273814675788252
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1022.5476293515765,
+          "profit_usd": 22.547629351576504
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2045.095258703153,
+          "profit_usd": 45.09525870315301
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10225.476293515765,
+          "profit_usd": 225.47629351576504
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2011-12-30",
+      "entry_date": "2012-01-03",
+      "exit_date": "2013-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "FSPHX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 98.59209686240095,
+          "trailing_sharpe_zero_cash_rate": 1.0720804619055686,
+          "trailing_volatility_pct": 23.998905709202432
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 758,
+          "trailing_total_return_pct": 68.32302532050856,
+          "trailing_sharpe_zero_cash_rate": 0.9640805197884766,
+          "trailing_volatility_pct": 20.08148969687418
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 70.33362147089028,
+          "trailing_sharpe_zero_cash_rate": 0.9338652515546022,
+          "trailing_volatility_pct": 21.458760549358907
+        }
+      ],
+      "net_return_pct": 20.188486653431937,
+      "benchmark_net_return_pct": 16.863035948286154,
+      "daily_mdd_pct": 10.488457369602145,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 240.37697330686387,
+          "profit_usd": 40.376973306863874
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 600.9424332671597,
+          "profit_usd": 100.94243326715969
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1201.8848665343194,
+          "profit_usd": 201.88486653431937
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2403.7697330686387,
+          "profit_usd": 403.76973306863874
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12018.848665343194,
+          "profit_usd": 2018.8486653431937
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 233.7260718965723,
+          "profit_usd": 33.72607189657231
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 584.3151797414307,
+          "profit_usd": 84.31517974143077
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1168.6303594828614,
+          "profit_usd": 168.63035948286154
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2337.260718965723,
+          "profit_usd": 337.2607189657231
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11686.303594828616,
+          "profit_usd": 1686.3035948286154
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2012-12-31",
+      "entry_date": "2013-01-02",
+      "exit_date": "2014-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FLPSX",
+        "FSCSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 53.26533256206516,
+          "trailing_sharpe_zero_cash_rate": 0.8870505551744841,
+          "trailing_volatility_pct": 17.903131414526253
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": 42.88787545325692,
+          "trailing_sharpe_zero_cash_rate": 0.7738014229115701,
+          "trailing_volatility_pct": 17.370115331781406
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 43.430774485022106,
+          "trailing_sharpe_zero_cash_rate": 0.671630872949234,
+          "trailing_volatility_pct": 21.34946316139999
+        }
+      ],
+      "net_return_pct": 42.69612851659179,
+      "benchmark_net_return_pct": 27.509747381970804,
+      "daily_mdd_pct": 4.2785140943241595,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 285.39225703318357,
+          "profit_usd": 85.39225703318358
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 713.4806425829589,
+          "profit_usd": 213.48064258295895
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1426.9612851659178,
+          "profit_usd": 426.9612851659179
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2853.9225703318357,
+          "profit_usd": 853.9225703318358
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 14269.61285165918,
+          "profit_usd": 4269.612851659179
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 255.01949476394162,
+          "profit_usd": 55.01949476394161
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 637.548736909854,
+          "profit_usd": 137.54873690985403
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1275.097473819708,
+          "profit_usd": 275.09747381970806
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2550.194947639416,
+          "profit_usd": 550.1949476394161
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12750.974738197081,
+          "profit_usd": 2750.9747381970806
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2013-12-31",
+      "entry_date": "2014-01-02",
+      "exit_date": "2015-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FSCSX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 104.89566971367896,
+          "trailing_sharpe_zero_cash_rate": 1.4837569182356467,
+          "trailing_volatility_pct": 17.15992847474245
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 82.34214795876152,
+          "trailing_sharpe_zero_cash_rate": 1.1187865131280077,
+          "trailing_volatility_pct": 19.686721259192506
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": 58.86154446083187,
+          "trailing_sharpe_zero_cash_rate": 1.0790663214429934,
+          "trailing_volatility_pct": 15.44840061509147
+        }
+      ],
+      "net_return_pct": 17.087543253601446,
+      "benchmark_net_return_pct": 14.271502749157317,
+      "daily_mdd_pct": 8.496759607362335,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 234.17508650720288,
+          "profit_usd": 34.17508650720289
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 585.4377162680072,
+          "profit_usd": 85.43771626800722
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1170.8754325360144,
+          "profit_usd": 170.87543253601444
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2341.750865072029,
+          "profit_usd": 341.7508650720289
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11708.754325360145,
+          "profit_usd": 1708.7543253601445
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.54300549831464,
+          "profit_usd": 28.543005498314635
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.3575137457866,
+          "profit_usd": 71.35751374578658
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.7150274915732,
+          "profit_usd": 142.71502749157315
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2285.4300549831464,
+          "profit_usd": 285.4300549831463
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11427.150274915732,
+          "profit_usd": 1427.1502749157316
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2014-12-31",
+      "entry_date": "2015-01-02",
+      "exit_date": "2016-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "VPMCX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 754,
+          "trailing_total_return_pct": 151.44625906300777,
+          "trailing_sharpe_zero_cash_rate": 1.944747682569405,
+          "trailing_volatility_pct": 16.582064879896855
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 754,
+          "trailing_total_return_pct": 87.85292883615669,
+          "trailing_sharpe_zero_cash_rate": 1.7458111512894074,
+          "trailing_volatility_pct": 12.54107227578676
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 754,
+          "trailing_total_return_pct": 68.80774482253177,
+          "trailing_sharpe_zero_cash_rate": 1.7336026293798612,
+          "trailing_volatility_pct": 10.424263014212114
+        }
+      ],
+      "net_return_pct": 1.0384727082177747,
+      "benchmark_net_return_pct": -0.32711163413415845,
+      "daily_mdd_pct": 13.790773762682583,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 202.07694541643554,
+          "profit_usd": 2.0769454164355494
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 505.19236354108887,
+          "profit_usd": 5.1923635410888735
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1010.3847270821777,
+          "profit_usd": 10.384727082177747
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2020.7694541643555,
+          "profit_usd": 20.769454164355494
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10103.847270821778,
+          "profit_usd": 103.84727082177747
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 199.3457767317317,
+          "profit_usd": -0.6542232682683169
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 498.3644418293292,
+          "profit_usd": -1.6355581706707922
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 996.7288836586584,
+          "profit_usd": -3.2711163413415845
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1993.457767317317,
+          "profit_usd": -6.542232682683169
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9967.288836586584,
+          "profit_usd": -32.711163413415846
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2015-12-31",
+      "entry_date": "2016-01-04",
+      "exit_date": "2017-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "VPMCX",
+        "FBGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 757,
+          "trailing_total_return_pct": 122.92117933771065,
+          "trailing_sharpe_zero_cash_rate": 1.5179386373709405,
+          "trailing_volatility_pct": 18.773311278811637
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 757,
+          "trailing_total_return_pct": 70.33405046019352,
+          "trailing_sharpe_zero_cash_rate": 1.3740555226436544,
+          "trailing_volatility_pct": 13.597339217277222
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 757,
+          "trailing_total_return_pct": 70.41562183422074,
+          "trailing_sharpe_zero_cash_rate": 1.273248582833013,
+          "trailing_volatility_pct": 14.824082382240913
+        }
+      ],
+      "net_return_pct": 3.289726266192017,
+      "benchmark_net_return_pct": 14.22591636997872,
+      "daily_mdd_pct": 13.987398352309977,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 206.57945253238404,
+          "profit_usd": 6.579452532384034
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 516.4486313309601,
+          "profit_usd": 16.448631330960083
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1032.8972626619202,
+          "profit_usd": 32.897262661920166
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2065.7945253238404,
+          "profit_usd": 65.79452532384033
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10328.972626619201,
+          "profit_usd": 328.97262661920166
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.45183273995744,
+          "profit_usd": 28.45183273995744
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.1295818498936,
+          "profit_usd": 71.1295818498936
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.2591636997872,
+          "profit_usd": 142.2591636997872
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2284.5183273995744,
+          "profit_usd": 284.5183273995744
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11422.591636997871,
+          "profit_usd": 1422.591636997872
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2016-12-30",
+      "entry_date": "2017-01-03",
+      "exit_date": "2018-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "VPMCX",
+        "FXAIX",
+        "VFIAX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "VPMCX",
+          "observations": 758,
+          "trailing_total_return_pct": 35.30849443697856,
+          "trailing_sharpe_zero_cash_rate": 0.7581326030469673,
+          "trailing_volatility_pct": 14.707098103060773
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 758,
+          "trailing_total_return_pct": 29.56404004435602,
+          "trailing_sharpe_zero_cash_rate": 0.7099588756425305,
+          "trailing_volatility_pct": 13.414032766834033
+        },
+        {
+          "symbol": "VFIAX",
+          "observations": 758,
+          "trailing_total_return_pct": 29.45071614762935,
+          "trailing_sharpe_zero_cash_rate": 0.7080639154157087,
+          "trailing_volatility_pct": 13.407534167476562
+        }
+      ],
+      "net_return_pct": 24.4493719756391,
+      "benchmark_net_return_pct": 21.40269940163615,
+      "daily_mdd_pct": 2.576138268838324,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 248.8987439512782,
+          "profit_usd": 48.8987439512782
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 622.2468598781956,
+          "profit_usd": 122.24685987819551
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1244.493719756391,
+          "profit_usd": 244.49371975639102
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2488.987439512782,
+          "profit_usd": 488.98743951278203
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12444.93719756391,
+          "profit_usd": 2444.93719756391
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 242.8053988032723,
+          "profit_usd": 42.8053988032723
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 607.0134970081807,
+          "profit_usd": 107.01349700818075
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1214.0269940163614,
+          "profit_usd": 214.0269940163615
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2428.053988032723,
+          "profit_usd": 428.053988032723
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12140.269940163615,
+          "profit_usd": 2140.269940163615
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2017-12-29",
+      "entry_date": "2018-01-02",
+      "exit_date": "2019-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "FDGRX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 66.67111673813378,
+          "trailing_sharpe_zero_cash_rate": 1.1686517670727699,
+          "trailing_volatility_pct": 15.599341927886817
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 54.496683015268374,
+          "trailing_sharpe_zero_cash_rate": 1.0295203652082099,
+          "trailing_volatility_pct": 15.192513194901306
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 758,
+          "trailing_total_return_pct": 51.422724164158026,
+          "trailing_sharpe_zero_cash_rate": 1.0240634841042902,
+          "trailing_volatility_pct": 14.522450857113862
+        }
+      ],
+      "net_return_pct": -1.5126791983345211,
+      "benchmark_net_return_pct": -5.338184723000305,
+      "daily_mdd_pct": 23.02948156257294,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 196.97464160333095,
+          "profit_usd": -3.0253583966690423
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 492.4366040083274,
+          "profit_usd": -7.563395991672605
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 984.8732080166548,
+          "profit_usd": -15.12679198334521
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1969.7464160333095,
+          "profit_usd": -30.25358396669042
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9848.732080166548,
+          "profit_usd": -151.2679198334521
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 189.32363055399938,
+          "profit_usd": -10.67636944600061
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 473.3090763849985,
+          "profit_usd": -26.690923615001527
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 946.618152769997,
+          "profit_usd": -53.38184723000305
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1893.236305539994,
+          "profit_usd": -106.7636944600061
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9466.18152769997,
+          "profit_usd": -533.8184723000305
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2018-12-31",
+      "entry_date": "2019-01-02",
+      "exit_date": "2020-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "VPMCX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 755,
+          "trailing_total_return_pct": 56.34374053566758,
+          "trailing_sharpe_zero_cash_rate": 0.9216797495927201,
+          "trailing_volatility_pct": 17.964521048313987
+        },
+        {
+          "symbol": "VPMCX",
+          "observations": 755,
+          "trailing_total_return_pct": 40.5151478911568,
+          "trailing_sharpe_zero_cash_rate": 0.8408987472851918,
+          "trailing_volatility_pct": 14.832465084854265
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 755,
+          "trailing_total_return_pct": 40.64070172389176,
+          "trailing_sharpe_zero_cash_rate": 0.7743457487148505,
+          "trailing_volatility_pct": 16.479555675354423
+        }
+      ],
+      "net_return_pct": 33.92357761739413,
+      "benchmark_net_return_pct": 32.04890519091048,
+      "daily_mdd_pct": 8.141540413723636,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 267.84715523478826,
+          "profit_usd": 67.84715523478826
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 669.6178880869707,
+          "profit_usd": 169.61788808697065
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1339.2357761739413,
+          "profit_usd": 339.2357761739413
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2678.4715523478826,
+          "profit_usd": 678.4715523478826
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13392.357761739413,
+          "profit_usd": 3392.357761739413
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 264.097810381821,
+          "profit_usd": 64.09781038182096
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 660.2445259545524,
+          "profit_usd": 160.24452595455242
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1320.4890519091048,
+          "profit_usd": 320.48905190910483
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2640.9781038182095,
+          "profit_usd": 640.9781038182097
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13204.890519091048,
+          "profit_usd": 3204.890519091048
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2019-12-31",
+      "entry_date": "2020-01-02",
+      "exit_date": "2021-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSCSX",
+        "FBGRX",
+        "TRBCX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSCSX",
+          "observations": 754,
+          "trailing_total_return_pct": 94.32333522106089,
+          "trailing_sharpe_zero_cash_rate": 1.3573094019412266,
+          "trailing_volatility_pct": 17.51976544979584
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 754,
+          "trailing_total_return_pct": 81.76052621341252,
+          "trailing_sharpe_zero_cash_rate": 1.2777345879057382,
+          "trailing_volatility_pct": 16.75663131322741
+        },
+        {
+          "symbol": "TRBCX",
+          "observations": 754,
+          "trailing_total_return_pct": 79.21392969422097,
+          "trailing_sharpe_zero_cash_rate": 1.273559319895603,
+          "trailing_volatility_pct": 16.392355684354413
+        }
+      ],
+      "net_return_pct": 42.32104200960989,
+      "benchmark_net_return_pct": 15.408043301649599,
+      "daily_mdd_pct": 30.91941859634203,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 284.6420840192198,
+          "profit_usd": 84.64208401921978
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 711.6052100480495,
+          "profit_usd": 211.60521004804943
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1423.210420096099,
+          "profit_usd": 423.21042009609886
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2846.420840192198,
+          "profit_usd": 846.4208401921977
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 14232.104200960988,
+          "profit_usd": 4232.104200960989
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 230.8160866032992,
+          "profit_usd": 30.816086603299198
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 577.040216508248,
+          "profit_usd": 77.040216508248
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1154.080433016496,
+          "profit_usd": 154.080433016496
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2308.160866032992,
+          "profit_usd": 308.160866032992
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11540.80433016496,
+          "profit_usd": 1540.80433016496
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2020-12-31",
+      "entry_date": "2021-01-04",
+      "exit_date": "2022-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "FBGRX",
+        "FSCSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 756,
+          "trailing_total_return_pct": 118.68309716563235,
+          "trailing_sharpe_zero_cash_rate": 1.1136794350072368,
+          "trailing_volatility_pct": 26.682028616146773
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 756,
+          "trailing_total_return_pct": 115.18705565299281,
+          "trailing_sharpe_zero_cash_rate": 1.1061283065484644,
+          "trailing_volatility_pct": 26.28515306045095
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 756,
+          "trailing_total_return_pct": 104.3448430375483,
+          "trailing_sharpe_zero_cash_rate": 1.0236267321184969,
+          "trailing_volatility_pct": 26.85487359161679
+        }
+      ],
+      "net_return_pct": 23.836279290776254,
+      "benchmark_net_return_pct": 30.998710127748375,
+      "daily_mdd_pct": 11.113010768439358,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 247.6725585815525,
+          "profit_usd": 47.67255858155251
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 619.1813964538812,
+          "profit_usd": 119.18139645388126
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1238.3627929077625,
+          "profit_usd": 238.36279290776253
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2476.725585815525,
+          "profit_usd": 476.72558581552505
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12383.627929077626,
+          "profit_usd": 2383.627929077625
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 261.99742025549676,
+          "profit_usd": 61.99742025549675
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 654.9935506387419,
+          "profit_usd": 154.99355063874188
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1309.9871012774838,
+          "profit_usd": 309.98710127748376
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2619.9742025549676,
+          "profit_usd": 619.9742025549675
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13099.871012774838,
+          "profit_usd": 3099.8710127748373
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2021-12-31",
+      "entry_date": "2022-01-03",
+      "exit_date": "2023-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "FBGRX",
+        "FSCSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 183.999574304356,
+          "trailing_sharpe_zero_cash_rate": 1.4763912518047106,
+          "trailing_volatility_pct": 25.82760800793327
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 165.4120231189149,
+          "trailing_sharpe_zero_cash_rate": 1.3856066005595402,
+          "trailing_volatility_pct": 25.909452928838423
+        },
+        {
+          "symbol": "FSCSX",
+          "observations": 758,
+          "trailing_total_return_pct": 138.97413933408146,
+          "trailing_sharpe_zero_cash_rate": 1.2721920572002439,
+          "trailing_volatility_pct": 25.348529254990332
+        }
+      ],
+      "net_return_pct": -34.84706628770601,
+      "benchmark_net_return_pct": -19.150839451263113,
+      "daily_mdd_pct": 36.80744389463268,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 130.30586742458797,
+          "profit_usd": -69.69413257541201
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 325.76466856147,
+          "profit_usd": -174.23533143853004
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 651.52933712294,
+          "profit_usd": -348.4706628770601
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1303.05867424588,
+          "profit_usd": -696.9413257541202
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6515.293371229399,
+          "profit_usd": -3484.7066287706007
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 161.69832109747378,
+          "profit_usd": -38.30167890252623
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 404.2458027436844,
+          "profit_usd": -95.75419725631556
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 808.4916054873688,
+          "profit_usd": -191.50839451263113
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1616.9832109747376,
+          "profit_usd": -383.01678902526226
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 8084.916054873689,
+          "profit_usd": -1915.0839451263114
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2022-12-30",
+      "entry_date": "2023-01-03",
+      "exit_date": "2024-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FDGRX",
+        "FLPSX",
+        "DODGX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FDGRX",
+          "observations": 758,
+          "trailing_total_return_pct": 36.23596795717614,
+          "trailing_sharpe_zero_cash_rate": 0.4885810861316049,
+          "trailing_volatility_pct": 30.88409518504886
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 28.74569496805548,
+          "trailing_sharpe_zero_cash_rate": 0.48183729388182206,
+          "trailing_volatility_pct": 22.991549943943166
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 31.29059040557911,
+          "trailing_sharpe_zero_cash_rate": 0.4643259968313318,
+          "trailing_volatility_pct": 28.048203167567053
+        }
+      ],
+      "net_return_pct": 26.137619502375344,
+      "benchmark_net_return_pct": 25.748223600024357,
+      "daily_mdd_pct": 10.404003205252256,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 252.2752390047507,
+          "profit_usd": 52.27523900475069
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 630.6880975118767,
+          "profit_usd": 130.68809751187672
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1261.3761950237533,
+          "profit_usd": 261.37619502375344
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2522.7523900475067,
+          "profit_usd": 522.7523900475069
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12613.761950237535,
+          "profit_usd": 2613.761950237534
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 251.49644720004872,
+          "profit_usd": 51.49644720004871
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 628.7411180001218,
+          "profit_usd": 128.7411180001218
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1257.4822360002436,
+          "profit_usd": 257.4822360002436
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2514.964472000487,
+          "profit_usd": 514.9644720004871
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12574.822360002436,
+          "profit_usd": 2574.8223600024357
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2023-12-29",
+      "entry_date": "2024-01-02",
+      "exit_date": "2025-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "DODGX",
+        "FLPSX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "DODGX",
+          "observations": 756,
+          "trailing_total_return_pct": 45.33066898453064,
+          "trailing_sharpe_zero_cash_rate": 0.7936692820266139,
+          "trailing_volatility_pct": 17.695881564514067
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 756,
+          "trailing_total_return_pct": 35.227981581605135,
+          "trailing_sharpe_zero_cash_rate": 0.7374894482633829,
+          "trailing_volatility_pct": 15.232854640514187
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 756,
+          "trailing_total_return_pct": 34.12302352889354,
+          "trailing_sharpe_zero_cash_rate": 0.6451718512385816,
+          "trailing_volatility_pct": 17.587625700679535
+        }
+      ],
+      "net_return_pct": 15.315775971947353,
+      "benchmark_net_return_pct": 25.03029629206295,
+      "daily_mdd_pct": 6.856127720508343,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 230.63155194389472,
+          "profit_usd": 30.631551943894706
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 576.5788798597367,
+          "profit_usd": 76.57887985973677
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1153.1577597194735,
+          "profit_usd": 153.15775971947355
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2306.315519438947,
+          "profit_usd": 306.3155194389471
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11531.577597194735,
+          "profit_usd": 1531.5775971947355
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 250.06059258412589,
+          "profit_usd": 50.0605925841259
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 625.1514814603147,
+          "profit_usd": 125.15148146031474
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1250.3029629206294,
+          "profit_usd": 250.30296292062948
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2500.605925841259,
+          "profit_usd": 500.60592584125897
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12503.029629206294,
+          "profit_usd": 2503.029629206295
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2024-12-31",
+      "entry_date": "2025-01-02",
+      "exit_date": "2026-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FXAIX",
+        "SWPPX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 754,
+          "trailing_total_return_pct": 35.88082686703176,
+          "trailing_sharpe_zero_cash_rate": 0.6160370240024154,
+          "trailing_volatility_pct": 19.86482444353996
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 754,
+          "trailing_total_return_pct": 29.244768184323846,
+          "trailing_sharpe_zero_cash_rate": 0.5782191922852264,
+          "trailing_volatility_pct": 17.49693110173176
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 754,
+          "trailing_total_return_pct": 29.161895257518687,
+          "trailing_sharpe_zero_cash_rate": 0.5769724707641817,
+          "trailing_volatility_pct": 17.497676241442647
+        }
+      ],
+      "net_return_pct": 19.12658108854557,
+      "benchmark_net_return_pct": 17.989002010594568,
+      "daily_mdd_pct": 18.920557025606875,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 238.25316217709113,
+          "profit_usd": 38.25316217709114
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 595.6329054427279,
+          "profit_usd": 95.63290544272785
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1191.2658108854557,
+          "profit_usd": 191.2658108854557
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2382.5316217709114,
+          "profit_usd": 382.5316217709114
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11912.658108854557,
+          "profit_usd": 1912.658108854557
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 235.97800402118912,
+          "profit_usd": 35.978004021189136
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 589.9450100529729,
+          "profit_usd": 89.94501005297283
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1179.8900201059457,
+          "profit_usd": 179.89002010594567
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2359.7800402118914,
+          "profit_usd": 359.78004021189133
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11798.900201059458,
+          "profit_usd": 1798.9002010594568
+        }
+      ]
+    },
+    {
+      "selector": "trailing_sharpe",
+      "signal_date": "2025-12-31",
+      "entry_date": "2026-01-02",
+      "exit_date": "2026-10-21",
+      "partial_final_period": true,
+      "selected": [
+        "FCNTX",
+        "FDGRX",
+        "FBGRX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 752,
+          "trailing_total_return_pct": 131.5494971726916,
+          "trailing_sharpe_zero_cash_rate": 1.7373118055375987,
+          "trailing_volatility_pct": 17.059348853366266
+        },
+        {
+          "symbol": "FDGRX",
+          "observations": 752,
+          "trailing_total_return_pct": 153.7675979711914,
+          "trailing_sharpe_zero_cash_rate": 1.589631635855715,
+          "trailing_volatility_pct": 21.058271090498007
+        },
+        {
+          "symbol": "FBGRX",
+          "observations": 752,
+          "trailing_total_return_pct": 163.38536304570934,
+          "trailing_sharpe_zero_cash_rate": 1.5851119347719365,
+          "trailing_volatility_pct": 22.037957365975842
+        }
+      ],
+      "net_return_pct": 18.04157945475511,
+      "benchmark_net_return_pct": 13.818074504382993,
+      "daily_mdd_pct": 11.057992903260772,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 236.08315890951022,
+          "profit_usd": 36.08315890951022
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 590.2078972737755,
+          "profit_usd": 90.20789727377554
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1180.415794547551,
+          "profit_usd": 180.4157945475511
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2360.831589095102,
+          "profit_usd": 360.8315890951022
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11804.15794547551,
+          "profit_usd": 1804.1579454755108
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 227.63614900876598,
+          "profit_usd": 27.636149008765987
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 569.090372521915,
+          "profit_usd": 69.09037252191497
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1138.18074504383,
+          "profit_usd": 138.18074504382994
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2276.36149008766,
+          "profit_usd": 276.3614900876599
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11381.807450438298,
+          "profit_usd": 1381.8074504382994
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2004-12-31",
+      "entry_date": "2005-01-03",
+      "exit_date": "2006-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FLPSX",
+        "DODGX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.500740513383526,
+          "trailing_sharpe_zero_cash_rate": 0.8824262902638332,
+          "trailing_volatility_pct": 13.94447719611112
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 757,
+          "trailing_total_return_pct": 61.28550636613572,
+          "trailing_sharpe_zero_cash_rate": 1.1892087255147172,
+          "trailing_volatility_pct": 14.254918408500425
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 757,
+          "trailing_total_return_pct": 40.843387941367325,
+          "trailing_sharpe_zero_cash_rate": 0.7580635357700002,
+          "trailing_volatility_pct": 16.95367574049299
+        }
+      ],
+      "net_return_pct": 14.339993001087258,
+      "benchmark_net_return_pct": 6.96328052101487,
+      "daily_mdd_pct": 7.029392918928556,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.67998600217453,
+          "profit_usd": 28.679986002174516
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.6999650054363,
+          "profit_usd": 71.6999650054363
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1143.3999300108726,
+          "profit_usd": 143.3999300108726
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2286.799860021745,
+          "profit_usd": 286.7998600217452
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11433.999300108726,
+          "profit_usd": 1433.999300108726
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 213.92656104202973,
+          "profit_usd": 13.92656104202974
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 534.8164026050744,
+          "profit_usd": 34.816402605074344
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1069.6328052101487,
+          "profit_usd": 69.63280521014869
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2139.2656104202974,
+          "profit_usd": 139.26561042029738
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10696.328052101488,
+          "profit_usd": 696.328052101487
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2005-12-30",
+      "entry_date": "2006-01-03",
+      "exit_date": "2007-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FCNTX",
+        "FLPSX",
+        "DODGX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FCNTX",
+          "observations": 758,
+          "trailing_total_return_pct": 71.62496258701536,
+          "trailing_sharpe_zero_cash_rate": 1.6188509298123221,
+          "trailing_volatility_pct": 11.520502479837194
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 88.12332961830727,
+          "trailing_sharpe_zero_cash_rate": 1.8592677044627322,
+          "trailing_volatility_pct": 11.685694150703114
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 73.25764696652675,
+          "trailing_sharpe_zero_cash_rate": 1.557458909021612,
+          "trailing_volatility_pct": 12.23119713736244
+        }
+      ],
+      "net_return_pct": 13.701024054262989,
+      "benchmark_net_return_pct": 13.41474782042209,
+      "daily_mdd_pct": 10.167023839938128,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 227.40204810852597,
+          "profit_usd": 27.402048108525978
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 568.5051202713149,
+          "profit_usd": 68.50512027131495
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1137.0102405426298,
+          "profit_usd": 137.0102405426299
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2274.0204810852597,
+          "profit_usd": 274.0204810852598
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11370.1024054263,
+          "profit_usd": 1370.102405426299
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 226.8294956408442,
+          "profit_usd": 26.82949564084418
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 567.0737391021105,
+          "profit_usd": 67.07373910211045
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1134.147478204221,
+          "profit_usd": 134.1474782042209
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2268.294956408442,
+          "profit_usd": 268.2949564084418
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11341.474782042209,
+          "profit_usd": 1341.474782042209
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2006-12-29",
+      "entry_date": "2007-01-03",
+      "exit_date": "2008-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "DODGX",
+        "SWPPX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "DODGX",
+          "observations": 758,
+          "trailing_total_return_pct": 55.20835056712452,
+          "trailing_sharpe_zero_cash_rate": 1.5182376234044646,
+          "trailing_volatility_pct": 9.968118384370664
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 758,
+          "trailing_total_return_pct": 34.48440573993923,
+          "trailing_sharpe_zero_cash_rate": 0.9966525541950382,
+          "trailing_volatility_pct": 10.444273335299348
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 758,
+          "trailing_total_return_pct": 34.475164018019264,
+          "trailing_sharpe_zero_cash_rate": 0.9946237534915677,
+          "trailing_volatility_pct": 10.465501094419876
+        }
+      ],
+      "net_return_pct": 2.115503879764935,
+      "benchmark_net_return_pct": 4.2013431423946646,
+      "daily_mdd_pct": 9.737262176927086,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 204.23100775952986,
+          "profit_usd": 4.23100775952987
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 510.5775193988247,
+          "profit_usd": 10.577519398824675
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1021.1550387976494,
+          "profit_usd": 21.15503879764935
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2042.3100775952987,
+          "profit_usd": 42.3100775952987
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10211.550387976493,
+          "profit_usd": 211.5503879764935
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 208.40268628478933,
+          "profit_usd": 8.402686284789329
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 521.0067157119734,
+          "profit_usd": 21.00671571197332
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1042.0134314239467,
+          "profit_usd": 42.01343142394664
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2084.0268628478934,
+          "profit_usd": 84.02686284789328
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10420.134314239467,
+          "profit_usd": 420.13431423946645
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2007-12-31",
+      "entry_date": "2008-01-02",
+      "exit_date": "2009-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "DODGX",
+        "SWPPX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 38.019866501560465,
+          "trailing_sharpe_zero_cash_rate": 1.00983496073082,
+          "trailing_volatility_pct": 11.298629247656104
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 755,
+          "trailing_total_return_pct": 29.825431575159488,
+          "trailing_sharpe_zero_cash_rate": 0.8001577586226968,
+          "trailing_volatility_pct": 11.769834969653767
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 755,
+          "trailing_total_return_pct": 27.81903195646136,
+          "trailing_sharpe_zero_cash_rate": 0.7259392088545168,
+          "trailing_volatility_pct": 12.353017055834624
+        }
+      ],
+      "net_return_pct": -35.13798965027852,
+      "benchmark_net_return_pct": -34.44619353822825,
+      "daily_mdd_pct": 47.69917793036677,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 129.72402069944295,
+          "profit_usd": -70.27597930055704
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 324.3100517486074,
+          "profit_usd": -175.68994825139262
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 648.6201034972148,
+          "profit_usd": -351.37989650278524
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1297.2402069944296,
+          "profit_usd": -702.7597930055705
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6486.201034972148,
+          "profit_usd": -3513.7989650278523
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 131.10761292354348,
+          "profit_usd": -68.8923870764565
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 327.76903230885875,
+          "profit_usd": -172.23096769114127
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 655.5380646177175,
+          "profit_usd": -344.46193538228255
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1311.076129235435,
+          "profit_usd": -688.9238707645651
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 6555.380646177175,
+          "profit_usd": -3444.6193538228254
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2008-12-31",
+      "entry_date": "2009-01-02",
+      "exit_date": "2010-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FCNTX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": -21.056079642661587,
+          "trailing_sharpe_zero_cash_rate": -0.29620701679279515,
+          "trailing_volatility_pct": 19.95839330329554
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": -17.75397386720583,
+          "trailing_sharpe_zero_cash_rate": -0.17372411741622634,
+          "trailing_volatility_pct": 22.725161842489648
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": -23.651029390855093,
+          "trailing_sharpe_zero_cash_rate": -0.27195354844240655,
+          "trailing_volatility_pct": 23.22306560518434
+        }
+      ],
+      "net_return_pct": 32.249290115617455,
+      "benchmark_net_return_pct": 24.48563384069944,
+      "daily_mdd_pct": 19.338645610984983,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 264.49858023123494,
+          "profit_usd": 64.49858023123491
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 661.2464505780873,
+          "profit_usd": 161.2464505780873
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1322.4929011561746,
+          "profit_usd": 322.4929011561746
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2644.9858023123493,
+          "profit_usd": 644.9858023123492
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13224.929011561746,
+          "profit_usd": 3224.929011561746
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 248.97126768139887,
+          "profit_usd": 48.97126768139888
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 622.4281692034972,
+          "profit_usd": 122.42816920349719
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1244.8563384069944,
+          "profit_usd": 244.85633840699438
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2489.7126768139888,
+          "profit_usd": 489.71267681398876
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12448.563384069945,
+          "profit_usd": 2448.563384069944
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2009-12-31",
+      "entry_date": "2010-01-04",
+      "exit_date": "2011-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FCNTX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 756,
+          "trailing_total_return_pct": 0.33285286501638645,
+          "trailing_sharpe_zero_cash_rate": 0.11684632119251029,
+          "trailing_volatility_pct": 22.400042804087686
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 756,
+          "trailing_total_return_pct": -2.8010743736421206,
+          "trailing_sharpe_zero_cash_rate": 0.08667623052001801,
+          "trailing_volatility_pct": 24.9343644388518
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 756,
+          "trailing_total_return_pct": -8.31560589435586,
+          "trailing_sharpe_zero_cash_rate": 0.025493669570837076,
+          "trailing_volatility_pct": 26.737853636209195
+        }
+      ],
+      "net_return_pct": 17.485021890772945,
+      "benchmark_net_return_pct": 14.078455139254853,
+      "daily_mdd_pct": 13.188638415899657,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 234.97004378154588,
+          "profit_usd": 34.97004378154589
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 587.4251094538647,
+          "profit_usd": 87.42510945386472
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1174.8502189077294,
+          "profit_usd": 174.85021890772944
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2349.700437815459,
+          "profit_usd": 349.7004378154589
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11748.502189077295,
+          "profit_usd": 1748.5021890772946
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.1569102785097,
+          "profit_usd": 28.156910278509706
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 570.3922756962743,
+          "profit_usd": 70.39227569627427
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1140.7845513925486,
+          "profit_usd": 140.78455139254854
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2281.569102785097,
+          "profit_usd": 281.5691027850971
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11407.845513925486,
+          "profit_usd": 1407.8455139254852
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2010-12-31",
+      "entry_date": "2011-01-03",
+      "exit_date": "2012-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FCNTX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 758,
+          "trailing_total_return_pct": 4.352998750706383,
+          "trailing_sharpe_zero_cash_rate": 0.1769786249353204,
+          "trailing_volatility_pct": 23.182496976726434
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 758,
+          "trailing_total_return_pct": -5.04134405462554,
+          "trailing_sharpe_zero_cash_rate": 0.05791642198601166,
+          "trailing_volatility_pct": 25.23292086709882
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 7.292252651568432,
+          "trailing_sharpe_zero_cash_rate": 0.22184844045898403,
+          "trailing_volatility_pct": 26.944316928575766
+        }
+      ],
+      "net_return_pct": 2.5449230399054112,
+      "benchmark_net_return_pct": 2.2547629351576504,
+      "daily_mdd_pct": 19.022037126619505,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 205.08984607981083,
+          "profit_usd": 5.0898460798108225
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 512.7246151995271,
+          "profit_usd": 12.724615199527056
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1025.4492303990542,
+          "profit_usd": 25.449230399054112
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2050.8984607981083,
+          "profit_usd": 50.898460798108225
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10254.49230399054,
+          "profit_usd": 254.49230399054113
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 204.50952587031531,
+          "profit_usd": 4.509525870315301
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 511.27381467578823,
+          "profit_usd": 11.273814675788252
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1022.5476293515765,
+          "profit_usd": 22.547629351576504
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2045.095258703153,
+          "profit_usd": 45.09525870315301
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 10225.476293515765,
+          "profit_usd": 225.47629351576504
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2011-12-30",
+      "entry_date": "2012-01-03",
+      "exit_date": "2013-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FSPHX",
+        "FCNTX",
+        "FLPSX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FSPHX",
+          "observations": 758,
+          "trailing_total_return_pct": 68.32302532050856,
+          "trailing_sharpe_zero_cash_rate": 0.9640805197884766,
+          "trailing_volatility_pct": 20.08148969687418
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 758,
+          "trailing_total_return_pct": 53.12330283438074,
+          "trailing_sharpe_zero_cash_rate": 0.8016862610663594,
+          "trailing_volatility_pct": 20.25697825364095
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 70.33362147089028,
+          "trailing_sharpe_zero_cash_rate": 0.9338652515546022,
+          "trailing_volatility_pct": 21.458760549358907
+        }
+      ],
+      "net_return_pct": 19.46677149587257,
+      "benchmark_net_return_pct": 16.863035948286154,
+      "daily_mdd_pct": 9.059216760406553,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 238.93354299174513,
+          "profit_usd": 38.93354299174514
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 597.3338574793629,
+          "profit_usd": 97.33385747936285
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1194.6677149587258,
+          "profit_usd": 194.6677149587257
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2389.3354299174516,
+          "profit_usd": 389.3354299174514
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11946.677149587256,
+          "profit_usd": 1946.677149587257
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 233.7260718965723,
+          "profit_usd": 33.72607189657231
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 584.3151797414307,
+          "profit_usd": 84.31517974143077
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1168.6303594828614,
+          "profit_usd": 168.63035948286154
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2337.260718965723,
+          "profit_usd": 337.2607189657231
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11686.303594828616,
+          "profit_usd": 1686.3035948286154
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2012-12-31",
+      "entry_date": "2013-01-02",
+      "exit_date": "2014-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FCNTX",
+        "FSPHX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": 42.88787545325692,
+          "trailing_sharpe_zero_cash_rate": 0.7738014229115701,
+          "trailing_volatility_pct": 17.370115331781406
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": 35.75022600546127,
+          "trailing_sharpe_zero_cash_rate": 0.6619789786983595,
+          "trailing_volatility_pct": 17.839544183232256
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 755,
+          "trailing_total_return_pct": 53.26533256206516,
+          "trailing_sharpe_zero_cash_rate": 0.8870505551744841,
+          "trailing_volatility_pct": 17.903131414526253
+        }
+      ],
+      "net_return_pct": 37.425544395863874,
+      "benchmark_net_return_pct": 27.509747381970804,
+      "daily_mdd_pct": 4.984512271574504,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 274.85108879172776,
+          "profit_usd": 74.85108879172775
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 687.1277219793194,
+          "profit_usd": 187.12772197931938
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1374.2554439586388,
+          "profit_usd": 374.25544395863875
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2748.5108879172776,
+          "profit_usd": 748.5108879172775
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13742.554439586387,
+          "profit_usd": 3742.5544395863876
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 255.01949476394162,
+          "profit_usd": 55.01949476394161
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 637.548736909854,
+          "profit_usd": 137.54873690985403
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1275.097473819708,
+          "profit_usd": 275.09747381970806
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2550.194947639416,
+          "profit_usd": 550.1949476394161
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12750.974738197081,
+          "profit_usd": 2750.9747381970806
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2013-12-31",
+      "entry_date": "2014-01-02",
+      "exit_date": "2015-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FCNTX",
+        "SWPPX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": 58.86154446083187,
+          "trailing_sharpe_zero_cash_rate": 1.0790663214429934,
+          "trailing_volatility_pct": 15.44840061509147
+        },
+        {
+          "symbol": "FCNTX",
+          "observations": 755,
+          "trailing_total_return_pct": 55.75834810556388,
+          "trailing_sharpe_zero_cash_rate": 0.9847642187984559,
+          "trailing_volatility_pct": 16.41303895237144
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 755,
+          "trailing_total_return_pct": 56.38695769972226,
+          "trailing_sharpe_zero_cash_rate": 0.9894331067803126,
+          "trailing_volatility_pct": 16.484537653426486
+        }
+      ],
+      "net_return_pct": 10.620202000112577,
+      "benchmark_net_return_pct": 14.271502749157317,
+      "daily_mdd_pct": 7.224748337957509,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 221.24040400022517,
+          "profit_usd": 21.240404000225155
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 553.1010100005628,
+          "profit_usd": 53.10101000056289
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1106.2020200011257,
+          "profit_usd": 106.20202000112577
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2212.4040400022513,
+          "profit_usd": 212.40404000225155
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11062.020200011259,
+          "profit_usd": 1062.0202000112577
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.54300549831464,
+          "profit_usd": 28.543005498314635
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.3575137457866,
+          "profit_usd": 71.35751374578658
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.7150274915732,
+          "profit_usd": 142.71502749157315
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2285.4300549831464,
+          "profit_usd": 285.4300549831463
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11427.150274915732,
+          "profit_usd": 1427.1502749157316
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2014-12-31",
+      "entry_date": "2015-01-02",
+      "exit_date": "2016-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "SWPPX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 754,
+          "trailing_total_return_pct": 68.80774482253177,
+          "trailing_sharpe_zero_cash_rate": 1.7336026293798612,
+          "trailing_volatility_pct": 10.424263014212114
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 754,
+          "trailing_total_return_pct": 71.4291493536089,
+          "trailing_sharpe_zero_cash_rate": 1.60665137026818,
+          "trailing_volatility_pct": 11.653405712511661
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 754,
+          "trailing_total_return_pct": 71.13615738969949,
+          "trailing_sharpe_zero_cash_rate": 1.5930626709657616,
+          "trailing_volatility_pct": 11.721892918173369
+        }
+      ],
+      "net_return_pct": -0.7359444472654242,
+      "benchmark_net_return_pct": -0.32711163413415845,
+      "daily_mdd_pct": 11.147487753129537,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 198.52811110546915,
+          "profit_usd": -1.4718888945308484
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 496.3202777636729,
+          "profit_usd": -3.679722236327121
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 992.6405555273458,
+          "profit_usd": -7.359444472654242
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1985.2811110546916,
+          "profit_usd": -14.718888945308484
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9926.405555273457,
+          "profit_usd": -73.59444472654242
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 199.3457767317317,
+          "profit_usd": -0.6542232682683169
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 498.3644418293292,
+          "profit_usd": -1.6355581706707922
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 996.7288836586584,
+          "profit_usd": -3.2711163413415845
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1993.457767317317,
+          "profit_usd": -6.542232682683169
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9967.288836586584,
+          "profit_usd": -32.711163413415846
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2015-12-31",
+      "entry_date": "2016-01-04",
+      "exit_date": "2017-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "SWPPX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 757,
+          "trailing_total_return_pct": 43.77240171827086,
+          "trailing_sharpe_zero_cash_rate": 1.220811239933071,
+          "trailing_volatility_pct": 10.354926329315653
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 757,
+          "trailing_total_return_pct": 52.159976555595634,
+          "trailing_sharpe_zero_cash_rate": 1.1592410582365094,
+          "trailing_volatility_pct": 12.777497681544475
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 757,
+          "trailing_total_return_pct": 51.88926399924196,
+          "trailing_sharpe_zero_cash_rate": 1.1522297755326805,
+          "trailing_volatility_pct": 12.806964800568752
+        }
+      ],
+      "net_return_pct": 12.955071765163972,
+      "benchmark_net_return_pct": 14.22591636997872,
+      "daily_mdd_pct": 9.085244243186441,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 225.91014353032796,
+          "profit_usd": 25.910143530327943
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 564.7753588258198,
+          "profit_usd": 64.77535882581986
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1129.5507176516396,
+          "profit_usd": 129.55071765163973
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2259.1014353032792,
+          "profit_usd": 259.10143530327946
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11295.507176516398,
+          "profit_usd": 1295.5071765163973
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 228.45183273995744,
+          "profit_usd": 28.45183273995744
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 571.1295818498936,
+          "profit_usd": 71.1295818498936
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1142.2591636997872,
+          "profit_usd": 142.2591636997872
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2284.5183273995744,
+          "profit_usd": 284.5183273995744
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11422.591636997871,
+          "profit_usd": 1422.591636997872
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2016-12-30",
+      "entry_date": "2017-01-03",
+      "exit_date": "2018-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "SWPPX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 16.595283673540017,
+          "trailing_sharpe_zero_cash_rate": 0.50180982315726,
+          "trailing_volatility_pct": 11.508591574167719
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 758,
+          "trailing_total_return_pct": 29.18115775159862,
+          "trailing_sharpe_zero_cash_rate": 0.7038704127034326,
+          "trailing_volatility_pct": 13.384425322803207
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 758,
+          "trailing_total_return_pct": 29.025855646334954,
+          "trailing_sharpe_zero_cash_rate": 0.6999155474477278,
+          "trailing_volatility_pct": 13.407159761242134
+        }
+      ],
+      "net_return_pct": 21.217463827335315,
+      "benchmark_net_return_pct": 21.40269940163615,
+      "daily_mdd_pct": 2.011423729292261,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 242.43492765467062,
+          "profit_usd": 42.43492765467063
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 606.0873191366766,
+          "profit_usd": 106.08731913667657
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1212.1746382733531,
+          "profit_usd": 212.17463827335314
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2424.3492765467063,
+          "profit_usd": 424.3492765467063
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12121.746382733532,
+          "profit_usd": 2121.7463827335314
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 242.8053988032723,
+          "profit_usd": 42.8053988032723
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 607.0134970081807,
+          "profit_usd": 107.01349700818075
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1214.0269940163614,
+          "profit_usd": 214.0269940163615
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2428.053988032723,
+          "profit_usd": 428.053988032723
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12140.269940163615,
+          "profit_usd": 2140.269940163615
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2017-12-29",
+      "entry_date": "2018-01-02",
+      "exit_date": "2019-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "SWPPX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 29.94349180229161,
+          "trailing_sharpe_zero_cash_rate": 0.8523811521831582,
+          "trailing_volatility_pct": 10.93389903462048
+        },
+        {
+          "symbol": "SWPPX",
+          "observations": 758,
+          "trailing_total_return_pct": 35.923393054495875,
+          "trailing_sharpe_zero_cash_rate": 0.8907341453206865,
+          "trailing_volatility_pct": 12.325794534881958
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 758,
+          "trailing_total_return_pct": 35.65545696974777,
+          "trailing_sharpe_zero_cash_rate": 0.8851170753434348,
+          "trailing_volatility_pct": 12.330432106550179
+        }
+      ],
+      "net_return_pct": -7.369400598343612,
+      "benchmark_net_return_pct": -5.338184723000305,
+      "daily_mdd_pct": 18.858247270638373,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 185.26119880331277,
+          "profit_usd": -14.738801196687223
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 463.15299700828194,
+          "profit_usd": -36.84700299171806
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 926.3059940165639,
+          "profit_usd": -73.69400598343611
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1852.6119880331278,
+          "profit_usd": -147.38801196687223
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9263.059940165638,
+          "profit_usd": -736.9400598343611
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 189.32363055399938,
+          "profit_usd": -10.67636944600061
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 473.3090763849985,
+          "profit_usd": -26.690923615001527
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 946.618152769997,
+          "profit_usd": -53.38184723000305
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1893.236305539994,
+          "profit_usd": -106.7636944600061
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 9466.18152769997,
+          "profit_usd": -533.8184723000305
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2018-12-31",
+      "entry_date": "2019-01-02",
+      "exit_date": "2020-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "VFIAX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 755,
+          "trailing_total_return_pct": 17.107498519813902,
+          "trailing_sharpe_zero_cash_rate": 0.5300545578825427,
+          "trailing_volatility_pct": 11.129542350648057
+        },
+        {
+          "symbol": "VFIAX",
+          "observations": 755,
+          "trailing_total_return_pct": 30.24963469389135,
+          "trailing_sharpe_zero_cash_rate": 0.7446578889850531,
+          "trailing_volatility_pct": 13.000131206993396
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 755,
+          "trailing_total_return_pct": 29.866142218232696,
+          "trailing_sharpe_zero_cash_rate": 0.7370679936311225,
+          "trailing_volatility_pct": 13.000294111660066
+        }
+      ],
+      "net_return_pct": 29.8353921226727,
+      "benchmark_net_return_pct": 32.04890519091048,
+      "daily_mdd_pct": 6.326799411367112,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 259.6707842453454,
+          "profit_usd": 59.6707842453454
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 649.1769606133635,
+          "profit_usd": 149.1769606133635
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1298.353921226727,
+          "profit_usd": 298.353921226727
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2596.707842453454,
+          "profit_usd": 596.707842453454
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12983.53921226727,
+          "profit_usd": 2983.5392122672697
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 264.097810381821,
+          "profit_usd": 64.09781038182096
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 660.2445259545524,
+          "profit_usd": 160.24452595455242
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1320.4890519091048,
+          "profit_usd": 320.48905190910483
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2640.9781038182095,
+          "profit_usd": 640.9781038182097
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13204.890519091048,
+          "profit_usd": 3204.890519091048
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2019-12-31",
+      "entry_date": "2020-01-02",
+      "exit_date": "2021-01-04",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "VIMAX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 754,
+          "trailing_total_return_pct": 34.81092893182765,
+          "trailing_sharpe_zero_cash_rate": 1.0057456977725605,
+          "trailing_volatility_pct": 10.488797799763127
+        },
+        {
+          "symbol": "VIMAX",
+          "observations": 754,
+          "trailing_total_return_pct": 40.601554601811095,
+          "trailing_sharpe_zero_cash_rate": 0.9570338778514905,
+          "trailing_volatility_pct": 12.771984968307788
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 754,
+          "trailing_total_return_pct": 51.22643969976926,
+          "trailing_sharpe_zero_cash_rate": 1.1453063415961604,
+          "trailing_volatility_pct": 12.80622019667626
+        }
+      ],
+      "net_return_pct": 13.008647502211845,
+      "benchmark_net_return_pct": 15.408043301649599,
+      "daily_mdd_pct": 36.655636230171616,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 226.0172950044237,
+          "profit_usd": 26.01729500442369
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 565.0432375110593,
+          "profit_usd": 65.04323751105923
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1130.0864750221185,
+          "profit_usd": 130.08647502211846
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2260.172950044237,
+          "profit_usd": 260.1729500442369
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11300.864750221184,
+          "profit_usd": 1300.8647502211845
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 230.8160866032992,
+          "profit_usd": 30.816086603299198
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 577.040216508248,
+          "profit_usd": 77.040216508248
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1154.080433016496,
+          "profit_usd": 154.080433016496
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2308.160866032992,
+          "profit_usd": 308.160866032992
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11540.80433016496,
+          "profit_usd": 1540.80433016496
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2020-12-31",
+      "entry_date": "2021-01-04",
+      "exit_date": "2022-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FSPHX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 756,
+          "trailing_total_return_pct": 21.865370555678677,
+          "trailing_sharpe_zero_cash_rate": 0.4201532601205823,
+          "trailing_volatility_pct": 21.031525326703175
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 756,
+          "trailing_total_return_pct": 73.15122838915546,
+          "trailing_sharpe_zero_cash_rate": 0.9232002161033672,
+          "trailing_volatility_pct": 22.643449038834536
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 756,
+          "trailing_total_return_pct": 47.57245322118837,
+          "trailing_sharpe_zero_cash_rate": 0.6741398651255083,
+          "trailing_volatility_pct": 23.33661795655482
+        }
+      ],
+      "net_return_pct": 23.112152980676548,
+      "benchmark_net_return_pct": 30.998710127748375,
+      "daily_mdd_pct": 6.34704053430426,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 246.22430596135308,
+          "profit_usd": 46.224305961353096
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 615.5607649033827,
+          "profit_usd": 115.56076490338273
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1231.1215298067655,
+          "profit_usd": 231.12152980676547
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2462.243059613531,
+          "profit_usd": 462.24305961353093
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12311.215298067655,
+          "profit_usd": 2311.2152980676547
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 261.99742025549676,
+          "profit_usd": 61.99742025549675
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 654.9935506387419,
+          "profit_usd": 154.99355063874188
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1309.9871012774838,
+          "profit_usd": 309.98710127748376
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2619.9742025549676,
+          "profit_usd": 619.9742025549675
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 13099.871012774838,
+          "profit_usd": 3099.8710127748373
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2021-12-31",
+      "entry_date": "2022-01-03",
+      "exit_date": "2023-01-03",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FSPHX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 71.12031540052357,
+          "trailing_sharpe_zero_cash_rate": 0.9518702139426184,
+          "trailing_volatility_pct": 21.173388730089766
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 758,
+          "trailing_total_return_pct": 82.75307892066886,
+          "trailing_sharpe_zero_cash_rate": 1.0356139415746701,
+          "trailing_volatility_pct": 21.66551949584109
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 758,
+          "trailing_total_return_pct": 100.39762943176736,
+          "trailing_sharpe_zero_cash_rate": 1.1448918774714918,
+          "trailing_volatility_pct": 22.433313178671614
+        }
+      ],
+      "net_return_pct": -13.438013267506888,
+      "benchmark_net_return_pct": -19.150839451263113,
+      "daily_mdd_pct": 21.334409701561086,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 173.12397346498622,
+          "profit_usd": -26.876026535013775
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 432.80993366246554,
+          "profit_usd": -67.19006633753443
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 865.6198673249311,
+          "profit_usd": -134.38013267506886
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1731.2397346498622,
+          "profit_usd": -268.76026535013773
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 8656.198673249311,
+          "profit_usd": -1343.8013267506888
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 161.69832109747378,
+          "profit_usd": -38.30167890252623
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 404.2458027436844,
+          "profit_usd": -95.75419725631556
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 808.4916054873688,
+          "profit_usd": -191.50839451263113
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 1616.9832109747376,
+          "profit_usd": -383.01678902526226
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 8084.916054873689,
+          "profit_usd": -1915.0839451263114
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2022-12-30",
+      "entry_date": "2023-01-03",
+      "exit_date": "2024-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FSPHX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 758,
+          "trailing_total_return_pct": 28.74569496805548,
+          "trailing_sharpe_zero_cash_rate": 0.48183729388182206,
+          "trailing_volatility_pct": 22.991549943943166
+        },
+        {
+          "symbol": "FSPHX",
+          "observations": 758,
+          "trailing_total_return_pct": 21.46857812541585,
+          "trailing_sharpe_zero_cash_rate": 0.38654330335655274,
+          "trailing_volatility_pct": 24.60479763140189
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 758,
+          "trailing_total_return_pct": 25.13673440316304,
+          "trailing_sharpe_zero_cash_rate": 0.42135184876292703,
+          "trailing_volatility_pct": 25.425950561240818
+        }
+      ],
+      "net_return_pct": 15.54253954445648,
+      "benchmark_net_return_pct": 25.748223600024357,
+      "daily_mdd_pct": 10.454374278451194,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 231.08507908891295,
+          "profit_usd": 31.08507908891296
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 577.7126977222824,
+          "profit_usd": 77.7126977222824
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1155.4253954445649,
+          "profit_usd": 155.4253954445648
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2310.8507908891297,
+          "profit_usd": 310.8507908891296
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11554.253954445649,
+          "profit_usd": 1554.2539544456479
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 251.49644720004872,
+          "profit_usd": 51.49644720004871
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 628.7411180001218,
+          "profit_usd": 128.7411180001218
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1257.4822360002436,
+          "profit_usd": 257.4822360002436
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2514.964472000487,
+          "profit_usd": 514.9644720004871
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12574.822360002436,
+          "profit_usd": 2574.8223600024357
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2023-12-29",
+      "entry_date": "2024-01-02",
+      "exit_date": "2025-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "FXAIX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 756,
+          "trailing_total_return_pct": 35.227981581605135,
+          "trailing_sharpe_zero_cash_rate": 0.7374894482633829,
+          "trailing_volatility_pct": 15.232854640514187
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 756,
+          "trailing_total_return_pct": 34.12302352889354,
+          "trailing_sharpe_zero_cash_rate": 0.6451718512385816,
+          "trailing_volatility_pct": 17.587625700679535
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 756,
+          "trailing_total_return_pct": 33.57505940293648,
+          "trailing_sharpe_zero_cash_rate": 0.6373793720046497,
+          "trailing_volatility_pct": 17.58840154042265
+        }
+      ],
+      "net_return_pct": 19.082959894711493,
+      "benchmark_net_return_pct": 25.03029629206295,
+      "daily_mdd_pct": 8.136958803661166,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 238.165919789423,
+          "profit_usd": 38.165919789422986
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 595.4147994735574,
+          "profit_usd": 95.41479947355747
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1190.8295989471148,
+          "profit_usd": 190.82959894711493
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2381.6591978942297,
+          "profit_usd": 381.65919789422986
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11908.29598947115,
+          "profit_usd": 1908.2959894711494
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 250.06059258412589,
+          "profit_usd": 50.0605925841259
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 625.1514814603147,
+          "profit_usd": 125.15148146031474
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1250.3029629206294,
+          "profit_usd": 250.30296292062948
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2500.605925841259,
+          "profit_usd": 500.60592584125897
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 12503.029629206294,
+          "profit_usd": 2503.029629206295
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2024-12-31",
+      "entry_date": "2025-01-02",
+      "exit_date": "2026-01-02",
+      "partial_final_period": false,
+      "selected": [
+        "FLPSX",
+        "DODGX",
+        "VFINX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "FLPSX",
+          "observations": 754,
+          "trailing_total_return_pct": 15.69171671625158,
+          "trailing_sharpe_zero_cash_rate": 0.40142789555920905,
+          "trailing_volatility_pct": 14.924904851041745
+        },
+        {
+          "symbol": "DODGX",
+          "observations": 754,
+          "trailing_total_return_pct": 24.62040068487099,
+          "trailing_sharpe_zero_cash_rate": 0.5303880214273273,
+          "trailing_volatility_pct": 16.43233686460234
+        },
+        {
+          "symbol": "VFINX",
+          "observations": 754,
+          "trailing_total_return_pct": 28.72049776466792,
+          "trailing_sharpe_zero_cash_rate": 0.5704663564867528,
+          "trailing_volatility_pct": 17.495874478748735
+        }
+      ],
+      "net_return_pct": 16.04043150734158,
+      "benchmark_net_return_pct": 17.989002010594568,
+      "daily_mdd_pct": 16.357430377522963,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 232.08086301468316,
+          "profit_usd": 32.08086301468316
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 580.2021575367079,
+          "profit_usd": 80.2021575367079
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1160.4043150734158,
+          "profit_usd": 160.4043150734158
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2320.8086301468315,
+          "profit_usd": 320.8086301468316
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11604.043150734158,
+          "profit_usd": 1604.043150734158
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 235.97800402118912,
+          "profit_usd": 35.978004021189136
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 589.9450100529729,
+          "profit_usd": 89.94501005297283
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1179.8900201059457,
+          "profit_usd": 179.89002010594567
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2359.7800402118914,
+          "profit_usd": 359.78004021189133
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11798.900201059458,
+          "profit_usd": 1798.9002010594568
+        }
+      ]
+    },
+    {
+      "selector": "trailing_low_volatility",
+      "signal_date": "2025-12-31",
+      "entry_date": "2026-01-02",
+      "exit_date": "2026-10-21",
+      "partial_final_period": true,
+      "selected": [
+        "DODGX",
+        "FLPSX",
+        "FXAIX"
+      ],
+      "selection_facts": [
+        {
+          "symbol": "DODGX",
+          "observations": 752,
+          "trailing_total_return_pct": 52.76255346252905,
+          "trailing_sharpe_zero_cash_rate": 1.095810071520763,
+          "trailing_volatility_pct": 13.853001224838119
+        },
+        {
+          "symbol": "FLPSX",
+          "observations": 752,
+          "trailing_total_return_pct": 41.80281270284891,
+          "trailing_sharpe_zero_cash_rate": 0.911045309997324,
+          "trailing_volatility_pct": 13.929290677760372
+        },
+        {
+          "symbol": "FXAIX",
+          "observations": 752,
+          "trailing_total_return_pct": 86.79349717440572,
+          "trailing_sharpe_zero_cash_rate": 1.466382877653293,
+          "trailing_volatility_pct": 15.075078360725715
+        }
+      ],
+      "net_return_pct": 11.616816024781196,
+      "benchmark_net_return_pct": 13.818074504382993,
+      "daily_mdd_pct": 8.017417187331821,
+      "capital_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 223.2336320495624,
+          "profit_usd": 23.23363204956239
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 558.084080123906,
+          "profit_usd": 58.08408012390598
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1116.168160247812,
+          "profit_usd": 116.16816024781195
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2232.336320495624,
+          "profit_usd": 232.3363204956239
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11161.68160247812,
+          "profit_usd": 1161.6816024781197
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "initial_usd": 200,
+          "ending_usd": 227.63614900876598,
+          "profit_usd": 27.636149008765987
+        },
+        {
+          "initial_usd": 500,
+          "ending_usd": 569.090372521915,
+          "profit_usd": 69.09037252191497
+        },
+        {
+          "initial_usd": 1000,
+          "ending_usd": 1138.18074504383,
+          "profit_usd": 138.18074504382994
+        },
+        {
+          "initial_usd": 2000,
+          "ending_usd": 2276.36149008766,
+          "profit_usd": 276.3614900876599
+        },
+        {
+          "initial_usd": 10000,
+          "ending_usd": 11381.807450438298,
+          "profit_usd": 1381.8074504382994
+        }
+      ]
+    }
+  ]
+}
