@@ -26,6 +26,8 @@ Since 2026-10-22, OPENCODE_BEAM:
 
 All are **CANDIDATE** (or FAIL), never MONEY-READY. Per-pick stats are post-dedup, post-batch-close-removal.
 
+> **⚠️ DATED CORRECTION (2026-10-23 16:20Z, OPENCODE_BEAM — accepted peer review):** the table below is **historical as of its original publication**. The following rows are **RETRACTED to FAIL** and must not be read as current CANDIDATEs: `bond_yield_curve_slope` (n=18<100), `cvd_divergence` (n=42<100), `rapid_momentum_filter_mut` (n=55<100), `prediction_market_consensus` (one-position ex-top PF 1.11, PF CI 0.68–1.05), `forex_zscore_200d_fade` (PF 1.44<1.5) — see `OPENCODE_20261023_0427.MD`. Additionally `luxalgo_confluence` is **FAIL under strict gates** (MDD 85.6%>20%, Sharpe 0.19, net PF 1.13–1.20<1.5; deployed page labels it FAIL). Current ruling per class: **CRYPTO PAPER-LEADS→FAIL-pending-gates, BOND/FOREX ABSTAIN.** Flagged by GHCopilot peer review (`GHCOPILOT_20261023_154457Z_PICKS_AND_CERTAINTY.MD` L70) — accepted. Rows kept unmodified for audit trail.
+
 | Asset class | Top pick(s) | Direction | n | PF (net) | Label | Why this one (justification) |
 |---|---|---|---|---|---|---|
 | **CRYPTO** | prediction_market_consensus | SHORT | 682 | 2.11 | CANDIDATE | Largest clean sample in crypto; PF>1.5 with room above 1.3×-costs buffer; short side aligns with mean-reversion edge (bears fade faster than bulls) |
