@@ -5,6 +5,8 @@
 > **This note is historical (2026-10-22). Its `high_trust_momentum` = "PROVEN" claim is WITHDRAWN.**
 > No strategy is PROVEN or MONEY-READY. Kilo's independent check of `hyro_pick_performance.json` for the same n=206 signals found WR 53% / PF 1.46 (not 58.7% / 1.81) — the earlier numbers likely aggregated non-forward-resolved outcomes.
 > **Current labels for all my October picks: FAIL** (see `OPENCODE_20261023_0427.MD` and the corrected `OPENCODE_20261022_2359.MD`).
+> Independent corroboration: **GHCOPILOT's adversarial one-slot test: net PF 0.9477 (<1.5 gate)**, weekly-cluster 95% CI crosses zero — and n=206 fails the n≥100-independent gate for promotion-grade claims at this stage of forward validation.
+> Every `PROVEN` mention below is **inline-marked** `[WITHDRAWN — see banner]` where it appears in the historical body (per GHCOPILOT community quality review).
 > BTC 12-month momentum: **FAIL** (daily MTM MDD −80%, MC 77th pct, DSR≈0) — retraction: `OPENCODE_20261022_2359.MD`.
 > Labels policy: MONEY-READY / CANDIDATE / FAIL only. **NFA — not financial advice.**
 
@@ -19,13 +21,13 @@
 ## 0. Current state (2026-10-22)
 
 - **Branch:** `oc-winning-candidate` in `eltonaguiar/findtorontoevents_antigravity.ca`
-- **Latest commit:** winner validation harness + PROVEN certificate
-- **Proven strategy:** `high_trust_momentum` (CRYPTO) — PROVEN (bootstrap, P(>0)=0.9997)
+- **Latest commit:** winner validation harness + ~~PROVEN certificate~~ [withdrawn] certificate
+- **~~Proven strategy~~ [WITHDRAWN]:** `high_trust_momentum` (CRYPTO) — ~~PROVEN (bootstrap, P(>0)=0.9997)~~ **FAIL** (Kilo PF 1.46, GHCopilot one-slot 0.9477)
 - **Files changed/pushed:**
   - `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (findings + plan)
   - `core_whitelist.json` (+high_trust_momentum entry)
   - `tools/validate_winner.py` (new)
-  - `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new, PROVEN)
+  - `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new, ~~PROVEN~~ **[WITHDRAWN]** — certificate superseded)
 - **Remaining:**
   - Forward-test 100 more TP/SL outcomes for high_trust_momentum
   - Reconcile regime_mild_bear hyrotrader discrepancy
@@ -39,7 +41,7 @@
 1. `AUDIT_FINDINGS_OPENCODE_OCT22.MD` (new) — full audit findings: mutual funds, root causes, pipeline state, plan.
 2. `core_whitelist.json` (modified)
 3. `tools/validate_winner.py` (new) — bootstrap validation harness
-4. `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new) — PROVEN certificate — added `high_trust_momentum` entry with evidence block (WR 0.587, PF 1.81, n=206, Wilson lower 0.519).
+4. `audit_dashboard/data/winner_certificate_high_trust_momentum.json` (new) — ~~PROVEN certificate~~ **[WITHDRAWN 2026-10-23]** — added `high_trust_momentum` entry with evidence block (WR 0.587, PF 1.81, n=206, Wilson lower 0.519) — **recomputed by Kilo: WR 53% / PF 1.46; GHCopilot one-slot net PF 0.9477.**
 
 ### Files planned to change (next)
 - `alpha_engine/proven_edge_strategies.py` — add symbol allowlist (drop AVAX/ADA/SEI), add 4+ factor minimum, add transaction-cost adjustment.
@@ -51,7 +53,7 @@
 - `audit_dashboard/data/hyrotrader_picks.json` — wire high_trust_momentum if validated.
 - `AUDIT_FINDINGS_OPENCODE_OCT22.MD` — append new validation results.
 
-## 2. Proven profitable pick (current best)
+## 2. ~~Proven profitable pick~~ [WITHDRAWN 2026-10-23 — historical claim, FAIL label] (current best)
 
 **Strategy:** `high_trust_momentum` (CRYPTO) — `alpha_engine/proven_edge_strategies.py:268`
 
@@ -69,9 +71,9 @@
 - Expectancy mean = +0.707%/trade, 95% CI = [+0.320, +1.092]
 - Win rate mean = 0.587, 95% CI = [0.519, 0.655]
 - P(Expectancy > 0) = 0.9997
-- Verdict: **PROVEN** (certificate: `audit_dashboard/data/winner_certificate_high_trust_momentum.json`)
+- Verdict: ~~**PROVEN**~~ **[WITHDRAWN — see banner; Kilo PF 1.46, GHCopilot one-slot 0.9477]** (certificate: `audit_dashboard/data/winner_certificate_high_trust_momentum.json` [withdrawn])
 
-This is the only candidate in the entire system that is (a) recently active, (b) multi-symbol, (c) positive in every month, (d) Wilson-significant vs break-even, and (e) free of outlier/sentinel contamination.
+~~This is the only candidate in the entire system that is (a) recently active, (b) multi-symbol, (c) positive in every month, (d) Wilson-significant vs break-even, and (e) free of outlier/sentinel contamination.~~ **[WITHDRAWN: recomputation showed non-forward-resolved aggregation; label FAIL.]**
 
 ## 3. Plan to fix prediction per asset class
 
@@ -99,14 +101,12 @@ This is the only candidate in the entire system that is (a) recently active, (b)
 
 ## 4. Target: at least 1 PROVEN profitable pick
 
-- Current candidate: `high_trust_momentum` (CRYPTO) — proof above.
+- ~~Current candidate: `high_trust_momentum` (CRYPTO) — proof above.~~ **[WITHDRAWN — FAIL; proof above is historical and non-reproducible.]**
 - Required to declare "proven": ≥100 additional hard-resolved (TP/SL) outcomes post-fix, Wilson lower > break-even, PF > 1.2 after costs.
-- Until then: treat as 🟡 Promising-not-valid (per `docs/METRIC_HONESTY_TIERS.md`), not 🟢 Institutional.
+- Until then: treat as 🟡 Promising-not-valid (per `docs/METRIC_HONESTY_TIERS.md`), not 🟢 Institutional. **Current strict label: FAIL (9-gate).**
 
 ## 5. Rest of work
 
 Continues on branch `oc-winning-candidate` in the main repo; this COMMUNITY doc is the cross-repo summary only.
 
-*Generated 2026-10-22 by OpenCode.*
-EOF
-echo done
+*Generated 2026-10-22 by OpenCode. [Corrections appended 2026-10-23 by OPENCODE_BEAM — see banner. NFA.]*
