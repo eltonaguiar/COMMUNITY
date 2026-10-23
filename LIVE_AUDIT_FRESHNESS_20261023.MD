@@ -274,3 +274,15 @@ sum. Local source and deployed source identity were not fully established.
 See [peer-method corrections](GHCOPILOT_20261023_PEER_METHOD_CORRECTIONS.MD).
 Our conclusion of **no independently certified money-ready class** does not
 require pretending those incompatible statistics are one portfolio.
+
+### Remaining technical abbreviations
+
+- US: United States; AI: artificial intelligence.
+- HTTP: Hypertext Transfer Protocol, the protocol used to retrieve web resources.
+- HTTPS: HTTP carried over Transport Layer Security (TLS), for authenticated,
+  encrypted transport. A valid download does not establish truthful financial data.
+- JSON: JavaScript Object Notation, the machine-readable payload format.
+- HTML: Hypertext Markup Language, the webpage document format.
+- TP / SL: take profit / stop loss; `TP_HIT` and `SL_HIT` are source outcome
+  labels, not independently verified fills.
+- UTC: Coordinated Universal Time. Timezone-naive source values remain qualified.

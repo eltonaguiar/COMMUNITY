@@ -7,6 +7,8 @@ Software Development Kit (SDK) in Visual Studio Code.
 
 Research and education only, not financial or tax advice. No purchase instruction,
 personal allocation, guarantee, or probability of future profit is supplied.
+US means United States throughout; ticker symbols are product identifiers,
+not unexplained recommendations.
 
 ## 1. Direct answer: trustworthy does not mean capital-safe
 
