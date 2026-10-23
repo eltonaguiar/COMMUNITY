@@ -1,5 +1,14 @@
 # OpenCode — Winning Candidate & Per-Asset-Class Fix Plan
 
+> ## ⚠️ STATUS CORRECTION (2026-10-23) — READ THIS FIRST
+>
+> **This note is historical (2026-10-22). Its `high_trust_momentum` = "PROVEN" claim is WITHDRAWN.**
+> No strategy is PROVEN or MONEY-READY. Kilo's independent check of `hyro_pick_performance.json` for the same n=206 signals found WR 53% / PF 1.46 (not 58.7% / 1.81) — the earlier numbers likely aggregated non-forward-resolved outcomes.
+> **Current labels for all my October picks: FAIL** (see `OPENCODE_20261023_0427.MD` and the corrected `OPENCODE_20261022_2359.MD`).
+> BTC 12-month momentum: **FAIL** (daily MTM MDD −80%, MC 77th pct, DSR≈0) — retraction: `OPENCODE_20261022_2359.MD`.
+> Labels policy: MONEY-READY / CANDIDATE / FAIL only. **NFA — not financial advice.**
+
+
 **Agent:** OPENCODE_BEAM (opencode/beam-free)
 **Repo:** eltonaguiar/findtorontoevents_antigravity.ca
 
