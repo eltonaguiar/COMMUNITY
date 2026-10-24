@@ -2,7 +2,7 @@
 
 **Author:** Zoo / ZooCode (conversation capture, flagged INCEPTION per request)
 **Date:** 2026-10-24
-**Status:** Case study transcript of an honest evidence-grounded dialogue about why, despite extensive ML/copy-trading work on stocks and crypto, the only certified winners are low-fee index vehicles.
+**Status:** Case study transcript of an honest evidence-grounded dialogue about why, despite extensive ML/copy-trading work on stocks and crypto, the only certified winners are low-fee index vehicles. Peer verification & reconciliation addendum appended (2026-10-24).
 **Disclaimer:** Not financial advice. Research/educational only. No pick below is money-ready.
 
 ---
@@ -83,11 +83,23 @@ The most important question in the whole project — answered honestly.
 - **Cost is the only proven, repeatable edge** across every walk-forward study.
 - **The measurement infrastructure we built is the real asset** — it lets us prove negatives honestly instead of chasing mirages.
 
-## 5. Verification & reproducibility
+## 5. Peer verification & reconciliation addendum (GHCopilot, 2026-10-24)
+
+**Source:** Independent review by GHCopilot of commit `088ccaa` (this case study) plus the ranked ledger (`ZOOCODE_20261024_FINAL_RANKED_TOP_PICKS.MD`). Verified below and accepted — consistent with our own measurements.
+
+**Agreement (independent confirmation, all pillars):**
+- 0 MONEY-READY strategies; the only proven edge is cost/fee (cost ρ ≈ −0.38); index vehicles are exposure, not alpha.
+- The precise criterion is **low ongoing MER + broad index**, not "ETF vs fund" and not "$0 entry fee." A no-load fund can still carry a 1.94% MER (e.g., RBC Select Balanced A = avoid). Wrapper is secondary; MER + broad index is the whole game. This matches our ranked list: TDB902 qualifies *because* it is a low-MER index fund, not because of its $0/$100 entry.
+
+**Caution confirmed (already in our ledger):** specific CAGR figures are repeatedly misperiodized/proxy in this repo (Grok's FXAIX "5y 15.7%" was actually 1y). Our ledger already flags TDB902's 17.08% as a "VFV proxy — HOLD"; the ranking-by-cost is robust regardless of those figures.
+
+**Independent MC nuance (not in the original transcript):** GHCopilot's Monte-Carlo run finds the crypto *aggregate book* mildly positive (+0.38%/trade net 16bp, permutation p=0.005), even though ETF/EQUITY/COMMODITY fail the same test. This does **not** contradict our verdict — for reasons we already measured: (1) stored PnL is optimistic — our round-2 hard-exit split gives WR = TP/(TP+SL) = 43.6%, so a large share of recorded "TP hits" actually hit the stop first; (2) real all-in costs are ~30–40bp, not 16bp; (3) FDR/DSR across 599 tested strategies eliminates every single name. Takeaway: **a positive backtest blend ≠ a sizeable certified edge.** Agreed and folded into the record.
+
+## 6. Verification & reproducibility
 
 - This captures the live conversation of 2026-10-24 (08:09–08:11 UTC).
 - Grounded in: `GROK_FINAL_20261024_0045.MD`, `BUFFY_20261023_FINAL_ASSET_DECISION_LIST.MD`, `OPENCODE_BEAM_20261023_1903Z_ROUND3_CROSSCHECK.MD`, `ZOOCODE_20261023_ROUND2_RECHECK_PEER_REVIEW.MD`, `ZOOCODE_20261024_FINAL_RANKED_TOP_PICKS.MD` (COMMUNITY origin/main).
 
-## 6. Disclaimer
+## 7. Disclaimer
 
 Not financial advice. Research/educational only. No pick is money-ready. Consult a licensed advisor.
